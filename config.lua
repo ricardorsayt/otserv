@@ -7,7 +7,7 @@ showPackets = false
 
 -- Combat settings--
 -- NOTE: valid values for worldType are: "pvp", "no-pvp" and "pvp-enforced"
-worldType = "pvp"
+worldType = "retro-pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 1
 pzLocked = 60 * 1000
@@ -72,9 +72,9 @@ antiMultiClientEnabled = false
 antiMultiClientLimit = 2
 
 
--- Configuração para permitir mount em Protection Zone (PZ)
+-- Configuraï¿½ï¿½o para permitir mount em Protection Zone (PZ)
 -- true = permite mount em PZ
--- false = não permite mount em PZ (comportamento padrão)
+-- false = nï¿½o permite mount em PZ (comportamento padrï¿½o)
 allowMountInPz = true 
 
 -- Depot Limit
