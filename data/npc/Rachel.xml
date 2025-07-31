@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Rachel" script="Rachel.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100" />
+	<look type="136" head="58" body="84" legs="86" feet="114" addons="0" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="avalanche rune,2274,114;
+			Stone Shower Rune,2288,37;
+			Thunderstorm Rune,2315,37;
+			blank rune,2260,10;
+			chameleon rune,2291,420;
+			convince creature rune,2290,160;
+			ultimate mp,26029,350;
+			Supreme Health Potion,26031,500;
+			ultimate spirit potion,26030,350;
+			cure poison rune,2266,130;
+			destroy field rune,2261,30;
+			energy field rune,2277,76;
+			energy wall rune,2279,170;
+			exercise rod,33086,262500;
+			exercise wand,33087,262500;
+			explosion rune,2313,62;
+			fire bomb rune,2305,294;
+			fire field rune,2301,56;
+			fire wall rune,2303,122;
+			great fireball rune,2304,114;
+			great health potion,7591,190;
+			great mana potion,7590,120;
+			great spirit potion,8472,190;
+			health potion,7618,45;
+			heavy magic missile rune,2311,24;
+			intense healing rune,2265,190;
+			light magic missile rune,2287,8;
+			mana potion,7620,50;
+			poison field rune,2285,42;
+			poison wall rune,2289,104;
+			spellbook,2175,150;
+			stalagmite rune,2292,24;
+			strong health potion,7588,100;
+			strong mana potion,7589,80;
+			sudden death rune,2268,270;
+			ultimate healing rune,2273,350;
+			ultimate health potion,8473,310;
+			wand of cosmic energy,2189,10000;
+			terra rod,2181,10000;
+			wand of decay,2188,5000;
+			wand of dragonbreath,2191,1000;
+			wand of vortex,2190,500;
+			Underworld Rod,8910,22000;
+			Wand of Starstorm,8920,18000;
+			necrotic rod,2185,5000;
+			snakebite rod,2182,500;
+			Wand of Voodoo,8922,22000;
+			Wild Growth Rune,2269,320;
+			Hailstorm Rod,2183,15000;
+			Magic Wall Rune,2293,55;
+			paralyze rune,2278,1000;
+			Wand of Inferno,2187,15000" />
+		<parameter key="shop_sellable" value="
+			empty potion flask,7634,5;
+			empty potion flask,7635,5;
+			empty potion flask,7636,5;
+			spellwand,7735,299;
+			talon,2151,320;
+			vial,2006,5;" />
+	</parameters>
+</npc>
