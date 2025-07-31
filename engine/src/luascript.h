@@ -1136,6 +1136,9 @@ class LuaScriptInterface
 		static int luaPlayerHasLostConnection(lua_State* L);
 		static int luaPlayerGetNoPongTime(lua_State* L);
 
+		static int luaPlayerGetVipDays(lua_State* L);
+		static int luaPlayerAddVipDays(lua_State* L);
+		static int luaPlayerRemoveVipDays(lua_State* L);
 
 		static int luaPlayerGetIdleTime(lua_State* L);
 

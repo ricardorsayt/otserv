@@ -1,3 +1,4 @@
+
 if not AutoLootList then
     AutoLootList = { players = {} }
 end
