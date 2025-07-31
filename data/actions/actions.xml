@@ -242,9 +242,9 @@
 	<action fromid="7915" toid="7916" script="quests/elemental spheres/machine.lua" />
 	<action fromid="7917" toid="7918" script="quests/elemental spheres/machine2.lua" />
 	<action fromid="8298" toid="8299" script="quests/elemental spheres/soils.lua" />
-	<action fromid="8302" toid="8303" script="quests/elemental spheres/soils.lua" />
+	<!--<action fromid="8302" toid="8303" script="quests/elemental spheres/soils.lua" /> -->
 	<action fromuid="9025" touid="9028" script="quests/elemental spheres/OAELever.lua" />
-	<action fromid="8304" toid="8306" script="quests/elemental spheres/soils2.lua" />
+	<!--<action fromid="8304" toid="8306" script="quests/elemental spheres/soils2.lua" /> -->
 	<action itemid="8300" script="quests/elemental spheres/soils2.lua" />
 
 	<!-- Explorer Society Quest -->

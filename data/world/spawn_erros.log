@@ -1,0 +1,1014 @@
+--------------------------------------------------------------------------------
+[38;2;050;205;050m- Otg Server - Version 1.4 (Protocol 1100)[0m
+
+[38;2;050;205;050m- Compiled with GNU C++ version 10.2.1 20210110[0m
+[38;2;050;205;050m- Compiled on Jul 31 2025 11:31:52 for platform x64[0m
+[38;2;050;205;050m- Linked with LuaJIT 2.1.0-beta3 for Lua support[0m
+--------------------------------------------------------------------------------
+- A server developed by [38;2;191;191;000mJohncore, Mark Samman and Mateuskl (Mateus Roberto)[0m
+- Engine Credits for: [38;2;191;191;000mTFS Team, Erick Nunes, Leo Pereira, Marson Schneider, LukST, worthdavi, OTX Team, OTG Team[0m
+- Based on TFS 1.4 (Protocol 1100), heavily modified by [38;2;178;034;034mMateus Roberto[0m
+- Visit our community: [38;2;100;149;237mhttps://github.com/Mateuzkl[0m and [38;2;100;149;237mhttps://github.com/otg-br[0m
+--------------------------------------------------------------------------------
+[[38;2;000;128;000m31/07/2025 15:40:01[0m] Loading config.lua ...              [[38;2;100;149;237m31/07/2025 15:40:01[0m] [38;2;100;149;237m> Loaded proxy with id: 1, ip: 0.0.0.0, port: 7000, name: USA[0m
+[[38;2;100;149;237m31/07/2025 15:40:01[0m] [38;2;100;149;237m> Loaded proxy with id: 2, ip: 0.0.0.0, port: 7000, name: BRA[0m
+[[38;2;000;128;000m     OK     [0m]
+[[38;2;000;128;000m31/07/2025 15:40:01[0m] Establishing database connection... [[38;2;050;205;050mMySQL 10.5.29[0m]
+[[38;2;000;128;000m31/07/2025 15:40:01[0m] Running database manager            [[38;2;000;128;000m31/07/2025 15:40:01[0m] Checking database migrations ...    [[38;2;050;205;050mVersion:  39[0m]
+[[38;2;000;128;000m31/07/2025 15:40:01[0m] Optimizing database tables ...      [[38;2;100;149;237m31/07/2025 15:40:01[0m] [38;2;100;149;237mOptimizing table tile_store...[0m      [[38;2;000;128;000m     OK     [0m]
+[[38;2;100;149;237m31/07/2025 15:40:01[0m] [38;2;100;149;237mOptimizing table players_online...[0m  [[38;2;000;128;000m     OK     [0m]
+[[38;2;000;128;000m     OK     [0m]
+[[38;2;000;128;000m31/07/2025 15:40:01[0m] Loading vocations ...               [[38;2;050;205;050mVocations: 9[0m]
+[[38;2;000;128;000m31/07/2025 15:40:01[0m] Loading items ...                   [[38;2;050;205;050mItems: 50430[0m]
+[[38;2;000;128;000m31/07/2025 15:40:01[0m]                                     [[38;2;050;205;050mOTB:   v3.62[0m]
+[[38;2;000;128;000m31/07/2025 15:40:01[0m] Loading script systems ...          [[38;2;050;205;050mLuaJIT 2.1.0-beta3[0m]
+>> Loaded 45 quests
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] Loading bestiary ...                [[38;2;000;128;000m31/07/2025 15:40:03[0m] Loading lua scripts ...             [Warning - Actions::registerLuaEvent] Duplicate registered item with id: 8302 in range from id: 8302, to id: 8303
+[Warning - Actions::registerLuaEvent] Duplicate registered item with id: 8306 in range from id: 8302, to id: 8303
+[Warning - Actions::registerLuaEvent] Duplicate registered item with id: 8305 in range from id: 8302, to id: 8303
+[Warning - Actions::registerLuaEvent] Duplicate registered item with id: 8304 in range from id: 8302, to id: 8303
+[Warning - Actions::registerLuaEvent] Duplicate registered item with id: 8303 in range from id: 8302, to id: 8303
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] Loading monsters (xml + lua) ...    [[38;2;050;205;050mmonsters: 1338[0m]
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] Loading quests ...                  [[38;2;000;128;000m31/07/2025 15:40:03[0m] Loading outfits ...                 [[38;2;050;205;050mOutfits: 230[0m]
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] Loading imbuements ...              [[38;2;000;128;000m     OK     [0m]
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] Loading charms ...                  [[38;2;000;128;000m     OK     [0m]
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] Loading Store ...                   [[38;2;000;128;000m     OK     [0m]
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] Loading prey data ...               [[38;2;000;128;000m     OK     [0m]
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] Checking world type ...             [[38;2;050;205;050m RETRO-PVP  [0m]
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] Loading world map...
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] 
+[[38;2;000;128;000m31/07/2025 15:40:03[0m] >> Filename:      [38;2;050;205;050mrealmap.otbm[0m
+[[38;2;000;128;000m31/07/2025 15:40:11[0m] >> Map size:      [38;2;050;205;050m33568x33146[0m
+[[38;2;000;128;000m31/07/2025 15:40:11[0m] >> Descr. 1:      [38;2;050;205;050mSaved with Remere's Map Editor 3.4[0m
+[[38;2;000;128;000m31/07/2025 15:40:11[0m] >> Descr. 2:      [38;2;050;205;050mMap 8.0 - 11x
+By Homero.[0m
+[[38;2;000;128;000m31/07/2025 15:40:27[0m] >> Loaded in:     [38;2;050;205;050m23.874 seconds[0m
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] 
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] >> House items:   [38;2;050;205;050m4294959979[0m
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] Loading guilds ...                  [[38;2;050;205;050mAll guilds have been loaded.[0m]
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] >> Towns:         [38;2;050;205;050m13[0m
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] >> Houses:        [38;2;050;205;050m966[0m
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] 
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] >> Monsters:      [38;2;050;205;050m27789[0m
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] >> NPCs:          [38;2;050;205;050m446[0m
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] >> Spawns:        [38;2;050;205;050m15013[0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn NPC "Fiona" on position: ( 32389 / 30742 / 007 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn NPC "Luna" on position: ( 32391 / 30736 / 007 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn NPC "Correios" on position: ( 32379 / 30729 / 007 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn NPC "Frodo" on position: ( 18231 / 18044 / 007 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Serpent Spawn" on position: ( 32724 / 32602 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Serpent Spawn" on position: ( 32718 / 32602 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Serpent Spawn" on position: ( 32724 / 32598 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Devil" on position: ( 33171 / 31691 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Elemental" on position: ( 33170 / 31692 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Elemental" on position: ( 33166 / 31693 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Devil" on position: ( 33171 / 31696 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Elemental" on position: ( 33169 / 31697 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Elemental" on position: ( 33165 / 31698 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Elemental" on position: ( 33173 / 31698 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Devil" on position: ( 33171 / 31699 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Elemental" on position: ( 33169 / 31701 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Devil" on position: ( 33168 / 31703 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Devil" on position: ( 33175 / 31705 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Elemental" on position: ( 33170 / 31685 / 015 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32751 / 32628 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32758 / 32620 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Poison Spider" on position: ( 32562 / 32176 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Poison Spider" on position: ( 32566 / 32177 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Poison Spider" on position: ( 32560 / 32181 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Poison Spider" on position: ( 32558 / 32182 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Minotaur" on position: ( 32541 / 32162 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33350 / 31607 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dark Torturer" on position: ( 33349 / 31589 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32140 / 31085 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 32162 / 31085 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 32167 / 31082 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32141 / 31074 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 32144 / 31076 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 32109 / 31074 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 32130 / 31069 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32124 / 31075 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32120 / 31061 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32107 / 31062 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32106 / 31055 / 014 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Slime" on position: ( 33390 / 32688 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Scarab" on position: ( 33390 / 32690 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Cobra" on position: ( 33391 / 32692 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33255 / 31643 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 33273 / 31638 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blightwalker" on position: ( 33268 / 31641 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33293 / 31635 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33298 / 31636 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33297 / 31637 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 33292 / 31638 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33297 / 31641 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Hellhound" on position: ( 33287 / 31635 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33285 / 31637 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33285 / 31642 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33308 / 31634 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 33303 / 31636 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33307 / 31639 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33302 / 31641 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dark Torturer" on position: ( 33257 / 31629 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33253 / 31630 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33256 / 31634 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 33253 / 31637 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32578 / 31429 / 013 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Constrictor" on position: ( 31884 / 32787 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 33396 / 32737 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 33023 / 32422 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 33032 / 32422 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 33023 / 32425 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 33032 / 32425 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dragon Lord" on position: ( 32755 / 32329 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dragon Lord" on position: ( 32753 / 32330 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dark Torturer" on position: ( 32884 / 32311 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32865 / 32291 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Diabolic Imp" on position: ( 32876 / 32287 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32380 / 32032 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Bonelord" on position: ( 32448 / 32019 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghost" on position: ( 32435 / 32003 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32436 / 32005 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32432 / 32006 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32358 / 32001 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32406 / 31996 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32408 / 31996 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32370 / 31984 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32374 / 31984 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32371 / 31987 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32370 / 31967 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghost" on position: ( 32423 / 31913 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghost" on position: ( 32423 / 31916 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghost" on position: ( 32434 / 31913 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33056 / 31742 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33081 / 31737 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33122 / 31718 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33119 / 31719 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33109 / 31718 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33113 / 31719 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33128 / 31712 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33126 / 31713 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Hellhound" on position: ( 33104 / 31708 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33104 / 31710 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Hellhound" on position: ( 33107 / 31713 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Hellhound" on position: ( 33113 / 31706 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33114 / 31711 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Hellhound" on position: ( 33122 / 31700 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33128 / 31702 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33124 / 31705 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33120 / 31699 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33111 / 31698 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33108 / 31701 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33230 / 31693 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33226 / 31696 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33235 / 31697 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33229 / 31700 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33103 / 31697 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33101 / 31699 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33130 / 31695 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33115 / 31689 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33117 / 31689 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fury" on position: ( 33114 / 31691 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33115 / 31695 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33120 / 31695 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33107 / 31685 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33104 / 31687 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Hellhound" on position: ( 33103 / 31690 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33106 / 31691 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33127 / 31688 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33230 / 31680 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33235 / 31680 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33226 / 31683 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33231 / 31683 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33226 / 31687 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33110 / 31685 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33112 / 31685 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33114 / 31685 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33197 / 31675 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33203 / 31677 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33201 / 31680 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33203 / 31683 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33197 / 31684 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33199 / 31685 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33192 / 31674 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33193 / 31677 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33194 / 31681 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33199 / 31663 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33202 / 31667 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33198 / 31670 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33194 / 31664 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33190 / 31669 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33236 / 31664 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33230 / 31666 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33230 / 31645 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33231 / 31647 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33236 / 31654 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 33089 / 31483 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32626 / 31424 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32139 / 31166 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32098 / 31167 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 32089 / 31167 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32052 / 31165 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32058 / 31167 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32104 / 31157 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 32064 / 31136 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32105 / 31119 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32102 / 31100 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32105 / 31104 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32103 / 31090 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32075 / 31088 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32168 / 31079 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32173 / 31081 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32160 / 31080 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32120 / 31078 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32105 / 31079 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32086 / 31065 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32080 / 31066 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32084 / 31068 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 32055 / 31066 / 012 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 32470 / 32273 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dragon Lord" on position: ( 33259 / 32241 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32360 / 32014 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32357 / 32017 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 32710 / 32006 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32392 / 32001 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32361 / 31991 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32364 / 31992 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32365 / 31986 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32368 / 31977 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32380 / 31973 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32370 / 31968 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32371 / 31973 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32355 / 31961 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33057 / 31829 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33080 / 31828 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33071 / 31828 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33097 / 31826 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33057 / 31815 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33060 / 31819 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33097 / 31815 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33084 / 31815 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33098 / 31802 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33104 / 31806 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33066 / 31800 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33067 / 31792 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33119 / 31785 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33114 / 31786 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33114 / 31791 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33118 / 31791 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33110 / 31776 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33103 / 31779 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33107 / 31782 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33099 / 31776 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33099 / 31780 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "a carved stone tile" on position: ( 33113 / 31726 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "a carved stone tile" on position: ( 33095 / 31726 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "a carved stone tile" on position: ( 33104 / 31717 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dark Magician" on position: ( 33088 / 31674 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dark Magician" on position: ( 33085 / 31675 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dark Magician" on position: ( 33071 / 31675 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dark Magician" on position: ( 33067 / 31673 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33142 / 31665 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33133 / 31664 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33118 / 31659 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33142 / 31657 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33145 / 31658 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33132 / 31656 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33133 / 31657 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33123 / 31650 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33126 / 31655 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33106 / 31650 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33108 / 31654 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33121 / 31642 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33122 / 31645 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33118 / 31642 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33115 / 31645 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33118 / 31645 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33110 / 31645 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Swamp Troll" on position: ( 32709 / 31645 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33116 / 31634 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33120 / 31637 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33118 / 31638 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33109 / 31634 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33110 / 31638 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33119 / 31626 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33119 / 31630 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33123 / 31630 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33105 / 31625 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33107 / 31625 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33107 / 31628 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33109 / 31630 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33112 / 31618 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33117 / 31618 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33114 / 31619 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33112 / 31620 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33117 / 31621 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33124 / 31617 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33121 / 31618 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33126 / 31620 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33101 / 31615 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33105 / 31619 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33116 / 31612 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33117 / 31615 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33095 / 31607 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33092 / 31610 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33111 / 31603 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33115 / 31604 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33111 / 31606 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33116 / 31607 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33112 / 31608 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33099 / 31600 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33104 / 31601 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33102 / 31602 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33106 / 31591 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33108 / 31593 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33105 / 31595 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Betrayed Wraith" on position: ( 33103 / 31596 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33117 / 31593 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Phantasm" on position: ( 33114 / 31594 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 33099 / 31584 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32128 / 31241 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32125 / 31244 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32090 / 31236 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32117 / 31236 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32129 / 31237 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32079 / 31227 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32150 / 31224 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32153 / 31228 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32129 / 31223 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32124 / 31225 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32128 / 31227 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32078 / 31214 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32080 / 31218 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32079 / 31219 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32009 / 31211 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32151 / 31207 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32103 / 31203 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32065 / 31203 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32123 / 31204 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32090 / 31203 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32186 / 31196 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32010 / 31190 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32008 / 31194 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32052 / 31188 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32055 / 31192 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32111 / 31177 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32114 / 31180 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 32028 / 31177 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32111 / 31161 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32085 / 31159 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32090 / 31162 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32067 / 31163 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32040 / 31159 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32043 / 31163 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32018 / 31160 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 31996 / 31161 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ice Golem" on position: ( 32029 / 31145 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32029 / 31139 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32137 / 31131 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32142 / 31132 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32139 / 31135 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32027 / 31135 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32154 / 31129 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32150 / 31132 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32012 / 31125 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32005 / 31124 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 32153 / 31118 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32028 / 31114 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32152 / 31104 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32123 / 31099 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32046 / 31091 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32116 / 31082 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32093 / 31083 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 32067 / 31083 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32082 / 31080 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32078 / 31083 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Lost Soul" on position: ( 32168 / 31078 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32046 / 31072 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32081 / 31067 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32153 / 31066 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32099 / 31056 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32101 / 31059 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32099 / 31061 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32045 / 31054 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32047 / 31059 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32169 / 31046 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32106 / 31044 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32102 / 31048 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Plaguesmith" on position: ( 32048 / 31047 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 32040 / 31044 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32027 / 31044 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 32474 / 30913 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dragon Lord" on position: ( 18442 / 17957 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Hero" on position: ( 18146 / 17883 / 011 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Zombie" on position: ( 32153 / 32959 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Zombie" on position: ( 32120 / 32963 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Zombie" on position: ( 32100 / 32952 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Zombie" on position: ( 32097 / 32950 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Geomancer" on position: ( 32988 / 32692 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 33004 / 32685 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 32989 / 32680 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 32988 / 32683 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 32992 / 32683 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Geomancer" on position: ( 32979 / 32633 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 32978 / 32634 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Geomancer" on position: ( 32975 / 32636 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 32978 / 32638 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 33006 / 32630 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 33008 / 32632 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 33007 / 32624 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 33021 / 32619 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 33023 / 32619 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 33012 / 32618 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 33014 / 32620 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 33013 / 32599 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 33014 / 32600 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 33006 / 32602 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 33006 / 32593 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Orc" on position: ( 32520 / 32280 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 32373 / 32189 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32410 / 32061 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32418 / 32058 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32391 / 32058 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 33322 / 32038 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32449 / 32026 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32452 / 32028 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32395 / 32024 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32376 / 32004 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32382 / 31972 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32359 / 31963 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 32359 / 31967 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Vampire" on position: ( 33267 / 31774 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Vampire" on position: ( 33271 / 31771 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Vampire" on position: ( 33261 / 31773 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 33273 / 31770 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Vampire" on position: ( 33260 / 31767 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 33272 / 31765 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghoul" on position: ( 33265 / 31767 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Vampire" on position: ( 33259 / 31762 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Vampire" on position: ( 33266 / 31761 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 33130 / 31670 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 33131 / 31667 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dark Magician" on position: ( 33102 / 31663 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dark Magician" on position: ( 33104 / 31664 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 33102 / 31658 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 31932 / 31657 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 33125 / 31653 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 33117 / 31654 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 31938 / 31645 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 31948 / 31634 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33200 / 31629 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33203 / 31630 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33204 / 31631 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33194 / 31635 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33200 / 31635 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33198 / 31636 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33202 / 31637 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33204 / 31638 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33211 / 31628 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33214 / 31629 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33219 / 31630 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Hellhound" on position: ( 33208 / 31632 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33211 / 31633 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Son of Verminor" on position: ( 33218 / 31635 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33208 / 31637 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 31948 / 31624 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 31951 / 31611 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 31952 / 31554 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 31996 / 31546 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 31974 / 31544 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32021 / 31542 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 31955 / 31546 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32145 / 31238 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32082 / 31235 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32068 / 31226 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32066 / 31230 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32069 / 31231 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32052 / 31235 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32062 / 31235 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32048 / 31236 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32059 / 31237 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32079 / 31237 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32052 / 31238 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32093 / 31227 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32096 / 31230 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32101 / 31235 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32143 / 31235 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32105 / 31236 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32093 / 31243 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32095 / 31246 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32136 / 31212 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32135 / 31215 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32085 / 31212 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32080 / 31213 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32087 / 31214 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32084 / 31216 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32113 / 31213 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32100 / 31212 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32100 / 31213 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32105 / 31214 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32068 / 31213 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32027 / 31209 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32024 / 31210 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32069 / 31180 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32066 / 31182 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32068 / 31189 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32064 / 31192 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32069 / 31193 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32066 / 31202 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32069 / 31204 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32067 / 31207 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32014 / 31190 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32000 / 31191 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32009 / 31191 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32028 / 31191 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32023 / 31192 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32014 / 31193 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32027 / 31198 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32024 / 31200 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32027 / 31203 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32027 / 31176 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32145 / 31171 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32146 / 31174 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Enlightened of the Cult" on position: ( 32096 / 31183 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Destroyer" on position: ( 32025 / 31166 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32145 / 31161 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32142 / 31165 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32024 / 31156 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32001 / 31154 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 31961 / 31151 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ice Golem" on position: ( 31992 / 31150 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ice Golem" on position: ( 31985 / 31153 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32027 / 31134 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32144 / 31126 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32000 / 31126 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31927 / 31124 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32049 / 31129 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32086 / 31143 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32084 / 31145 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32088 / 31145 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32066 / 31147 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32067 / 31148 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32024 / 31118 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32027 / 31120 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ice Golem" on position: ( 32024 / 31122 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ice Golem" on position: ( 32026 / 31126 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32000 / 31118 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32002 / 31121 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32148 / 31120 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31920 / 31114 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 31982 / 31112 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 31966 / 31109 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 31961 / 31110 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 31968 / 31112 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 31964 / 31113 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ice Golem" on position: ( 31993 / 31112 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32067 / 31112 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 31980 / 31101 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32148 / 31097 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31920 / 31102 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31931 / 31099 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32150 / 31088 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ice Golem" on position: ( 32002 / 31083 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ice Golem" on position: ( 31999 / 31086 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32067 / 31088 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32025 / 31101 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32036 / 31102 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32027 / 31104 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32049 / 31104 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32069 / 31107 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 32093 / 31085 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 32092 / 31104 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32069 / 31074 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32068 / 31079 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32136 / 31075 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32141 / 31076 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32138 / 31077 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32108 / 31074 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32090 / 31074 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32095 / 31077 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32029 / 31074 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32032 / 31077 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32017 / 31075 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 31996 / 31074 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32113 / 31074 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32048 / 31069 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Leviathan" on position: ( 31906 / 31071 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ice Golem" on position: ( 31981 / 31068 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 32079 / 31064 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32085 / 31064 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32082 / 31067 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31927 / 31070 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31943 / 31082 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31928 / 31089 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31947 / 31053 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31944 / 31057 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32086 / 31051 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32079 / 31050 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32081 / 31052 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32116 / 31048 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32113 / 31052 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ice Golem" on position: ( 31981 / 31046 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32139 / 31073 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crystal Spider" on position: ( 32168 / 31074 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31925 / 31039 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31924 / 31045 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31905 / 31039 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31906 / 31046 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32066 / 31038 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 31986 / 31037 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 31981 / 31037 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31920 / 31031 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32111 / 31030 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32116 / 31030 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32088 / 31028 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32092 / 31030 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32023 / 31035 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32026 / 31038 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32047 / 31050 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32051 / 31053 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31902 / 31016 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31894 / 31021 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32116 / 31022 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 31980 / 31013 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Adept of the Cult" on position: ( 31978 / 31015 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 31981 / 31016 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31921 / 31016 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32048 / 31010 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32049 / 31015 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Acolyte of the Cult" on position: ( 32113 / 31021 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31915 / 31009 / 010 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crab" on position: ( 32171 / 32967 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Tortoise" on position: ( 32489 / 32952 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Constrictor Scout" on position: ( 32194 / 32948 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32542 / 32857 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32548 / 32854 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32554 / 32840 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Mantassin Scout" on position: ( 32543 / 32839 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32566 / 32836 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32559 / 32833 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32544 / 32830 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Mantassin Scout" on position: ( 32536 / 32810 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32567 / 32809 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32497 / 32807 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32489 / 32801 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32495 / 32796 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32500 / 32775 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32507 / 32770 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Mantassin Scout" on position: ( 32072 / 32675 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Constrictor Scout" on position: ( 32167 / 32670 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Predator Scout" on position: ( 32126 / 32666 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Mantassin Scout" on position: ( 32140 / 32662 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Predator Scout" on position: ( 32143 / 32644 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Mantassin Scout" on position: ( 32112 / 32640 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Hydromancer Scout" on position: ( 32088 / 32613 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dragon" on position: ( 32213 / 32607 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon Skeleton" on position: ( 32120 / 32593 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon Skeleton" on position: ( 32117 / 32595 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 32120 / 32595 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Necromancer" on position: ( 32115 / 32590 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Elemental" on position: ( 32196 / 32578 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon Skeleton" on position: ( 32117 / 32570 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32132 / 32550 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32132 / 32554 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crypt Shambler" on position: ( 32088 / 32556 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33174 / 32445 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33124 / 32442 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33121 / 32444 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33117 / 32442 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33111 / 32439 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33130 / 32436 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33158 / 32433 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33154 / 32436 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33107 / 32434 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33159 / 32423 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33162 / 32423 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33158 / 32426 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33121 / 32419 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33112 / 32415 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33108 / 32417 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33112 / 32418 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33119 / 32396 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33122 / 32393 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33041 / 32374 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33049 / 32371 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33047 / 32374 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33057 / 32372 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33314 / 32366 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33314 / 32369 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33319 / 32365 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33328 / 32364 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33030 / 32360 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33034 / 32357 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33004 / 32355 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33024 / 32347 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33308 / 32334 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33032 / 32333 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33063 / 32332 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33067 / 32332 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33054 / 32329 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33051 / 32333 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33046 / 32331 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33040 / 32331 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33296 / 32325 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33294 / 32327 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33297 / 32328 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33309 / 32323 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33309 / 32309 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33312 / 32311 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33306 / 32309 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33189 / 32299 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33191 / 32300 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33183 / 32297 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33195 / 32295 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32447 / 32293 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32449 / 32293 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32446 / 32294 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32449 / 32296 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32439 / 32293 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32443 / 32293 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32440 / 32295 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32439 / 32296 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33205 / 32287 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33201 / 32281 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 33207 / 32279 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Carrion Worm" on position: ( 33205 / 32280 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 32407 / 32115 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32447 / 32035 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32445 / 32038 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 33325 / 32025 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32420 / 31994 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32422 / 31996 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32422 / 31997 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32424 / 31999 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32374 / 31990 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32395 / 31980 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32369 / 31980 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32367 / 31974 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32168 / 31677 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32160 / 31679 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32087 / 31676 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32086 / 31677 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32084 / 31681 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Juggernaut" on position: ( 33222 / 31610 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Nightmare" on position: ( 33215 / 31612 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Demon" on position: ( 33221 / 31613 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rotworm" on position: ( 32051 / 31578 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32016 / 31539 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32141 / 31253 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32139 / 31255 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Mammoth" on position: ( 32133 / 31254 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32133 / 31242 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32110 / 31253 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32120 / 31253 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32109 / 31255 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32113 / 31255 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32123 / 31255 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32094 / 31232 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32093 / 31237 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Mammoth" on position: ( 32097 / 31237 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32091 / 31241 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32142 / 31235 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32146 / 31238 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32130 / 31237 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32117 / 31234 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32120 / 31237 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 32109 / 31235 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32119 / 31208 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32079 / 31209 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32094 / 31209 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32075 / 31211 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32100 / 31211 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32118 / 31211 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32079 / 31212 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32099 / 31213 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32107 / 31219 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Gargoyle" on position: ( 32148 / 31190 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32129 / 31190 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32131 / 31178 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32133 / 31183 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32106 / 31181 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32110 / 31183 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32144 / 31177 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32148 / 31178 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32143 / 31183 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32147 / 31185 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32087 / 31166 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32086 / 31170 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32071 / 31165 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32073 / 31167 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32073 / 31170 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32146 / 31163 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32142 / 31167 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32148 / 31170 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32096 / 31168 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32133 / 31168 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32106 / 31166 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32111 / 31167 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32072 / 31155 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32074 / 31160 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32086 / 31152 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32090 / 31154 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32086 / 31157 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32143 / 31151 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32147 / 31154 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32130 / 31149 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32129 / 31154 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32135 / 31154 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32105 / 31153 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32110 / 31154 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32093 / 31152 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32144 / 31140 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32148 / 31143 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32118 / 31138 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32113 / 31137 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32108 / 31139 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32093 / 31137 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32071 / 31136 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32075 / 31139 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31924 / 31133 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31912 / 31128 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Mammoth" on position: ( 32153 / 31126 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31941 / 31123 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32071 / 31119 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32073 / 31122 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31940 / 31115 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31930 / 31115 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32051 / 31119 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Ghost" on position: ( 32025 / 31122 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32032 / 31122 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Mammoth" on position: ( 32038 / 31123 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32145 / 31103 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32148 / 31106 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32092 / 31099 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32093 / 31102 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32079 / 31099 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32080 / 31102 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31902 / 31095 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31899 / 31101 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32093 / 31086 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32063 / 31085 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32064 / 31086 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32064 / 31089 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32062 / 31090 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32065 / 31093 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31953 / 31090 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31956 / 31102 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32094 / 31077 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32043 / 31079 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32033 / 31079 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31959 / 31075 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31897 / 31076 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31914 / 31075 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31957 / 31061 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31915 / 31063 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32080 / 31057 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32062 / 31051 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32033 / 31054 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32064 / 31055 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32032 / 31056 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32034 / 31056 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32062 / 31058 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32034 / 31061 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32033 / 31074 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32041 / 31075 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32049 / 31075 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32018 / 31076 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32024 / 31077 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32020 / 31078 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32031 / 31078 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Novice of the Cult" on position: ( 32066 / 31078 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31888 / 31045 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31889 / 31048 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31898 / 31037 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32052 / 31030 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32049 / 31032 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32064 / 31026 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31926 / 31028 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Sea Serpent" on position: ( 31937 / 31035 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32062 / 31016 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32064 / 31017 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32064 / 31018 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32062 / 31020 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32064 / 31021 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Frost Troll" on position: ( 32062 / 31023 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Water Elemental" on position: ( 32534 / 30853 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Predator Scout" on position: ( 32247 / 30818 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Pincher Scout" on position: ( 32276 / 30816 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blood Crab" on position: ( 32384 / 30814 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Predator Scout" on position: ( 32235 / 30806 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blood Crab" on position: ( 32333 / 30804 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blood Crab" on position: ( 32349 / 30803 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blood Crab" on position: ( 32411 / 30801 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blood Crab" on position: ( 32401 / 30785 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blood Crab" on position: ( 32411 / 30772 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blood Crab" on position: ( 32329 / 30765 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blood Crab" on position: ( 32422 / 30761 / 009 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Tarantula" on position: ( 32749 / 32838 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Tarantula" on position: ( 32747 / 32845 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Poison Spider" on position: ( 32792 / 32840 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Tarantula" on position: ( 32780 / 32832 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Tarantula" on position: ( 32786 / 32834 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Tarantula" on position: ( 32782 / 32838 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Crocodile" on position: ( 32614 / 32712 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Predator Scout" on position: ( 32154 / 32695 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Constrictor Scout" on position: ( 32187 / 32691 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Pincher Scout" on position: ( 32122 / 32682 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Devil" on position: ( 32198 / 32609 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Devil" on position: ( 32191 / 32606 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Fire Devil" on position: ( 32140 / 32566 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Tarantula" on position: ( 32947 / 32546 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Tarantula" on position: ( 32962 / 32534 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Tarantula" on position: ( 32930 / 32519 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32431 / 32324 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32435 / 32324 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32431 / 32327 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32435 / 32328 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wolf" on position: ( 32336 / 32323 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32447 / 32317 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32445 / 32319 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "War Wolf" on position: ( 32330 / 32317 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wolf" on position: ( 32340 / 32316 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wolf" on position: ( 32336 / 32314 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wolf" on position: ( 32340 / 32310 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32437 / 32297 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32428 / 32292 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32428 / 32294 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Wasp" on position: ( 32424 / 32295 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 33324 / 32048 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf" on position: ( 33330 / 32047 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf" on position: ( 33355 / 32046 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 33347 / 32045 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Soldier" on position: ( 33330 / 32034 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 33341 / 32021 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Dwarf Guard" on position: ( 33308 / 32017 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32396 / 31994 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Skeleton" on position: ( 32400 / 31998 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rat" on position: ( 33096 / 31806 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rat" on position: ( 33069 / 31804 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rat" on position: ( 33079 / 31802 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rat" on position: ( 33053 / 31801 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rat" on position: ( 33037 / 31786 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rat" on position: ( 33032 / 31774 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Rat" on position: ( 33027 / 31762 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blood Crab" on position: ( 31922 / 31062 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Blood Crab" on position: ( 31916 / 31056 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Quara Constrictor" on position: ( 32277 / 30823 / 008 )![0m
+[[38;2;191;191;000m31/07/2025 15:40:29[0m] [[38;2;191;191;000mWarning - Spawns::startup[0m]: [38;2;191;191;000mCouldn't spawn monster "Serpent Spawn" on position: ( 32177 / 32065 / 006 )![0m
+[[38;2;128;000;128mLoaded spawns in 0.362 seconds.[0m]
+>> Boss Reward System loaded successfully!
+>> [Catacombs] loaded map wrath.
+>> Loaded 442 npcs and spawned 26890 monsters.
+>> Loaded 13 towns with 966 houses in total.
+[daily reward WARNING] LastServerSave is 0, reseting to now
+>> Start time: 31.07.2025 - 15:40:29
+>> [Battlefield] Map battlefield_x2 loaded.
+>> [Battlefield 2.0] Map battlefield_x4 loaded.
+>> [Last Man Standing] Map lastman loaded.
+>> [Zombie] Map zombie loaded.
+>> Yasir: ankrahmun. 
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] 
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] Server protocol: [38;2;050;205;050m1100[0m  Login port: [38;2;050;205;050m7171[0m  Game port: [38;2;050;205;050m7172[0m  Status port: [38;2;050;205;050m7171[0m
+[[38;2;128;000;128mStart time: 31.07.2025 - 15:40:29[0m]
+[[38;2;128;000;128mServer started in 28.377 seconds.[0m]
+[[38;2;050;205;050mShanera Server Online![0m]
+[[38;2;000;128;000m31/07/2025 15:40:29[0m] 
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Map size:      [38;2;050;205;050m33697x31625[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 1:      [38;2;050;205;050mSaved with Remere's Map Editor 3.4[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 2:      [38;2;050;205;050mNo map description available.[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Loaded in:     [38;2;050;205;050m0.067 seconds[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Map size:      [38;2;050;205;050m32105x32645[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 1:      [38;2;050;205;050mSaved with Remere's Map Editor 3.4[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 2:      [38;2;050;205;050mNo map description available.[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Loaded in:     [38;2;050;205;050m0.022 seconds[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Map size:      [38;2;050;205;050m32105x32839[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 1:      [38;2;050;205;050mSaved with Remere's Map Editor 3.4[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 2:      [38;2;050;205;050mNo map description available.[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Loaded in:     [38;2;050;205;050m0.031 seconds[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Map size:      [38;2;050;205;050m34143x32842[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 1:      [38;2;050;205;050mSaved with Remere's Map Editor 3.4[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 2:      [38;2;050;205;050mNo map description available.[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Loaded in:     [38;2;050;205;050m0.003 seconds[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Map size:      [38;2;050;205;050m34143x33812[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 1:      [38;2;050;205;050mSaved with Remere's Map Editor 3.4[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 2:      [38;2;050;205;050mNo map description available.[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Loaded in:     [38;2;050;205;050m0.036 seconds[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Map size:      [38;2;050;205;050m33760x33023[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 1:      [38;2;050;205;050mSaved with Remere's Map Editor 2.2[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Descr. 2:      [38;2;050;205;050mNo map description available.[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:29[0m] [38;2;100;149;237m>> Loaded in:     [38;2;050;205;050m0.003 seconds[0m[0m
+[[38;2;100;149;237m31/07/2025 15:40:37[0m] [38;2;100;149;237mRamaren has logged in.[0m
+[LOGIN] Player Ramaren has logged in.
+[[38;2;100;149;237m31/07/2025 15:41:42[0m] [38;2;100;149;237mSIGINT received, shutting game server down...[0m
+[LOGOUT] Player Ramaren has logged out.
+[[38;2;178;034;034m31/07/2025 15:41:42[0m] [38;2;178;034;034mRamaren has logged out.[0m
+[[38;2;100;149;237m31/07/2025 15:41:42[0m] [38;2;100;149;237mSaving logs...[0m
+[[38;2;100;149;237m31/07/2025 15:41:42[0m] [38;2;100;149;237mSaving server...[0m
+[[38;2;100;149;237m31/07/2025 15:41:42[0m] [38;2;100;149;237mSaved house items in: 0.31 s[0m
+[[38;2;100;149;237m31/07/2025 15:41:42[0m] [38;2;100;149;237mServer save complete![0m
+[[38;2;100;149;237m31/07/2025 15:41:42[0m] [38;2;100;149;237mShutting down ...[0m
+[[38;2;100;149;237m31/07/2025 15:41:42[0m] [38;2;100;149;237mSaving server...[0m
+[[38;2;100;149;237m31/07/2025 15:41:43[0m] [38;2;100;149;237mSaved house items in: 0.26 s[0m
+[[38;2;100;149;237m31/07/2025 15:41:43[0m] [38;2;100;149;237mServer save complete![0m
+[[38;2;100;149;237m31/07/2025 15:41:43[0m] [38;2;100;149;237mShutdown complete![0m
+[[38;2;100;149;237m31/07/2025 15:41:46[0m] [38;2;100;149;237m>> Saving player items.[0m

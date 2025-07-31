@@ -1,3 +1,4 @@
+
 --[[
     ========================================
     TIER UPGRADE SYSTEM + ABILITIES + NECKLACE DROP BOOST
@@ -14,7 +15,7 @@
     FORGE STYLE SYSTEM:
     - Uses specific items for upgrade (8302, 8303, 8304)
     - Tier system (1-10) with success chances
-    - Classification system (Base â†’ Improved â†’ Exalted)
+    - Classification system (Base ? Improved ? Exalted)
     - Automatic abilities by slot:
       * HAND: Onslaught (critical damage +60%)
       * ARMOR: Ruse (dodge system)
@@ -26,7 +27,7 @@
     UPGRADE ITEMS:
     - 8302: Reset (removes tier and classification)
     - 8303: Tier Upgrade (increases tier 1-10)
-    - 8304: Classification Upgrade (Base â†’ Improved â†’ Exalted)
+    - 8304: Classification Upgrade (Base ? Improved ? Exalted)
     - 8305: Dodge Boost (+50 dodge)
     - 8306: Speed Boost (+10 speed)
     
@@ -589,7 +590,7 @@ local function handleTranscendence(player)
     
     local tier = legs:getAttribute(ITEM_ATTRIBUTE_TIER) or 0
     
-    -- SÃ³ funciona se tier for 3 ou mais
+    -- Só funciona se tier for 3 ou mais
     if tier < 3 then
         return false
     end
@@ -847,14 +848,14 @@ NecklaceDropBoost:register(-1)
 local action = Action()
 function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
     if not isItemTierable(target) then
-        player:sendTextMessage(MESSAGE_STATUS_SMALL, "Este item nÃ£o pode receber upgrades de tier.")
+        player:sendTextMessage(MESSAGE_STATUS_SMALL, "Este item não pode receber upgrades de tier.")
         player:getPosition():sendMagicEffect(CONST_ME_POFF, player)
         return true
     end
     
     local upgradeItem = upgradeItems[item:getId()]
     if not upgradeItem then
-        player:sendTextMessage(MESSAGE_STATUS_SMALL, "Item de upgrade invÃ¡lido.")
+        player:sendTextMessage(MESSAGE_STATUS_SMALL, "Item de upgrade inválido.")
         player:getPosition():sendMagicEffect(CONST_ME_POFF, player)
         return true
     end
@@ -867,7 +868,7 @@ function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
     
     if upgradeItem.type == "reset" then
         if currentTier == 0 and currentClassification == 0 then
-            player:sendTextMessage(MESSAGE_STATUS_SMALL, "Este item nÃ£o possui tier ou classificaÃ§Ã£o para resetar.")
+            player:sendTextMessage(MESSAGE_STATUS_SMALL, "Este item não possui tier ou classificação para resetar.")
             target:getPosition():sendMagicEffect(CONST_ME_POFF, player)
             return true
         end
@@ -880,7 +881,7 @@ function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
         target:removeCustomAttribute("dodge_bonus")
         
         target:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE, player)
-        player:sendTextMessage(MESSAGE_STATUS_SMALL, "Tier e classificaÃ§Ã£o resetados com sucesso!")
+        player:sendTextMessage(MESSAGE_STATUS_SMALL, "Tier e classificação resetados com sucesso!")
         item:remove(1)
         
         if toPosition.x == CONTAINER_POSITION and toPosition.y <= 10 then
@@ -895,7 +896,7 @@ function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
         local xmlClassification = itemType.classification or 0
         
         if currentTier >= maxTier then
-            player:sendTextMessage(MESSAGE_STATUS_SMALL, "Este item jÃ¡ atingiu o tier mÃ¡ximo (" .. maxTier .. ").")
+            player:sendTextMessage(MESSAGE_STATUS_SMALL, "Este item já atingiu o tier máximo (" .. maxTier .. ").")
             target:getPosition():sendMagicEffect(CONST_ME_POFF, player)
             return true
         end
@@ -927,14 +928,14 @@ function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
         local xmlClassification = itemType.classification or 0
         
         if currentClassification >= maxClassification then
-            player:sendTextMessage(MESSAGE_STATUS_SMALL, "Este item jÃ¡ estÃ¡ na classificaÃ§Ã£o mÃ¡xima (" .. getClassificationName(maxClassification) .. ").")
+            player:sendTextMessage(MESSAGE_STATUS_SMALL, "Este item já está na classificação máxima (" .. getClassificationName(maxClassification) .. ").")
             target:getPosition():sendMagicEffect(CONST_ME_POFF, player)
             return true
         end
         
         target:setAttribute(ITEM_ATTRIBUTE_CLASSIFICATION, currentClassification + 1)
         target:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN, player)
-        player:sendTextMessage(MESSAGE_STATUS_SMALL, "Upgrade de classificaÃ§Ã£o realizado! Nova classificaÃ§Ã£o: " .. getClassificationName(currentClassification + 1))
+        player:sendTextMessage(MESSAGE_STATUS_SMALL, "Upgrade de classificação realizado! Nova classificação: " .. getClassificationName(currentClassification + 1))
         
         item:remove(1)
         return true

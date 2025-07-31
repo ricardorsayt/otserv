@@ -1,4 +1,5 @@
-build/
+# Ignorar builds e arquivos temporários
+engine/build/
 *.gch
 *.o
 *.obj
