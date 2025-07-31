@@ -1,0 +1,9 @@
+build/
+*.gch
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
