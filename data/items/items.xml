@@ -9535,6 +9535,7 @@
 		<attribute key="weight" value="850" />
 		<attribute key="armor" value="1" />
 		<attribute key="slotType" value="head" />
+		<attribute key="classification" value="10"/>
 	</item>
 	<item id="5918" name="pirate knee breeches">
 		<attribute key="weight" value="1200" />
@@ -45748,19 +45749,19 @@
 		<attribute key="rotateTo" value="36662" />
 		<attribute key="wrapableTo" value="26054" />
 	</item>	
-		<item id="36664" article="a" name="barrel & anchor lamp">
+		<item id="36664" article="a" name="barrel e anchor lamp">
 		<attribute key="rotateTo" value="36665" />
 		<attribute key="wrapableTo" value="26054" />
 	</item>	
-		<item id="36665" article="a" name="barrel & anchor lamp">
+		<item id="36665" article="a" name="barrel e anchor lamp">
 		<attribute key="rotateTo" value="36664" />
 		<attribute key="wrapableTo" value="26054" />
 	</item>		
-	<item id="36666" article="a" name="barrel & anchor lamp">
+	<item id="36666" article="a" name="barrel e anchor lamp">
 		<attribute key="rotateTo" value="36667" />
 		<attribute key="wrapableTo" value="26054" />
 	</item>	
-	<item id="36667" article="a" name="barrel & anchor lamp">
+	<item id="36667" article="a" name="barrel e anchor lamp">
 		<attribute key="rotateTo" value="36666" />
 		<attribute key="wrapableTo" value="26054" />
 	</item>	

@@ -1,0 +1,113 @@
+ID: 2128 - Nome: crown
+ID: 2139 - Nome: ancient tiara
+ID: 2323 - Nome: hat of the mad
+ID: 2342 - Nome: helmet of the ancients
+ID: 2343 - Nome: helmet of the ancients
+ID: 2457 - Nome: steel helmet
+ID: 2458 - Nome: chain helmet
+ID: 2459 - Nome: iron helmet
+ID: 2460 - Nome: brass helmet
+ID: 2461 - Nome: leather helmet
+ID: 2462 - Nome: devil helmet
+ID: 2471 - Nome: golden helmet
+ID: 2473 - Nome: viking helmet
+ID: 2474 - Nome: winged helmet
+ID: 2475 - Nome: warrior helmet
+ID: 2479 - Nome: strange helmet
+ID: 2480 - Nome: legion helmet
+ID: 2481 - Nome: soldier helmet
+ID: 2482 - Nome: studded helmet
+ID: 2490 - Nome: dark helmet
+ID: 2491 - Nome: crown helmet
+ID: 2493 - Nome: demon helmet
+ID: 2496 - Nome: horned helmet
+ID: 2497 - Nome: crusader helmet
+ID: 2498 - Nome: royal helmet
+ID: 2499 - Nome: amazon helmet
+ID: 2501 - Nome: ceremonial mask
+ID: 2502 - Nome: dwarven helmet
+ID: 2506 - Nome: dragon scale helmet
+ID: 2662 - Nome: magician hat
+ID: 2663 - Nome: mystic turban
+ID: 2664 - Nome: wood cape
+ID: 2665 - Nome: post officer's hat
+ID: 3967 - Nome: tribal mask
+ID: 3969 - Nome: horseman helmet
+ID: 3970 - Nome: feather headdress
+ID: 3971 - Nome: charmer's tiara
+ID: 3972 - Nome: bonelord helmet
+ID: 5461 - Nome: helmet of the deep
+ID: 5741 - Nome: skull helmet
+ID: 5903 - Nome: Ferumbras' hat
+ID: 5917 - Nome: bandana
+ID: 6096 - Nome: pirate hat
+ID: 6531 - Nome: santa hat
+ID: 6578 - Nome: party hat
+ID: 7458 - Nome: fur cap
+ID: 7459 - Nome: pair of earmuffs
+ID: 7461 - Nome: krimhorn helmet
+ID: 7462 - Nome: ragnir helmet
+ID: 7497 - Nome: mining helmet
+ID: 7900 - Nome: magma monocle
+ID: 7901 - Nome: lightning headband
+ID: 7902 - Nome: glacier mask
+ID: 7903 - Nome: terra hood
+ID: 7939 - Nome: mining helmet
+ID: 7957 - Nome: jester hat
+ID: 8820 - Nome: mage hat
+ID: 9778 - Nome: yalahari mask
+ID: None - Nome: rusty helmet
+ID: 9927 - Nome: flower wreath
+ID: 10016 - Nome: batwing hat
+ID: 10291 - Nome: odd hat
+ID: 10298 - Nome: helmet of ultimate terror
+ID: 10299 - Nome: helmet of nature
+ID: 10316 - Nome: mighty helm of green sparks
+ID: 10570 - Nome: witch hat
+ID: 11302 - Nome: Zaoan helmet
+ID: 11368 - Nome: jade hat
+ID: 12541 - Nome: helmet of the deep
+ID: 12630 - Nome: cobra crown
+ID: 12645 - Nome: elite draken helmet
+ID: 12656 - Nome: sedge hat
+ID: 13756 - Nome: mage's cap
+ID: 15408 - Nome: depth galea
+ID: 15651 - Nome: depth galea
+ID: 18398 - Nome: gill gugel
+ID: 18403 - Nome: prismatic helmet
+ID: 20132 - Nome: helmet of the lost
+ID: 22518 - Nome: broken visor
+ID: 23536 - Nome: rubber cap
+ID: 24261 - Nome: crest of the deep seas
+ID: 24718 - Nome: werewolf helmet
+ID: 24744 - Nome: Enchanted werewolf helmet
+ID: None - Nome: enchanted werewolf helmet
+ID: None - Nome: enchanted werewolf helmet
+ID: 24788 - Nome: enchanted werewolf helmet
+ID: 24848 - Nome: shamanic mask
+ID: 25410 - Nome: visage of the end days
+ID: 25413 - Nome: shroud of despair
+ID: 25413 - Nome: shroud of despair
+ID: 26130 - Nome: tiara of power
+ID: 26131 - Nome: tiara of power
+ID: 27065 - Nome: Ferumbras' Candy Hat
+ID: 27073 - Nome: rusty winged helmet
+ID: 29423 - Nome: leaf crown
+ID: 29424 - Nome: iron crown
+ID: 29425 - Nome: incandescent crown
+ID: 29426 - Nome: reflecting crown
+ID: 30882 - Nome: gnome helmet
+ID: 33216 - Nome: falcon circlet
+ID: 33217 - Nome: falcon coif
+ID: 33920 - Nome: dark whispers
+ID: 35111 - Nome: cobra hood
+ID: 36152 - Nome: sphinx tiara
+ID: 36291 - Nome: terra helmet
+ID: 36296 - Nome: galea mortis
+ID: 36826 - Nome: traditional gamsbart hat
+ID: 37356 - Nome: spooky hood
+ID: 42064 - Nome: Eldritch Cowl
+ID: 42065 - Nome: Eldritch Hood
+ID: 39560 - Nome: lion spangenhelm
+ID: 43002 - Nome: green demon helmet
+ID: 43004 - Nome: Morshabaal's mask

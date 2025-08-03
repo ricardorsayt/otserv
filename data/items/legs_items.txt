@@ -1,0 +1,41 @@
+ID: 2468 - Nome: studded legs
+ID: 2469 - Nome: dragon scale legs
+ID: 2470 - Nome: golden legs
+ID: 2477 - Nome: knight legs
+ID: 2478 - Nome: brass legs
+ID: 2488 - Nome: crown legs
+ID: 2495 - Nome: demon legs
+ID: 2504 - Nome: dwarven legs
+ID: 2507 - Nome: elven legs
+ID: 2647 - Nome: plate legs
+ID: 2648 - Nome: chain legs
+ID: 2649 - Nome: leather legs
+ID: 3983 - Nome: bast skirt
+ID: 5918 - Nome: pirate knee breeches
+ID: 7464 - Nome: mammoth fur shorts
+ID: 7730 - Nome: blue legs
+ID: 7885 - Nome: terra legs
+ID: 7894 - Nome: magma legs
+ID: 7895 - Nome: lightning legs
+ID: 7896 - Nome: glacier kilt
+ID: 8923 - Nome: ranger legs
+ID: 9777 - Nome: yalahari leg piece
+ID: 10300 - Nome: trousers of the ancients
+ID: 11304 - Nome: Zaoan legs
+ID: 15409 - Nome: depth ocrea
+ID: 15412 - Nome: ornate legs
+ID: 15490 - Nome: grasshopper legs
+ID: 18400 - Nome: gill legs
+ID: 18405 - Nome: prismatic legs
+ID: 21700 - Nome: icy culottes
+ID: 23539 - Nome: alloy legs
+ID: 24743 - Nome: wereboar loincloth
+ID: 27070 - Nome: chocolatey dragon scale legs
+ID: 27072 - Nome: tatty Dragon scale legs
+ID: 30884 - Nome: gnome legs
+ID: 33222 - Nome: falcon greaves
+ID: 36823 - Nome: lederhosen
+ID: 37343 - Nome: fabulous legs
+ID: 37344 - Nome: soulful legs
+ID: 42061 - Nome: Eldritch Breeches
+ID: 43000 - Nome: green demon legs
