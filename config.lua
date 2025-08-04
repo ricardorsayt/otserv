@@ -1,7 +1,7 @@
 -- Brasilia time
 timeGMT = 0
 -- Can only login who is adm or has no free pass
-maintenance = false
+maintenance = true
 
 showPackets = false
 
@@ -11,16 +11,16 @@ worldType = "retro-pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 1
 pzLocked = 60 * 1000
-removeChargesFromRunes = false
+removeChargesFromRunes = true
 removeChargesFromPotions = true
-removeWeaponAmmunition = false
-removeWeaponCharges = false
+removeWeaponAmmunition = true
+removeWeaponCharges = true
 -- default: 45 * 24 * 60 * 60 = 45 days
 -- using 14hrs
 timeToDecreaseFrags = 7 * 60 * 60
-whiteSkullTime = 10 * 60 * 1000
+whiteSkullTime = 15 * 60 * 1000
 stairJumpExhaustion = 1 * 1000
-experienceByKillingPlayers = false
+experienceByKillingPlayers = true
 expFromPlayersLevelRange = 75
 dayKillsToRedSkull = 5
 weekKillsToRedSkull = 15
@@ -135,7 +135,7 @@ kickIdlePlayerAfterMinutes = 15
 idleWarningTime = 10 * 60 * 1000
 idleKickTime = 15 * 60 * 1000
 maxMessageBuffer = 4
-emoteSpells = true
+emoteSpells = false
 classicEquipmentSlots = false
 allowWalkthrough = true
 storeCoinsPacketSize = 25
@@ -158,16 +158,16 @@ serverSaveShutdown = true
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
 rateExp = 10
-rateSkill = 20
-rateLoot = 3
-rateMagic = 15
+rateSkill = 2
+rateLoot = 2
+rateMagic = 2
 rateSpawn = 1
 spawnSpeed = 1.0
 
 -- Monster rates
-rateMonsterHealth = 1.0
-rateMonsterAttack = 1.2
-rateMonsterDefense = 1.0
+rateMonsterHealth = 1.1
+rateMonsterAttack = 1.3
+rateMonsterDefense = 1.1
 rateMonsterSpeed = 1.95
 
 -- Monsters
@@ -188,7 +188,7 @@ defaultPriority = "high"
 startupDatabaseOptimization = true
 
 -- Status server information
-ownerName = "Otg Server"
+ownerName = "Shanera-Retro"
 ownerEmail = ""
 url = ""
 location = "Brazil"
