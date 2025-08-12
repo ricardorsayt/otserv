@@ -5,3 +5,4 @@ function onLogin(player)
 	player:registerEvent("AutoLoot")
 	return true
 end
+player:registerEvent("ExtendedOpcode")

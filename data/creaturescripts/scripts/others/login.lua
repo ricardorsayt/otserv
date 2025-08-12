@@ -351,6 +351,8 @@ function onLogin(player)
 		player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("All spawns are faster."))
 	end
 
+	player:registerEvent("SoundOpcode")
+
 	player:updateExpState()
 	player:setStorageValue(Storage.combatProtectionStorage, -1)
 

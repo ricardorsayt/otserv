@@ -1,13 +1,17 @@
-local OPCODE_LANGUAGE = 1
-
+-- Captura o extended opcode enviado pelo cliente
 function onExtendedOpcode(player, opcode, buffer)
-	if opcode == OPCODE_LANGUAGE then
-		-- otclient language
-		if buffer == 'en' or buffer == 'pt' then
-			-- example, setting player language, because otclient is multi-language...
-			-- player:setStorageValue(SOME_STORAGE_ID, SOME_VALUE)
-		end
-	else
-		-- other opcodes can be ignored, and the server will just work fine...
-	end
+    if opcode == 110 then
+        if buffer == "open" then
+            print("[ExtendedOpcode] Cliente pediu para abrir a janela de tasks.")
+
+            -- Verifica se a função sendTasksData existe no seu tasks.lua
+            if _G.sendTasksData then
+                sendTasksData(player)
+            else
+                print("[ExtendedOpcode] ERRO: função sendTasksData não encontrada.")
+            end
+        else
+            print("[ExtendedOpcode] Recebido do cliente (opcode 0): " .. (buffer or ""))
+        end
+    end
 end

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
-
 	<event type="modalwindow" name="ModalWindow_Offers" script="playersell/playersell.lua" />
 	<event type="textedit" name="Text_Offers" script="playersell/playersell.lua" />
     

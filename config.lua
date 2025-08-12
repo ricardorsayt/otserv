@@ -1,12 +1,13 @@
 -- Brasilia time
 timeGMT = 0
 -- Can only login who is adm or has no free pass
-maintenance = true
+maintenance = false
 
 showPackets = false
 
 -- Combat settings--
 -- NOTE: valid values for worldType are: "pvp", "no-pvp" and "pvp-enforced"
+enableExtendedOpcode = true
 worldType = "retro-pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 1
