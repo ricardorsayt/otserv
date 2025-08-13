@@ -63,13 +63,13 @@ REWARD_LANE = {
             description='Choose 5 runes or potions',
             type = REWARD_TYPE_RUNE_POT,
             ammount = 5,
-            available = {} --ids das potions e runas disponÃ­veis para escolher (NÃ£o Implementado)
+            available = {} --ids das potions e runas disponíveis para escolher (Não Implementado)
         },
         {
             description='Choose 5 runes or potions',
             type = REWARD_TYPE_RUNE_POT,
             ammount = 5,
-            available = {} --ids das potions e runas disponÃ­veis para escolher
+            available = {} --ids das potions e runas disponíveis para escolher
         },
         {
             description = 'ONE Prey Bonus Reroll',
@@ -80,13 +80,13 @@ REWARD_LANE = {
             description='Choose 10 runes or potions',
             type = REWARD_TYPE_RUNE_POT,
             ammount = 10,
-            available = {} --ids das potions e runas disponÃ­veis para escolher
+            available = {} --ids das potions e runas disponíveis para escolher
         },
         {
             description='Choose 10 runes or potions',
             type = REWARD_TYPE_RUNE_POT,
             ammount = 10,
-            available = {} --ids das potions e runas disponÃ­veis para escolher
+            available = {} --ids das potions e runas disponíveis para escolher
         },
         {
             description = 'One temporary Gold Converter with 100 charges',
@@ -100,7 +100,7 @@ REWARD_LANE = {
         {
             description = 'Ten minutes 50% XP Boost',
             type = REWARD_TYPE_XP_BOOST,
-            ammount = 10, --*60 ??  xp boost Ã© por minuto ou por segundo??
+            ammount = 10, --*60 ??  xp boost é por minuto ou por segundo??
             expires = true
         }
     },
@@ -109,13 +109,13 @@ REWARD_LANE = {
             description='Choose 10 runes or potions',
             type = REWARD_TYPE_RUNE_POT,
             ammount = 10,
-            available = {} --ids das potions e runas disponÃ­veis para escolher
+            available = {} --ids das potions e runas disponíveis para escolher
         },
         {
             description='Choose 10 runes or potions',
             type = REWARD_TYPE_RUNE_POT,
             ammount = 10,
-            available = {} --ids das potions e runas disponÃ­veis para escolher
+            available = {} --ids das potions e runas disponíveis para escolher
         },
         {
             description = 'TWO Prey Bonus Reroll',
@@ -126,13 +126,13 @@ REWARD_LANE = {
             description='Choose 20 runes or potions',
             type = REWARD_TYPE_RUNE_POT,
             ammount = 20,
-            available = {} --ids das potions e runas disponÃ­veis para escolher
+            available = {} --ids das potions e runas disponíveis para escolher
         },
         {
             description='Choose 20 runes or potions',
             type = REWARD_TYPE_RUNE_POT,
             ammount = 20,
-            available = {} --ids das potions e runas disponÃ­veis para escolher
+            available = {} --ids das potions e runas disponíveis para escolher
         },
         {
             description = 'One temporary Temple Teleport scroll and one temporary Gold Converter with 100 charges.',
@@ -147,7 +147,7 @@ REWARD_LANE = {
         {
             description = 'Thirty minutes 50% XP Boost',
             type = REWARD_TYPE_XP_BOOST,
-            ammount = 30, --*60 ??  xp boost Ã© por minuto ou por segundo??
+            ammount = 30, --*60 ??  xp boost é por minuto ou por segundo??
             expires = true
         }
     }
@@ -199,33 +199,7 @@ local getDefaultModalState --(player)
 local sendModalSelectRecursive --(player)
 local getChoiceModalState --(playerid, rewardAmmount)
 -- -----------------
-local function getHours(seconds)
-    return math.floor((seconds/60)/60)
-end
 
-local function getMinutes(seconds)
-    return math.floor(seconds/60)
-end
-
-local function getSeconds(seconds)
-    return seconds%60
-end
-local function getTimeinWords(secs)
-    local hours, minutes, seconds = getHours(secs), getMinutes(secs), getSeconds(secs)
-    if (minutes > 59) then
-        minutes = minutes-hours*60
-    end
-
-    local timeStr = ''
-
-    if hours > 0 then
-        timeStr = timeStr .. string.format('%d hour%s',hours,(hours > 1 and "s" or '') )
-    end
-
-    timeStr = timeStr .. string.format('%d minute%s and %d second%s',minutes,(minutes~=1 and "s" or ''), seconds, (seconds~=1 and 's' or ''))
-
-    return timeStr
-end
 
 local function getDefaultStateData(player, MODAL_STATE)
     local statedata = {}
@@ -1129,7 +1103,7 @@ function Player:initDailyRewardSystem()
 
     if nextRewardPick < (Game.getLastServerSave() - (24*60*60)) then -- 24 hours of the limit time has passed, reset streak
         self:setCurrentDayStreak(0)
-        print('reset current day streak')
+        Game.sendConsoleMessage('reset current day streak', CONSOLEMESSAGE_TYPE_INFO)
     end
 
     self:loadStreakBonuses()
@@ -1145,7 +1119,7 @@ function Player:setLastRewardPick(timestamp)
     if tonumber(timestamp) then
         self:setStorageValue(Storage.dailyReward.lastRewardPick, timestamp)
     else
-        print('[WARNING - DAILY REWARD]: Invalid last reward timestamp')
+        Game.sendConsoleMessage('[WARNING - DAILY REWARD]: Invalid last reward timestamp', CONSOLEMESSAGE_TYPE_WARNING)
     end
 
 end
@@ -1158,7 +1132,7 @@ function Player:setNextRewardPick(timestamp)
     if tonumber(timestamp) then
         self:setStorageValue(Storage.dailyReward.nextRewardPick, timestamp)
     else
-        print('[WARNING - DAILY REWARD]: Invalid next reward timestamp')
+        Game.sendConsoleMessage('[WARNING - DAILY REWARD]: Invalid next reward timestamp', CONSOLEMESSAGE_TYPE_WARNING)
     end
 
 end
@@ -1261,7 +1235,7 @@ function Player:enableStaminaRegenInRestAreas()
 end
 
 function Player:enableStreakBonus(day)
-    --Nem todos precisam ser ativados, o regen de mana e health jÃ¡ estÃ£o prontos nas srcs
+    --Nem todos precisam ser ativados, o regen de mana e health já estão prontos nas srcs
     if day == 7 then
         self:enableSoulRegenInRestAreas()
     elseif day == 4 then
@@ -1356,11 +1330,12 @@ function Player:receiveReward(useToken, rewardType, additional)
     end
 
     --update values
-    local nextReward = Game.getLastServerSave() + (24*60*60) -- next day
+    local currentTime = os.time()
+    local nextReward = currentTime + (24*60*60)
 
     self:incrementCurrentRewardLaneIndex()
     self:setCurrentDayStreak(self:getCurrentDayStreak()+1)
-    self:setLastRewardPick(os.time())
+    self:setLastRewardPick(currentTime)
     self:setNextRewardPick(nextReward)
     if self:getCurrentDayStreak()<=7 then
         self:enableStreakBonus(self:getCurrentDayStreak()) --load the new bonus
@@ -1381,7 +1356,21 @@ function Player:receiveReward(useToken, rewardType, additional)
 end
 
 function Player:canGetDailyReward()
-    return os.time() > self:getNextRewardPick()
+    local lastRewardTime = self:getLastRewardPick()
+    local currentTime = os.time()
+    
+    if lastRewardTime <= 0 then
+        return true
+    end
+    
+    local timeDifference = currentTime - lastRewardTime
+    
+    if timeDifference >= 172800 then
+        self:setCurrentDayStreak(0)
+        self:loadStreakBonuses()
+    end
+    
+    return timeDifference >= 86400
 end
 
 --[[

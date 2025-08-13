@@ -17,7 +17,9 @@ local ServerPackets = {
     OpenRewardWall = 0xE2, -- 226
     CloseRewardWall = 0xE3, -- 227
     DailyRewardBasic = 0xE4,-- 228
-    DailyRewardHistory = 0xE5 -- 229
+    DailyRewardHistory = 0xE5, -- 229
+    CollectionResource = 0x14,
+    JokerResource = 0x15
 }
 
 local ClientPackets ={
@@ -173,7 +175,8 @@ function Player:sendOpenRewardWall(isFreePick, nextRewardPick, hasString, confir
     if not self:canGetDailyReward() then
         timestampPickLimit = 0
     else
-        timestampPickLimit = Game.getLastServerSave() + 24*60*60
+        local lastRewardTime = self:getLastRewardPick()
+        timestampPickLimit = lastRewardTime + (48*60*60)
     end
 
     local currentDayStreak = self:getCurrentDayStreak()
@@ -215,7 +218,7 @@ function Player:sendDailyRewardHistory(history)
         for i=1, #history do
             local entry = history[i]
             msg:addU32(entry.timestamp)
-            msg:addByte(0) -- toggle green font (talvez seja a recompensa do dia de hoje?) --s√≥ 1 permitido
+            msg:addByte(0) -- toggle green font (talvez seja a recompensa do dia de hoje?) --sÛ 1 permitido
             msg:addString(entry.event)
             msg:addU16(entry.streak)
         end
@@ -265,7 +268,7 @@ function onRecvbyte(player, msg, byte)
                 return player:sendCancelMessage(RETURNVALUE_NOTPOSSIBLE)
             end
 
-            --TODO: verificar se todos os itens selecionados s√£o leg√≠timos
+            --TODO: verificar se todos os itens selecionados s„o legÌtimos
 
             player:receiveReward(usedToken, reward.type, rewardsSelected)
 

@@ -1,5 +1,5 @@
 -- Brasilia time
-timeGMT = 0
+timeGMT = -3*60*60
 -- Can only login who is adm or has no free pass
 maintenance = false
 
@@ -7,7 +7,6 @@ showPackets = false
 
 -- Combat settings--
 -- NOTE: valid values for worldType are: "pvp", "no-pvp" and "pvp-enforced"
-enableExtendedOpcode = true
 worldType = "retro-pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 1
@@ -19,9 +18,9 @@ removeWeaponCharges = true
 -- default: 45 * 24 * 60 * 60 = 45 days
 -- using 14hrs
 timeToDecreaseFrags = 7 * 60 * 60
-whiteSkullTime = 15 * 60 * 1000
+whiteSkullTime = 10 * 60 * 1000
 stairJumpExhaustion = 1 * 1000
-experienceByKillingPlayers = true
+experienceByKillingPlayers = false
 expFromPlayersLevelRange = 75
 dayKillsToRedSkull = 5
 weekKillsToRedSkull = 15
@@ -46,13 +45,13 @@ loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
 maxPlayers = 0
-motd = "Welcome to Shanera Global Retro!"
-onePlayerOnlinePerAccount = false
+motd = "Welcome to Shanera-Retro!"
+onePlayerOnlinePerAccount = true
 allowClones = false
-serverName = "Shanera"
+serverName = "Shanera-Retro"
 statusTimeout = 0
 replaceKickOnLogin = true
-maxPacketsPerSecond = 25
+maxPacketsPerSecond = 50
 enableLiveCasting = true
 liveCastPort = 7173
 maxItem = 2000
@@ -64,24 +63,36 @@ replayProtocolPort = 7174
 proxyList = "1,0.0.0.0,7000,USA;2,0.0.0.0,7000,BRA"
 
 -- Version Manual
-allowOnlyOfficialClient = false
-clientVersionMin = 1098
-clientVersionMax = 1260
-clientVersionStr = "Only support outdated 10.00 and version 12.30"
+clientVersionMin = 1100
+clientVersionMax = 1291
+clientVersionStr = "Only support outdated 10.00 and version 12.91"
+
 -- Anti Multi-Client System
-antiMultiClientEnabled = false
-antiMultiClientLimit = 2
+antiMultiClientEnabled = true
+antiMultiClientLimit = 5
 
+-- Auto Loot Configuration
+-- NOTE: autolootmode values:
+-- 0 = disabled
+-- 1 = enabled (items go to player inventory)
+-- 2 = enabled (items go to backpack)
+autolootmode = 2
+vip_autoloot = 20
+free_autoloot = 10
 
--- Configuraï¿½ï¿½o para permitir mount em Protection Zone (PZ)
+-- Configuração para permitir mount em Protection Zone (PZ)
 -- true = permite mount em PZ
--- false = nï¿½o permite mount em PZ (comportamento padrï¿½o)
+-- false = não permite mount em PZ (comportamento padrão)
 allowMountInPz = true 
 
 -- Depot Limit
 freeDepotLimit = 2000
 premiumDepotLimit = 10000
 depotBoxes = 18
+
+-- Max players allowed on a dummy.
+maxAllowedOnADummy = 5
+rateExerciseTrainingSpeed = rateAttackSpeed
 
 -- GameStore
 gamestoreByModules = false
@@ -100,8 +111,8 @@ deathLosePercent = -1
 
 -- Houses
 -- NOTE: set housePriceEachSQM to -1 to disable the ingame buy house functionality
-housePriceEachSQM = 10000
-houseRentPeriod = "never"
+housePriceEachSQM = 1000
+houseRentPeriod = "weekly"
 
 -- Item Usage
 -- Do not touch here
@@ -112,7 +123,7 @@ timeBetweenExActions = 800
 -- NOTE: set mapName WITHOUT .otbm at the end
 -- NOTE: unzip the map world.rar
 mapName = "realmap"
-mapAuthor = ""
+mapAuthor = "Homero"
 
 -- Market
 marketOfferDuration = 30 * 24 * 60 * 60
@@ -131,7 +142,7 @@ passwordType = "sha1"
 
 -- Misc.
 allowChangeOutfit = true
-freePremium = true
+freePremium = false
 kickIdlePlayerAfterMinutes = 15
 idleWarningTime = 10 * 60 * 1000
 idleKickTime = 15 * 60 * 1000
@@ -140,7 +151,7 @@ emoteSpells = false
 classicEquipmentSlots = false
 allowWalkthrough = true
 storeCoinsPacketSize = 25
-storeImagesUrl = "http://shanera-retro.com/images/store/"
+storeImagesUrl = "http://shanera-retro.com/store/"
 defaultStoreOffer = "Blessings"
 classicAttackSpeed = true
 showScriptsLogInConsole = false
@@ -158,18 +169,28 @@ serverSaveShutdown = true
 
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
-rateExp = 10
+rateExp = 2
 rateSkill = 2
 rateLoot = 2
 rateMagic = 2
-rateSpawn = 1
-spawnSpeed = 1.0
+rateSpawn = 2
+spawnSpeed = 2.0
 
 -- Monster rates
-rateMonsterHealth = 1.1
-rateMonsterAttack = 1.3
-rateMonsterDefense = 1.1
+rateMonsterHealth = 1.0
+rateMonsterAttack = 1.2
+rateMonsterDefense = 1.0
 rateMonsterSpeed = 1.95
+
+-- Today regeneration condition over an loop every 1 second,
+-- So values which should regenerated less then 1 second or won't will work
+rateHealthRegen = 1.0
+rateHealthRegenSpeed = 1.0
+rateManaRegen = 1.0
+rateManaRegenSpeed = 1.0
+rateSoulRegen = 1.0
+rateSoulRegenSpeed = 1.0
+rateAttackSpeed = 1.0
 
 -- Monsters
 deSpawnRange = 2
@@ -189,7 +210,7 @@ defaultPriority = "high"
 startupDatabaseOptimization = true
 
 -- Status server information
-ownerName = "Shanera-Retro"
+ownerName = ""
 ownerEmail = ""
 url = ""
 location = "Brazil"
