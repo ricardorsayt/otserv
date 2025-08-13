@@ -830,32 +830,23 @@ function Player:onGainExperience(source, exp, rawExp)
 		end
 	end
     -- Boost Creature
-    local extraXp = 0
-    local initialExp = exp
+-- Boost Creature
+local extraXp = 0
+local initialExp = exp
+if source then
     for _, boosted in ipairs(boostCreature) do
         if source:getName():lower() == boosted.name then
             local extraPercent = boosted.exp
             extraXp = exp * extraPercent / 100
-            self:sendTextMessage(MESSAGE_STATUS_DEFAULT, string.format("[Boosted Creature] You gained %d extra experience from a %s.", extraXp, boosted.category))
+            self:sendTextMessage(MESSAGE_STATUS_DEFAULT,
+                string.format("[Boosted Creature] You gained %d extra experience from a %s.",
+                extraXp, boosted.category))
             break
         end
     end
-    exp = exp + extraXp
-	
-	-- Guild Level System
-	if self:getGuild() then
-		local rewards = {}
-		local number = false
-		rewards = getReward(self:getId()) or {}
-		for i = 1, #rewards do
-			if rewards[i].type == GUILD_LEVEL_BONUS_EXP then
-				number = rewards[i].quantity
-			end
-		end
-		if number then
-			exp = exp +(exp*number)
-		end
-	end
+end
+exp = exp + extraXp
+
 	-- Soul Regeneration
 	local vocation = self:getVocation()
 	if self:getSoul() < vocation:getMaxSoul() and exp >= self:getLevel() then
