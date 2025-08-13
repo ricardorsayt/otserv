@@ -88,8 +88,7 @@ Modal = {
 		}
 	},
 
-	autoloot = 7135,
-	autolootContainer = 7136,
+
 }
 
 Storage = {
@@ -342,12 +341,14 @@ Storage = {
 		exaust = 98231521
 	},
 
+	ExerciseDummyExhaust = 30029,
+
 	DangerousDepths = {
 	Questline = 800,
 		Dwarves = {
 			Status = 897,
-			Home = 801, -- Miss√£o
-			Subterranean = 802, -- Miss√£o
+			Home = 801, -- Miss„o
+			Subterranean = 802, -- Miss„o
 			LostExiles = 803,
 			Prisoners = 804,
 			Organisms = 805,
@@ -358,8 +359,8 @@ Storage = {
 		},
 		Scouts = {
 			Status = 899,
-			Diremaw = 810, -- Miss√£o
-			Growth = 811, -- Miss√£o
+			Diremaw = 810, -- Miss„o
+			Growth = 811, -- Miss„o
 			DiremawsCount = 812,
 			GnomishChest = 813,
 			BarrelCount = 814,
@@ -375,9 +376,9 @@ Storage = {
 		},
 		Gnomes = {
 			Status = 898,
-			Ordnance = 824, -- Miss√£o
-			Measurements = 825, -- Miss√£o
-			Charting = 826, -- Miss√£o
+			Ordnance = 824, -- Miss„o
+			Measurements = 825, -- Miss„o
+			Charting = 826, -- Miss„o
 			GnomeChartChest = 827, -- Measurements
 			GnomeChartPaper = 828, -- Charting
 			GnomesCount = 829, -- Ordnance
@@ -796,6 +797,7 @@ Storage = {
 		Warzone1Reward = 958,
 		Warzone2Reward = 959,
 		Warzone3Reward = 960,
+
 		bossKills = 961,
 		openGoldenFruits = 962,
 
@@ -1734,10 +1736,16 @@ Storage = {
 	Supply = 7095,
 
 	SkillBot = 7096,
-	VipSystem = 7097,
+	VipSystem = 30037,
 
 	NPCTable = 7098,
 
+	TaskLinked = {
+		storageBase = 1010000,
+		activeTaskStorage = 1011000,
+		roomStorageBase = 1010500,
+		chestActionId = 49026
+	}
 }
 
 GlobalStorage = {
@@ -1937,10 +1945,15 @@ GlobalStorage = {
 
 	LastServerSave =  69798,
 	LastBoostTime =  69799,
+	BoostedLootBonus = 69802,
+	BoostedExpBonus = 69803,
 
 	XpDisplayMode = 5634,
 
 	WarDelay = 69800,
 	WarDelay1 = 69801,
+
+	-- Training Storage
+	isTrainingStorage = 12835,
 
 }
