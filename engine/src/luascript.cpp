@@ -2192,7 +2192,11 @@ void LuaScriptInterface::registerFunctions()
 	registerEnumIn("configKeys", ConfigManager::ORANGE_SKULL_DURATION)
 	registerEnumIn("configKeys", ConfigManager::NETWORK_ATTACK_THRESHOLD)
 	registerEnumIn("configKeys", ConfigManager::AUTOLOOT_MODE)
+	registerEnumIn("configKeys", ConfigManager::VIP_AUTOLOOT_LIMIT)
+	registerEnumIn("configKeys", ConfigManager::FREE_AUTOLOOT_LIMIT)
 	registerEnumIn("configKeys", ConfigManager::TIME_GMT)
+	registerEnumIn("configKeys", ConfigManager::MAX_ALLOWED_ON_A_DUMMY)
+	registerEnumIn("configKeys", ConfigManager::RATE_EXERCISE_TRAINING_SPEED)
 
 	registerEnumIn("configKeys", ConfigManager::RATE_MONSTER_HEALTH)
 	registerEnumIn("configKeys", ConfigManager::RATE_MONSTER_ATTACK)
@@ -2800,6 +2804,10 @@ void LuaScriptInterface::registerFunctions()
 	registerMethod("Player", "setBonusRerollCount", LuaScriptInterface::luaPlayerSetBonusRerollCount);
 	
 	registerMethod("Player", "isOffline", LuaScriptInterface::luaPlayerIsOffline);
+
+	// Momentum system functions
+	registerMethod("Player", "getHelmetCooldownReduction", LuaScriptInterface::luaPlayerGetHelmetCooldownReduction);
+	registerMethod("Player", "setHelmetCooldownReduction", LuaScriptInterface::luaPlayerSetHelmetCooldownReduction);
 
 	registerMethod("Player", "getBaseXpGain", LuaScriptInterface::luaPlayerGetBaseXpGain);
 	registerMethod("Player", "setBaseXpGain", LuaScriptInterface::luaPlayerSetBaseXpGain);
@@ -10520,68 +10528,6 @@ int LuaScriptInterface::luaPlayerShowTextDialog(lua_State* L)
 	return 1;
 }
 
-int LuaScriptInterface::luaPlayerGetVipDays(lua_State* L)
-{
-	// player:getVipDays()
-	Player* player = getUserdata<Player>(L, 1);
-	if (player) {
-		lua_pushnumber(L, player->viptime);
-	} else {
-		lua_pushnil(L);
-	}
-	return 1;
-}
-
-int LuaScriptInterface::luaPlayerAddVipDays(lua_State* L)
-{
-	// player:addVipDays(days)
-	Player* player = getUserdata<Player>(L, 1);
-	if (!player) {
-		lua_pushnil(L);
-		return 1;
-	}
-
-	if (player->viptime != std::numeric_limits<uint32_t>::max()) {
-		uint32_t days = (getNumber<uint32_t>(L, 2) * 86400);
-		uint32_t addDays = OS_TIME(nullptr);
-		if (player->viptime > addDays) {
-			addDays = player->viptime + days;
-		} else {
-			addDays += days;
-		}
-
-		player->setVipDays(addDays);
-		IOLoginData::setVipDays(player->getAccount(), addDays);
-	}
-	pushBoolean(L, true);
-	return 1;
-}
-
-int LuaScriptInterface::luaPlayerRemoveVipDays(lua_State* L)
-{
-	// player:removeVipDays(days)
-	Player* player = getUserdata<Player>(L, 1);
-	if (!player) {
-		lua_pushnil(L);
-		return 1;
-	}
-
-	if (player->viptime != std::numeric_limits<uint32_t>::max()) {
-		uint32_t days = (getNumber<uint32_t>(L, 2) * 86400);
-		uint32_t removeDays = OS_TIME(nullptr);
-		if (player->viptime > removeDays) {
-			removeDays = player->viptime - days;
-		} else {
-			removeDays -= days;
-		}
-
-		player->setVipDays(removeDays);
-		IOLoginData::setVipDays(player->getAccount(), removeDays);
-	}
-	pushBoolean(L, true);
-	return 1;
-}
-
 int LuaScriptInterface::luaPlayerSendTextMessage(lua_State* L)
 {
 	// player:sendTextMessage(type, text[, position, primaryValue = 0, primaryColor = TEXTCOLOR_NONE[, secondaryValue = 0, secondaryColor = TEXTCOLOR_NONE]])
@@ -10910,6 +10856,68 @@ int LuaScriptInterface::luaPlayerSetPremiumEndsAt(lua_State* L)
 
 	player->setPremiumTime(timestamp);
 	IOLoginData::updatePremiumTime(player->getAccount(), timestamp);
+	pushBoolean(L, true);
+	return 1;
+}
+
+int LuaScriptInterface::luaPlayerGetVipDays(lua_State* L)
+{
+	// player:getVipDays()
+	Player* player = getUserdata<Player>(L, 1);
+	if (player) {
+		lua_pushnumber(L, player->viptime);
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int LuaScriptInterface::luaPlayerAddVipDays(lua_State* L)
+{
+	// player:addVipDays(days)
+	Player* player = getUserdata<Player>(L, 1);
+	if (!player) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	if (player->viptime != std::numeric_limits<uint32_t>::max()) {
+		uint32_t days = (getNumber<uint32_t>(L, 2) * 86400);
+		uint32_t addDays = OS_TIME(nullptr);
+		if (player->viptime > addDays) {
+			addDays = player->viptime + days;
+		} else {
+			addDays += days;
+		}
+
+		player->setVipDays(addDays);
+		IOLoginData::setVipDays(player->getAccount(), addDays);
+	}
+	pushBoolean(L, true);
+	return 1;
+}
+
+int LuaScriptInterface::luaPlayerRemoveVipDays(lua_State* L)
+{
+	// player:removeVipDays(days)
+	Player* player = getUserdata<Player>(L, 1);
+	if (!player) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	if (player->viptime != std::numeric_limits<uint32_t>::max()) {
+		uint32_t days = (getNumber<uint32_t>(L, 2) * 86400);
+		uint32_t removeDays = OS_TIME(nullptr);
+		if (player->viptime > removeDays) {
+			removeDays = player->viptime - days;
+		} else {
+			removeDays -= days;
+		}
+
+		player->setVipDays(removeDays);
+		IOLoginData::setVipDays(player->getAccount(), removeDays);
+	}
 	pushBoolean(L, true);
 	return 1;
 }
@@ -19683,4 +19691,31 @@ void LuaEnvironment::executeTimerEvent(uint32_t eventIndex)
 	for (auto parameter : timerEventDesc.parameters) {
 		luaL_unref(luaState, LUA_REGISTRYINDEX, parameter);
 	}
+}
+
+// Momentum system functions
+int LuaScriptInterface::luaPlayerGetHelmetCooldownReduction(lua_State* L)
+{
+	// player:getHelmetCooldownReduction()
+	Player* player = getUserdata<Player>(L, 1);
+	if (player) {
+		lua_pushnumber(L, player->getHelmetCooldownReduction());
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int LuaScriptInterface::luaPlayerSetHelmetCooldownReduction(lua_State* L)
+{
+	// player:setHelmetCooldownReduction(reduction)
+	Player* player = getUserdata<Player>(L, 1);
+	if (player) {
+		uint32_t reduction = getNumber<uint32_t>(L, 2);
+		player->setHelmetCooldownReduction(reduction);
+		pushBoolean(L, true);
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
 }

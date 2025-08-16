@@ -108,6 +108,8 @@ bool Events::load()
 				info.playerOnItemMoved = event;
 			} else if (methodName == "onMoveCreature") {
 				info.playerOnMoveCreature = event;
+			} else if (methodName == "onStepTile") {
+				info.playerOnStepTile = event;
 			} else if (methodName == "onReportRuleViolation") {
 				info.playerOnReportRuleViolation = event;
 			} else if (methodName == "onReportBug") {
@@ -136,6 +138,8 @@ bool Events::load()
 				info.playerClearImbuement = event;
 			}else if (methodName == "onCombat") {
 				info.playerOnCombat = event;
+			} else if (methodName == "onWrapItem") {
+				info.onWrapItem = event;
 			} else {
 				std::cout << "[Warning - Events::load] Unknown player method: " << methodName << std::endl;
 			}
@@ -702,6 +706,33 @@ bool Events::eventPlayerOnMoveCreature(Player* player, Creature* creature, const
 	return scriptInterface.callFunction(4);
 }
 
+bool Events::eventPlayerOnStepTile(Player* player, const Position& fromPosition, const Position& toPosition)
+{
+    // Player:onStepTile(fromPosition, toPosition)
+    if (info.playerOnStepTile == -1) {
+        return true;
+    }
+
+    if (!scriptInterface.reserveScriptEnv()) {
+        std::cout << "[Error - Events::eventPlayerOnStepTile] Call stack overflow" << std::endl;
+        return false;
+    }
+
+    ScriptEnvironment* env = scriptInterface.getScriptEnv();
+    env->setScriptId(info.playerOnStepTile, &scriptInterface);
+
+    lua_State* L = scriptInterface.getLuaState();
+    scriptInterface.pushFunction(info.playerOnStepTile);
+
+    LuaScriptInterface::pushUserdata<Player>(L, player);
+    LuaScriptInterface::setMetatable(L, -1, "Player");
+
+    LuaScriptInterface::pushPosition(L, fromPosition);
+    LuaScriptInterface::pushPosition(L, toPosition);
+
+    return scriptInterface.callFunction(3);
+}
+
 void Events::eventPlayerOnItemMoved(Player* player, Item* item, uint16_t count, const Position& fromPosition, const Position& toPosition, Cylinder* fromCylinder, Cylinder* toCylinder)
 {
 	// Player:onItemMoved(item, count, fromPosition, toPosition) or Player.onItemMoved(self, item, count, fromPosition, toPosition, fromCylinder, toCylinder)
@@ -1151,6 +1182,33 @@ void Events::eventPlayerOnCombat(Player* player, Creature* target, Item* item, C
 	}
 
 	scriptInterface.resetScriptEnv();
+}
+
+bool Events::eventPlayerOnWrapItem(Player* player, Item* item)
+{
+	// Player:onWrapItem(item)
+	if (info.onWrapItem == -1) {
+		return true;
+	}
+
+	if (!scriptInterface.reserveScriptEnv()) {
+		std::cout << "[Error - Events::eventPlayerOnWrapItem] Call stack overflow" << std::endl;
+		return false;
+	}
+
+	ScriptEnvironment* env = scriptInterface.getScriptEnv();
+	env->setScriptId(info.onWrapItem, &scriptInterface);
+
+	lua_State* L = scriptInterface.getLuaState();
+	scriptInterface.pushFunction(info.onWrapItem);
+
+	LuaScriptInterface::pushUserdata<Player>(L, player);
+	LuaScriptInterface::setMetatable(L, -1, "Player");
+
+	LuaScriptInterface::pushUserdata<Item>(L, item);
+	LuaScriptInterface::setItemMetatable(L, -1, item);
+
+	return scriptInterface.callFunction(2);
 }
 
 void Events::eventMonsterOnDropLoot(Monster* monster, Container* corpse)

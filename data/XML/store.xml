@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-	<category name="Home" icon="Home.png" rookgaard="yes">
-		<subcategory name="Troca1" />
-	</category>
-
-
-	<!-- -->
  	<offers name="VIP Time" icon="Category_PremiumTime.png" rookgaard="yes" state="sale" >
-		<offer name="30 Days of VIP Time" count="1" price="250" itemtype="16101" icon="Product_PremiumTime30.png" description="VIP Account for 30 days." description12="VIP benefits: <br /> {info} XP bonus <br /> {info} Loot bonus <br /> {info} Exclusive Mounts <br /> {info} Exclusive outfits <br /> {info} Access to Premium Plaza" type="item"  actionid="7127" state="sale" validUntil="30" />  <!-- 7097 + vipdays -->
-		<offer name="90 Days of VIP Time" count="1" itemtype="16101" price="400" icon="Product_PremiumTime90.png" description="VIP Account for 90 days." description12="VIP benefits: <br /> {info} XP bonus <br /> {info} Loot bonus <br /> {info} Exclusive Mounts <br /> {info} Exclusive outfits <br /> {info} Access to Premium Plaza" type="item"  actionid="7187" state="sale" validUntil="30" />
-		<offer name="180 Days of VIP Time" count="1" itemtype="16101" price="700" icon="Product_PremiumTime180.png" description="VIP Account for 180 days." description12="VIP benefits: <br /> {info} XP bonus <br /> {info} Loot bonus <br /> {info} Exclusive Mounts <br /> {info} Exclusive outfits <br /> {info} Access to Premium Plaza" type="item"  actionid="7277" state="sale" validUntil="30" />
-		<offer name="360 Days of VIP Time" count="1" itemtype="16101" price="1000" icon="Product_PremiumTime360.png" description="VIP Account for 360 days." description12="VIP benefits: <br /> {info} XP bonus <br /> {info} Loot bonus <br /> {info} Exclusive Mounts <br /> {info} Exclusive outfits <br /> {info} Access to Premium Plaza" type="item"  actionid="7457" state="sale" validUntil="30" />
+		<offer name="Loot Pounch" itemtype="26377" count="1" price="225" icon="Product_MagicCoinPurse.png" description="With Loot Pouch, you can carry your loot amount without having to keep many backpacks in your backpack. This product allows you to carry as much gold as your capacity allows." type="pouch" state="new" />
+
+		<offer name="30 Days of VIP Time" count="1" price="250" itemtype="16101" icon="Product_PremiumTime360.png" description="VIP Account for 30 days." description12="VIP benefits: <br /> {info} XP bonus <br /> {info} Loot bonus <br /> {info} Exclusive Mounts <br /> {info} Exclusive outfits <br /> {info} Access to Premium Plaza" type="item"  actionid="7127" state="sale" validUntil="30" />  <!-- 7097 + vipdays -->
 </offers> 
 	<!-- -->
 	<offers name="Imbuements" description="Imbuement Itens" icon="Category_PremiumTime.png" rookgaard="no" state="none" >

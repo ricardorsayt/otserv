@@ -22,6 +22,7 @@
 
 #include <string>
 #include <unordered_map>
+#include <map>
 
 class ConfigManager
 {
@@ -146,6 +147,8 @@ class ConfigManager
 			PREMIUM_DEPOT_LIMIT,
 			DEPOT_BOXES,
 			AUTOLOOT_MODE, //Autoloot
+			VIP_AUTOLOOT_LIMIT,
+			FREE_AUTOLOOT_LIMIT,
 			DAY_KILLS_TO_RED,
 			WEEK_KILLS_TO_RED,
 			MONTH_KILLS_TO_RED,
@@ -159,6 +162,8 @@ class ConfigManager
 			TIME_GMT,
 			ANTI_MULTI_CLIENT_LIMIT,
 			PVP_PROTECTION_LEVEL,
+			MAX_ALLOWED_ON_A_DUMMY,
+			RATE_EXERCISE_TRAINING_SPEED,
 
 			LAST_INTEGER_CONFIG /* this must be the last one */
 		};
@@ -167,6 +172,13 @@ class ConfigManager
 			RATE_MONSTER_HEALTH,
 			RATE_MONSTER_ATTACK,
 			RATE_MONSTER_DEFENSE,
+			RATE_HEALTH_REGEN,
+			RATE_HEALTH_REGEN_SPEED,
+			RATE_MANA_REGEN,
+			RATE_MANA_REGEN_SPEED,
+			RATE_SOUL_REGEN,
+			RATE_SOUL_REGEN_SPEED,
+			RATE_ATTACK_SPEED,
 
 			LAST_FLOATING_CONFIG
 		};

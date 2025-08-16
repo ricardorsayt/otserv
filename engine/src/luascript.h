@@ -1037,6 +1037,10 @@ class LuaScriptInterface
 		static int luaPlayerGetPremiumEndsAt(lua_State* L);
 		static int luaPlayerSetPremiumEndsAt(lua_State* L);
 
+		static int luaPlayerGetVipDays(lua_State* L);
+		static int luaPlayerAddVipDays(lua_State* L);
+		static int luaPlayerRemoveVipDays(lua_State* L);
+
 		static int luaPlayerGetTibiaCoins(lua_State* L);
 		static int luaPlayerAddTibiaCoins(lua_State* L);
 		static int luaPlayerRemoveTibiaCoins(lua_State* L);
@@ -1136,11 +1140,12 @@ class LuaScriptInterface
 		static int luaPlayerHasLostConnection(lua_State* L);
 		static int luaPlayerGetNoPongTime(lua_State* L);
 
-		static int luaPlayerGetVipDays(lua_State* L);
-		static int luaPlayerAddVipDays(lua_State* L);
-		static int luaPlayerRemoveVipDays(lua_State* L);
 
 		static int luaPlayerGetIdleTime(lua_State* L);
+
+		// Momentum system functions
+		static int luaPlayerGetHelmetCooldownReduction(lua_State* L);
+		static int luaPlayerSetHelmetCooldownReduction(lua_State* L);
 
 		// Monster
 		static int luaMonsterCreate(lua_State* L);

@@ -54,8 +54,9 @@ class Events
 		int32_t playerOnLookInShop = -1;
 		int32_t playerOnMoveItem = -1;
 		int32_t playerOnItemMoved = -1;
-		int32_t playerOnMoveCreature = -1;
-		int32_t playerOnReportRuleViolation = -1;
+			int32_t playerOnMoveCreature = -1;
+	int32_t playerOnStepTile = -1;
+	int32_t playerOnReportRuleViolation = -1;
 		int32_t playerOnReportBug = -1;
 		int32_t playerOnTurn = -1;
 		int32_t playerOnTradeRequest = -1;
@@ -71,6 +72,7 @@ class Events
 		int32_t playerOnApplyImbuement = -1;
 		int32_t playerClearImbuement = -1;
 		int32_t playerOnCombat = -1;
+		int32_t onWrapItem = -1;
 
 		// Monster
 		int32_t monsterOnSpawn = -1;
@@ -104,6 +106,7 @@ class Events
 		bool eventPlayerOnMoveItem(Player* player, Item* item, uint16_t count, const Position& fromPosition, const Position& toPosition, Cylinder* fromCylinder, Cylinder* toCylinder);
 		void eventPlayerOnItemMoved(Player* player, Item* item, uint16_t count, const Position& fromPosition, const Position& toPosition, Cylinder* fromCylinder, Cylinder* toCylinder);
 		bool eventPlayerOnMoveCreature(Player* player, Creature* creature, const Position& fromPosition, const Position& toPosition);
+		bool eventPlayerOnStepTile(Player* player, const Position& fromPosition, const Position& toPosition);
 		void eventPlayerOnReportRuleViolation(Player* player, const std::string& targetName, uint8_t reportType, uint8_t reportReason, const std::string& comment, const std::string& translation);
 		bool eventPlayerOnReportBug(Player* player, const std::string& message, const Position& position, uint8_t category);
 		bool eventPlayerOnTurn(Player* player, Direction direction);
@@ -120,6 +123,7 @@ class Events
 		void eventPlayerOnApplyImbuement(Player* player, Imbuement* imbuement, Item* item, uint8_t slot, bool protectionCharm);
 		void eventPlayerClearImbuement(Player* player, Item* item, uint8_t slot);
 		void eventPlayerOnCombat(Player* player, Creature* target, Item* item, CombatDamage& damage);
+		bool eventPlayerOnWrapItem(Player* player, Item* item);
 
 		// Monster
 		bool eventMonsterOnSpawn(Monster* monster, const Position& position, bool startup, bool artificial);
