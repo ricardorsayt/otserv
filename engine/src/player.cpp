@@ -1493,9 +1493,16 @@ bool Player::closeShopWindow(bool sendCloseShopWindow /*= true*/)
 
 void Player::onWalk(Direction& dir)
 {
+	const Position& fromPos = getPosition();
+	const Position& toPos = getNextPosition(dir, fromPos);
+	if (!g_events->eventPlayerOnStepTile(this, fromPos, toPos)) {
+		return;
+	}
+	
 	Creature::onWalk(dir);
 	setNextActionTask(nullptr);
-	setNextAction(OTSYS_TIME() + getStepDuration(dir));
+	// Removing this line fixes exhausted when opening backpack while running.
+	//setNextAction(OTSYS_TIME() + getStepDuration(dir));
 }
 
 void Player::onCreatureMove(Creature* creature, const Tile* newTile, const Position& newPos,
@@ -1992,15 +1999,6 @@ void Player::addExperience(Creature* source, uint64_t exp, bool sendText/* = fal
 		if (hasActivePreyBonus(BONUS_XP_BONUS, source)) {
 			hasparenteses = true;
 			expString += " (active prey bonus";
-		}
-
-		if (isVip()) {
-			if (!hasparenteses) {
-				hasparenteses = true;
-				expString += " (VIP Boost Active";
-			} else {
-				expString += " and VIP Boost";
-			}
 		}
 
 		if (hasparenteses) {
@@ -2929,15 +2927,16 @@ ReturnValue Player::queryAdd(int32_t index, const Thing& thing, uint32_t count, 
 		return ret;
 	}
 
-	//need an exchange with source? (destination item is swapped with currently moved item)
 	const Item* inventoryItem = getInventoryItem(static_cast<slots_t>(index));
 	if (inventoryItem && (!inventoryItem->isStackable() || inventoryItem->getID() != item->getID())) {
-		const Cylinder* cylinder = item->getTopParent();
-		if (cylinder && (dynamic_cast<const DepotChest*>(cylinder) || dynamic_cast<const Player*>(cylinder))) {
-			return RETURNVALUE_NEEDEXCHANGE;
+		if (!g_config.getBoolean(ConfigManager::CLASSIC_EQUIPMENT_SLOTS)) {
+			const Cylinder* cylinder = item->getTopParent();
+			if (cylinder && (dynamic_cast<const DepotChest*>(cylinder) || dynamic_cast<const Player*>(cylinder))) {
+				return RETURNVALUE_NEEDEXCHANGE;
+			}
+			return RETURNVALUE_NOTENOUGHROOM;
 		}
-
-		return RETURNVALUE_NOTENOUGHROOM;
+		return RETURNVALUE_NEEDEXCHANGE;
 	}
 
 	return ret;
@@ -4216,7 +4215,7 @@ void Player::changeMana(int32_t manaChange)
 void Player::changeSoul(int32_t soulChange)
 {
 	if (soulChange > 0) {
-		soul += std::min<int32_t>(soulChange, vocation->getSoulMax() - soul);
+		soul += std::min<int32_t>(soulChange * g_config.getFloat(ConfigManager::RATE_SOUL_REGEN), vocation->getSoulMax() - soul);
 	} else {
 		soul = std::max<int32_t>(0, soul + soulChange);
 	}
@@ -6030,7 +6029,7 @@ void Player::setAutolootItem(uint16_t itemId, bool isLogin /* = false */)
 		count++;
 	}
 
-	size_t limit = isVip() ? 20 : 10;
+	size_t limit = isVip() ? g_config.getNumber(ConfigManager::VIP_AUTOLOOT_LIMIT) : g_config.getNumber(ConfigManager::FREE_AUTOLOOT_LIMIT);
 	if (autoLootItemIds.size() >= limit) {
 		if (!isLogin)
 			sendTextMessage(MESSAGE_STATUS_WARNING, "You have reached the limit of items in the list.");
@@ -6178,5 +6177,14 @@ void Player::updateImbuementTrackerStats() const {
 	if (imbuementTrackerWindowOpen) {
 		g_game.playerRequestInventoryImbuements(getID(), true);
 	}
+}
+
+// Momentum system functions
+uint32_t Player::getHelmetCooldownReduction() const {
+	return helmetCooldownReduction;
+}
+
+void Player::setHelmetCooldownReduction(uint32_t reduction) {
+	helmetCooldownReduction = reduction;
 }
 
