@@ -617,6 +617,13 @@ end
 
 local isTrainingStorage = 12835
 
+function Player:onStepTile(fromPosition, toPosition)
+    if hasEvent.onStepTile then
+        return Event.onStepTile(self, fromPosition, toPosition)
+    end
+    return true
+end
+
 function Player:onMoveCreature(creature, fromPosition, toPosition)
 	if self:getGroup():getId() < 4 then
 		if Game.getWorldType() == WORLD_TYPE_RETRO_OPEN_PVP then

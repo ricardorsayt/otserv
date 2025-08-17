@@ -174,6 +174,8 @@ bool ConfigManager::load()
 		integer[PREMIUM_DEPOT_LIMIT] = getGlobalNumber(L, "premiumDepotLimit", 8000);
 		integer[DEPOT_BOXES] = getGlobalNumber(L, "depotBoxes", 17);
 		integer[AUTOLOOT_MODE] = getGlobalNumber(L, "autolootmode", 0); //Autoloot
+		integer[VIP_AUTOLOOT_LIMIT] = getGlobalNumber(L, "vip_autoloot", 25);
+		integer[FREE_AUTOLOOT_LIMIT] = getGlobalNumber(L, "free_autoloot", 15);
 
 		boolean[PROTO_BUFF] = getGlobalNumber(L, "protobuff", false); //Autoloot
 
@@ -267,10 +269,21 @@ bool ConfigManager::load()
 	integer[TIME_GMT] = getGlobalNumber(L, "timeGMT", -3 * 60 * 60);
 	integer[ANTI_MULTI_CLIENT_LIMIT] = getGlobalNumber(L, "antiMultiClientLimit", 4);
 	integer[PVP_PROTECTION_LEVEL] = getGlobalNumber(L, "pvpProtectionLevel", 50);
+	integer[MAX_ALLOWED_ON_A_DUMMY] = getGlobalNumber(L, "maxAllowedOnADummy", 5);
+	integer[RATE_EXERCISE_TRAINING_SPEED] = getGlobalNumber(L, "rateExerciseTrainingSpeed", 1.0);
+	
+
 
 	floating[RATE_MONSTER_HEALTH] = getGlobalFloat(L, "rateMonsterHealth", 1.0);
 	floating[RATE_MONSTER_ATTACK] = getGlobalFloat(L, "rateMonsterAttack", 1.0);
 	floating[RATE_MONSTER_DEFENSE] = getGlobalFloat(L, "rateMonsterDefense", 1.0);
+	floating[RATE_HEALTH_REGEN] = getGlobalFloat(L, "rateHealthRegen", 1.0);
+	floating[RATE_HEALTH_REGEN_SPEED] = getGlobalFloat(L, "rateHealthRegenSpeed", 1.0);
+	floating[RATE_MANA_REGEN] = getGlobalFloat(L, "rateManaRegen", 1.0);
+	floating[RATE_MANA_REGEN_SPEED] = getGlobalFloat(L, "rateManaRegenSpeed", 1.0);
+	floating[RATE_SOUL_REGEN] = getGlobalFloat(L, "rateSoulRegen", 1.0);
+	floating[RATE_SOUL_REGEN_SPEED] = getGlobalFloat(L, "rateSoulRegenSpeed", 1.0);
+	floating[RATE_ATTACK_SPEED] = getGlobalFloat(L, "rateAttackSpeed", 1.0);
 
 	doubling[RATE_MONSTER_SPEED] = getGlobalDouble(L, "rateMonsterSpeed", 1.95);
 

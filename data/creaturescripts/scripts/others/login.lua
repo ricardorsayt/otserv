@@ -118,42 +118,82 @@ function onLogin(player)
 		player:setStorageValue(Storage.DreamCourts.UnsafeRelease.hasBait, - 1)
 	end
 	
-	local isTrainingStorage = 12835
-	if player:getStorageValue(isTrainingStorage) >= 1 then
-		player:setStorageValue(isTrainingStorage, -1)
+	if player:getStorageValue(Storage.isTrainingStorage) >= 1 then
+		player:setStorageValue(Storage.isTrainingStorage, -1)
+	end
+
+	if player:getStorageValue(ENTREGAR_QUESTS) < 1 then
+		entregarQuests(player:getId())
+		player:setStorageValue(ENTREGAR_QUESTS, 1)
 	end
 	
 	-- remover dps
 	player:addOutfit(151)
 	player:addOutfit(155)
 
-	local vipMounts = {
-		113, 114, 115
-	}
+	-- VIP System
+    -- Grant 3 VIP days if first time
+    if player:getAccountStorageValue(2) <= 0 then
+        player:addVipDays(3)
+        player:setAccountStorageValue(2, os.stime())
+        player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("[PARABENS] voce recebeu 3 dias VIP."))
+    end
 
-	if player:isPremium() then
-		for _, mount in pairs(vipMounts) do
-			if not player:hasMount(mount) then
-				player:addMount(mount)
-			end
-		end
-	end
+    -- Calculate VIP days and set VIP status
+    local vipTime = player:getVipDays()
+    local days = 0
+    local hasVip = false
+    
+    if vipTime > os.stime() then
+        days = math.ceil((vipTime - os.stime()) / 86400)
+        hasVip = true
+        player:setStorageValue(Storage.VipSystem, 1)
+    else
+        hasVip = false
+        player:setStorageValue(Storage.VipSystem, -1)
+    end
 
+    player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("You have %d day%s vip (+10%% experience bonus).", days, (days > 1 and "s" or "")))
 
-	local vipOutfits = {
-		1202, 1203, 1204, 1205, 1206, 1207
-	}
+    -- Handle VIP expiration
+    if not hasVip and player:getStorageValue(Storage.VipSystem) > -1 then
+        player:setStorageValue(Storage.VipSystem, -1)
 
-	if player:isPremium() then
-		for _, outfit in pairs(vipOutfits) do
-			-- entregando o outfit
-			player:addOutfit(outfit)
-			-- entregando a outfit
-			player:addOutfitAddon(outfit, 0)
-			player:addOutfitAddon(outfit, 1)
-			player:addOutfitAddon(outfit, 2)
-		end
-	end
+        if player:getSex() == 1 then
+            player:setOutfit({lookType = 128, lookAddons = 0})
+        else
+            player:setOutfit({lookType = 136, lookAddons = 0})
+        end
+        player:teleportTo(player:getTown():getTemplePosition(), true)
+        player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("Your vip is over."))
+    end
+
+    -- VIP Mounts for VIP Players (only if has valid VIP)
+    if hasVip then
+        local vipMounts = {
+            113, 114, 115
+        }
+
+        for _, mount in pairs(vipMounts) do
+            if not player:hasMount(mount) then
+                player:addMount(mount)
+            end
+        end
+    end
+
+    -- VIP Outfits for VIP Players (only if has valid VIP)
+    if hasVip then
+        local vipOutfits = {
+            1202, 1203, 1204, 1205, 1206, 1207
+        }
+
+        for _, outfit in pairs(vipOutfits) do
+            player:addOutfit(outfit)
+            player:addOutfitAddon(outfit, 0)
+            player:addOutfitAddon(outfit, 1)
+            player:addOutfitAddon(outfit, 2)
+        end
+    end
 
 	local g = player:getGuild()
 	if g then
@@ -184,7 +224,7 @@ function onLogin(player)
 		loginStr = string.format('Your last visit was on %s.', os.sdate('%a %b %d %X %Y', player:getLastLoginSaved()))
 	end
     
-	AutoLootList:onLogin(player:getId())
+
 	
 	player:sendTextMessage(MESSAGE_STATUS_DEFAULT, loginStr)
 	
@@ -301,7 +341,6 @@ function onLogin(player)
 	-- Events
 	for i = 1, #events do
 		player:registerEvent(events[i])
-		player:registerEvent("AutoLoot")
 	end
 
 
@@ -310,48 +349,14 @@ function onLogin(player)
 		onMovementRemoveProtection(playerId, player:getPosition(), 10)
 	end
 
-	-- vip devido ao bug la
-	if player:getAccountStorageValue(2) <= 0 then
-		player:setPremiumEndsAt(player:getPremiumEndsAt() + 259200) -- 3 dias em segundos (3 * 24 * 60 * 60)
-		player:setAccountStorageValue(2, os.stime())
-		-- if table.contains({SKULL_RED, SKULL_BLACK}, player:getSkull()) then
-			-- player:setSkull(SKULL_NONE)
-		-- end
-
-		player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("[PARABENS] voce recebeu 3 dias VIP."))
-	end
-
 	local proxy = player:getProxyInfo()
 	if proxy then
 		player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("You are logged in using the %s server.", proxy.name))
 	end
 
-	local days = math.max(0, math.ceil((player:getPremiumEndsAt() - os.stime()) / 86400))
-	if player:isPremium() then
-		player:setStorageValue(Storage.VipSystem, 1)
-	end
-
-	player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("You have %d day%s vip.", days, (days > 1 and "s" or "")))
-
-	if player:getStorageValue(Storage.VipSystem) > -1 then
-		if not player:isPremium() then
-			player:setStorageValue(Storage.VipSystem, -1)
-
-			if player:getSex() == 1 then
-				player:setOutfit({lookType = 128, lookAddons = 0})
-			else
-				player:setOutfit({lookType = 136, lookAddons = 0})
-			end
-			player:teleportTo(player:getTown():getTemplePosition(), true)
-			player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("Your vip is over."))
-		end
-	end
-
 	if configManager.getDouble(configKeys.SPAWN_SPEED) > 1.0 then
 		player:sendTextMessage(MESSAGE_INFO_DESCR, string.format("All spawns are faster."))
 	end
-
-	player:registerEvent("SoundOpcode")
 
 	player:updateExpState()
 	player:setStorageValue(Storage.combatProtectionStorage, -1)
