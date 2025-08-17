@@ -9,13 +9,13 @@
 
 
 	<!-- Battlefield (Davi) -->
-	<globalevent name="startBattlefield_x2" time="19:00" script="events/battlefield/start_1.lua" />
+	<!--<globalevent name="startBattlefield_x2" time="19:00" script="events/battlefield/start_1.lua" /> -->
 	<!-- The Last Man Standing (Davi) -->
-	<globalevent name="startTheLastMan" time="18:00" script="events/lastman/start.lua" />
+	<!--<globalevent name="startTheLastMan" time="18:00" script="events/lastman/start.lua" /> -->
 	<!-- Zombie (Davi) -->
-	<globalevent name="startZombie" time="20:00" script="events/zombie/start.lua" />
+	<!--<globalevent name="startZombie" time="20:00" script="events/zombie/start.lua" /> -->
 	<!-- Castle (Davi) -->
-	<globalevent name="startCastle" time="21:00" script="events/castle/start.lua" />
+	<!--<globalevent name="startCastle" time="21:00" script="events/castle/start.lua" /> -->
 
 	<!-- Pits of Inferno -->
 	<globalevent name="bosspoi" interval="46800000" script="bosses/bosspoi.lua"/>
