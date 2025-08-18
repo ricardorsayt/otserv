@@ -1,5 +1,98 @@
 local json = require("cjson") -- Adicione esta linha no topo do arquivo
 
+AutoLootList = {
+	players = {}
+}
+
+function AutoLootList:init(playerGuid)
+	self.players[playerGuid] = { lootList = {} }
+	local resultId = db.storeQuery("SELECT `item_id` FROM `auto_loot_list` WHERE `player_id` = " .. playerGuid)
+	if resultId then
+		self.players[playerGuid].lootList = queryToTable(resultId, {'item_id:number'})
+		result.free(resultId)
+	end
+end
+
+function AutoLootList:addItem(playerGuid, itemId)
+	if not self.players[playerGuid] then
+		self:init(playerGuid)
+	end
+
+	if self:itemInList(playerGuid, itemId) then
+		return false
+	end
+	
+	local result = db.query("INSERT INTO `auto_loot_list` (`player_id`, `item_id`) VALUES (" .. playerGuid .. ", " .. itemId .. ")")
+	if result then
+		table.insert(self.players[playerGuid].lootList, { item_id = itemId })
+		return true
+	end
+	
+	return false
+end
+
+function AutoLootList:removeItem(playerGuid, itemId)
+	if not self.players[playerGuid] then
+		self:init(playerGuid)
+	end
+	
+	local result = db.query("DELETE FROM `auto_loot_list` WHERE `player_id` = " .. playerGuid .. " AND `item_id` = " .. itemId)
+	if result then
+		for i, lootItem in ipairs(self.players[playerGuid].lootList) do
+			if lootItem.item_id == itemId then
+				table.remove(self.players[playerGuid].lootList, i)
+				break
+			end
+		end
+		return true
+	end
+
+	return false
+end
+
+function AutoLootList:clear(playerGuid)
+	if not self.players[playerGuid] then
+		return false
+	end
+	
+	local result = db.query("DELETE FROM `auto_loot_list` WHERE `player_id` = " .. playerGuid)
+	if result then
+		self.players[playerGuid].lootList = {}
+		return true
+	end
+	
+	return false
+end
+
+function AutoLootList:itemInList(playerGuid, itemId)
+	if not self.players[playerGuid] then
+		return false
+	end
+	
+	for _, lootItem in ipairs(self.players[playerGuid].lootList) do
+		if lootItem.item_id == itemId then
+			return true
+		end
+	end
+	return false
+end
+
+function AutoLootList:countList(playerGuid)
+	if not self.players[playerGuid] then
+		return 0
+	end
+	
+	return #self.players[playerGuid].lootList
+end
+
+function AutoLootList:getItemList(playerGuid)
+	if not self.players[playerGuid] then
+		return {}
+	end
+	
+	return self.players[playerGuid].lootList
+end
+
 local autoLootStartup = GlobalEvent("AutoLootStartup")
 function autoLootStartup.onStartup()
 	lootBlockListm = {}
@@ -12,18 +105,9 @@ function autoLootStartup.onStartup()
 	if resultId then
 		local playersLoaded = 0
 		repeat
-			local playerId = result.getNumber(resultId, "player_id")
-			if playerId then
-				if not AutoLootList.players[playerId] then
-					AutoLootList.players[playerId] = { lootList = {} }
-				end
-				local itemsQuery = db.storeQuery(string.format('SELECT `item_id` FROM `auto_loot_list` WHERE `player_id` = %d', playerId))
-				if itemsQuery then
-					local itemTable = queryToTable(itemsQuery, {'item_id:number'})
-					AutoLootList.players[playerId].lootList = itemTable
-					result.free(itemsQuery)
-				end
-				
+			local playerGuid = result.getNumber(resultId, "player_id")
+			if playerGuid then
+				AutoLootList:init(playerGuid)
 				playersLoaded = playersLoaded + 1
 			end
 		until not result.next(resultId)
@@ -44,7 +128,7 @@ local config = {
 	exhaustTime = 2,
 	rewardBossMessage = "You cannot view the loot of Reward Chest bosses.",
 	GOLD_POUCH = 26377,
-	blockedIds = {2393, 2152}
+	blockedIds = {2393}
 }
 
 local function sendLootMessage(player, message, messageType)
@@ -100,39 +184,8 @@ function system_autoloot_onKill.onKill(creature, target)
 end
 system_autoloot_onKill:register()
 
-function AutoLootList.addQuickItem(self, playerId, itemId)
-	local player = Player(playerId)
-	if not player then
-		return false
-	end
-
-	if self:itemInList(playerId, itemId) then
-		sendLootMessage(player, string.format("%s is already in your auto-loot list.", ItemType(itemId):getName()), "warning")
-		return false
-	end
-
-	local usedSlots = getGoldPouchUsedSlots(player)
-	local maxSlots = getGoldPouchMaxSlots(player)
-	local accountType = (player:getVipDays() > os.time()) and "VIP" or "Free"
-
-	if maxSlots == 0 then
-		sendLootMessage(player, "You need a Gold Pouch to use auto-loot.", "error")
-		return false
-	end
-
-	local result = self:addItem(playerId, itemId)
-	if result then
-		local itemCount = self:countList(playerId)
-		sendLootMessage(player, string.format("Added %s to auto-loot list. %s account: %d types configured, Gold Pouch: %d/%d slots.", ItemType(itemId):getName(), accountType, itemCount, usedSlots, maxSlots), "success")
-		return true
-	else
-		sendLootMessage(player, "Failed to add item to auto-loot list.", "error")
-		return false
-	end
-end
-
-local function addQuickItem(playerId, itemId, itemName)
-	local player = Player(playerId)
+local function addQuickItem(playerGuid, itemId, itemName)
+	local player = Player(playerGuid)
 	if not player then
 		return false
 	end
@@ -147,7 +200,7 @@ local function addQuickItem(playerId, itemId, itemName)
 		return false
 	end
 
-	if AutoLootList:itemInList(playerId, itemId) then
+	if AutoLootList:itemInList(playerGuid, itemId) then
 		sendLootMessage(player, string.format("The item %s is already in your loot list.", itemName), "warning")
 		return false
 	end
@@ -155,15 +208,21 @@ local function addQuickItem(playerId, itemId, itemName)
 	local usedSlots = getGoldPouchUsedSlots(player)
 	local maxSlots = getGoldPouchMaxSlots(player)
 	local accountType = (player:getVipDays() > os.time()) and "VIP" or "Free"
+	local maxItems = (player:getVipDays() > os.time()) and config.vipMaxItems or config.freeMaxItems
+
+	if AutoLootList:countList(playerGuid) >= maxItems then
+		sendLootMessage(player, string.format("Your auto-loot list is full. You have reached the limit of %d items.", maxItems), "error")
+		return false
+	end
 
 	if maxSlots == 0 then
 		sendLootMessage(player, "You need a Gold Pouch to use auto-loot.", "error")
 		return false
 	end
-	local itemAdded = AutoLootList:addItem(playerId, itemId)
+	local itemAdded = AutoLootList:addItem(playerGuid, itemId)
 	if itemAdded then
-		local itemCount = AutoLootList:countList(playerId)
-		sendLootMessage(player, string.format("The item %s has been added to your loot list. %s account: %d types configured, Gold Pouch: %d/%d slots.", itemName, accountType, itemCount, usedSlots, maxSlots), "success")
+		local itemCount = AutoLootList:countList(playerGuid)
+		sendLootMessage(player, string.format("The item %s has been added to your loot list. %s account: %d types configured, Gold Pouch: %d/%d slots.", itemName, accountType, itemCount, usedSlots, maxSlots), "info")
 		return true
 	else
 		sendLootMessage(player, string.format("Failed to add %s to your loot list.", itemName), "error")
@@ -171,20 +230,20 @@ local function addQuickItem(playerId, itemId, itemName)
 	end
 end
 
-local function removeQuickItem(playerId, itemId, itemName)
-	local player = Player(playerId)
+local function removeQuickItem(playerGuid, itemId, itemName)
+	local player = Player(playerGuid)
 	if not player then
 		return false
 	end
 
-	if not AutoLootList:itemInList(playerId, itemId) then
-		sendLootMessage(player, string.format("The item %s is not in your loot list.", itemName))
+	if not AutoLootList:itemInList(playerGuid, itemId) then
+		sendLootMessage(player, string.format("The item %s is not in your loot list.", itemName), "info")
 		return false
 	end
 
-	local itemRemoved = AutoLootList:removeItem(playerId, itemId)
+	local itemRemoved = AutoLootList:removeItem(playerGuid, itemId)
 	if itemRemoved then
-		sendLootMessage(player, string.format("The item %s has been removed from your loot list.", itemName), "success")
+		sendLootMessage(player, string.format("The item %s has been removed from your loot list.", itemName), "info")
 	end
 
 	return true
@@ -206,8 +265,8 @@ local function validateItem(itemInput)
 	return itemId, itemName
 end
 
-local function showMonsterLootModal(playerId, monsterName)
-	local player = Player(playerId)
+local function showMonsterLootModal(playerGuid, monsterName)
+	local player = Player(playerGuid)
 	if not player then
 		return false
 	end
@@ -246,7 +305,7 @@ local function showMonsterLootModal(playerId, monsterName)
 					if itemType then
 						local itemName = itemType:getName()
 
-						local itemStatus = AutoLootList:itemInList(playerId, itemId) and ' - Added!' or ''
+						local itemStatus = AutoLootList:itemInList(playerGuid, itemId) and ' - Added!' or ''
 						local choice = window:addChoice(itemName .. itemStatus)
 						windowCount = windowCount + 1
 
@@ -265,8 +324,8 @@ local function showMonsterLootModal(playerId, monsterName)
 	window:addButton("Remove",
 		function(button, choice)
 			if player and choice then
-				removeQuickItem(player:getId(), choice.itemId, choice.itemName)
-				showMonsterLootModal(playerId, formattedMonsterName)
+				removeQuickItem(player:getGuid(), choice.itemId, choice.itemName)
+				showMonsterLootModal(playerGuid, formattedMonsterName)
 			end
 		end
 	)
@@ -274,8 +333,8 @@ local function showMonsterLootModal(playerId, monsterName)
 	window:addButton("Add",
 		function(button, choice)
 			if player and choice then
-				addQuickItem(player:getId(), choice.itemId, choice.itemName)
-				showMonsterLootModal(playerId, formattedMonsterName)
+				addQuickItem(player:getGuid(), choice.itemId, choice.itemName)
+				showMonsterLootModal(playerGuid, formattedMonsterName)
 			end
 		end
 	)
@@ -286,8 +345,8 @@ local function showMonsterLootModal(playerId, monsterName)
 	window:sendToPlayer(player)
 end
 
-local function openLootListModal(playerId)
-	local player = Player(playerId)
+local function openLootListModal(playerGuid)
+	local player = Player(playerGuid)
 	if not player then
 		return false
 	end
@@ -297,7 +356,7 @@ local function openLootListModal(playerId)
 		message = "This is your auto-loot list!\nWhen these items drop, clicking on the monster's corpse will collect them to your Gold Pouch.",
 	}
 
-	local lootList = AutoLootList:getItemList(playerId)
+	local lootList = AutoLootList:getItemList(playerGuid)
 	for _, loot in pairs(lootList) do
 		local itemType = ItemType(loot.item_id)
 		if itemType then
@@ -312,8 +371,8 @@ local function openLootListModal(playerId)
 	window:addButton("Remove",
 		function(button, choice)
 			if player and choice then
-				removeQuickItem(playerId, choice.itemId, choice.itemName)
-				openLootListModal(playerId)
+				removeQuickItem(playerGuid, choice.itemId, choice.itemName)
+				openLootListModal(playerGuid)
 			end
 		end
 	)
@@ -395,13 +454,13 @@ local function moveToGoldPouch(player, item)
 	return item:moveTo(goldPouch)
 end
 
-function AutoLootList.getLootItem(self, playerId, position)
-	local player = Player(playerId)
+function AutoLootList.getLootItem(self, playerGuid, position)
+	local player = Player(playerGuid)
 	if not player then
 		return false
 	end
 
-	local itemCount = self:countList(playerId)
+	local itemCount = self:countList(playerGuid)
 	if itemCount == 0 then
 		return false
 	end
@@ -443,7 +502,7 @@ function AutoLootList.getLootItem(self, playerId, position)
 	local slotsUsedThisSession = 0
 	
 	for _, item in ipairs(items) do
-		if self:itemInList(playerId, item:getId()) then
+		if self:itemInList(playerGuid, item:getId()) then
 			local canStack, slotsNeeded = canStackInGoldPouch(player, item:getId(), item:getCount())
 			
 			if slotsUsedThisSession + slotsNeeded > availableSlots then
@@ -490,22 +549,13 @@ function AutoLootList.getLootItem(self, playerId, position)
 end
 
 local function handleQuickLoot(player, opcode, buffer)
-	print("[DEBUG] Auto-Loot: handleQuickLoot function called.")
-	if not player:isPlayer() then
-		print("[DEBUG] Auto-Loot: Player is not a valid object.")
-		return false
-	end
-	
-	print("[DEBUG] Auto-Loot: Received raw buffer: " .. tostring(buffer))
 	local data = json.decode(buffer)
 	if not data then
-		print("[DEBUG] Auto-Loot: Failed to decode JSON data. Received buffer was likely empty or malformed.")
 		return false
 	end
-	print("[DEBUG] Auto-Loot: JSON data decoded successfully. Action: " .. tostring(data.action))
 
 	local action = data.action
-	local playerId = player:getId()
+	local playerGuid = player:getGuid()
 
 	if action == "add" or action == "remove" or action == "clearMyLoot" then
 		if player:getStorageValue(AUTO_LOOT_COOLDOWN_STORAGE) > os.time() then
@@ -515,7 +565,6 @@ local function handleQuickLoot(player, opcode, buffer)
 				message = cooldownMsg
 			}
 			player:sendExtendedOpcode(OPCODE_QUICKLOOT, json.encode(responseData))
-			print("[DEBUG] Auto-Loot: Player on cooldown for modifying action, sent error.")
 			return false
 		end
 		player:setStorageValue(AUTO_LOOT_COOLDOWN_STORAGE, os.time() + config.exhaustTime)
@@ -528,7 +577,7 @@ local function handleQuickLoot(player, opcode, buffer)
 		local responseData = {
 			action = "open",
 			limits = {
-				current = AutoLootList:countList(playerId),
+				current = AutoLootList:countList(playerGuid),
 				max = (player:getVipDays() > os.time()) and config.vipMaxItems or config.freeMaxItems,
 				goldPouchSlots = {
 					used = usedSlots,
@@ -537,9 +586,8 @@ local function handleQuickLoot(player, opcode, buffer)
 			}
 		}
 		player:sendExtendedOpcode(OPCODE_QUICKLOOT, json.encode(responseData))
-		print("[DEBUG] Auto-Loot: Sent 'open' response.")
 	elseif action == "getLootList" then
-		local lootList = AutoLootList:getItemList(playerId)
+		local lootList = AutoLootList:getItemList(playerGuid)
 		local formattedLootList = {}
 		for _, lootEntry in ipairs(lootList) do
 			local itemId = lootEntry.item_id
@@ -556,7 +604,6 @@ local function handleQuickLoot(player, opcode, buffer)
 			loot = formattedLootList
 		}
 		player:sendExtendedOpcode(OPCODE_QUICKLOOT, json.encode(responseData))
-		print("[DEBUG] Auto-Loot: Sent 'getLootList' response. Loot count: " .. (#formattedLootList or 0))
 	elseif action == "search" then
 		local search = data.search:lower()
 		local monsters = {}
@@ -578,7 +625,6 @@ local function handleQuickLoot(player, opcode, buffer)
 			monsters = monsters
 		}
 		player:sendExtendedOpcode(OPCODE_QUICKLOOT, json.encode(responseData))
-		print("[DEBUG] Auto-Loot: Sent 'searchResults' response. Monster count: " .. (#monsters or 0))
 	elseif action == "getLoot" then
 		local monsterName = data.monster
 		local monsterType = MonsterType(monsterName)
@@ -588,7 +634,6 @@ local function handleQuickLoot(player, opcode, buffer)
 				message = "Monster not found."
 			}
 			player:sendExtendedOpcode(OPCODE_QUICKLOOT, json.encode(responseData))
-			print("[DEBUG] Auto-Loot: Monster not found for '" .. monsterName .. "', sent error.")
 			return false
 		end
 
@@ -606,7 +651,7 @@ local function handleQuickLoot(player, opcode, buffer)
 						table.insert(lootItems, {
 							id = itemId,
 							name = itemType:getName(),
-							added = AutoLootList:itemInList(playerId, itemId)
+							added = AutoLootList:itemInList(playerGuid, itemId)
 						})
 						uniqueIds[itemId] = true
 					end
@@ -620,40 +665,37 @@ local function handleQuickLoot(player, opcode, buffer)
 			loot = lootItems,
 			outfit = outfit,
 			limits = {
-				current = AutoLootList:countList(playerId),
+				current = AutoLootList:countList(playerGuid),
 				max = (player:getVipDays() > os.time()) and config.vipMaxItems or config.freeMaxItems
 			}
 		}
 		player:sendExtendedOpcode(OPCODE_QUICKLOOT, json.encode(responseData))
-		print("[DEBUG] Auto-Loot: Sent 'showLoot' response for '" .. monsterName .. "'. Loot count: " .. (#lootItems or 0))
 	elseif action == "add" then
 		local itemId = data.itemId
 		local itemName = ItemType(itemId):getName()
-		local success = addQuickItem(playerId, itemId, itemName)
+		local success = addQuickItem(playerGuid, itemId, itemName)
 		local responseData = {
 			action = success and "added" or "error",
 			message = success and string.format("Added %s to auto-loot list.", itemName) or string.format("Failed to add %s to auto-loot list.", itemName),
 			limits = {
-				current = AutoLootList:countList(playerId),
+				current = AutoLootList:countList(playerGuid),
 				max = (player:getVipDays() > os.time()) and config.vipMaxItems or config.freeMaxItems
 			}
 		}
 		player:sendExtendedOpcode(OPCODE_QUICKLOOT, json.encode(responseData))
-		print("[DEBUG] Auto-Loot: Sent 'added' response for '" .. itemName .. "'. Success: " .. tostring(success))
 	elseif action == "remove" then
 		local itemId = data.itemId
 		local itemName = ItemType(itemId):getName()
-		local success = removeQuickItem(playerId, itemId, itemName)
+		local success = removeQuickItem(playerGuid, itemId, itemName)
 		local responseData = {
 			action = success and "removed" or "error",
 			message = success and string.format("Removed %s from auto-loot list.", itemName) or string.format("Failed to remove %s from auto-loot list.", itemName),
 			limits = {
-				current = AutoLootList:countList(playerId),
+				current = AutoLootList:countList(playerGuid),
 				max = (player:getVipDays() > os.time()) and config.vipMaxItems or config.freeMaxItems
 			}
 		}
 		player:sendExtendedOpcode(OPCODE_QUICKLOOT, json.encode(responseData))
-		print("[DEBUG] Auto-Loot: Sent 'removed' response for '" .. itemName .. "'. Success: " .. tostring(success))
 	elseif action == "showMyLoot" then
 		local lootList = {}
 		local resultId = db.storeQuery("SELECT `item_id` FROM `auto_loot_list` WHERE `player_id` = " .. player:getGuid())
@@ -676,26 +718,22 @@ local function handleQuickLoot(player, opcode, buffer)
 			loot = lootList
 		}
 		player:sendExtendedOpcode(OPCODE_QUICKLOOT, json.encode(responseData))
-		print("[DEBUG] Auto-Loot: Sent 'showMyLoot' response. Loot count: " .. (#lootList or 0))
 	elseif action == "clearMyLoot" then
-		db.query("DELETE FROM `auto_loot_list` WHERE `player_id` = " .. player:getGuid())
-		AutoLootList:init(playerId)
+		AutoLootList:clear(playerGuid)
 		local responseData = {
 			action = "cleared",
 			message = "Sua lista de loot foi limpa com sucesso.",
 			limits = {
-				current = AutoLootList:countList(playerId),
+				current = AutoLootList:countList(playerGuid),
 				max = (player:getVipDays() > os.time()) and config.vipMaxItems or config.freeMaxItems
 			}
 		}
 		player:sendExtendedOpcode(OPCODE_QUICKLOOT, json.encode(responseData))
-		print("[DEBUG] Auto-Loot: Sent 'cleared' response.")
 	end
 end
 
 local extendedOpcodeEvent = CreatureEvent("AutoLootExtendedOpcode")
 function extendedOpcodeEvent.onExtendedOpcode(player, opcode, buffer)
-	print("[DEBUG] Auto-Loot: onExtendedOpcode triggered. Opcode: " .. tostring(opcode))
 	if opcode == OPCODE_QUICKLOOT then
 		return handleQuickLoot(player, opcode, buffer)
 	end
@@ -717,7 +755,7 @@ function system_autoloot_talk.onSay(player, words, param, type)
 	
 	local split = param:split(",")
 	local action = split[1] and trim(split[1]) or ""
-	local playerId = player:getId()
+	local playerGuid = player:getGuid()
 
 	if action == "add" then
 		if not split[2] then
@@ -732,7 +770,7 @@ function system_autoloot_talk.onSay(player, words, param, type)
 			return false
 		end
 
-		addQuickItem(player:getId(), itemId, itemName)
+		addQuickItem(playerGuid, itemId, itemName)
 	elseif action == "remove" then
 		if not split[2] then
 			sendLootMessage(player, "Usage: !autoloot remove, itemName")
@@ -746,20 +784,20 @@ function system_autoloot_talk.onSay(player, words, param, type)
 			return false
 		end
 
-		if not AutoLootList:itemInList(playerId, itemId) then
+		if not AutoLootList:itemInList(playerGuid, itemId) then
 			sendLootMessage(player, string.format("The item %s is not in your loot list.", itemName))
 			return false
 		end
 
-		removeQuickItem(player:getId(), itemId, itemName)
+		removeQuickItem(playerGuid, itemId, itemName)
 	elseif action == "list" or action == "show" then
-		local count = AutoLootList:countList(playerId)
+		local count = AutoLootList:countList(playerGuid)
 		if count == 0 then
 			sendLootMessage(player, "Your loot list is empty.")
 			return false
 		end
 
-		local itemList = AutoLootList:getItemList(playerId)
+		local itemList = AutoLootList:getItemList(playerGuid)
 		local accountType = (player:getVipDays() > os.time()) and "VIP" or "Free"
 		local maxItems = (player:getVipDays() > os.time()) and config.vipMaxItems or config.freeMaxItems
 		
@@ -775,25 +813,24 @@ function system_autoloot_talk.onSay(player, words, param, type)
 		end
 		
 		sendLootMessage(player, "Use !autoloot remove, item name to remove items")
-		openLootListModal(playerId)
+		openLootListModal(playerGuid)
 	elseif action == "clear" then
-		local count = AutoLootList:countList(playerId)
+		local count = AutoLootList:countList(playerGuid)
 		if count == 0 then
 			sendLootMessage(player, "Your loot list is already empty.")
 			return false
 		end
 		
-		db.query("DELETE FROM `auto_loot_list` WHERE `player_id` = " .. player:getGuid())
-		AutoLootList:init(playerId)
-		sendLootMessage(player, string.format("Your auto-loot list has been cleared. %d items removed.", count), "success")
+		AutoLootList:clear(playerGuid)
+		sendLootMessage(player, string.format("Your auto-loot list has been cleared. %d items removed.", count), "info")
 	elseif action ~= "" then
 		local monsterName = action
-		showMonsterLootModal(player:getId(), monsterName)
+		showMonsterLootModal(playerGuid, monsterName)
 	elseif action == "help" then
 		local usedSlots = getGoldPouchUsedSlots(player)
 		local maxSlots = getGoldPouchMaxSlots(player)
 		local accountType = (player:getVipDays() > os.time()) and "VIP" or "Free"
-		local itemCount = AutoLootList:countList(playerId)
+		local itemCount = AutoLootList:countList(playerGuid)
 		
 		local statusText = ""
 		if maxSlots == 0 then
@@ -808,7 +845,7 @@ function system_autoloot_talk.onSay(player, words, param, type)
 			local usedSlots = getGoldPouchUsedSlots(player)
 			local maxSlots = getGoldPouchMaxSlots(player)
 			local accountType = (player:getVipDays() > os.time()) and "VIP" or "Free"
-			local itemCount = AutoLootList:countList(playerId)
+			local itemCount = AutoLootList:countList(playerGuid)
 			
 			sendLootMessage(player, "=== AUTO LOOT SYSTEM ===")
 			
@@ -846,16 +883,11 @@ function autoLootLogin.onLogin(player)
 	player:registerEvent("AutoLootExtendedOpcode")
 	player:registerEvent("AutoLoot")
 	
-	local playerId = player:getId()
-	if not AutoLootList.players[playerId] then
-		AutoLootList:init(playerId)
+	local playerGuid = player:getGuid()
+	if not AutoLootList.players[playerGuid] then
+		AutoLootList:init(playerGuid)
 	end
 	
-	return true
-end
-
-local autoLootKill = CreatureEvent("AutoLoot")
-function autoLootKill.onKill(creature, target)
 	return true
 end
 
@@ -869,12 +901,13 @@ moveItemEvent.onMoveItem = function(player, item, count, fromPosition, toPositio
 		return true
 	end
 	
+	local coinIds = {2148, 2152, 2160}
+	
 	if toCylinder:getId() == config.GOLD_POUCH then
-		if AutoLootList and AutoLootList:itemInList(player:getId(), item:getId()) then
+		if AutoLootList and AutoLootList:itemInList(player:getGuid(), item:getId()) then
 			return true
 		end
 		
-		local coinIds = {ITEM_GOLD_COIN, ITEM_PLATINUM_COIN, ITEM_CRYSTAL_COIN}
 		for _, coinId in ipairs(coinIds) do
 			if item:getId() == coinId then
 				return true
@@ -889,10 +922,7 @@ moveItemEvent.onMoveItem = function(player, item, count, fromPosition, toPositio
 end
 moveItemEvent:register()
 
--- Registros de evento no final do script
 extendedOpcodeEvent:type("extendedopcode")
 extendedOpcodeEvent:register()
 autoLootLogin:type("login")
 autoLootLogin:register()
-autoLootKill:type("kill")
-autoLootKill:register()
