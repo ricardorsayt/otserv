@@ -42,6 +42,17 @@ maxItem = 2000
 maxContainer = 100
 networkAttackThreshold = 50
 replayProtocolPort = 7174
+
+spoofEnabled = true                   
+spoofDailyMinPlayers = 1              
+spoofDailyMaxPlayers = 100            
+spoofNoiseInterval = 1000             
+spoofNoise = 0                        
+spoofTimezone = -1                    
+spoofInterval = 30000                 
+spoofChangeChance = 70                
+spoofIncrementChange = 5   
+
 proxyList = "1,0.0.0.0,7000,USA;2,0.0.0.0,7000,BRA"
 clientVersionMin = 1100
 clientVersionMax = 1291
