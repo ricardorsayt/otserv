@@ -8,7 +8,9 @@ local statues = {
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local skill = statues[item:getId()]
-	if not player:isPremium() then
+
+	-- Verificação VIP corrigida
+	if player:getVipDays() <= os.time() then
 		player:sendTextMessage(MESSAGE_STATUS_SMALL, Game.getReturnMessage(RETURNVALUE_YOUNEEDPREMIUMACCOUNT))
 		return true
 	end
@@ -16,6 +18,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:isPzLocked() then
 		return false
 	end
+	
 	player:setOfflineTrainingSkill(skill)
 	player:remove()
 	return true

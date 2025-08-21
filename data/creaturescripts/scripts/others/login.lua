@@ -171,7 +171,7 @@ function onLogin(player)
     -- VIP Mounts for VIP Players (only if has valid VIP)
     if hasVip then
         local vipMounts = {
-            113, 114, 115
+            113, 114, 115, 163, 164, 165, 175, 176, 177, 179, 180, 181
         }
 
         for _, mount in pairs(vipMounts) do
@@ -184,7 +184,7 @@ function onLogin(player)
     -- VIP Outfits for VIP Players (only if has valid VIP)
     if hasVip then
         local vipOutfits = {
-            1202, 1203, 1204, 1205, 1206, 1207
+            1202, 1203, 1204, 1205, 1206, 1207, 268, 269, 273, 270, 278, 279, 289, 288, 325, 324, 335, 336, 367, 366, 430, 431, 432, 433, 463, 464, 465, 466, 472, 471
         }
 
         for _, outfit in pairs(vipOutfits) do

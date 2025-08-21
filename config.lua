@@ -43,7 +43,7 @@ maxContainer = 100
 networkAttackThreshold = 50
 replayProtocolPort = 7174
 
-spoofEnabled = true                   
+spoofEnabled = false                   
 spoofDailyMinPlayers = 1              
 spoofDailyMaxPlayers = 100            
 spoofNoiseInterval = 1000             
