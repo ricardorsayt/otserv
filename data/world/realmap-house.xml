@@ -364,6 +364,7 @@
 	<house name="Unnamed House #369" houseid="369" entryx="32221" entryy="31176" entryz="7" rent="0" townid="12" size="33" />
 	<house name="Unnamed House #370" houseid="370" entryx="32209" entryy="31175" entryz="7" rent="0" townid="12" size="23" />
 	<house name="Unnamed House #371" houseid="371" entryx="32204" entryy="31169" entryz="7" rent="0" townid="12" size="20" />
+	<house name="" houseid="372" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="36" />
 	<house name="Unnamed House #373" houseid="373" entryx="32311" entryy="31136" entryz="7" rent="0" townid="12" size="38" />
 	<house name="Unnamed House #374" houseid="374" entryx="32546" entryy="31666" entryz="7" rent="0" townid="5" size="319" />
 	<house name="Unnamed House #375" houseid="375" entryx="32643" entryy="31691" entryz="7" rent="0" townid="5" size="27" />
@@ -966,4 +967,17 @@
 	<house name="Unnamed House #998" houseid="998" entryx="32593" entryy="31826" entryz="9" rent="0" townid="3" size="190" />
 	<house name="Unnamed House #999" houseid="999" entryx="32483" entryy="31825" entryz="7" rent="0" townid="4" size="145" />
 	<house name="Unnamed House #1000" houseid="1000" entryx="32698" entryy="31773" entryz="7" rent="0" townid="3" size="343" />
+	<house name="" houseid="1001" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="36" />
+	<house name="" houseid="1002" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="36" />
+	<house name="" houseid="1003" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="65" />
+	<house name="" houseid="1004" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="8" />
+	<house name="" houseid="1005" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="10" />
+	<house name="" houseid="1006" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="13" />
+	<house name="" houseid="1007" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="10" />
+	<house name="" houseid="1008" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="8" />
+	<house name="" houseid="1009" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="8" />
+	<house name="" houseid="1010" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="10" />
+	<house name="" houseid="1011" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="13" />
+	<house name="" houseid="1012" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="10" />
+	<house name="" houseid="1013" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="8" />
 </houses>
