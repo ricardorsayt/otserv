@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Alerica" script="Alerica.lua" walkinterval="0">
 	<health now="100" max="100" />
-	<look type="154" head="41" body="116" legs="95" feet="114" addons="0" />
+	<look type="153" head="41" body="116" legs="95" feet="114" addons="0" />
 <parameters>
 <parameter key="message_greet" value="Hello |PLAYERNAME|! A warm welcome to the amulets and rings shop of Shanera." />
 		<parameter key="message_farewell" value="Good bye." />
