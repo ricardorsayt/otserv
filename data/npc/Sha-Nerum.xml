@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Sha-Nerum" script="Sha-Nerum.lua" walkinterval="1000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="962" head="95" body="94" legs="94" feet="82" addons="0" />
+</npc>
