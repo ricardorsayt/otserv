@@ -978,5 +978,32 @@
 	<house name="Shanera 10" houseid="1023" entryx="1226" entryy="1135" entryz="6" rent="0" townid="14" size="8" />
 	<house name="Shanera 11" houseid="1024" entryx="1237" entryy="1135" entryz="6" rent="0" townid="14" size="8" />
 	<house name="Shanera 12" houseid="1025" entryx="1237" entryy="1134" entryz="6" rent="0" townid="14" size="10" />
-	<house name="Shanera 113" houseid="1026" entryx="1261" entryy="1133" entryz="7" rent="0" townid="14" size="31" />
+	<house name="Shanera 13" houseid="1026" entryx="1261" entryy="1133" entryz="7" rent="0" townid="14" size="31" />
+	<house name="Shanera 14" houseid="1027" entryx="1242" entryy="1121" entryz="7" rent="0" townid="14" size="20" />
+	<house name="Shanera 15" houseid="1028" entryx="1247" entryy="1121" entryz="7" rent="0" townid="14" size="20" />
+	<house name="Shanera 16" houseid="1029" entryx="1245" entryy="1118" entryz="6" rent="0" townid="14" size="20" />
+	<house name="Shanera 17" houseid="1030" entryx="1208" entryy="1177" entryz="7" rent="0" townid="14" size="34" />
+	<house name="Shanera 18" houseid="1031" entryx="1208" entryy="1183" entryz="7" rent="0" townid="14" size="54" />
+	<house name="Shanera 19" houseid="1032" entryx="1212" entryy="1177" entryz="7" rent="0" townid="14" size="31" />
+	<house name="Shanera 20" houseid="1033" entryx="1230" entryy="1178" entryz="7" rent="0" townid="14" size="64" />
+	<house name="Shanera 21" houseid="1034" entryx="1213" entryy="1202" entryz="7" rent="0" townid="14" size="18" />
+	<house name="Shanera 22" houseid="1035" entryx="1219" entryy="1202" entryz="7" rent="0" townid="14" size="18" />
+	<house name="Shanera 23" houseid="1036" entryx="1224" entryy="1202" entryz="7" rent="0" townid="14" size="36" />
+	<house name="Shanera 24" houseid="1037" entryx="1231" entryy="1202" entryz="7" rent="0" townid="14" size="36" />
+	<house name="Shanera 25" houseid="1038" entryx="1241" entryy="1202" entryz="7" rent="0" townid="14" size="36" />
+	<house name="Shanera 26" houseid="1039" entryx="1259" entryy="1187" entryz="7" rent="0" townid="14" size="32" />
+	<house name="Shanera 27" houseid="1040" entryx="1256" entryy="1182" entryz="6" rent="0" townid="14" size="34" />
+	<house name="Shanera 28" houseid="1041" entryx="1244" entryy="1179" entryz="5" rent="0" townid="14" size="38" />
+	<house name="Fishing Village 1" houseid="1042" entryx="1194" entryy="1167" entryz="6" rent="0" townid="14" size="16" />
+	<house name="Fishing Village 2" houseid="1043" entryx="1194" entryy="1166" entryz="6" rent="0" townid="14" size="16" />
+	<house name="Fishing Village 3" houseid="1044" entryx="1181" entryy="1166" entryz="6" rent="0" townid="14" size="16" />
+	<house name="Fishing Village 4" houseid="1045" entryx="1182" entryy="1168" entryz="6" rent="0" townid="14" size="63" />
+	<house name="Fishing Village 5" houseid="1046" entryx="1174" entryy="1166" entryz="6" rent="0" townid="14" size="16" />
+	<house name="Fishing Village 6" houseid="1047" entryx="1184" entryy="1163" entryz="5" rent="0" townid="14" size="12" />
+	<house name="Fishing Village 7" houseid="1048" entryx="1168" entryy="1159" entryz="6" rent="0" townid="14" size="40" />
+	<house name="Fishing Village 8" houseid="1049" entryx="1166" entryy="1159" entryz="5" rent="0" townid="14" size="18" />
+	<house name="Fishing Village 9" houseid="1050" entryx="1173" entryy="1158" entryz="6" rent="0" townid="14" size="20" />
+	<house name="Fishing Village 10" houseid="1051" entryx="1185" entryy="1155" entryz="6" rent="0" townid="14" size="27" />
+	<house name="Fishing Village 11" houseid="1052" entryx="1189" entryy="1154" entryz="6" rent="0" townid="14" size="52" />
+	<house name="Fishing Village 12" houseid="1053" entryx="1188" entryy="1180" entryz="6" rent="0" townid="14" size="87" />
 </houses>
