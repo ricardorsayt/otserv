@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 	<action itemid="33248" function="supply"/>
+
+	<action itemid="2147" script="enchantedHelmet.lua"/>
+
 	
 	<action itemid="7735" script="others/spellwand.lua"/> <!-- Spellwand -->	
 	<action fromid="31719" toid="31720" script="others/consumables/cupcakes.lua"/> <!-- Cupcakes -->
@@ -630,10 +633,11 @@
 	<action itemid="22598" script="others/variables/unrealizedDream.lua"/>
 	<action itemid="22726" script="others/variables/ursagrodon.lua" />
 	<!-- Others (Weapons Enchanting Gems) -->
-	<action itemid="2146" script="others/shrines/iceFeyristEntrance.lua" />
-	<action itemid="2147" script="others/shrines/fireFeyristEntrance.lua" />
-	<action itemid="2149" script="others/shrines/earthFeyristEntrance.lua" />
-    <action itemid="2150" script="others/shrines/energyFeyristEntrance.lua" />
+	<!-- <action itemid="2146" script="others/shrines/iceFeyristEntrance.lua" /> -->
+	<!-- <action itemid="2147" script="others/shrines/fireFeyristEntrance.lua" /> -->
+	<!-- <action itemid="2149" script="others/shrines/earthFeyristEntrance.lua" /> -->
+    	<!-- <action itemid="2150" script="others/shrines/energyFeyristEntrance.lua" /> -->
+
     <action fromaid="24999" toaid="25002" script="others/shrines/feyristExit.lua" />
 	
 	<!--
