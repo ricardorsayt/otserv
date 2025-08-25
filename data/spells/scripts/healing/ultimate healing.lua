@@ -5,13 +5,24 @@ combat:setParameter(COMBAT_PARAM_AGGRESSIVE, 0)
 combat:setParameter(COMBAT_PARAM_DISPEL, CONDITION_PARALYZE)
 
 function onGetFormulaValues(player, level, maglevel)
-	local min = (level / 5) + (maglevel * 6.8) + 42
-	local max = (level / 5) + (maglevel * 12.9) + 90
-	return player:getSpellDamage(min, max, true)
+    local maxHealth = player:getMaxHealth()
+    local minHeal = 0
+    local maxHeal = 0
+    local vocName = player:getVocation():getName()
+
+    if vocName == "Sorcerer" or vocName == "Druid" or vocName == "Elder Druid" or vocName == "Master Sorcerer" then
+        minHeal = maxHealth
+        maxHeal = maxHealth
+    elseif vocName == "Paladin" or vocName == "Royal Paladin" then
+        minHeal = maxHealth * 0.60
+        maxHeal = maxHealth * 0.70
+    end
+    
+    return minHeal, maxHeal
 end
 
 combat:setCallback(CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 function onCastSpell(creature, var)
-	return combat:execute(creature, var)
+    return combat:execute(creature, var)
 end

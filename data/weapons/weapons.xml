@@ -780,40 +780,40 @@
 	</distance>
 
 	<!-- Ammunition -->
-	<distance id="1294" /> <!-- small stone -->
-	<distance id="2111"  /> <!-- snowball -->
-	<distance id="2389" /> <!-- spear -->
-	<distance id="2399" /> <!-- throwing star -->
-	<distance id="2410" /> <!-- throwing knife -->
-	<distance id="2543"  /> <!-- bolt -->
-	<distance id="2544"  /> <!-- arrow -->
-	<distance id="2545"  script="poison_arrow.lua" /> <!-- poison arrow -->
-	<distance id="2546"  script="burst_arrow.lua" /> <!-- burst arrow -->
-	<distance id="2547"  unproperly="1" level="55" /> <!-- Power Bolt -->
-	<distance id="3965"  unproperly="1" level="20" /> <!-- Hunting Spear -->
-	<distance id="6529"  unproperly="1" level="110" /> <!-- Infernal Bolt -->
-	<distance id="7363"  unproperly="1" level="30" /> <!-- Piercing Bolt -->
-	<distance id="7364"  unproperly="1" level="20" /> <!-- Sniper Arrow -->
-	<distance id="7365"  unproperly="1" level="40" /> <!-- Onyx Arrow -->
-	<distance id="7366" script="viper_star.lua" />
-	<distance id="7367" unproperly="1" level="42" /> <!-- Enchanted Spear -->
-	<distance id="7368"  unproperly="1" level="80" /> <!-- Assassin Star -->
-	<distance id="29036" unproperly="1" level="60" /> <!-- Leaf Star -->
-	<distance id="7378"  unproperly="1" level="25" /> <!-- Royal Spear -->
-	<distance id="7838"  unproperly="1" level="20" /> <!-- Flash Arrow -->
-	<distance id="7839"  unproperly="1" level="20" /> <!-- Shiver Arrow -->
-	<distance id="7840"  unproperly="1" level="20" /> <!-- Flaming Arrow -->
-	<distance id="7850"  unproperly="1" level="20" /> <!-- Earth Arrow -->
-	<distance id="15648"  unproperly="1" level="30" /> <!-- Tarsal Arrow -->
-	<distance id="15649"  unproperly="1" level="40" /> <!-- Vortex Bolt -->
-	<distance id="18303"  /> <!-- crystal bolt -->
-	<distance id="18304"  unproperly="1" level="90" /> <!-- Crystalline Arrow -->
-	<distance id="18435"  unproperly="1" level="90" /> <!-- Prismatic Bolt -->
-	<distance id="18436"  unproperly="1" level="70" /> <!-- Drill Bolt -->
-	<distance id="18437"  unproperly="1" level="70" /> <!-- Envenomed Arrow -->
-	<distance id="23529" unproperly="1" level="60" /> <!-- Glooth Spear -->
-	<distance id="23839"  unproperly="0" level="1" /> <!-- Simple Arrow -->
-	<distance id="29057"  unproperly="1" level="150" script="diamond_arrow.lua" />	<!-- Diamond Arrow -->
-	<distance id="29058"  unproperly="1" level="150" />	<!-- Spectral Bolt -->
-	<distance id="29059" unproperly="1" level="120" />	<!-- Royal Star -->
+    <distance id="1294" name="Small Stone" swing="true" breakchance="3" />
+    <distance id="2111" name="Snowball" swing="true" action="removecount" />
+    <distance id="2389" name="Spear" swing="true" breakchance="0" />
+    <distance id="2399" name="Throwing Star" swing="true" breakchance="2" />
+    <distance id="2410" name="Throwing Knife" swing="true" breakchance="3" />
+    <distance id="2543" name="Bolt" swing="true" action="removecount" />
+    <distance id="2544" name="Arrow" swing="true" action="removecount" />
+    <distance id="2545" name="Poison Arrow" swing="true" action="removecount" script="poison_arrow.lua" />
+    <distance id="2546" name="Burst Arrow" swing="true" action="removecount" script="burst_arrow.lua" />
+    <distance id="2547" name="Power Bolt" swing="true" action="removecount" unproperly="1" level="55" />
+    <distance id="3965" name="Hunting Spear" swing="true" breakchance="3" unproperly="1" level="20" />
+    <distance id="6529" name="Infernal Bolt" swing="true" action="removecount" unproperly="1" level="110" />
+    <distance id="7363" name="Piercing Bolt" swing="true" action="removecount" unproperly="1" level="30" />
+    <distance id="7364" name="Sniper Arrow" swing="true" action="removecount" unproperly="1" level="20" />
+    <distance id="7365" name="Onyx Arrow" swing="true" action="removecount" unproperly="1" level="40" />
+    <distance id="7366" name="Viper Star" swing="true" breakchance="5" script="viper_star.lua" />
+    <distance id="7367" name="Enchanted Spear" swing="true" breakchance="3" unproperly="1" level="42" />
+    <distance id="7368" name="Assassin Star" swing="true" breakchance="13" unproperly="1" level="80" />
+    <distance id="7378" name="Royal Spear" swing="true" breakchance="3" unproperly="1" level="25" />
+    <distance id="7838" name="Flash Arrow" swing="true" action="removecount" unproperly="1" level="20" />
+    <distance id="7839" name="Shiver Arrow" swing="true" action="removecount" unproperly="1" level="20" />
+    <distance id="7840" name="Flaming Arrow" swing="true" action="removecount" unproperly="1" level="20" />
+    <distance id="7850" name="Earth Arrow" swing="true" action="removecount" unproperly="1" level="20" />
+    <distance id="15648" name="Tarsal Arrow" swing="true" action="removecount" unproperly="1" level="30" />
+    <distance id="15649" name="Vortex Bolt" swing="true" action="removecount" unproperly="1" level="40" />
+    <distance id="18303" name="Crystal Bolt" swing="true" action="removecount" />
+    <distance id="18304" name="Crystalline Arrow" swing="true" action="removecount" unproperly="1" level="90" />
+    <distance id="18435" name="Prismatic Bolt" swing="true" action="removecount" unproperly="1" level="90" />
+    <distance id="18436" name="Drill Bolt" swing="true" action="removecount" unproperly="1" level="70" />
+    <distance id="18437" name="Envenomed Arrow" swing="true" action="removecount" unproperly="1" level="70" />
+    <distance id="23529" name="Glooth Spear" swing="true" breakchance="3" unproperly="1" level="60" />
+    <distance id="23839" name="Simple Arrow" swing="true" action="removecount" unproperly="0" level="1" />
+    <distance id="29036" name="Leaf Star" swing="true" breakchance="2" unproperly="1" level="60" />
+    <distance id="29057" name="Diamond Arrow" swing="true" action="removecount" unproperly="1" level="150" script="diamond_arrow.lua" />
+    <distance id="29058" name="Spectral Bolt" swing="true" action="removecount" unproperly="1" level="150" />
+    <distance id="29059" name="Royal Star" swing="true" breakchance="13" unproperly="1" level="120" />
 </weapons>
