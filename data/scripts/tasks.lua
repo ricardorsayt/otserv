@@ -16,11 +16,11 @@ local Config = {
   StorageKillsSelected = 97626, -- 87627 - 87637 reserved (10)
   StorageKillsCurrent = 97638,
   StorageTaskCompletions = 98800, -- 87639 - 87649 reserved (10)
-  ActiveTasksLimit = 3, -- max 10 or you will have to adjust storage keys
+  ActiveTasksLimit = 5, -- max 10 or you will have to adjust storage keys
   RecommendedLevelRange = 30, -- when player is within this range (at level 20, 10-20 and 20-30 levels), "Recommended" text will be displayed in tasks list
   
   -- Intervalo ajustado para 300-3000 kills
-  RequiredKills = {Min = 2, Max = 5000},
+  RequiredKills = {Min = 1, Max = 5000},
   
   -- Bônus a cada 300 kills (10% do máximo)
   KillsForBonus = 1000,

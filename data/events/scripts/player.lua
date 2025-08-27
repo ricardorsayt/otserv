@@ -170,10 +170,10 @@ function Player:onLook(thing, position, distance)
 			end
 		end
 	end
-	-- local strKills = "%s\n[Kills: %d]\n[Deaths: %d]"
-	-- if thing:isPlayer() then
-		-- description = string.format(strKills, description, math.max(thing:getStorageValue(STORAGE_KILL_COUNT), 0), math.max(thing:getStorageValue(STORAGE_DEATH_COUNT), 0))
-	-- end
+	 local strKills = "%s\n[Kills: %d]\n[Deaths: %d]"
+	 if thing:isPlayer() then
+		 description = string.format(strKills, description, math.max(thing:getStorageValue(STORAGE_KILL_COUNT), 0), math.max(thing:getStorageValue(STORAGE_DEATH_COUNT), 0))
+	 end
 	-- if thing:isPlayer() and thing:getClient().version <= 1100 then
 	-- 	description = string.format("%s\nUsing Client 10: *possible bot!*", description)
 	-- end
