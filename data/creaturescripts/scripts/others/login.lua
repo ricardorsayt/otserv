@@ -287,7 +287,6 @@ function onLogin(player)
 	--daily reward
 	player:initDailyRewardSystem()
 
-
 	if (player:getAccountType() == ACCOUNT_TYPE_TUTOR) then
 		local msg = [[:: Tutor Rules
 	            1 *> 3 Warnings you lose the job.
