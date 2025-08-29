@@ -23,7 +23,7 @@
 <!-- </skillstages> -->
 
 <skillstages>
-	<skills enabled="1">
+	<skills enabled="0">
 		<skill minskill="1" maxskill="10" multiplier="2" />
 		<skill minskill="11" maxskill="20" multiplier="2" />
 		<skill minskill="21" maxskill="30" multiplier="2" />
@@ -34,7 +34,7 @@
 		<skill minskill="71" maxskill="80" multiplier="2" />
 		<skill minskill="81" multiplier="2" />
 	</skills>
-	<magiclevel enabled="1">
+	<magiclevel enabled="0">
 		<ml minmagic="0" maxmagic="20" multiplier="2" />
 		<ml minmagic="21" maxmagic="30" multiplier="2" />
 		<ml minmagic="31" maxmagic="40" multiplier="2" />

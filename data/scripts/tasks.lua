@@ -17,10 +17,10 @@ local Config = {
   StorageKillsCurrent = 97638,
   StorageTaskCompletions = 98800, -- 87639 - 87649 reserved (10)
   ActiveTasksLimit = 5, -- max 10 or you will have to adjust storage keys
-  RecommendedLevelRange = 30, -- when player is within this range (at level 20, 10-20 and 20-30 levels), "Recommended" text will be displayed in tasks list
+  RecommendedLevelRange = 10, -- when player is within this range (at level 20, 10-20 and 20-30 levels), "Recommended" text will be displayed in tasks list
   
   -- Intervalo ajustado para 300-3000 kills
-  RequiredKills = {Min = 1, Max = 5000},
+  RequiredKills = {Min = 50, Max = 5000},
   
   -- Bônus a cada 300 kills (10% do máximo)
   KillsForBonus = 1000,
@@ -43,24 +43,64 @@ local Config = {
   },
   
   Ranks = {
-    [5] = "Huntsman",
-    [15] = "Ranger",
-    [30] = "Big Game Hunter",
-    [45] = "Trophy Hunter",
-    [60] = "Pro Hunter",
-    [75] = "Elite Hunter"
+    [25] = "Huntsman",
+    [50] = "Ranger",
+    [100] = "Big Game Hunter",
+    [150] = "Trophy Hunter",
+    [200] = "Pro Hunter",
+    [250] = "Elite Hunter"
   },
   
 Tasks = {
+    {
+      RaceName = "Rats",
+      Level = 1,
+      Monsters = {"rat", "cave rat"},
+      Rewards = {
+        {Type = RewardType.Experience, BaseValue = 500},
+        {Type = RewardType.Gold, BaseValue = 1000},
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+      }
+    },
+    {
+      RaceName = "Spiders",
+      Level = 5,
+      Monsters = {"spider", "poison spider"},
+      Rewards = {
+        {Type = RewardType.Experience, BaseValue = 1000},
+        {Type = RewardType.Gold, BaseValue = 1500},
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+      }
+    },
+    {
+      RaceName = "Snakes",
+      Level = 5,
+      Monsters = {"snake"},
+      Rewards = {
+        {Type = RewardType.Experience, BaseValue = 500},
+        {Type = RewardType.Gold, BaseValue = 500},
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+      }
+    },
+    {
+      RaceName = "Trolls",
+      Level = 5,
+      Monsters = {"troll", "troll champion", "troll guard"},
+      Rewards = {
+        {Type = RewardType.Experience, BaseValue = 1000},
+        {Type = RewardType.Gold, BaseValue = 1000},
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+      }
+    },
+
     {
       RaceName = "Rotworm",
       Level = 8,
       Monsters = {"rotworm", "carrion worm"},
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 10000},
-        {Type = RewardType.Gold, BaseValue = 4000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 6}
+        {Type = RewardType.Gold, BaseValue = 2000},
+		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
       }
     },
     {
@@ -70,8 +110,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 20000},
         {Type = RewardType.Gold, BaseValue = 10000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 10}
+		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 2475, Amount = 1}
       }
     },
     {
