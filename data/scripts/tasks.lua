@@ -22,18 +22,18 @@ local Config = {
   -- Intervalo ajustado para 300-3000 kills
   RequiredKills = {Min = 50, Max = 5000},
   
-  -- B么nus a cada 300 kills (10% do m谩ximo)
+  -- B鬾us a cada 300 kills (10% do m醲imo)
   KillsForBonus = 1000,
   
-  -- B么nus aumentados significativamente
+  -- B鬾us aumentados significativamente
   PointsIncrease = 30,    -- 150% increased rank points per 300 kills above minimum
   ExperienceIncrease = 50, -- 20% increased experience per 300 kills above minimum
   GoldIncrease = 15,       -- 25% increased gold per 300 kills above minimum
   
-  -- B么nus especial para quem completa 3000 kills
+  -- B鬾us especial para quem completa 3000 kills
   MaxKillsBonus = {
     Points = 0,       -- +5 pontos adicionais
-    Experience = 0.0, -- +20% da experi锚ncia total
+    Experience = 0.0, -- +20% da experi阯cia total
     Gold = 0.0        -- +20% do ouro total
   },
   
@@ -631,7 +631,7 @@ function Player:startNewTask(taskId, kills)
       return
     end
 
-    -- Atualizar as kills m铆nimas e m谩ximas
+    -- Atualizar as kills m韓imas e m醲imas
     kills = tonumber(kills) or Config.RequiredKills.Min
     kills = math.max(kills, Config.RequiredKills.Min)
     kills = math.min(kills, Config.RequiredKills.Max)
@@ -733,7 +733,7 @@ function Player:addTaskReward(reward, requiredKills)
     bonus = bonus * Config.PointsIncrease
     local value = reward.BaseValue + math.floor((reward.BaseValue * bonus / 100) + 0.5)
     
-    -- B么nus adicional por escolher 3000 kills
+    -- B鬾us adicional por escolher 3000 kills
     if isMaxKills then
       value = value + Config.MaxKillsBonus.Points
     end
@@ -749,7 +749,7 @@ function Player:addTaskReward(reward, requiredKills)
     bonus = bonus * Config.ExperienceIncrease
     local value = reward.BaseValue + math.floor((reward.BaseValue * bonus / 100) + 0.5)
     
-    -- B么nus adicional por escolher 3000 kills
+    -- B鬾us adicional por escolher 3000 kills
     if isMaxKills then
       value = value + math.floor(reward.BaseValue * Config.MaxKillsBonus.Experience)
     end
@@ -765,7 +765,7 @@ function Player:addTaskReward(reward, requiredKills)
     bonus = bonus * Config.GoldIncrease
     local value = reward.BaseValue + math.floor((reward.BaseValue * bonus / 100) + 0.5)
     
-    -- B么nus adicional por escolher 3000 kills
+    -- B鬾us adicional por escolher 3000 kills
     if isMaxKills then
       value = value + math.floor(reward.BaseValue * Config.MaxKillsBonus.Gold)
     end

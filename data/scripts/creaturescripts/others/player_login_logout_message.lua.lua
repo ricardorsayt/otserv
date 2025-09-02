@@ -76,14 +76,12 @@ function loginMessage.onLogin(player)
 
 	player:sendTextMessage(MESSAGE_STATUS_DEFAULT, loginStr)
 
-	-- Promotion handling
+-- Promotion handling
 	local vocation = player:getVocation()
 	local promotion = vocation:getPromotion()
-	if player:isPremium() then
-		local value = player:getStorageValue(PlayerStorageKeys.promotion)
-		if value == 1 then
-			player:setVocation(promotion)
-		end
+	local value = player:getStorageValue(PlayerStorageKeys.promotion)
+	if value == 1 and promotion then
+		player:setVocation(promotion)
 	elseif not promotion then
 		player:setVocation(vocation:getDemotion())
 	end

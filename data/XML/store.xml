@@ -407,7 +407,7 @@
 		<offer name="XP Boost +50%" price="150" icon="XP_Boost.png" description12="<i>Purchase a boost that increases the experience points your character gains from hunting by 50%!</i><br/><br/>{character}<br/>{info} lasts for 1 hour hunting time<br/>{info} paused if stamina falls under 14 hours<br/>{info} can be purchased up to 5 times between 2 server saves<br/>{info} price increases with every purchase<br/>{info} cannot be purchased if an XP boost is already active" type="expboost" />
 	</offers>
 	<offers name="Exclusive Offers" description="Buy exceptional equipment to upgrade your Tibia House" icon="Tournament_Restricted.png" rookgaard="yes" state="none" >
-		<offer name="Loot Pounch" itemtype="26377" count="1" price="100" icon="Product_MagicCoinPurse.png" description="With Loot Pouch, you can carry your loot amount without having to keep many backpacks in your backpack. This product allows you to carry as much gold as your capacity allows." type="pouch" state="new" />
+		<offer name="Loot Pounch" itemtype="26377" count="1" price="0" icon="Product_MagicCoinPurse.png" description="With Loot Pouch, you can carry your loot amount without having to keep many backpacks in your backpack. This product allows you to carry as much gold as your capacity allows." type="pouch" state="new" />
 		<offer name="Rashid Acess Scroll" itemtype="49349" count="1" price="200" icon="Abridged_Promotion_Scroll.png" type="item" state="new" disabled="no"/> 
 		<offer name="Blue Djinn Acess Scroll" itemtype="49350" count="1" price="200" icon="Basic_Promotion_Scroll.png" type="item" state="new" disabled="no"/> 
 		<offer name="Green Djinn Acess Scroll" itemtype="49351" count="1" price="200" icon="Revised_Promotion_Scroll.png" type="item" state="new" disabled="no"/> 

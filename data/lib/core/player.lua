@@ -253,9 +253,10 @@ function Player.isPromoted(self)
 	local promotedVocation = vocation:getPromotion()
 	promotedVocation = promotedVocation and promotedVocation:getId() or 0
 
-	return promotedVocation == 0 and vocation:getId() ~= promotedVocation
+	-- A verificação `isPromoted` será apenas se o jogador já está em uma vocação promovida.
+	-- A verificação de premium foi removida.
+	return vocation:getId() ~= promotedVocation
 end
-
 function Player.isUsingOtClient(self)
 	return self:getClient().os >= CLIENTOS_OTCLIENT_LINUX
 end

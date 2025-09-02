@@ -550,6 +550,7 @@
 	<movevent event="StepIn" fromid="23798" toid="23805" script="others/walkback.lua" />
 
 	<!-- Dawnport and Rookgaard -->
+	<movevent event="StepIn" actionid="50241" script="rookgaard/premium_bridge.lua"/>
 	<movevent event="StepIn" actionid="50998" script="rookgaard/levelbridge.lua" />
 	<movevent event="StepIn" actionid="50999" script="rookgaard/rookVillage.lua" />
 	<movevent event="StepIn" fromaid="20001" toaid="20004" script="dawnport/vocationtrial.lua" />

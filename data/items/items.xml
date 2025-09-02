@@ -40806,9 +40806,9 @@
 		<attribute key="corpseType" value="venom" />
 	</item>
 	<!--Fim Corpses-->
-	<!-- InÃ­cio itens de quest -->
+	<!-- Início itens de quest -->
 	
-	<!-- NÃ£o sei que item Ã© esse
+	<!-- Não sei que item é esse
 	<item id="32407" article="a" name="hawser">
 		<attribute key="weight" value="600" />
 	</item>
@@ -41247,7 +41247,7 @@
 	<item id="32419" article="a" name="light of change">    <!--verde-->
 		<attribute key="wrapableTo" value="26054" />
 	</item>	
-	<!-- Atï¿½ aqui -->
+	<!-- At  aqui -->
 	<item id="32027" article="a" name="torch of change">    <!--base-->
 		<attribute key="wrapableTo" value="26054" />
 	</item>	
