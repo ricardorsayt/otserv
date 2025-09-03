@@ -209,7 +209,7 @@ function AutoLootList.getLootItem(self, playerCid, position)
     end
 
     if not goldPouch then
-        sendLootMessage(player, "You need a Gold Pouch to use auto-loot.", "error")
+        -- sendLootMessage(player, "You need a Gold Pouch to use auto-loot.", "error")
         return false
     end
 
@@ -260,7 +260,7 @@ function AutoLootList.getLootItem(self, playerCid, position)
                 if canStack and slotsNeeded == 0 then stackInfo = " (stacked)"
                 elseif ItemType(iid):isStackable() then stackInfo = string.format(" (%d slots)", slotsNeeded) end
 
-                sendLootMessage(player, string.format("Collected %dx %s%s (%s: %d/%d slots)", item:getCount(), item:getName(), stackInfo, accountType, currentUsed, maxSlots), "collected")
+                -- sendLootMessage(player, string.format("Collected %dx %s%s (%s: %d/%d slots)", item:getCount(), item:getName(), stackInfo, accountType, currentUsed, maxSlots), "collected")
             else
                 sendLootMessage(player, string.format("Could not collect %s: No space in Gold Pouch.", item:getName()), "error")
             end
@@ -269,7 +269,7 @@ function AutoLootList.getLootItem(self, playerCid, position)
 
     if itemsCollected > 0 then
         local finalUsed = usedSlots + slotsUsedThisSession
-        sendLootMessage(player, string.format("Auto-loot session complete: %d items collected, %d slots used. %s: %d/%d slots.", itemsCollected, slotsUsedThisSession, accountType, finalUsed, maxSlots), "info")
+        -- sendLootMessage(player, string.format("Auto-loot session complete: %d items collected, %d slots used. %s: %d/%d slots.", itemsCollected, slotsUsedThisSession, accountType, finalUsed, maxSlots), "info")
         player:openChannel(9)
     end
 
