@@ -441,6 +441,16 @@ const std::string& LuaScriptInterface::getFileById(int32_t scriptId)
 	return it->second;
 }
 
+const std::string& LuaScriptInterface::getFileByIdForStats(int32_t scriptId)
+{
+	auto it = cacheFiles.find(scriptId);
+	if (it == cacheFiles.end()) {
+		static const std::string& unk = "(Unknown scriptfile)";
+		return unk;
+	}
+	return it->second;
+}
+
 std::string LuaScriptInterface::getStackTrace(const std::string& error_desc)
 {
 	lua_getglobal(luaState, "debug");
@@ -548,6 +558,16 @@ int LuaScriptInterface::luaErrorHandler(lua_State* L)
 
 bool LuaScriptInterface::callFunction(int params)
 {
+
+#ifdef STATS_ENABLED
+	int32_t scriptId;
+	int32_t callbackId;
+	bool timerEvent;
+	LuaScriptInterface* scriptInterface;
+	getScriptEnv()->getEventInfo(scriptId, scriptInterface, callbackId, timerEvent);
+	std::chrono::high_resolution_clock::time_point time_point = std::chrono::high_resolution_clock::now();
+#endif
+
 	bool result = false;
 	int size = lua_gettop(luaState);
 	if (protectedCall(luaState, params, 1) != 0) {
@@ -560,6 +580,11 @@ bool LuaScriptInterface::callFunction(int params)
 	if ((lua_gettop(luaState) + params + 1) != size) {
 		LuaScriptInterface::reportError(nullptr, "Stack size changed!");
 	}
+
+#ifdef STATS_ENABLED
+	uint64_t ns = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::high_resolution_clock::now() - time_point).count();
+	g_stats.addLuaStats(new Stat(ns, getFileByIdForStats(scriptId), ""));
+#endif
 
 	resetScriptEnv();
 	return result;
@@ -2464,6 +2489,9 @@ void LuaScriptInterface::registerFunctions()
 
 	registerMethod("Item", "getDescription", LuaScriptInterface::luaItemGetDescription);
 
+	registerMethod("Item", "getDuration", LuaScriptInterface::luaItemGetDuration);
+	registerMethod("Item", "getRemainingDuration", LuaScriptInterface::luaItemGetRemainingDuration);
+
 	registerMethod("Item", "hasProperty", LuaScriptInterface::luaItemHasProperty);
 
 	// Container
@@ -2830,7 +2858,6 @@ void LuaScriptInterface::registerFunctions()
 
 	registerMethod("Player", "hasLostConnection", LuaScriptInterface::luaPlayerHasLostConnection);
 	registerMethod("Player", "getNoPongTime", LuaScriptInterface::luaPlayerGetNoPongTime);
-	registerMethod("Player", "hasPing", LuaScriptInterface::luaPlayerHasPing);
 
 	registerMethod("Player", "inEffectLowBlow", LuaScriptInterface::luaPlayerInEffectLowBlow);
 	registerMethod("Player", "setEffectLowBlow", LuaScriptInterface::luaPlayerSetEffectLowBlow);
@@ -4639,7 +4666,7 @@ int LuaScriptInterface::luaGameLoadMap(lua_State* L)
 		relativePosition = getPosition(L, 2);
 	}	
 	
-	g_dispatcher.addTask(createTask([path, relativePosition]() {
+	g_dispatcher.addTask(createTaskWithStats([path, relativePosition]() {
 		try {
 			g_game.loadMap(path, relativePosition);
 			
@@ -4650,7 +4677,7 @@ int LuaScriptInterface::luaGameLoadMap(lua_State* L)
 				 << e.what() << std::endl;
 			
 		}
-	}));
+	}, "LuaScriptInterface::luaGameLoadMap", "Loading map from Lua script"));
 	return 0;
 }
 
@@ -7260,7 +7287,7 @@ int LuaScriptInterface::luaItemGetAttribute(lua_State* L)
 
 	if (ItemAttributes::isIntAttrType(attribute)) {
 		if (attribute == ITEM_ATTRIBUTE_DURATION) {
-			lua_pushnumber(L, item->getDuration());
+			lua_pushnumber(L, item->getRemainingDuration());
 			return 1;
 		}
 		lua_pushnumber(L, item->getIntAttr(attribute));
@@ -7752,6 +7779,30 @@ int LuaScriptInterface::luaItemGetDescription(lua_State* L)
 	if (item) {
 		int32_t distance = getNumber<int32_t>(L, 2);
 		pushString(L, item->getDescription(distance));
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int LuaScriptInterface::luaItemGetDuration(lua_State* L)
+{
+	// item:getDuration()
+	Item* item = getUserdata<Item>(L, 1);
+	if (item) {
+		lua_pushnumber(L, item->getDuration());
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int LuaScriptInterface::luaItemGetRemainingDuration(lua_State* L)
+{
+	// item:getRemainingDuration()
+	Item* item = getUserdata<Item>(L, 1);
+	if (item) {
+		lua_pushnumber(L, item->getRemainingDuration());
 	} else {
 		lua_pushnil(L);
 	}
@@ -11811,20 +11862,6 @@ int LuaScriptInterface::luaPlayerGetNoPongTime(lua_State *L) {
 	} else {
 		lua_pushnil(L);
 	}
-	return 1;
-}
-
-int LuaScriptInterface::luaPlayerHasPing(lua_State* L)
-{
-	// hasPing() -> boolean
-	Player* player = getUserdata<Player>(L, 1);
-	if (!player) {
-		lua_pushnil(L);
-		return 1;
-	}
-
-	// Um player tem ping se não perdeu a conexão e tem um client ativo
-	pushBoolean(L, player->client && !player->hasLostConnection());
 	return 1;
 }
 

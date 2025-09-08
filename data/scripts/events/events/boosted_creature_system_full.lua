@@ -1,4 +1,4 @@
--- Evento de inicialização do sistema boosted
+-- Evento de inicializaÃ§Ã£o do sistema boosted
 local BoostCreature = GlobalEvent("BoostCreature")
 function BoostCreature.onStartup()
     if BoostedCreature.db then
@@ -45,7 +45,7 @@ function BoostCreature.onStartup()
 end
 BoostCreature:register()
 
--- Evento Think para mensagens periódicas
+-- Evento Think para mensagens periÃ³dicas
 local BoostCreatureThink = GlobalEvent("BoostCreatureThink")
 function BoostCreatureThink.onThink(...)
     for _, boosted in ipairs(boostCreature) do

@@ -217,6 +217,7 @@ class LuaScriptInterface
 		int32_t loadFile(const std::string& file, Npc* npc = nullptr);
 
 		const std::string& getFileById(int32_t scriptId);
+		const std::string& getFileByIdForStats(int32_t scriptId);
 		int32_t getEvent(const std::string& eventName);
 		int32_t getEvent();
 		int32_t getMetaEvent(const std::string& globalName, const std::string& eventName);
@@ -784,6 +785,9 @@ class LuaScriptInterface
 
 		static int luaItemGetDescription(lua_State* L);
 
+		static int luaItemGetDuration(lua_State* L);
+		static int luaItemGetRemainingDuration(lua_State* L);
+
 		static int luaItemHasProperty(lua_State* L);
 
 		// Container
@@ -1138,8 +1142,7 @@ class LuaScriptInterface
 		static int luaPlayerSendBasicData(lua_State* L);
 
 		static int luaPlayerHasLostConnection(lua_State* L);
-        static int luaPlayerGetNoPongTime(lua_State* L);
-        static int luaPlayerHasPing(lua_State* L);
+		static int luaPlayerGetNoPongTime(lua_State* L);
 
 
 		static int luaPlayerGetIdleTime(lua_State* L);

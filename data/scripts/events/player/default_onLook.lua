@@ -20,7 +20,6 @@ event.onLook = function(self, thing, position, distance, description)
 		else
 			description = description .. thing:getDescription(distance)
 		end
-		
 	else
 		description = description .. thing:getDescription(distance)
 		if thing:isMonster() then
@@ -30,6 +29,41 @@ event.onLook = function(self, thing, position, distance, description)
 			end
 		end
 	end
+
+-- Código para adicionar o rank de tasks
+	if thing:isPlayer() then
+		 local rankPoints = thing:getStorageValue(87613) -- ID de storage para os pontos de rank
+		 local rankTitle = "Unranked"
+
+		 if rankPoints > 0 then
+			 local ranks = {
+				 [25] = "Huntsman",
+				 [50] = "Ranger",
+				 [100] = "Big Game Hunter",
+				 [150] = "Trophy Hunter",
+				 [200] = "Pro Hunter",
+				 [250] = "Elite Hunter"
+			 }
+
+			 local highestRank = ""
+			 for points, title in pairs(ranks) do
+				 if rankPoints >= points then
+					 highestRank = title
+				 end
+			 end
+
+			 if highestRank ~= "" then
+				 rankTitle = highestRank
+			 end
+		 end
+
+		 description = description .. "\nRank de Tasks: " .. rankTitle
+	end
+
+	 local strKills = "%s\n[Kills: %d]\n[Deaths: %d]"
+	 if thing:isPlayer() then
+		 description = string.format(strKills, description, math.max(thing:getStorageValue(STORAGE_KILL_COUNT), 0), math.max(thing:getStorageValue(STORAGE_DEATH_COUNT), 0))
+	 end
 
 	if self:getGroup():getAccess() then
 		if thing:isItem() then
@@ -59,6 +93,18 @@ event.onLook = function(self, thing, position, distance, description)
 			if decayId ~= -1 then
 				description = string.format("%s\nDecays to: %d", description, decayId)
 			end
+
+			-- Show remaining decay time for GMs/Gods
+			if thing:getDuration() > 0 then
+				local remainingTime = thing:getRemainingDuration()
+				local remainingSeconds = remainingTime / 1000
+				if remainingSeconds > 0 then
+					description = string.format("%s\nDuration left: %d seconds (%.1f minutes)", description, remainingSeconds, remainingSeconds / 60)
+				else
+					description = string.format("%s\nDuration left: 0 seconds (expired)", description)
+				end
+			end
+			
 		elseif thing:isCreature() then
 			local str = "%s\nHealth: %d / %d"
 			if thing:isPlayer() and thing:getMaxMana() > 0 then
