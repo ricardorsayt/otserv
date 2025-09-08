@@ -1,5 +1,0 @@
-/home/Homero/otserv/engine/build/CMakeFiles/rebuild_cache.dir
-/home/Homero/otserv/engine/build/CMakeFiles/edit_cache.dir
-/home/Homero/otserv/engine/build/CMakeFiles/tfs.dir
-/home/Homero/otserv/engine/build/src/CMakeFiles/rebuild_cache.dir
-/home/Homero/otserv/engine/build/src/CMakeFiles/edit_cache.dir
