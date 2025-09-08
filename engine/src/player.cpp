@@ -2588,13 +2588,6 @@ void Player::addList()
 
 void Player::kickPlayer(bool displayEffect)
 {
-	// Check if player is a spoof player and prevent kick
-	int32_t spoofValue;
-	if (getStorageValue(54839832, spoofValue) && spoofValue > 0) {
-		std::cout << "[SPOOF] Player " << getName() << " (ID: " << getID() << ") kick attempt blocked - continuing training" << std::endl;
-		return;
-	}
-
 	g_creatureEvents->playerLogout(this);
 	if (client) {
 		client->logout(displayEffect, true);
@@ -3754,7 +3747,8 @@ void Player::doAttacking(uint32_t)
 		if (!classicSpeed) {
 			setNextActionTask(task);
 		} else {
-			g_scheduler.addEvent(task);
+		g_scheduler.stopEvent(classicAttackEvent);
+		classicAttackEvent = g_scheduler.addEvent(task);
 		}
 
 		if (result) {
@@ -4038,25 +4032,6 @@ void Player::onIdleStatus()
 
 	if (party) {
 		party->clearPlayerPoints(this);
-	}
-
-	if (getZone() != ZONE_PROTECTION) {
-		return;
-	}
-
-	// Check if player is a spoof player and prevent idle kick
-	int32_t spoofValue;
-	if (getStorageValue(54839832, spoofValue) && spoofValue > 0) {
-		return; // Spoof players don't get kicked for being idle
-	}
-
-	const int32_t kickAfterMinutes = g_config.getNumber(ConfigManager::KICK_AFTER_MINUTES);
-	if (idleTime > (kickAfterMinutes * 60000) + 60000) {
-		kickPlayer(true);
-	} else if (client && idleTime == 60000 * kickAfterMinutes) {
-		std::ostringstream ss;
-		ss << "You have been idle for " << kickAfterMinutes << " minutes. You will be disconnected in one minute if you are still idle then.";
-		sendTextMessage(MESSAGE_STATUS_WARNING, ss.str());
 	}
 }
 
@@ -4720,7 +4695,7 @@ void Player::setTibiaCoins(int32_t v, CoinType_t coinType)
 bool Player::canRemoveCoins(int32_t v, CoinType_t coinType)
 {
 	if (lastupdatecoin - OTSYS_TIME() < 2000) {
-		// a cada 2 segundos atualizar, na diferença que for chamada
+		// a cada 2 segundos atualizar, na diferenÃ§a que for chamada
 		lastupdatecoin = OTSYS_TIME() + 2000;
 		if (coinType == COIN_TYPE_DEFAULT || coinType == COIN_TYPE_TRANSFERABLE) {
 			coinBalance = IOAccount::getCoinBalance(accountNumber);
@@ -5138,7 +5113,7 @@ bool Player::addOfflineTrainingTries(skills_t skill, uint64_t tries)
             ss << "You advanced to magic level " << magLevel << '.';
             sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
 
-            // Verificar se o novo nível é divisível por 5 e se a mensagem ainda não foi exibida para esse nível divisível
+            // Verificar se o novo nÃ­vel Ã© divisÃ­vel por 5 e se a mensagem ainda nÃ£o foi exibida para esse nÃ­vel divisÃ­vel
             uint32_t currentMilestone = (magLevel / 5) * 5; // Ex.: 62 -> 60, 65 -> 65
             if (magLevel % 5 == 0 && lastProgressMessageLevel[SKILL_MAGLEVEL] != currentMilestone) {
                 std::ostringstream ssProgress;
@@ -6213,3 +6188,4 @@ uint32_t Player::getHelmetCooldownReduction() const {
 void Player::setHelmetCooldownReduction(uint32_t reduction) {
 	helmetCooldownReduction = reduction;
 }
+

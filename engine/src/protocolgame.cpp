@@ -247,14 +247,6 @@ void ProtocolGame::logout(bool displayEffect, bool forced)
 	if (!player) {
 		return;
 	}
-	// Check if player is a spoof player and prevent logout
-	int32_t spoofValue;
-	if (player->getStorageValue(54839832, spoofValue) && spoofValue > 0) {
-		std::cout << "[SPOOF] Player " << player->getName() << " (ID: " << player->getID() << ") attempted logout - blocked (continuing training)" << std::endl;
-		player->sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Spoof player cannot logout - continuing training.");
-		return;
-	}
-
 
 	if (!player->isRemoved()) {
 		if (!forced) {
@@ -560,9 +552,9 @@ void ProtocolGame::parsePacket(NetworkMessage& msg)
 	//a dead player can not perform actions
 	if (!player || player->isRemoved() || player->getHealth() <= 0) {
 		auto this_ptr = getThis();
-		g_dispatcher.addTask(createTask([this_ptr]() {
+		g_dispatcher.addTask(createTaskWithStats([this_ptr]() {
 			this_ptr->stopLiveCast();
-		}));
+		}, "ProtocolGame::parsePacket", "Stop live cast for dead/removed player"));
 		if (recvbyte == 0x0F) {
 			// g_dispatcher.addTask(createTask(std::bind(&ProtocolGame::onRecvFirstMessage, getThis(), msg)));
 			disconnect();

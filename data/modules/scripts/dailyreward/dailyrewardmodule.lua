@@ -218,7 +218,7 @@ function Player:sendDailyRewardHistory(history)
         for i=1, #history do
             local entry = history[i]
             msg:addU32(entry.timestamp)
-            msg:addByte(0) -- toggle green font (talvez seja a recompensa do dia de hoje?) --sÛ 1 permitido
+            msg:addByte(0) -- toggle green font (talvez seja a recompensa do dia de hoje?) --s√≥ 1 permitido
             msg:addString(entry.event)
             msg:addU16(entry.streak)
         end
@@ -268,7 +268,7 @@ function onRecvbyte(player, msg, byte)
                 return player:sendCancelMessage(RETURNVALUE_NOTPOSSIBLE)
             end
 
-            --TODO: verificar se todos os itens selecionados s„o legÌtimos
+            --TODO: verificar se todos os itens selecionados s√£o leg√≠timos
 
             player:receiveReward(usedToken, reward.type, rewardsSelected)
 
