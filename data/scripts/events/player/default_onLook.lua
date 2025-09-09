@@ -30,41 +30,6 @@ event.onLook = function(self, thing, position, distance, description)
 		end
 	end
 
--- Código para adicionar o rank de tasks
-	if thing:isPlayer() then
-		 local rankPoints = thing:getStorageValue(87613) -- ID de storage para os pontos de rank
-		 local rankTitle = "Unranked"
-
-		 if rankPoints > 0 then
-			 local ranks = {
-				 [25] = "Huntsman",
-				 [50] = "Ranger",
-				 [100] = "Big Game Hunter",
-				 [150] = "Trophy Hunter",
-				 [200] = "Pro Hunter",
-				 [250] = "Elite Hunter"
-			 }
-
-			 local highestRank = ""
-			 for points, title in pairs(ranks) do
-				 if rankPoints >= points then
-					 highestRank = title
-				 end
-			 end
-
-			 if highestRank ~= "" then
-				 rankTitle = highestRank
-			 end
-		 end
-
-		 description = description .. "\nRank de Tasks: " .. rankTitle
-	end
-
-	 local strKills = "%s\n[Kills: %d]\n[Deaths: %d]"
-	 if thing:isPlayer() then
-		 description = string.format(strKills, description, math.max(thing:getStorageValue(STORAGE_KILL_COUNT), 0), math.max(thing:getStorageValue(STORAGE_DEATH_COUNT), 0))
-	 end
-
 	if self:getGroup():getAccess() then
 		if thing:isItem() then
 			description = string.format("%s\nItem ID: %d", description, thing:getId())

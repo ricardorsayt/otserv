@@ -615,6 +615,24 @@ class Player final : public Creature, public Cylinder
 		void setLastBestiaryMonster(uint16_t newvalue) {
 			lastBestiaryMonster = newvalue;
 		}
+		uint32_t getKills() const {
+			return kills;
+		}
+		void setKills(uint32_t newKills) {
+			kills = newKills;
+		}
+		void addKill() {
+			++kills;
+		}
+		uint32_t getDeaths() const {
+			return deaths;
+		}
+		void setDeaths(uint32_t newDeaths) {
+			deaths = newDeaths;
+		}
+		void addDeath() {
+			++deaths;
+		}
 
 		Item* getInventoryItem(slots_t slot) const;
 
@@ -1942,7 +1960,9 @@ class Player final : public Creature, public Cylinder
 		int16_t lastDepotId = -1;
 
 		uint8_t soul = 0;
-		uint8_t levelPercent = 0;
+		// Kill/Death system
+		uint32_t kills = 0;
+		uint32_t deaths = 0;		uint8_t levelPercent = 0;
 		uint8_t magLevelPercent = 0;
 
 		PlayerSex_t sex = PLAYERSEX_FEMALE;
