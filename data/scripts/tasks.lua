@@ -18,7 +18,7 @@ local Config = {
   ActiveTasksLimit = 5, -- max 10 or you will have to adjust storage keys
   RecommendedLevelRange = 10, -- when player is within this range (at level 20, 10-20 and 20-30 levels), "Recommended" text will be displayed in tasks list
   -- Intervalo ajustado para 300-3000 kills
-  RequiredKills = {Min = 50, Max = 5000},
+  RequiredKills = {Min = 150, Max = 5000},
   -- B nus a cada 300 kills (10% do m ximo)
   KillsForBonus = 1000,
   -- B nus aumentados significativamente
@@ -290,6 +290,18 @@ Tasks = {
       }
     },
     {
+      RaceName = "Djinns",
+      Level = 35,
+      Monsters = {"blue djinn", "green djinn", "efreet", "marid"},
+      Rewards = {
+        {Type = RewardType.Experience, BaseValue = 80000},
+        {Type = RewardType.Gold, BaseValue = 7000},
+		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 5910, Amount = 10},
+        {Type = RewardType.Item, Id = 5912, Amount = 10}
+      }
+    },
+    {
       RaceName = "Heros",
       Level = 40,
       Monsters = {"hero"},
@@ -338,6 +350,17 @@ Tasks = {
       }
     },
     {
+      RaceName = "Frost dragons",
+      Level = 50,
+      Monsters = {"frost dragon"},
+      Rewards = {
+        {Type = RewardType.Experience, BaseValue = 250000},
+        {Type = RewardType.Gold, BaseValue = 30000},
+		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 2492, Amount = 1}
+      }
+    },
+    {
       RaceName = "Hydra",
       Level = 50,
       Monsters = {"hydra"},
@@ -349,12 +372,25 @@ Tasks = {
         {Type = RewardType.Item, Id = 11199, Amount = 15}
       }
     },
+   {
+      RaceName = "Nightmare",
+      Level = 50,
+      Monsters = {"nightmare", "nightmare scion"},
+      Rewards = {
+        {Type = RewardType.Experience, BaseValue = 250000},
+        {Type = RewardType.Gold, BaseValue = 40000},
+        {Type = RewardType.Item, Id = 2195, Amount = 1},
+		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 6500, Amount = 20}
+      }
+    },
+
     {
       RaceName = "Deeplings",
       Level = 70,
       Monsters = {"deepling elite", "deepling warrior", "deepling guard", "deepling master librarian", "deepling spellsinger", "deepling tyrant"},
       Rewards = {
-        {Type = RewardType.Experience, BaseValue = 280000},
+        {Type = RewardType.Experience, BaseValue = 350000},
         {Type = RewardType.Gold, BaseValue = 30000},
 		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
         {Type = RewardType.Item, Id = 15454, Amount = 1},
@@ -366,11 +402,11 @@ Tasks = {
       Level = 80,
       Monsters = {"warlock"},
       Rewards = {
-        {Type = RewardType.Experience, BaseValue = 500000},
-        {Type = RewardType.Gold, BaseValue = 250000},
-        {Type = RewardType.Item, Id = 5809, Amount = 1},
+        {Type = RewardType.Experience, BaseValue = 400000},
+        {Type = RewardType.Gold, BaseValue = 30000},
+        {Type = RewardType.Item, Id = 2656, Amount = 1},
 		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 15}
+        {Type = RewardType.Item, Id = 5904, Amount = 2}
       }
     },
     {
@@ -378,10 +414,10 @@ Tasks = {
       Level = 80,
       Monsters = {"serpent spawn"},
       Rewards = {
-        {Type = RewardType.Experience, BaseValue = 70000},
-        {Type = RewardType.Gold, BaseValue = 70000},
+        {Type = RewardType.Experience, BaseValue = 400000},
+        {Type = RewardType.Gold, BaseValue = 30000},
 		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 15}
+        {Type = RewardType.Item, Id = 8902, Amount = 1}
       }
     },
     {
@@ -389,11 +425,12 @@ Tasks = {
       Level = 80,
       Monsters = {"behemoth"},
       Rewards = {
-        {Type = RewardType.Experience, BaseValue = 200000},
-        {Type = RewardType.Gold, BaseValue = 180000},
+        {Type = RewardType.Experience, BaseValue = 400000},
+        {Type = RewardType.Gold, BaseValue = 35000},
         {Type = RewardType.Item, Id = 2466, Amount = 1},
 		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 15}
+        {Type = RewardType.Item, Id = 5930, Amount = 5},
+        {Type = RewardType.Item, Id = 5893, Amount = 5}
       }
     },
     {
@@ -403,9 +440,9 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 500000},
         {Type = RewardType.Gold, BaseValue = 70000},
-        {Type = RewardType.Item, Id = 2466, Amount = 1},
+        {Type = RewardType.Item, Id = 7404, Amount = 1},
 		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 15}
+        {Type = RewardType.Item, Id = 5911, Amount = 20}
       }
     },
     {
@@ -414,32 +451,9 @@ Tasks = {
       Monsters = {"demon"},
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 500000},
-        {Type = RewardType.Gold, BaseValue = 1500000},
+        {Type = RewardType.Gold, BaseValue = 200000},
 		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 20}
-      }
-    },
-    {
-      RaceName = "Frost dragons",
-      Level = 80,
-      Monsters = {"frost dragon"},
-      Rewards = {
-        {Type = RewardType.Experience, BaseValue = 250000},
-        {Type = RewardType.Gold, BaseValue = 70000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 15}
-      }
-    },
-		    {
-      RaceName = "Nightmare",
-      Level = 50,
-      Monsters = {"nightmare"},
-      Rewards = {
-        {Type = RewardType.Experience, BaseValue = 250000},
-        {Type = RewardType.Gold, BaseValue = 70000},
-        {Type = RewardType.Item, Id = 2195, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 15}
+        {Type = RewardType.Item, Id = 6068, Amount = 20}
       }
     },
     {
@@ -447,32 +461,32 @@ Tasks = {
       Level = 120,
       Monsters = {"medusa"},
       Rewards = {
-        {Type = RewardType.Experience, BaseValue = 500000},
-        {Type = RewardType.Gold, BaseValue = 100000},
+        {Type = RewardType.Experience, BaseValue = 800000},
+        {Type = RewardType.Gold, BaseValue = 150000},
 		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 20}
+        {Type = RewardType.Item, Id = 11226, Amount = 20}
       }
     },
     {
       RaceName = "Grim Reaper",
-      Level = 160,
+      Level = 150,
       Monsters = {"grim reaper"},
       Rewards = {
-        {Type = RewardType.Experience, BaseValue = 500000},
+        {Type = RewardType.Experience, BaseValue = 800000},
         {Type = RewardType.Gold, BaseValue = 200000},
 		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 20}
+        {Type = RewardType.Item, Id = 8889, Amount = 1}
       }
     },
     {
       RaceName = "Juggernaut",
-      Level = 200,
+      Level = 180,
       Monsters = {"juggernaut"},
       Rewards = {
-        {Type = RewardType.Experience, BaseValue = 500000},
-        {Type = RewardType.Gold, BaseValue = 400000},
+        {Type = RewardType.Experience, BaseValue = 1500000},
+        {Type = RewardType.Gold, BaseValue = 300000},
 		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 30}
+        {Type = RewardType.Item, Id = 2514, Amount = 1}
       }
     },
     {
@@ -480,10 +494,10 @@ Tasks = {
       Level = 200,
       Monsters = {"hellhound"},
       Rewards = {
-        {Type = RewardType.Experience, BaseValue = 500000},
-        {Type = RewardType.Gold, BaseValue = 400000},
+        {Type = RewardType.Experience, BaseValue = 1500000},
+        {Type = RewardType.Gold, BaseValue = 300000},
 		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
-        {Type = RewardType.Item, Id = 7630, Amount = 30}
+        {Type = RewardType.Item, Id = 6553, Amount = 1}
       }
     }
 }
