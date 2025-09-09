@@ -1,5 +1,5 @@
 local json = require("cjson") -- carrega suporte a JSON
-
+-- JSON library is loaded globally from data/lib/core/json.lua
 local RewardType = {
   Points = 1,
   Experience = 2,
@@ -8,7 +8,6 @@ local RewardType = {
   Storage = 5,
   Teleport = 6
 }
-
 local Config = {
   TasksOpCode = 110,
   StoragePoints = 87613,
@@ -18,30 +17,24 @@ local Config = {
   StorageTaskCompletions = 98800, -- 87639 - 87649 reserved (10)
   ActiveTasksLimit = 5, -- max 10 or you will have to adjust storage keys
   RecommendedLevelRange = 10, -- when player is within this range (at level 20, 10-20 and 20-30 levels), "Recommended" text will be displayed in tasks list
-  
   -- Intervalo ajustado para 300-3000 kills
   RequiredKills = {Min = 50, Max = 5000},
-  
-  -- Bônus a cada 300 kills (10% do máximo)
+  -- B nus a cada 300 kills (10% do m ximo)
   KillsForBonus = 1000,
-  
-  -- Bônus aumentados significativamente
+  -- B nus aumentados significativamente
   PointsIncrease = 30,    -- 150% increased rank points per 300 kills above minimum
   ExperienceIncrease = 50, -- 20% increased experience per 300 kills above minimum
   GoldIncrease = 15,       -- 25% increased gold per 300 kills above minimum
-  
-  -- Bônus especial para quem completa 3000 kills
+  -- B nus especial para quem completa 3000 kills
   MaxKillsBonus = {
     Points = 0,       -- +5 pontos adicionais
-    Experience = 0.0, -- +20% da experiência total
+    Experience = 0.0, -- +20% da experi ncia total
     Gold = 0.0        -- +20% do ouro total
   },
-  
   Party = {
     Enabled = true,
     Range = 8
   },
-  
   Ranks = {
     [25] = "Huntsman",
     [50] = "Ranger",
@@ -50,7 +43,6 @@ local Config = {
     [200] = "Pro Hunter",
     [250] = "Elite Hunter"
   },
-  
 Tasks = {
     {
       RaceName = "Rats",
@@ -102,7 +94,6 @@ Tasks = {
 	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
       }
     },
-
     {
       RaceName = "Rotworm",
       Level = 8,
@@ -135,7 +126,6 @@ Tasks = {
         {Type = RewardType.Item, Id = 5902, Amount = 10}
       }
     },
-
     {
       RaceName = "Amazons",
       Level = 10,
@@ -147,7 +137,6 @@ Tasks = {
         {Type = RewardType.Item, Id = 12400, Amount = 10}
       }
     },
-
     {
       RaceName = "Ghouls",
       Level = 15,
@@ -372,7 +361,6 @@ Tasks = {
         {Type = RewardType.Item, Id = 15645, Amount = 1}
       }
     },
-
     {
       RaceName = "Warlock",
       Level = 80,
@@ -500,11 +488,8 @@ Tasks = {
     }
 }
 }
-
 local Cache = {}
-
 local StartupEvent = GlobalEvent("TasksStartUp")
-
 function StartupEvent.onStartup()
   Cache.Ranks = {}
   local ordered = {}
@@ -512,12 +497,10 @@ function StartupEvent.onStartup()
     table.insert(ordered, key)
   end
   table.sort(ordered)
-  
   local to = ordered[1] - 1
   for k = 0, to do
-    Cache.Ranks[k] = Config.Ranks[ordered[1]]
+    Cache.Ranks[k] = "Novice Hunter"
   end
-
   for i = 1, #ordered do
     local from = ordered[i]
     local to = i == #ordered and ordered[i] or ordered[i + 1] - 1
@@ -526,14 +509,12 @@ function StartupEvent.onStartup()
     end
     Cache.LastRank = from
   end
-
   Cache.Tasks = {}
   for id, task in ipairs(Config.Tasks) do
     for _, name in ipairs(task.Monsters) do
-      Cache.Tasks[name] = id
+      Cache.Tasks[string.lower(name)] = id
     end
   end
-  
   for _, task in ipairs(Config.Tasks) do
     if not task.Outfits then
       task.Outfits = {}
@@ -548,18 +529,14 @@ function StartupEvent.onStartup()
     end
   end
 end
-
 local LoginEvent = CreatureEvent("TasksLogin")
-
 function LoginEvent.onLogin(player)
   player:registerEvent("TasksExtended")
   player:registerEvent("TasksKill")
   player:sendTasksData()
   return true
 end
-
 local ExtendedEvent = CreatureEvent("TasksExtended")
-
 function ExtendedEvent.onExtendedOpcode(player, opcode, buffer)
   if opcode == Config.TasksOpCode then
     local status, json_data =
@@ -571,10 +548,8 @@ function ExtendedEvent.onExtendedOpcode(player, opcode, buffer)
     if not status then
       return false
     end
-
     local action = json_data.action
     local data = json_data.data
-
     if action == "start" then
       player:startNewTask(data.taskId, data.kills)
     elseif action == "cancel" then
@@ -583,15 +558,12 @@ function ExtendedEvent.onExtendedOpcode(player, opcode, buffer)
   end
   return true
 end
-
 function Player:openTasksList()
   self:sendExtendedOpcode(Config.TasksOpCode, json.encode({action = "open"}))
 end
-
 function Player:closeTasksList()
   self:sendExtendedOpcode(Config.TasksOpCode, json.encode({action = "close"}))
 end
-
 function Player:sendTasksData()
   -- Send config
   local config = {
@@ -603,7 +575,6 @@ function Player:sendTasksData()
     gold = Config.GoldIncrease
   }
   self:sendExtendedOpcode(Config.TasksOpCode, json.encode({action = "config", data = config}))
-
   -- Send tasks list
   local tasks = {}
   for _, task in ipairs(Config.Tasks) do
@@ -614,7 +585,6 @@ function Player:sendTasksData()
       outfits = task.Outfits,
       rewards = {}
     }
-
     for _, reward in ipairs(task.Rewards) do
       if reward.Type == RewardType.Points or reward.Type == RewardType.Experience or reward.Type == RewardType.Gold then
         table.insert(taskData.rewards, {type = reward.Type, value = reward.BaseValue})
@@ -624,10 +594,8 @@ function Player:sendTasksData()
         table.insert(taskData.rewards, {type = reward.Type, desc = reward.Description})
       end
     end
-
     table.insert(tasks, taskData)
   end
-
   local buffer = json.encode({action = "tasks", data = tasks})
   local s = {}
   for i = 1, #buffer, 8191 do
@@ -642,7 +610,6 @@ function Player:sendTasksData()
     end
     self:sendExtendedOpcode(Config.TasksOpCode, "E" .. s[#s])
   end
-
   -- Send active tasks
   local active = {}
   for slot = 1, Config.ActiveTasksLimit do
@@ -662,13 +629,10 @@ function Player:sendTasksData()
     end
   end
   self:sendExtendedOpcode(Config.TasksOpCode, json.encode({action = "active", data = active}))
-
   self:sendTasksPointsUpdate()
 end
-
 function Player:sendTaskUpdate(taskId)
   local update = {}
-
   local slot = self:getSlotByTaskId(taskId)
   if not slot then
     update.status = 2 -- abandoned
@@ -676,7 +640,6 @@ function Player:sendTaskUpdate(taskId)
   else
     local requiredKills = self:getTaskRequiredKills(slot)
     local kills = self:getTaskKills(slot)
-
     if kills < requiredKills then
       update.status = 1 -- in progress
       update.kills = kills
@@ -687,14 +650,11 @@ function Player:sendTaskUpdate(taskId)
       update.taskId = taskId
     end
   end
-
   self:sendExtendedOpcode(Config.TasksOpCode, json.encode({action = "update", data = update}))
 end
-
 function Player:sendTasksPointsUpdate()
   self:sendExtendedOpcode(Config.TasksOpCode, json.encode({action = "points", data = self:getTasksPoints()}))
 end
-
 function Player:startNewTask(taskId, kills)
   local task = Config.Tasks[taskId]
   if task then
@@ -703,36 +663,27 @@ function Player:startNewTask(taskId, kills)
       self:popupFYI("You can't accept more tasks.")
       return
     end
-
     if self:getSlotByTaskId(taskId) then
       self:popupFYI("You already have this task active.")
       return
     end
-
     -- Verificando quantas vezes a tarefa foi completada
-    local taskCompletionCount = self:getStorageValue(Config.StorageTaskCompletions + taskId)
+    local taskCompletionCount = tonumber(self:getStorageValue(Config.StorageTaskCompletions + taskId)) or 0 -- << corrigido: numeric
     if taskCompletionCount >= 2 then
       self:popupFYI("You have already completed this task twice.")
       return
     end
-
-    -- Atualizar as kills mínimas e máximas
+    -- Atualizar as kills m nimas e m ximas
     kills = tonumber(kills) or Config.RequiredKills.Min
     kills = math.max(kills, Config.RequiredKills.Min)
     kills = math.min(kills, Config.RequiredKills.Max)
-
-    -- Iniciar a tarefa e aumentar o contador de completadas
+    -- Iniciar a tarefa (NÃO incrementar completadas aqui)
     self:setStorageValue(Config.StorageSlot + slot, taskId)
     self:setStorageValue(Config.StorageKillsCurrent + slot, 0)
     self:setStorageValue(Config.StorageKillsSelected + slot, kills)
-
-    -- Incrementa o contador de tarefas completadas
-    self:setStorageValue(Config.StorageTaskCompletions + taskId, (taskCompletionCount or 0) + 1)
-
     self:sendTaskUpdate(taskId)
   end
 end
-
 function Player:cancelTask(taskId)
   local task = Config.Tasks[taskId]
   if task then
@@ -745,14 +696,11 @@ function Player:cancelTask(taskId)
     end
   end
 end
-
 local KillEvent = CreatureEvent("TasksKill")
-
 function KillEvent.onKill(player, target)
   if not target or target:isPlayer() or target:getMaster() then
     return true
   end
-
   local taskId = Cache.Tasks[string.lower(target:getName())]
   if taskId then
     local task = Config.Tasks[taskId]
@@ -761,7 +709,6 @@ function KillEvent.onKill(player, target)
       if party and Config.Party.Enabled then
         local members = party:getMembers()
         table.insert(members, party:getLeader())
-
         local killerPos = player:getPosition()
         for _, member in ipairs(members) do
           if Config.Party.Range > 0 then
@@ -777,28 +724,23 @@ function KillEvent.onKill(player, target)
       end
     end
   end
-
   return true
 end
-
 function Player:taskProcessKill(taskId)
   local slot = self:getSlotByTaskId(taskId)
   if slot then
     self:addTaskKill(slot)
-
     local requiredKills = self:getTaskRequiredKills(slot)
     local kills = self:getTaskKills(slot)
     if kills >= requiredKills then
-      -- Incrementa o contador de completamentos
-      local currentCompletions = self:getStorageValue(Config.StorageKillsCurrent + slot)
-      self:setStorageValue(Config.StorageKillsCurrent + slot, currentCompletions + 1)
+      -- Ao concluir: incrementar completadas por taskId e limpar slot
+      local key = Config.StorageTaskCompletions + taskId -- << corrigido
+      local completed = tonumber(self:getStorageValue(key)) or 0 -- << corrigido
+      self:setStorageValue(key, completed + 1) -- << corrigido
 
-      -- Verifica se o jogador completou 2 vezes a task
-      if currentCompletions >= 2 then
-        self:setStorageValue(Config.StorageSlot + slot, -1)
-        self:setStorageValue(Config.StorageKillsCurrent + slot, -1)
-        self:setStorageValue(Config.StorageKillsSelected + slot, -1)
-      end
+      self:setStorageValue(Config.StorageSlot + slot, -1)
+      self:setStorageValue(Config.StorageKillsCurrent + slot, -1)
+      self:setStorageValue(Config.StorageKillsSelected + slot, -1)
 
       local task = Config.Tasks[taskId]
       for _, reward in ipairs(task.Rewards) do
@@ -809,16 +751,14 @@ function Player:taskProcessKill(taskId)
     self:sendTaskUpdate(taskId)
   end
 end
-
 function Player:addTaskReward(reward, requiredKills)
   local bonus = math.floor((math.max(0, requiredKills - Config.KillsForBonus) / Config.KillsForBonus + 0.5))  -- Corrigido
   local isMaxKills = (requiredKills == Config.RequiredKills.Max)
-  
   if reward.Type == RewardType.Points then
     bonus = bonus * Config.PointsIncrease
     local value = reward.BaseValue + math.floor((reward.BaseValue * bonus / 100) + 0.5)
     
-    -- Bônus adicional por escolher 3000 kills
+    -- B nus adicional por escolher 3000 kills
     if isMaxKills then
       value = value + Config.MaxKillsBonus.Points
     end
@@ -829,12 +769,11 @@ function Player:addTaskReward(reward, requiredKills)
       "[Task Reward] Tasks Points +" .. value .. ", you have now " .. self:getTasksPoints() .. " tasks points." ..
       (isMaxKills and "\n[Bonus] +5 extra points for completing maximum kills!" or "")
     )
-
   elseif reward.Type == RewardType.Experience then
     bonus = bonus * Config.ExperienceIncrease
     local value = reward.BaseValue + math.floor((reward.BaseValue * bonus / 100) + 0.5)
     
-    -- Bônus adicional por escolher 3000 kills
+    -- B nus adicional por escolher 3000 kills
     if isMaxKills then
       value = value + math.floor(reward.BaseValue * Config.MaxKillsBonus.Experience)
     end
@@ -845,12 +784,11 @@ function Player:addTaskReward(reward, requiredKills)
       "[Task Reward] Experience +" .. value .. "." ..
       (isMaxKills and "\n[Bonus] +20% extra experience for completing maximum kills!" or "")
     )
-
   elseif reward.Type == RewardType.Gold then
     bonus = bonus * Config.GoldIncrease
     local value = reward.BaseValue + math.floor((reward.BaseValue * bonus / 100) + 0.5)
     
-    -- Bônus adicional por escolher 3000 kills
+    -- B nus adicional por escolher 3000 kills
     if isMaxKills then
       value = value + math.floor(reward.BaseValue * Config.MaxKillsBonus.Gold)
     end
@@ -861,7 +799,6 @@ function Player:addTaskReward(reward, requiredKills)
       "[Task Reward] " .. value .. " gold added to your bank." ..
       (isMaxKills and "\n[Bonus] +20% extra gold for completing maximum kills!" or "")
     )
-
   elseif reward.Type == RewardType.Item then
     local itemType = ItemType(reward.Id)
     local itemWeight = itemType:getWeight(reward.Amount)
@@ -876,23 +813,19 @@ function Player:addTaskReward(reward, requiredKills)
         "[Task Reward] Low on capacity, sending " .. reward.Amount .. "x " .. itemType:getName() .. " to your Purse."
       )
     end
-
   elseif reward.Type == RewardType.Storage then
     if self:getStorageValue(reward.Key) ~= reward.Value then
       self:setStorageValue(reward.Key, reward.Value)
       self:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, '[Task Reward] You have been granted "' .. reward.Description .. '".')
     end
-
   elseif reward.Type == RewardType.Teleport then
     self:teleportTo(reward.Position)
     self:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, '[Task Reward] You have been teleported to "' .. reward.Description .. '".')
   end
 end
-
 function Player:getTaskIdBySlot(slot)
-  return math.max(0, self:getStorageValue(Config.StorageSlot + slot))
+  return math.max(0, tonumber(self:getStorageValue(Config.StorageSlot + slot)) or 0) -- << robusto
 end
-
 function Player:getSlotByTaskId(taskId)
   for i = 1, Config.ActiveTasksLimit do
     local slotTask = self:getTaskIdBySlot(i)
@@ -900,50 +833,31 @@ function Player:getSlotByTaskId(taskId)
       return i
     end
   end
-
   return nil
 end
-
 function Player:getTaskKills(slot)
-  return math.max(0, self:getStorageValue(Config.StorageKillsCurrent + slot))
+  return math.max(0, tonumber(self:getStorageValue(Config.StorageKillsCurrent + slot)) or 0) -- << robusto
 end
-
 function Player:getTaskRequiredKills(slot)
-  return math.max(0, self:getStorageValue(Config.StorageKillsSelected + slot))
+  return math.max(0, tonumber(self:getStorageValue(Config.StorageKillsSelected + slot)) or 0) -- << robusto
 end
-
 function Player:addTaskKill(slot)
   self:setStorageValue(Config.StorageKillsCurrent + slot, self:getTaskKills(slot) + 1)
 end
-
 function Player:addTasksPoints(points)
   self:setStorageValue(Config.StoragePoints, self:getTasksPoints() + points)
   self:sendTasksPointsUpdate()
 end
-
 function Player:getTasksPoints()
-  return math.max(0, self:getStorageValue(Config.StoragePoints))
+  return math.max(0, tonumber(self:getStorageValue(Config.StoragePoints)) or 0) -- << robusto
 end
-
 function Player:getTasksRank()
   local rank = self:getTasksPoints()
   if rank >= Cache.LastRank then
     return Cache.Ranks[Cache.LastRank]
   end
-
   return Cache.Ranks[rank]
 end
-
-function Player:getFreeTaskSlot()
-  for i = 1, Config.ActiveTasksLimit do
-    if self:getTaskIdBySlot(i) == 0 then
-      return i
-    end
-  end
-
-  return nil
-end
-
 function MonsterType:getOutfitOTC()
   local outfit = self:outfit()
   return {
@@ -957,7 +871,17 @@ function MonsterType:getOutfitOTC()
     mount = outfit.lookMount
   }
 end
-
+local taskRankLook = Event()
+function taskRankLook.onLook(player, thing, position, distance, description)
+    if thing and thing:isPlayer() then
+        local taskPoints = thing:getTasksPoints() -- << usar função consistente
+        local rank = thing:getTasksRank() -- << evitar pairs sem ordem
+        description = description .. string.format("\n[Task Rank: %s] [Points: %d]", rank, taskPoints)
+    end
+    
+    return description
+end
+taskRankLook:register(1)
 LoginEvent:type("login")
 LoginEvent:register()
 ExtendedEvent:type("extendedopcode")
