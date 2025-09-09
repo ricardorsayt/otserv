@@ -18,7 +18,7 @@ local Config = {
   ActiveTasksLimit = 5, -- max 10 or you will have to adjust storage keys
   RecommendedLevelRange = 10, -- when player is within this range (at level 20, 10-20 and 20-30 levels), "Recommended" text will be displayed in tasks list
   -- Intervalo ajustado para 300-3000 kills
-  RequiredKills = {Min = 150, Max = 5000},
+  RequiredKills = {Min = 300, Max = 5000},
   -- B nus a cada 300 kills (10% do m ximo)
   KillsForBonus = 1000,
   -- B nus aumentados significativamente
@@ -51,6 +51,7 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 500},
         {Type = RewardType.Gold, BaseValue = 1000},
+        {Type = RewardType.Item, Id = 24774, Amount = 1},
 	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
       }
     },
@@ -61,6 +62,7 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 1000},
         {Type = RewardType.Gold, BaseValue = 1500},
+        {Type = RewardType.Item, Id = 24774, Amount = 1},
 	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
       }
     },
@@ -71,6 +73,7 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 500},
         {Type = RewardType.Gold, BaseValue = 500},
+        {Type = RewardType.Item, Id = 24774, Amount = 1},
 	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
       }
     },
@@ -81,6 +84,7 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 1000},
         {Type = RewardType.Gold, BaseValue = 1000},
+        {Type = RewardType.Item, Id = 24774, Amount = 1},
 	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
       }
     },
@@ -91,6 +95,7 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 1000},
         {Type = RewardType.Gold, BaseValue = 800},
+        {Type = RewardType.Item, Id = 24774, Amount = 1},
 	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
       }
     },
@@ -101,7 +106,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 10000},
         {Type = RewardType.Gold, BaseValue = 2000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 2},
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
       }
     },
     {
@@ -111,7 +117,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 20000},
         {Type = RewardType.Gold, BaseValue = 10000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 2},
         {Type = RewardType.Item, Id = 2475, Amount = 1}
       }
     },
@@ -122,18 +129,20 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 1000},
         {Type = RewardType.Gold, BaseValue = 5000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 2},
         {Type = RewardType.Item, Id = 5902, Amount = 10}
       }
     },
     {
       RaceName = "Amazons",
-      Level = 10,
+      Level = 15,
       Monsters = {"amazon", "valkyrie"},
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 8000},
         {Type = RewardType.Gold, BaseValue = 2000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 2},
         {Type = RewardType.Item, Id = 12400, Amount = 10}
       }
     },
@@ -144,8 +153,9 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 10000},
         {Type = RewardType.Gold, BaseValue = 3000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
-        {Type = RewardType.Item, Id = 5913, Amount = 10}
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 2}, 
+       {Type = RewardType.Item, Id = 5913, Amount = 10}
       }
     },
     {
@@ -155,8 +165,9 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 10000},
         {Type = RewardType.Gold, BaseValue = 3000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
-        {Type = RewardType.Item, Id = 5880, Amount = 10}
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 2},
+       {Type = RewardType.Item, Id = 5880, Amount = 10}
       }
     },
     {
@@ -167,7 +178,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 10000},
         {Type = RewardType.Gold, BaseValue = 5000},
         {Type = RewardType.Item, Id = 5804, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 2},
         {Type = RewardType.Item, Id = 5878, Amount = 10}
       }
     },
@@ -178,7 +190,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 20000},
         {Type = RewardType.Gold, BaseValue = 5000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 5883, Amount = 10}
       }
     },
@@ -189,7 +202,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 30000},
         {Type = RewardType.Gold, BaseValue = 7000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 5879, Amount = 4}
       }
     },
@@ -200,7 +214,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 40000},
         {Type = RewardType.Gold, BaseValue = 5000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 10574, Amount = 35}
       }
     },
@@ -211,7 +226,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 40000},
         {Type = RewardType.Gold, BaseValue = 5000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 5881, Amount = 10},
         {Type = RewardType.Item, Id = 5876, Amount = 10}
       }
@@ -223,7 +239,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 55000},
         {Type = RewardType.Gold, BaseValue = 4000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 2159, Amount = 10},
         {Type = RewardType.Item, Id = 2150, Amount = 5},
         {Type = RewardType.Item, Id = 2149, Amount = 5}
@@ -236,7 +253,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 65000},
         {Type = RewardType.Gold, BaseValue = 8000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 5905, Amount = 3}
       }
     },
@@ -248,7 +266,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 80000},
         {Type = RewardType.Gold, BaseValue = 10000},
         {Type = RewardType.Item, Id = 2516, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 12413, Amount = 15}
       }
     },
@@ -261,7 +280,8 @@ Tasks = {
         {Type = RewardType.Gold, BaseValue = 10000},
         {Type = RewardType.Item, Id = 8912, Amount = 1},
         {Type = RewardType.Item, Id = 7903, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 10548, Amount = 10}
       }
     },
@@ -273,7 +293,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 100000},
         {Type = RewardType.Gold, BaseValue = 20000},
         {Type = RewardType.Item, Id = 2497, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 5879, Amount = 5}
       }
     },
@@ -285,7 +306,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 100000},
         {Type = RewardType.Gold, BaseValue = 20000},
         {Type = RewardType.Item, Id = 5801, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 5879, Amount = 5}
       }
     },
@@ -296,7 +318,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 80000},
         {Type = RewardType.Gold, BaseValue = 7000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 3},
         {Type = RewardType.Item, Id = 5910, Amount = 10},
         {Type = RewardType.Item, Id = 5912, Amount = 10}
       }
@@ -308,7 +331,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 120000},
         {Type = RewardType.Gold, BaseValue = 25000},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 4},
         {Type = RewardType.Item, Id = 2488, Amount = 1}
       }
     },
@@ -320,7 +344,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 120000},
         {Type = RewardType.Gold, BaseValue = 20000},
         {Type = RewardType.Item, Id = 2414, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 4},
         {Type = RewardType.Item, Id = 5893, Amount = 5}
       }
     },
@@ -332,7 +357,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 120000},
         {Type = RewardType.Gold, BaseValue = 20000},
         {Type = RewardType.Item, Id = 8912, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 5}, -- Adicionado 5 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 4},
         {Type = RewardType.Item, Id = 10584, Amount = 25}
       }
     },
@@ -344,7 +370,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 250000},
         {Type = RewardType.Gold, BaseValue = 30000},
         {Type = RewardType.Item, Id = 2528, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 4},
         {Type = RewardType.Item, Id = 5882, Amount = 15},
         {Type = RewardType.Item, Id = 5948, Amount = 15}
       }
@@ -356,7 +383,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 250000},
         {Type = RewardType.Gold, BaseValue = 30000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 4},
         {Type = RewardType.Item, Id = 2492, Amount = 1}
       }
     },
@@ -368,7 +396,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 250000},
         {Type = RewardType.Gold, BaseValue = 30000},
         {Type = RewardType.Item, Id = 2536, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 4},
         {Type = RewardType.Item, Id = 11199, Amount = 15}
       }
     },
@@ -380,7 +409,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 250000},
         {Type = RewardType.Gold, BaseValue = 40000},
         {Type = RewardType.Item, Id = 2195, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 4},
         {Type = RewardType.Item, Id = 6500, Amount = 20}
       }
     },
@@ -392,7 +422,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 350000},
         {Type = RewardType.Gold, BaseValue = 30000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 5},
         {Type = RewardType.Item, Id = 15454, Amount = 1},
         {Type = RewardType.Item, Id = 15645, Amount = 1}
       }
@@ -405,7 +436,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 400000},
         {Type = RewardType.Gold, BaseValue = 30000},
         {Type = RewardType.Item, Id = 2656, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 5},
         {Type = RewardType.Item, Id = 5904, Amount = 2}
       }
     },
@@ -416,7 +448,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 400000},
         {Type = RewardType.Gold, BaseValue = 30000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 5},
         {Type = RewardType.Item, Id = 8902, Amount = 1}
       }
     },
@@ -428,7 +461,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 400000},
         {Type = RewardType.Gold, BaseValue = 35000},
         {Type = RewardType.Item, Id = 2466, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 5},
         {Type = RewardType.Item, Id = 5930, Amount = 5},
         {Type = RewardType.Item, Id = 5893, Amount = 5}
       }
@@ -441,7 +475,8 @@ Tasks = {
         {Type = RewardType.Experience, BaseValue = 500000},
         {Type = RewardType.Gold, BaseValue = 70000},
         {Type = RewardType.Item, Id = 7404, Amount = 1},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 5},
         {Type = RewardType.Item, Id = 5911, Amount = 20}
       }
     },
@@ -452,7 +487,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 500000},
         {Type = RewardType.Gold, BaseValue = 200000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 5},
         {Type = RewardType.Item, Id = 6068, Amount = 20}
       }
     },
@@ -463,7 +499,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 800000},
         {Type = RewardType.Gold, BaseValue = 150000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 5},
         {Type = RewardType.Item, Id = 11226, Amount = 20}
       }
     },
@@ -474,7 +511,8 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 800000},
         {Type = RewardType.Gold, BaseValue = 200000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 5},
         {Type = RewardType.Item, Id = 8889, Amount = 1}
       }
     },
@@ -485,7 +523,9 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 1500000},
         {Type = RewardType.Gold, BaseValue = 300000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 5},
+        {Type = RewardType.Item, Id = 24774, Amount = 1},
         {Type = RewardType.Item, Id = 2514, Amount = 1}
       }
     },
@@ -496,7 +536,9 @@ Tasks = {
       Rewards = {
         {Type = RewardType.Experience, BaseValue = 1500000},
         {Type = RewardType.Gold, BaseValue = 300000},
-		{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+	{Type = RewardType.Points, BaseValue = 10}, -- Adicionado 10 pontos como recompensa
+        {Type = RewardType.Item, Id = 24774, Amount = 5},
+        {Type = RewardType.Item, Id = 24774, Amount = 1},
         {Type = RewardType.Item, Id = 6553, Amount = 1}
       }
     }
