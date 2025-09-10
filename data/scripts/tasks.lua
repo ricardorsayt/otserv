@@ -883,6 +883,16 @@ function Player:getTaskIdBySlot(slot)
   return math.max(0, tonumber(self:getStorageValue(Config.StorageSlot + slot)) or 0) -- << robusto
 end
 function Player:getSlotByTaskId(taskId)
+function Player:getFreeTaskSlot()
+for i = 1, Config.ActiveTasksLimit do
+if self:getTaskIdBySlot(i) == 0 then
+return i
+end
+end
+return nil
+end
+
+
   for i = 1, Config.ActiveTasksLimit do
     local slotTask = self:getTaskIdBySlot(i)
     if taskId == slotTask then
