@@ -1,0 +1,421 @@
+# GIMUD - Graphical Interface Multi User Dungeon
+
+Name = "Santa Klaus"
+Outfit = (130,19-86-87-95)
+Home = [32340,32206,6]
+Radius = 2
+
+Behaviour = {
+ADDRESS,"hello$",! -> "Welcome %N! The royal Tibians army is looking for brave adventurers to complete tasks for our legion.", SetQuestValue(49999, 1)
+ADDRESS,"hi$",!    -> *
+ADDRESS,"hiho$",!    -> *
+ADDRESS,!          -> Idle
+
+BUSY,"hello$",!    -> "Show some patience please.", Queue
+BUSY,"hi$",!       -> *
+BUSY,"hiho$",!    -> *
+BUSY,!             -> NOP
+VANISH,!           -> "Farewell."
+
+"bye"      -> "Farewell.", Idle
+"farewell" -> *
+
+"job"		-> "I am the conjucator and main leader of The Royal Tibians army. We are looking for adventurers to help our legion."
+"name"		-> "I am called Grizzly Adams. But my real name is Adam."
+"offer"		-> "I have nothing to offer, although, I do have some tasks available and in exchange for completing them, I will reward you nicely."
+"trade"		-> *
+"buy"		-> *
+"sell"		-> *
+
+"task"		-> "These are my available tasks Crocodile, Dwarves, Ghouls, Goblins, Larvas, Minotaurs all Kind, Rotworms, Orcs all Kind, Scarabs, Trolls, Ancient Scarabs, Apes, Cyclops...",
+			   "And Demon Skeleton, Dragon, Dwarf Guard, Fire Elemental, Hero, Lizards, Necromancer, Vampire, Behemoth, Dragon Lord, Demon, Hydra, Serpent Spawn, Warlock, Swamp Troll...",
+			   "And Bug, Hyaena, Frost Troll, Wasp, Stone Golem, Poison Spider, Witch, Skeleton, Elf Scout, Ghost, Scorpion, Cave Rat, Rats, Snake, Lions, Amazon, Tarantula, Beholder...", 
+			   "Crypt Shambler, Black Knight, Mummy, Valkyrie, Giant Spider, Demon Outcast, Grim Reaper, Frozemoth, Solar Dragon,"
+
+"easy tasks"	-> "These are my available tasks Crocodiles, Dwarves, Ghouls, Goblins, Larvas, Minotaurs All Kind, Rotworms, Orcs, Scarabs, Trolls, Swamp Troll, Bug, Hyaena...",
+				   "Frost Troll, Wasp, Poison Spider, Witch, Skeleton, Elf Scout, Ghosts, Scorpions, Cave Rat, Rats, Snakes, Lions, Amazon and Valkyrie"
+			   
+"medium tasks"	-> "These are my available tasks Mummies, Tarantulas, Apes, Cyclops, Demon Skeleton, Dwarf Guard, Fire Elemental, Lizards, Necromancers, Vampire, Stone Golem, Beholder and Crypt Shamblers."
+			   
+"hard tasks"	-> "These are my available tasks Demons, Black Knight, Giant Spider, Ancient Scarab, Hero, Dragon, Dragon Lord, Crystal Spider...",
+				   "Warlock, Hydra, Serpent Spawn, Behemoths, Frozemoths, Demon Outcasts, Grim Reapers, Solar Dragon and Black Dragon."
+# ----------- TASKS -------------
+
+QuestValue(901)>=1,"crocodile" -> "You have already done this task. Ask for a different one."
+"crocodile" -> "If you kill 200 crocodiles for me I will give you 8000 gold coins, accept?", Topic=1, Data=1001
+
+QuestValue(902)>=1,"dwarves" -> "You have already done this task. Ask for a different one."
+"dwarves" -> "If you kill 400 dwarf or dwarf soldiers for me I will give you 5000 gold coins and 45000 experience, accept?", Topic=1, Data=1002
+"dwarves" -> *
+
+QuestValue(903)>=1,"ghoul" -> "You have already done this task. Ask for a different one."
+"ghoul" -> "If you kill 300 ghouls for me I will give you 45000 experience, accept?", Topic=1, Data=1003
+
+QuestValue(904)>=1,"goblin" -> "You have already done this task. Ask for a different one."
+"goblin" -> "If you kill 100 goblins for me I will give you 1000 gold coins and 5000 experience, accept?", Topic=1, Data=1004
+
+QuestValue(905)>=1,"larva" -> "You have already done this task. Ask for a different one."
+"larva" -> "If you kill 150 larvas for me I will give you 2500 gold coins and 20000 experience, accept?", Topic=1, Data=1005
+
+QuestValue(906)>=1,"minotaur" -> "You have already done this task. Ask for a different one."
+"minotaur" -> "If you kill 500 minotaurs of all kind for me I will give you 5000 gold coins and 60000 experience, accept?", Topic=1, Data=1006
+
+QuestValue(907)>=1,"rotworm" -> "You have already done this task. Ask for a different one."
+"rotworm" -> "If you kill 200 rotworms for me I will give you 3000 gold coins and 25000 experience, accept?", Topic=1, Data=1007
+
+QuestValue(908)>=1,"orc" -> "You have already done this task. Ask for a different one."
+"orc" -> "If you kill 300 orcs of all kind for me I will give you 8000 gold coins and 20000 experience, accept?", Topic=1, Data=1008
+
+#QuestValue(909)>=1,"panda" -> "You have already done this task. Ask for a different one."
+#"panda" -> "If you kill 150 pandas for me I will give you 5500 experience and 5000 gold coins, accept?", Topic=1, Data=1009
+
+QuestValue(910)>=1,"scarab" -> "You have already done this task. Ask for a different one."
+"scarab" -> "If you kill 200 scarabs for me I will give you 5000 gold coins and 50000 experience, accept?", Topic=1, Data=1010
+
+QuestValue(911)>=1,"tarantula" -> "You have already done this task. Ask for a different one."
+"tarantula" -> "If you kill 300 tarantulas for me I will give you 5000 gold coins and 90000 experience, accept?", Topic=1, Data=1011
+
+QuestValue(912)>=1,"troll" -> "You have already done this task. Ask for a different one."
+"troll" -> "If you kill 200 trolls for me I will give you 2000 gold coins and 13000 experience, accept?", Topic=1, Data=1012
+
+QuestValue(913)>=1,"ancient","scarab" -> "You have already done this task. Ask for a different one."
+"ancient","scarab" -> "If you kill 300 ancient scarabs for me I will give you 50000 gold coins and 140000, accept?", Topic=1, Data=1013
+
+QuestValue(914)>=1,"ape" -> "You have already done this task. Ask for a different one."
+"ape" -> "If you kill 300 apes for me I will give you 10000 gold coins and 75000 experience, accept?", Topic=1, Data=1014
+
+QuestValue(915)>=1,"black","knight" -> "You have already done this task. Ask for a different one."
+"black","knight" -> "If you kill the black knight 200 times for me I will give you a Dragon Lance and 180000 experience, accept?", Topic=1, Data=1015
+
+QuestValue(916)>=1,"cyclop" -> "You have already done this task. Ask for a different one."
+"cyclop" -> "If you kill 350 cyclops for me I will give you a Naginata and 90000 experience, accept?", Topic=1, Data=1016
+
+QuestValue(917)>=1,"demon","skeleton" -> "You have already done this task. Ask for a different one."
+"demon","skeleton" -> "If you kill 200 demon skeletons for me I will give you 12000 gold coins and 80000 experience, accept?", Topic=1, Data=1017
+
+QuestValue(918)>=1,"dragon" -> "You have already done this task. Ask for a different one."
+"dragon" -> "If you kill 600 dragons for me I will give you 30000 gold coins and 145000 experience, accept?", Topic=1, Data=1018
+
+QuestValue(919)>=1,"dwarf","guard" -> "You have already done this task. Ask for a different one."
+"dwarf","guard" -> "If you kill 300 dwarf guards for me I will give you 15000 gold coins, accept?", Topic=1, Data=1019
+
+QuestValue(920)>=1,"fire","elemental" -> "You have already done this task. Ask for a different one."
+"fire","elemental" -> "If you kill 70 fire elementals for me I will give you 5000 gold coins, accept?", Topic=1, Data=1020
+
+QuestValue(921)>=1,"giant","spider" -> "You have already done this task. Ask for a different one."
+"giant","spider" -> "If you kill 400 giant spiders for me I will give you Knight Legs and 140000 experience, accept?", Topic=1, Data=1021
+
+QuestValue(922)>=1,"hero" -> "You have already done this task. Ask for a different one."
+"hero" -> "If you kill 350 heroes for me I will give you Crown Legs and 165000 experience, accept?", Topic=1, Data=1022
+
+QuestValue(923)>=1,"lizard" -> "You have already done this task. Ask for a different one."
+"lizard" -> "If you kill 500 lizards for me I will give you 15000 gold coins and 50000 experience, accept?", Topic=1, Data=1023
+
+QuestValue(924)>=1,"necromancer" -> "You have already done this task. Ask for a different one."
+"necromancer" -> "If you kill 350 necromancers for me I will give you Boots of Haste and 120000 experience, accept?", Topic=1, Data=1024
+
+#QuestValue(925)>=1,"terror","bird" -> "You have already done this task. Ask for a different one."
+#"terror","bird" -> "If you kill 150 terror birds for me I will give you 80000 experience and 10000 gold coins, accept?", Topic=1, Data=1025
+
+QuestValue(926)>=1,"vampire" -> "You have already done this task. Ask for a different one."
+"vampire" -> "If you kill 300 vampires for me I will give you Vampire Shield and 98000 experience, accept?", Topic=1, Data=1026
+
+QuestValue(927)>=1,"behemoth" -> "You have already done this task. Ask for a different one."
+"behemoth" -> "If you kill 400 behemoths for me I will give you Giant Sword and 550000 experience and a warmaster outfit, accept?", Topic=1, Data=1027
+
+QuestValue(928)>=1,"dragon","lord" -> "You have already done this task. Ask for a different one."
+"dragon","lord" -> "If you kill 500 dragon lords for me I will give you Royal Helmet and 360000 experience, accept?", Topic=1, Data=1028
+
+QuestValue(929)>=1,"demon" -> "You have already done this task. Ask for a different one."
+"demon" -> "If you kill 666 demons for me I will give you a pair of demon legs and 1000000 experience, accept?", Topic=1, Data=1029
+
+QuestValue(930)>=1,"hydra" -> "You have already done this task. Ask for a different one."
+"hydra" -> "If you kill 500 hydras for me I will give you 40000 gold coins and 250000, accept?", Topic=1, Data=1030
+
+QuestValue(931)>=1,"serpent","spawn" -> "You have already done this task. Ask for a different one."
+"serpent","spawn" -> "If you kill 500 serpent spawns for me I will give you 30000 gold coins and 350000, accept?", Topic=1, Data=1031
+
+QuestValue(932)>=1,"warlock" -> "You have already done this task. Ask for a different one."
+"warlock" -> "If you kill 350 warlocks for me I will give you Golden Armor and 450000 experience, accept?", Topic=1, Data=1032
+
+QuestValue(933)>=1,"swamp","troll" -> "You have already done this task. Ask for a different one."
+"swamp","troll" -> "If you kill 200 swamp trolls for me I will give you 2500 gold coins and 11000 experience.", Topic=1, Data=1033
+
+QuestValue(934)>=1,"bug" -> "You have already done this task. Ask for a different one."
+"bug" -> "If you kill 50 bug for me I will give you 1500 gold coins and 5000 experience.", Topic=1, Data=1034
+
+QuestValue(935)>=1,"hyaena" -> "You have already done this task. Ask for a different one."
+"hyaena" -> "If you kill 80 hyaenas for me I will give you 3000 gold coins.", Topic=1, Data=1035
+
+QuestValue(936)>=1,"frost","troll" -> "You have already done this task. Ask for a different one."
+"frost","troll" -> "If you kill 200 frost trolls for me I will give you 2000 gold coins and 13000 experience.", Topic=1, Data=1036
+
+QuestValue(937)>=1,"wasp" -> "You have already done this task. Ask for a different one."
+"wasp" -> "If you kill 120 wasps for me I will give you 2500 gold coins and 15000 experience.", Topic=1, Data=1037
+
+QuestValue(938)>=1,"stone","golem" -> "You have already done this task. Ask for a different one."
+"stone","golem" -> "If you kill 80 stone golems for me I will give you 5000 gold coins.", Topic=1, Data=1038
+
+QuestValue(939)>=1,"poison","spider" -> "You have already done this task. Ask for a different one."
+"poison","spider" -> "If you kill 80 poison spiders for me I will give you 3000 gold coins.", Topic=1, Data=1039
+
+QuestValue(940)>=1,"witch" -> "You have already done this task. Ask for a different one."
+"witch" -> "If you kill 50 witches for me I will give you 5000 gold coins.", Topic=1, Data=1040
+
+QuestValue(941)>=1,"skeleton" -> "You have already done this task. Ask for a different one."
+"skeleton" -> "If you kill 200 skeletons for me I will give you 2500 gold coins and 22000 experience.", Topic=1, Data=1041
+
+QuestValue(942)>=1,"elf","scout" -> "You have already done this task. Ask for a different one."
+"elf","scout" -> "If you kill 200 elf scouts for me I will give you 5000 gold coins and 40000 experience.", Topic=1, Data=1042
+
+QuestValue(943)>=1,"ghost" -> "You have already done this task. Ask for a different one."
+"ghost" -> "If you kill 150 ghosts for me I will give you 10000 gold coins and 15000 experience.", Topic=1, Data=1043
+
+QuestValue(944)>=1,"scorpion" -> "You have already done this task. Ask for a different one."
+"scorpion" -> "If you kill 80 scorpions for me I will give you 2500 gold coin and 10000 experience.", Topic=1, Data=1044
+
+QuestValue(945)>=1,"cave","rat" -> "You have already done this task. Ask for a different one."
+"cave","rat" -> "If you kill 50 cave rats for me I will give you 2000 gold coin and 7000 experience.", Topic=1, Data=1045
+
+QuestValue(946)>=1,"snake" -> "You have already done this task. Ask for a different one."
+"snake" -> "If you kill 100 snakes for me I will give you 1500 gold coin and 5000 experience.", Topic=1, Data=1046
+
+QuestValue(947)>=1,"lion" -> "You have already done this task. Ask for a different one."
+"lion" -> "If you kill 80 lions for me I will give you 4000 gold coin.", Topic=1, Data=1047
+
+QuestValue(948)>=1,"amazon" -> "You have already done this task. Ask for a different one."
+"amazon" -> "If you kill 150 amazons for me I will give you 5000 gold coin and 35000 experience.", Topic=1, Data=1048
+
+QuestValue(949)>=1,"valky" -> "You have already done this task. Ask for a different one."
+"valky" -> "If you kill 150 valkyries for me I will give you 8000 gold coin and 22000 experience.", Topic=1, Data=1049
+
+QuestValue(951)>=1,"beholder" -> "You have already done this task. Ask for a different one."
+"beholder" -> "If you kill 100 Beholders for me I will give you beholder shield and 35000 experience.", Topic=1, Data=1051
+
+QuestValue(952)>=1,"crypt","sham" -> "You have already done this task. Ask for a different one."
+"crypt","sham" -> "If you kill 200 Crypt Shamblers for me I will give you 4000 gold coins and 55000 experience.", Topic=1, Data=1052
+
+QuestValue(953)>=1,"mumm" -> "You have already done this task. Ask for a different one."
+"mumm" -> "If you kill 200 Mummies for me I will give you 60000 experience and 5000 gold coins.", Topic=1, Data=1053
+
+QuestValue(954)>=1,"rat" -> "You have already done this task. Ask for a different one."
+"rat" -> "If you kill 80 rats for me I will give you 1000 gold coins and 5000 experience.", Topic=1, Data=1054
+
+QuestValue(955)>=1,"frozemoth" -> "You have already done this task. Ask for a different one."
+"frozemoth" -> "If you kill 350 frozemoths for me I will give you 100000 gold coins and 300000 experience.", Topic=1, Data=1055
+
+QuestValue(956)>=1,"demon","outcast" -> "You have already done this task. Ask for a different one."
+"demon","outcast" -> "If you kill 400 demon outcast for me I will give you 100000 gold coins, a magic plate armor and 350000 experience.", Topic=1, Data=1056
+
+QuestValue(957)>=1,"grim","reaper" -> "You have already done this task. Ask for a different one."
+"grim","reaper" -> "If you kill 500 grim reapers for me I will give you 250000 gold coins and 600000 experience.", Topic=1, Data=1057
+
+QuestValue(958)>=1,"solar","dragon" -> "You have already done this task. Ask for a different one."
+"solar","dragon" -> "If you kill 500 solar dragons for me I will give you 150000 gold coins, a dragon scale mail and 400000 experience.", Topic=1, Data=1058
+
+QuestValue(959)>=1,"black","dragon" -> "You have already done this task. Ask for a different one."
+"black","dragon" -> "If you kill 450 black dragons for me I will give you 200000 gold coins, a steel boots and 550000 experience.", Topic=1, Data=1059
+
+
+
+# --------- TASK ACCEPTING ENVIRONMENT ------------
+Topic=1,"yes",QuestValue(999)>=1,!,! -> "You have already been assigned to a task."
+Topic=1,"yes",QuestValue(Data)>0 -> "It seems to me that you have already been assigned to this task."
+Topic=1,"yes",QuestValue(Data)=0 -> "Deal! Come talk to me again when you are done and ask me about your 'reward'. You can say '!tasks' to check on your current task progress.",
+									SetQuestValue(999,QuestValue(999)+1), SetQuestValue(Data,1), SetQuestValue(Data+50000,1), EffectOpp(11)
+Topic=1 -> "I didn't say it would be easy. Ask me again when you feel prepared."
+
+# --------- CANCEL TASK -----------
+
+"cancel",QuestValue(999)>=1 -> "Are you sure you want to cancel your currently active task?", Topic=2
+"cancel" -> "You are not in a task."
+Topic=2,"yes" -> "Okay. I have disposed your assigned task.", SetQuestValue(999,QuestValue(999)-1), SetQuestValue(1001,0)
+, SetQuestValue(1002,0), SetQuestValue(1003,0), SetQuestValue(1004,0), SetQuestValue(1005,0), SetQuestValue(1006,0), SetQuestValue(1007,0), SetQuestValue(1008,0), SetQuestValue(1009,0)
+, SetQuestValue(1010,0), SetQuestValue(1011,0), SetQuestValue(1012,0), SetQuestValue(1013,0), SetQuestValue(1014,0), SetQuestValue(1015,0), SetQuestValue(1016,0), SetQuestValue(1017,0)
+, SetQuestValue(1018,0), SetQuestValue(1019,0), SetQuestValue(1020,0), SetQuestValue(1021,0), SetQuestValue(1022,0), SetQuestValue(1023,0), SetQuestValue(1024,0), SetQuestValue(1025,0)
+, SetQuestValue(1026,0), SetQuestValue(1027,0), SetQuestValue(1028,0), SetQuestValue(1029,0), SetQuestValue(1030,0), SetQuestValue(1031,0), SetQuestValue(1032,0), SetQuestValue(1033,0)
+, SetQuestValue(1034,0), SetQuestValue(1035,0), SetQuestValue(1036,0), SetQuestValue(1037,0), SetQuestValue(1038,0), SetQuestValue(1039,0), SetQuestValue(1040,0), SetQuestValue(1041,0)
+, SetQuestValue(1042,0), SetQuestValue(1043,0), SetQuestValue(1044,0), SetQuestValue(1045,0), SetQuestValue(1046,0), SetQuestValue(1047,0), SetQuestValue(1048,0), SetQuestValue(1049,0)
+, SetQuestValue(1050,0), SetQuestValue(1051,0), SetQuestValue(1052,0), SetQuestValue(1053,0), SetQuestValue(1054,0), SetQuestValue(1055,0), SetQuestValue(1056,0), SetQuestValue(1057,0)
+, SetQuestValue(1058,0), SetQuestValue(1059,0), SetQuestValue(1060,0)
+
+Topic=2 -> "Some other time then."
+
+# --------- TASK REWARD ENVIRONMENT -----------
+
+"reward",QuestValue(1001)>=200 -> "Thank you! Here's your reward.", Price=8000, CreateMoney, SetQuestValue(999, 0), SetQuestValue(1001, 0), SetQuestValue(901, QuestValue(901)+1)
+"reward",QuestValue(1001)>=1,QuestValue(1001)<200 -> "You have to kill 200 crocodiles. Come back later.", Idle
+
+"reward",QuestValue(1002)>=400 -> "Thank you! Here's your reward.", Price=5000, CreateMoney, Amount=45000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1002, 0), SetQuestValue(902, QuestValue(902)+1)
+"reward",QuestValue(1002)>=1,QuestValue(1002)<400 -> "You have to kill 400 dwarves. Come back later.", Idle
+
+"reward",QuestValue(1003)>=300 -> "Thank you! Here's your reward.", Amount=1, Create(3052), Amount=45000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1003, 0), SetQuestValue(903, QuestValue(903)+1)
+"reward",QuestValue(1003)>=1,QuestValue(1003)<300 -> "You have to kill 300 ghouls. Come back later.", Idle
+
+"reward",QuestValue(1004)>=100 -> "Thank you! Here's your reward.", Price=1000, CreateMoney, Amount=5000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1004, 0), SetQuestValue(904, QuestValue(904)+1)
+"reward",QuestValue(1004)>=1,QuestValue(1004)<100 -> "You have to kill 100 goblins. Come back later.", Idle
+
+"reward",QuestValue(1005)>=150 -> "Thank you! Here's your reward.", Price=2500, CreateMoney, Amount=20000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1005, 0), SetQuestValue(905, QuestValue(905)+1)
+"reward",QuestValue(1005)>=1,QuestValue(1005)<150 -> "You have to kill 150 larvas. Come back later.", Idle
+
+"reward",QuestValue(1006)>=500 -> "Thank you! Here's your reward.", Price=5000, CreateMoney, Amount=60000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1006, 0), SetQuestValue(906, QuestValue(906)+1)
+"reward",QuestValue(1006)>=1,QuestValue(1006)<500 -> "You have to kill 500 minotaurs of all kinds. Come back later.", Idle
+
+"reward",QuestValue(1007)>=200 -> "Thank you! Here's your reward.", Price=3000, CreateMoney, Amount=25000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1007, 0), SetQuestValue(907, QuestValue(907)+1)
+"reward",QuestValue(1007)>=1,QuestValue(1007)<200 -> "You have to kill 200 rotworms. Come back later.", Idle
+
+"reward",QuestValue(1008)>=300 -> "Thank you! Here's your reward.", Price=8000, CreateMoney, Amount=20000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1008, 0), SetQuestValue(908, QuestValue(908)+1)
+"reward",QuestValue(1008)>=1,QuestValue(1008)<300 -> "You have to kill 300 orcs. Come back later.", Idle
+
+#"reward",QuestValue(1009)>=150 -> "Thank you! Here's your reward.", Amount=5500, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1009, 0), SetQuestValue(909, QuestValue(909)+1)
+#"reward",QuestValue(1009)>=1,QuestValue(1009)<150 -> "You have to kill 150 pandas. Come back later.", Idle
+
+"reward",QuestValue(1010)>=200 -> "Thank you! Here's your reward.", Price=5000, CreateMoney, Amount=50000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1010, 0), SetQuestValue(910, QuestValue(910)+1)
+"reward",QuestValue(1010)>=1,QuestValue(1010)<200 -> "You have to kill 200 scarabs. Come back later.", Idle
+
+"reward",QuestValue(1011)>=300 -> "Thank you! Here's your reward.", Price=5000, CreateMoney, Amount=90000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1011, 0), SetQuestValue(911, QuestValue(911)+1)
+"reward",QuestValue(1011)>=1,QuestValue(1011)<300 -> "You have to kill 300 tarantulas. Come back later.", Idle
+
+"reward",QuestValue(1012)>=200 -> "Thank you! Here's your reward.", Price=2000, CreateMoney, Amount=13000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1012, 0), SetQuestValue(912, QuestValue(912)+1)
+"reward",QuestValue(1012)>=1,QuestValue(1012)<200 -> "You have to kill 200 trolls. Come back later.", Idle
+
+"reward",QuestValue(1013)>=300 -> "Thank you! Here's your reward.", Price=50000, CreateMoney, Amount=140000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1013, 0), SetQuestValue(913, QuestValue(913)+1)
+"reward",QuestValue(1013)>=1,QuestValue(1013)<300 -> "You have to kill 300 ancient scarabs. Come back later.", Idle
+
+"reward",QuestValue(1014)>=300 -> "Thank you! Here's your reward.", Price=10000, CreateMoney, Amount=75000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1014, 0), SetQuestValue(914, QuestValue(914)+1)
+"reward",QuestValue(1014)>=1,QuestValue(1014)<300 -> "You have to kill 300 apes. Come back later.", Idle
+
+"reward",QuestValue(1015)>=200 -> "Thank you! Here's your reward.", Amount=1, Create(3302), Amount=180000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1015, 0), SetQuestValue(915, QuestValue(915)+1)
+"reward",QuestValue(1015)>=1,QuestValue(1015)<200 -> "You have to kill 200 black knights. Come back later.", Idle
+
+"reward",QuestValue(1016)>=350 -> "Thank you! Here's your reward.", Amount=1, Create(3314), Amount=90000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1016, 0), SetQuestValue(916, QuestValue(916)+1)
+"reward",QuestValue(1016)>=1,QuestValue(1016)<350 -> "You have to kill 350 cyclops. Come back later.", Idle
+
+"reward",QuestValue(1017)>=200 -> "Thank you! Here's your reward.", Price=12000, CreateMoney, Amount=80000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1017, 0), SetQuestValue(917, QuestValue(917)+1)
+"reward",QuestValue(1017)>=1,QuestValue(1017)<200 -> "You have to kill 200 demon skeleton. Come back later.", Idle
+
+"reward",QuestValue(1018)>=600 -> "Thank you! Here's your reward.", Price=30000, CreateMoney, Amount=145000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1018, 0), SetQuestValue(918, QuestValue(918)+1)
+"reward",QuestValue(1018)>=1,QuestValue(1018)<600 -> "You have to kill 600 dragons. Come back later.", Idle
+
+"reward",QuestValue(1019)>=300 -> "Thank you! Here's your reward.", Price=15000, CreateMoney, SetQuestValue(999, 0), SetQuestValue(1019, 0), SetQuestValue(919, QuestValue(919)+1)
+"reward",QuestValue(1019)>=1,QuestValue(1019)<300 -> "You have to kill 300 dwarf guards. Come back later.", Idle
+
+"reward",QuestValue(1020)>=70 -> "Thank you! Here's your reward.",  Price=5000, CreateMoney, SetQuestValue(999, 0), SetQuestValue(1020, 0), SetQuestValue(920, QuestValue(920)+1)
+"reward",QuestValue(1020)>=1,QuestValue(1020)<70 -> "You have to kill 70 fire elementals. Come back later.", Idle
+
+"reward",QuestValue(1021)>=400 -> "Thank you! Here's your reward.", Amount=1, Create(3371), Amount=140000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1021, 0), SetQuestValue(921, QuestValue(921)+1)
+"reward",QuestValue(1021)>=1,QuestValue(1021)<400 -> "You have to kill 400 giant spiders. Come back later.", Idle
+
+"reward",QuestValue(1022)>=350 -> "Thank you! Here's your reward.", Amount=1, Create(3382), Amount=165000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1022, 0), SetQuestValue(922, QuestValue(922)+1)
+"reward",QuestValue(1022)>=1,QuestValue(1022)<350 -> "You have to kill 350 heroes. Come back later.", Idle
+
+"reward",QuestValue(1023)>=500 -> "Thank you! Here's your reward.", Price=15000, CreateMoney, Amount=50000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1023, 0), SetQuestValue(923, QuestValue(923)+1)
+"reward",QuestValue(1023)>=1,QuestValue(1023)<500 -> "You have to kill 500 lizards. Come back later.", Idle
+
+"reward",QuestValue(1024)>=350 -> "Thank you! Here's your reward.", Amount=1, Create(3079), Amount=120000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1024, 0), SetQuestValue(924, QuestValue(924)+1)
+"reward",QuestValue(1024)>=1,QuestValue(1024)<350 -> "You have to kill 350 necromancers. Come back later.", Idle
+
+#"reward",QuestValue(1025)>=150 -> "Thank you! Here's your reward.", Amount=80000, Price=10000, Experience(Amount), CreateMoney, SetQuestValue(999, 0), SetQuestValue(1025, 0), SetQuestValue(925, QuestValue(925)+1)
+#"reward",QuestValue(1025)>=1,QuestValue(1025)<150 -> "You have to kill 150 terror birds. Come back later.", Idle
+
+"reward",QuestValue(1026)>=300 -> "Thank you! Here's your reward.", Amount=1, Create(3434), Amount=98000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1026, 0), SetQuestValue(926, QuestValue(926)+1)
+"reward",QuestValue(1026)>=1,QuestValue(1026)<300 -> "You have to kill 300 vampires. Come back later.", Idle
+
+"reward",QuestValue(1027)>=400 -> "Thank you! Here's your reward.", Amount=550000, Experience(Amount), Amount=1, Create(3281), SetQuestValue(999, 0), SetQuestValue(1027, 0), SetQuestValue(927, QuestValue(927)+1)
+"reward",QuestValue(1027)>=1,QuestValue(1027)<400 -> "You have to kill 400 behemoths. Come back later.", Idle
+
+"reward",QuestValue(1028)>=500 -> "Thank you! Here's your reward.", Amount=1, Create(3392), Amount=360000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1028, 0), SetQuestValue(928, QuestValue(928)+1)
+"reward",QuestValue(1028)>=1,QuestValue(1028)<500 -> "You have to kill 500 dragon lords. Come back later.", Idle
+
+"reward",QuestValue(1029)>=666 -> "Thank you! Here's your reward.", Amount=1, Create(3389), Amount=1000000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1029, 0), SetQuestValue(929, QuestValue(929)+1)
+"reward",QuestValue(1029)>=1,QuestValue(1029)<666 -> "You have to kill 666 demons. Come back later.", Idle
+
+"reward",QuestValue(1030)>=500 -> "Thank you! Here's your reward.", Price=40000, CreateMoney, Amount=250000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1030, 0), SetQuestValue(930, QuestValue(930)+1)
+"reward",QuestValue(1030)>=1,QuestValue(1030)<500 -> "You have to kill 500 hydras. Come back later.", Idle
+
+"reward",QuestValue(1031)>=500 -> "Thank you! Here's your reward.", Price=30000, CreateMoney, Amount=350000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1031, 0), SetQuestValue(931, QuestValue(931)+1)
+"reward",QuestValue(1031)>=1,QuestValue(1031)<500 -> "You have to kill 500 serpent spawns. Come back later.", Idle
+
+"reward",QuestValue(1032)>=350 -> "Thank you! Here's your reward.", Amount=1, Create(3360), Amount=450000, Experience(Amount), Amount=1, Create(6170), SetQuestValue(999, 0), SetQuestValue(1032, 0), SetQuestValue(932, QuestValue(932)+1)
+"reward",QuestValue(1032)>=1,QuestValue(1032)<350 -> "You have to kill 350 warlocks. Come back later.", Idle
+
+"reward",QuestValue(1033)>=200 -> "Thank you! Here's your reward.", Price=2500, CreateMoney, Amount=11000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1033, 0), SetQuestValue(933, QuestValue(933)+1)
+"reward",QuestValue(1033)>=1,QuestValue(1033)<200 -> "You have to kill 200 swamp trolls. Come back later.", Idle
+
+"reward",QuestValue(1034)>=50 -> "Thank you! Here's your reward.", Price=1500, CreateMoney, Amount=5000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1034, 0), SetQuestValue(934, QuestValue(934)+1)
+"reward",QuestValue(1034)>=1,QuestValue(1034)<50 -> "You have to kill 50 bugs. Come back later.", Idle
+
+"reward",QuestValue(1035)>=80 -> "Thank you! Here's your reward.",  Price=3000, CreateMoney, SetQuestValue(999, 0), SetQuestValue(1035, 0), SetQuestValue(935, QuestValue(935)+1)
+"reward",QuestValue(1035)>=1,QuestValue(1035)<80 -> "You have to kill 80 hyaena. Come back later.", Idle
+
+"reward",QuestValue(1036)>=200 -> "Thank you! Here's your reward.", Price=2000, CreateMoney, Amount=13000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1036, 0), SetQuestValue(936, QuestValue(936)+1)
+"reward",QuestValue(1036)>=1,QuestValue(1036)<200 -> "You have to kill 200 frost trolls. Come back later.", Idle
+
+"reward",QuestValue(1037)>=120 -> "Thank you! Here's your reward.", Price=2500, CreateMoney, Amount=15000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1037, 0), SetQuestValue(937, QuestValue(937)+1)
+"reward",QuestValue(1037)>=1,QuestValue(1037)<120 -> "You have to kill 120 wasps. Come back later.", Idle
+
+"reward",QuestValue(1038)>=80 -> "Thank you! Here's your reward.", Price=5000, CreateMoney, SetQuestValue(999, 0), SetQuestValue(1038, 0), SetQuestValue(938, QuestValue(938)+1)
+"reward",QuestValue(1038)>=1,QuestValue(1038)<80 -> "You have to kill 80 stone golems. Come back later.", Idle
+
+"reward",QuestValue(1039)>=80 -> "Thank you! Here's your reward.", Price=3000, CreateMoney, SetQuestValue(999, 0), SetQuestValue(1039, 0), SetQuestValue(939, QuestValue(939)+1)
+"reward",QuestValue(1039)>=1,QuestValue(1039)<80 -> "You have to kill 80 poison spider. Come back later.", Idle
+
+"reward",QuestValue(1040)>=50 -> "Thank you! Here's your reward.", Price=5000, CreateMoney, SetQuestValue(999, 0), SetQuestValue(1040, 0), SetQuestValue(940, QuestValue(940)+1)
+"reward",QuestValue(1040)>=1,QuestValue(1040)<50 -> "You have to kill 50 witches. Come back later.", Idle
+
+"reward",QuestValue(1041)>=200 -> "Thank you! Here's your reward.", Price=2500, CreateMoney, Amount=22000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1041, 0), SetQuestValue(941, QuestValue(941)+1)
+"reward",QuestValue(1041)>=1,QuestValue(1041)<200 -> "You have to kill 200 skeletons. Come back later.", Idle
+
+"reward",QuestValue(1042)>=200 -> "Thank you! Here's your reward.", Price=5000, CreateMoney, Amount=40000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1042, 0), SetQuestValue(942, QuestValue(942)+1)
+"reward",QuestValue(1042)>=1,QuestValue(1042)<200 -> "You have to kill 200 elf scouts. Come back later.", Idle
+
+"reward",QuestValue(1043)>=150 -> "Thank you! Here's your reward.", Price=10000, CreateMoney, Amount=15000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1043, 0), SetQuestValue(943, QuestValue(943)+1)
+"reward",QuestValue(1043)>=1,QuestValue(1043)<150 -> "You have to kill 150 ghosts. Come back later.", Idle
+
+"reward",QuestValue(1044)>=80 -> "Thank you! Here's your reward.", Price=2500, CreateMoney, Amount=10000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1044, 0), SetQuestValue(944, QuestValue(944)+1)
+"reward",QuestValue(1044)>=1,QuestValue(1044)<80 -> "You have to kill 80 scorpions. Come back later.", Idle
+
+"reward",QuestValue(1045)>=50 -> "Thank you! Here's your reward.", Price=2000, CreateMoney, Amount=7000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1045, 0), SetQuestValue(945, QuestValue(945)+1)
+"reward",QuestValue(1045)>=1,QuestValue(1045)<50 -> "You have to kill 50 cave rats. Come back later.", Idle
+
+"reward",QuestValue(1046)>=100 -> "Thank you! Here's your reward.", Price=1500, CreateMoney, Amount=5000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1046, 0), SetQuestValue(946, QuestValue(946)+1)
+"reward",QuestValue(1046)>=1,QuestValue(1046)<100 -> "You have to kill 100 snakes. Come back later.", Idle
+
+"reward",QuestValue(1047)>=80 -> "Thank you! Here's your reward.", Price=4000, CreateMoney, SetQuestValue(999, 0), SetQuestValue(1047, 0), SetQuestValue(947, QuestValue(947)+1)
+"reward",QuestValue(1047)>=1,QuestValue(1047)<80 -> "You have to kill 80 lions. Come back later.", Idle
+
+"reward",QuestValue(1048)>=150 -> "Thank you! Here's your reward.", Price=5000, CreateMoney, Amount=35000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1048, 0), SetQuestValue(948, QuestValue(948)+1)
+"reward",QuestValue(1048)>=1,QuestValue(1048)<150 -> "You have to kill 150 amazons. Come back later.", Idle
+
+"reward",QuestValue(1049)>=150 -> "Thank you! Here's your reward.", Price=8000, CreateMoney, Amount=22000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1049, 0), SetQuestValue(949, QuestValue(949)+1)
+"reward",QuestValue(1049)>=1,QuestValue(1049)<150 -> "You have to kill 150 valkyries. Come back later.", Idle
+
+"reward",QuestValue(1051)>=100 -> "Thank you! Here's your reward.", Amount=1, Create(3418), Amount=35000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1051, 0), SetQuestValue(951, QuestValue(951)+1)
+"reward",QuestValue(1051)>=1,QuestValue(1051)<100 -> "You have to kill 100 Beholders. Come back later.", Idle
+
+"reward",QuestValue(1052)>=200 -> "Thank you! Here's your reward.", Price=4000, CreateMoney, Amount=55000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1052, 0), SetQuestValue(952, QuestValue(952)+1)
+"reward",QuestValue(1052)>=1,QuestValue(1052)<200 -> "You have to kill 200 Crypt Shamblers. Come back later.", Idle
+
+"reward",QuestValue(1053)>=200 -> "Thank you! Here's your reward.", Price=5000, CreateMoney, Amount=60000, Experience(Amount), Amount=1, Create(3043), SetQuestValue(999, 0), SetQuestValue(1053, 0), SetQuestValue(953, QuestValue(953)+1)
+"reward",QuestValue(1053)>=1,QuestValue(1053)<200 -> "You have to kill 200 mummies. Come back later.", Idle
+
+"reward",QuestValue(1054)>=80 -> "Thank you! Here's your reward.", Price=1000, CreateMoney, Amount=5000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1054, 0), SetQuestValue(954, QuestValue(954)+1)
+"reward",QuestValue(1054)>=1,QuestValue(1054)<80 -> "You have to kill 80 rats. Come back later.", Idle
+
+"reward",QuestValue(1055)>=350 -> "Thank you! Here's your reward.", Price=100000, CreateMoney, Amount=300000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1055, 0), SetQuestValue(955, QuestValue(955)+1)
+"reward",QuestValue(1055)>=1,QuestValue(1055)<350 -> "You have to kill 350 frozemoths. Come back later.", Idle
+
+"reward",QuestValue(1056)>=400 -> "Thank you! Here's your reward.", Price=100000, CreateMoney, Amount=350000, Experience(Amount), Amount=1, Create(3366), SetQuestValue(999, 0), SetQuestValue(1056, 0), SetQuestValue(956, QuestValue(956)+1)
+"reward",QuestValue(1056)>=1,QuestValue(1056)<400 -> "You have to kill 400 demon outcasts. Come back later.", Idle
+
+"reward",QuestValue(1057)>=500 -> "Thank you! Here's your reward.", Price=250000, CreateMoney, Amount=600000, Experience(Amount), SetQuestValue(999, 0), SetQuestValue(1057, 0), SetQuestValue(957, QuestValue(957)+1)
+"reward",QuestValue(1057)>=1,QuestValue(1057)<500 -> "You have to kill 500 grim reapers. Come back later.", Idle
+
+"reward",QuestValue(1058)>=500 -> "Thank you! Here's your reward.", Price=150000, CreateMoney, Amount=400000, Experience(Amount), Amount=1, Create(3386), SetQuestValue(999, 0), SetQuestValue(1058, 0), SetQuestValue(958, QuestValue(958)+1)
+"reward",QuestValue(1058)>=1,QuestValue(1058)<500 -> "You have to kill 500 solar dragons. Come back later.", Idle
+
+"reward",QuestValue(1059)>=450 -> "Thank you! Here's your reward.", Price=200000, CreateMoney, Amount=550000, Experience(Amount), Amount=1, Create(3554), SetQuestValue(999, 0), SetQuestValue(1059, 0), SetQuestValue(959, QuestValue(959)+1)
+"reward",QuestValue(1059)>=1,QuestValue(1059)<450 -> "You have to kill 450 black dragons. Come back later.", Idle
+
+"reward" 				-> "Yes, I am offering stupendous rewards for those who are willing to fulfill a few tasks for me."
+}

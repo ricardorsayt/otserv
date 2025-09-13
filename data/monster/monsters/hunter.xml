@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<monster name="Hunter" nameDescription="a hunter" race="blood" experience="150" speed="65" manacost="530">
+	<health now="150" max="150" />
+	<look type="129" head="95" body="116" legs="120" feet="115" corpse="3058" />
+	<targetchange chance="50" />
+	<targetstrategy nearest="100" weakest="0" mostdamage="0" random="0" />
+	<bestiary id="62" class="human" prowess="250" expertise="600" mastery="1200" difficulty="2" occurrence="2"/>
+	<flags>
+		<flag canpushcreatures="false" />
+		<flag canpushitems="true" />
+		<flag convinceable="true" />
+		<flag hostile="true" />
+		<flag illusionable="true" />
+		<flag pushable="false" />
+		<flag summonable="false" />
+		<flag runonhealth="10" />
+		<flag targetdistance="4" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1200" skillnextlevel="100" skilladdcount="1" skill="18" attack="13" />
+		<attack name="physical" delay="2" min="-50" max="-100" range="7">
+			<attribute key="shooteffect" value="arrow" />
+		</attack>
+	</attacks>
+	<defenses defense="10" armor="8" />
+	<immunities />
+	<elements />
+	<voices>
+		<voice sentence="Guess who we are hunting, hahaha!" yell="0" />
+	</voices>
+	<loot>
+		<item id="2050" countmax="1" chance="5000" />
+		<item id="2147" countmax="1" chance="200" />
+		<item id="2690" countmax="2" chance="11000" />
+		<item id="2675" countmax="2" chance="20000" />
+		<item id="2649" countmax="1" chance="14000" />
+		<item id="2461" countmax="1" chance="10000" />
+		<item id="2201" countmax="1" chance="3000" />
+		<item id="2546" countmax="3" chance="5000" />
+		<item id="2460" countmax="1" chance="5000" />
+		<item id="2465" countmax="1" chance="5000" />
+		<item id="2456" countmax="1" chance="30000" />
+		<item id="2544" countmax="12" chance="40000" />
+		<item id="2544" countmax="10" chance="70000" />
+		<item id="5090" countmax="1" chance="90" />
+	</loot>
+</monster>

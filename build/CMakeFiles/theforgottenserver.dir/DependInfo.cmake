@@ -1,0 +1,118 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/Homero/Ravenor/src/actions.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/actions.cpp.o"
+  "/home/Homero/Ravenor/src/auras.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/auras.cpp.o"
+  "/home/Homero/Ravenor/src/ban.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/ban.cpp.o"
+  "/home/Homero/Ravenor/src/baseevents.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o"
+  "/home/Homero/Ravenor/src/battlepass.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o"
+  "/home/Homero/Ravenor/src/bed.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/bed.cpp.o"
+  "/home/Homero/Ravenor/src/chat.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/chat.cpp.o"
+  "/home/Homero/Ravenor/src/combat.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/combat.cpp.o"
+  "/home/Homero/Ravenor/src/condition.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/condition.cpp.o"
+  "/home/Homero/Ravenor/src/configmanager.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o"
+  "/home/Homero/Ravenor/src/connection.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/connection.cpp.o"
+  "/home/Homero/Ravenor/src/container.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/container.cpp.o"
+  "/home/Homero/Ravenor/src/creature.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/creature.cpp.o"
+  "/home/Homero/Ravenor/src/creatureevent.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o"
+  "/home/Homero/Ravenor/src/cylinder.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o"
+  "/home/Homero/Ravenor/src/database.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/database.cpp.o"
+  "/home/Homero/Ravenor/src/databasemanager.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o"
+  "/home/Homero/Ravenor/src/databasetasks.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o"
+  "/home/Homero/Ravenor/src/depotlocker.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o"
+  "/home/Homero/Ravenor/src/events.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/events.cpp.o"
+  "/home/Homero/Ravenor/src/fileloader.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o"
+  "/home/Homero/Ravenor/src/game.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/game.cpp.o"
+  "/home/Homero/Ravenor/src/globalevent.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o"
+  "/home/Homero/Ravenor/src/groups.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/groups.cpp.o"
+  "/home/Homero/Ravenor/src/guild.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/guild.cpp.o"
+  "/home/Homero/Ravenor/src/house.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/house.cpp.o"
+  "/home/Homero/Ravenor/src/housetile.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o"
+  "/home/Homero/Ravenor/src/ioguild.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o"
+  "/home/Homero/Ravenor/src/iologindata.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o"
+  "/home/Homero/Ravenor/src/iomap.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o"
+  "/home/Homero/Ravenor/src/iomapserialize.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o"
+  "/home/Homero/Ravenor/src/item.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/item.cpp.o"
+  "/home/Homero/Ravenor/src/items.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/items.cpp.o"
+  "/home/Homero/Ravenor/src/logger.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/logger.cpp.o"
+  "/home/Homero/Ravenor/src/luascript.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o"
+  "/home/Homero/Ravenor/src/mailbox.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o"
+  "/home/Homero/Ravenor/src/map.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/map.cpp.o"
+  "/home/Homero/Ravenor/src/monster.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/monster.cpp.o"
+  "/home/Homero/Ravenor/src/monsters.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o"
+  "/home/Homero/Ravenor/src/movement.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/movement.cpp.o"
+  "/home/Homero/Ravenor/src/n.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/n.cpp.o"
+  "/home/Homero/Ravenor/src/networkmessage.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o"
+  "/home/Homero/Ravenor/src/npc.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/npc.cpp.o"
+  "/home/Homero/Ravenor/src/npcbehavior.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o"
+  "/home/Homero/Ravenor/src/otpch.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o"
+  "/home/Homero/Ravenor/src/otserv.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o"
+  "/home/Homero/Ravenor/src/outfit.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o"
+  "/home/Homero/Ravenor/src/outputmessage.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o"
+  "/home/Homero/Ravenor/src/party.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/party.cpp.o"
+  "/home/Homero/Ravenor/src/player.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/player.cpp.o"
+  "/home/Homero/Ravenor/src/position.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/position.cpp.o"
+  "/home/Homero/Ravenor/src/protocol.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o"
+  "/home/Homero/Ravenor/src/protocolgame.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o"
+  "/home/Homero/Ravenor/src/protocollogin.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o"
+  "/home/Homero/Ravenor/src/protocolstatus.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o"
+  "/home/Homero/Ravenor/src/raids.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/raids.cpp.o"
+  "/home/Homero/Ravenor/src/rsa.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o"
+  "/home/Homero/Ravenor/src/scheduler.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o"
+  "/home/Homero/Ravenor/src/script.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/script.cpp.o"
+  "/home/Homero/Ravenor/src/scriptmanager.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o"
+  "/home/Homero/Ravenor/src/scriptreader.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o"
+  "/home/Homero/Ravenor/src/server.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/server.cpp.o"
+  "/home/Homero/Ravenor/src/shaders.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o"
+  "/home/Homero/Ravenor/src/signals.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/signals.cpp.o"
+  "/home/Homero/Ravenor/src/spawn.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o"
+  "/home/Homero/Ravenor/src/spells.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/spells.cpp.o"
+  "/home/Homero/Ravenor/src/stats.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/stats.cpp.o"
+  "/home/Homero/Ravenor/src/storeinbox.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o"
+  "/home/Homero/Ravenor/src/talkaction.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o"
+  "/home/Homero/Ravenor/src/tasks.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o"
+  "/home/Homero/Ravenor/src/teleport.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o"
+  "/home/Homero/Ravenor/src/thing.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/thing.cpp.o"
+  "/home/Homero/Ravenor/src/tile.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/tile.cpp.o"
+  "/home/Homero/Ravenor/src/tools.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/tools.cpp.o"
+  "/home/Homero/Ravenor/src/trashholder.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o"
+  "/home/Homero/Ravenor/src/vocation.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o"
+  "/home/Homero/Ravenor/src/weapons.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o"
+  "/home/Homero/Ravenor/src/wildcardtree.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o"
+  "/home/Homero/Ravenor/src/wings.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/wings.cpp.o"
+  "/home/Homero/Ravenor/src/xtea.cpp" "/home/Homero/Ravenor/build/CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "BOOST_ALL_NO_LIB"
+  "BOOST_FILESYSTEM_DYN_LINK"
+  "BOOST_IOSTREAMS_DYN_LINK"
+  "BOOST_SYSTEM_DYN_LINK"
+  "FMT_LOCALE"
+  "FMT_SHARED"
+  "SPDLOG_COMPILED_LIB"
+  "SPDLOG_FMT_EXTERNAL"
+  "SPDLOG_SHARED_LIB"
+  "_GLIBCXX_USE_CXX11_ABI=1"
+  )
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/crypto++"
+  "/usr/include/lua5.3"
+  "/usr/include/mysql"
+  "/usr/include/pugixml"
+  "../src"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

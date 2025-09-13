@@ -1,0 +1,6 @@
+"pack"                -> "I can offer empty furniture package."
+"empty", "package"        -> Type=5162, Amount=1, Price=100, "You want to buy a empty furniture package for %P gold?", Topic=81
+
+Topic=81,"yes",CountMoney>=Price -> "Here you are.", DeleteMoney, Create(Type)
+Topic=81,"yes"                           -> "Come back, when you have enough money."
+Topic=81                                 -> "Hmm, but I'm sure, it will be needed to pack your special furniture."

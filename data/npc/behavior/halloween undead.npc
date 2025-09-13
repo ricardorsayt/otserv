@@ -1,0 +1,44 @@
+Behavior = {
+ADDRESS,"hello$",! -> "I'm the moooost intimate entity of Halloween energy. Hoooow can I help you %N?"
+ADDRESS,"hi$",!    -> *
+ADDRESS,!          -> Idle
+BUSY,"hello$",!    -> "Wait %N., little soul...", Queue
+BUSY,"hi$",!       -> *
+BUSY,!             -> NOP
+VANISH,!           -> "Negligible..."
+
+"bye",male         -> "See you soon... HAHA", Idle
+"farewell",male    -> *
+"bye",female       -> "See you soon... HAHA", Idle
+"farewell",female  -> *
+"how","are","you" -> "Muuuuch to do, little soul..."
+"job"             -> "I'm the local tanner. I buy fresh animal corpses, tan them, and convert them into fine leather clothes ...","I'm only selling to major customers. But I'm buying fresh corpses of rats, rabbits and wolves from you."
+"name"            -> "You wouldn't understaaaand the pronunciation of my name, little soul"
+
+"undead"           -> "I say hi to them..."
+
+"pumpkin","head"               -> Type=5128, Amount=1, Price=25000,    "Do you want to buy a pumpkin head for %P halloween coin?", Topic=1
+"pumpkin","backpack"               -> Type=5124, Amount=1, Price=5000,    "Do you want to buy a pumpkin backpack for %P halloween coin?", Topic=1
+"halloween","ticket"               -> Type=5126, Amount=1, Price=50000,    "Do you want to buy a haloween ticket for %P halloween coin?", Topic=1
+"halloween","backpack"               -> Type=5125, Amount=1, Price=10000,    "Do you want to buy a haloween backpack for %P halloween coin?", Topic=1
+
+%1,1<%1,"pumpkin","head"               -> Type=5128, Amount=%1, Price=25000*%1,    "Do you want to buy %A pumpkin heads for %P halloween coin?", Topic=1
+%1,1<%1,"pumpkin","backpack"               -> Type=5124, Amount=%1, Price=5000*%1,    "Do you want to buy %A pumpkin backpacks for %P halloween coin?", Topic=1
+%1,1<%1,"halloween","ticket"               -> Type=5126, Amount=%1, Price=50000*%1,    "Do you want to buy %A haloween tickets for %P halloween coin?", Topic=1
+%1,1<%1,"halloween","backpack"               -> Type=5125, Amount=%1, Price=10000*%1,    "Do you want to buy %A haloween backpacks for %P halloween coin?", Topic=1
+
+"sell","pumpkin","head"               -> Type=5127, Amount=1, Price=1500,   "Do you want to sell a pumpkin head for %P halloween coin?", Topic=2
+
+"sell",%1,1<%1,"pumpkin","head"               -> Type=5127, Amount=%1, Price=1500*%1,   "Do you want to sell %A pumpkin heads for %P halloween coin?", Topic=2
+
+Topic=1,"yes",CountMoney>=Price -> "Nice... Here it is.", DeleteMoney, Create(Type)
+Topic=1,"yes"                   -> "Hm, you do not have halloween coin for me..."
+Topic=1                         -> "Maybe one day you will be able to have..."
+
+Topic=2,"yes",Count(Type)>=Amount -> "Ok. Here is your halloween coins.", Delete(Type), CreateMoney
+Topic=2,"yes"                             -> "You do not have one."
+Topic=2,"yes",Amount>1                    -> "You do not have so many."
+Topic=2                                   -> "Do not waste my time..."
+
+
+}

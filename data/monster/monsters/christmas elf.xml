@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<monster name="Helper Elf" nameDescription="an helper elf" race="blood" experience="42" speed="55" manacost="320" script="christmas elf.lua">
+	<health now="99200" max="99200" />
+	<look type="62" head="0" body="0" legs="0" feet="0" corpse="2945" />
+	<targetchange chance="0" />
+	<targetstrategy nearest="100" weakest="0" mostdamage="0" random="0" />
+	<flags>
+		<flag hostile="1" />
+		<flag attackable="0" />
+		<flag summonable="0" />
+		<flag illusionable="0" />
+		<flag pushable="1" />
+		<flag convinceable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1500" skillnextlevel="100" skilladdcount="1" skill="20" attack="12" />
+		<attack name="physical" delay="20" min="-15" max="-35" range="7">
+			<attribute key="shooteffect" value="arrow" />
+		</attack>
+	</attacks>
+	<defenses armor="6" defense="12">
+	</defenses>
+	<immunities>
+		<immunity fire="0" />
+		<immunity energy="0" />
+		<immunity poison="0" />
+		<immunity physical="0" />
+		<immunity outfit="0" />
+		<immunity lifedrain="0" />
+		<immunity paralyze="0" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices>
+		<voice sentence="We need to help Mr. Klaus" />
+		<voice sentence="Happy Christmas!" />
+	</voices>
+</monster>

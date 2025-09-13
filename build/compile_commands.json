@@ -1,0 +1,482 @@
+[
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/actions.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/actions.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/actions.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/actions.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/auras.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/auras.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/auras.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/auras.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/ban.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/ban.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/ban.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/ban.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/baseevents.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/baseevents.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/battlepass.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/battlepass.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/bed.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/bed.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/bed.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/bed.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/chat.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/chat.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/chat.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/chat.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/combat.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/combat.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/combat.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/combat.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/condition.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/condition.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/condition.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/condition.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/configmanager.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/configmanager.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/connection.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/connection.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/connection.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/connection.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/container.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/container.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/container.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/container.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/creature.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/creature.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/creature.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/creature.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/creatureevent.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/creatureevent.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/cylinder.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/cylinder.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/database.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/database.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/database.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/database.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/databasemanager.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/databasemanager.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/databasetasks.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/databasetasks.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/depotlocker.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/depotlocker.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/events.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/events.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/events.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/events.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/fileloader.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/fileloader.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/game.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/game.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/game.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/game.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/globalevent.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/globalevent.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/groups.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/groups.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/groups.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/groups.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/guild.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/guild.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/guild.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/guild.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/house.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/house.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/house.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/house.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/housetile.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/housetile.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/ioguild.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/ioguild.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/iologindata.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/iologindata.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/iomap.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/iomap.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/iomapserialize.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/iomapserialize.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/item.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/item.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/item.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/item.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/items.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/items.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/items.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/items.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/logger.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/logger.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/logger.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/logger.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/luascript.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/luascript.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/mailbox.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/mailbox.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/map.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/map.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/map.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/map.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/monster.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/monster.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/monster.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/monster.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/monsters.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/monsters.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/movement.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/movement.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/movement.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/movement.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/n.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/n.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/n.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/n.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/networkmessage.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/networkmessage.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/npc.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/npc.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/npc.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/npc.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/npcbehavior.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/npcbehavior.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/otpch.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/otpch.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/otserv.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/otserv.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/outfit.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/outfit.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/outputmessage.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/outputmessage.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/party.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/party.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/party.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/party.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/player.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/player.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/player.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/player.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/position.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/position.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/position.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/position.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/protocol.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/protocol.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/protocolgame.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/protocolgame.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/protocollogin.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/protocollogin.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/protocolstatus.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/protocolstatus.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/raids.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/raids.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/raids.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/raids.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/rsa.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/rsa.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/scheduler.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/scheduler.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/script.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/script.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/script.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/script.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/scriptmanager.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/scriptmanager.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/scriptreader.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/scriptreader.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/server.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/server.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/server.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/server.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/shaders.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/shaders.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/signals.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/signals.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/signals.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/signals.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/spawn.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/spawn.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/spells.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/spells.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/spells.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/spells.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/stats.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/stats.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/stats.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/stats.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/storeinbox.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/storeinbox.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/talkaction.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/talkaction.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/tasks.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/tasks.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/teleport.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/teleport.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/thing.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/thing.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/thing.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/thing.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/tile.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/tile.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/tile.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/tile.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/tools.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/tools.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/tools.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/tools.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/trashholder.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/trashholder.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/vocation.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/vocation.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/weapons.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/weapons.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/wildcardtree.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/wildcardtree.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/wings.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/wings.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/wings.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/wings.cpp.o"
+},
+{
+  "directory": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -D_GLIBCXX_USE_CXX11_ABI=1 -I/usr/include/crypto++ -I/usr/include/lua5.3 -I/usr/include/mysql -I/usr/include/pugixml -I/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src -g -std=gnu++20 -o CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o -c /home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/xtea.cpp",
+  "file": "/home/rickson/Documentos/GitHub/TVP-Ravenor-Server/src/xtea.cpp",
+  "output": "CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o"
+}
+]

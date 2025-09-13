@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<monster name="Barbarian Headsplitter" nameDescription="a barbarian headsplitter" race="blood" experience="300" speed="80" manacost="0">
+	<health now="450" max="450" />
+	<look type="163" head="0" body="0" legs="0" feet="0" corpse="3058" />
+	<targetchange chance="0" />
+	<targetstrategy nearest="100" weakest="0" mostdamage="0" random="0" />
+	<bestiary id="9" class="humanoid" prowess="250" expertise="600" mastery="1200" difficulty="2" occurrence="2"/>
+	<flags>
+		<flag canpushcreatures="false" />
+		<flag canpushitems="true" />
+		<flag convinceable="false" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag pushable="false" />
+		<flag summonable="false" />
+		<flag runonhealth="0" />
+		<flag targetdistance="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1500" skillnextlevel="100" skilladdcount="1" skill="60" attack="55" />
+		<attack name="physical" delay="7" min="-28" max="-42" range="7">
+			<attribute key="shooteffect" value="spear" />
+		</attack>
+	</attacks>
+	<defenses defense="40" armor="25" />
+	<immunities>
+		<immunity fire="true" />
+		<immunity ice="true" />
+	</immunities>
+	<elements />
+	<voices>
+		<voice sentence="I will regain my honor with your blood!" yell="0" />
+		<voice sentence="Surrender is not option!" yell="0" />
+		<voice sentence="Its you or me!" yell="1" />
+		<voice sentence="Die! Die! Die!" yell="0" />
+	</voices>
+	<loot>
+		<item id="2380" countmax="1" chance="60000" /><!-- hand axe -->
+		<item id="2381" countmax="1" chance="1500" /><!-- halberd -->
+		<item id="2229" countmax="2" chance="8000" /><!-- skull -->
+		<item id="2388" countmax="1" chance="75000" /><!-- hatchet -->
+		<item id="2171" countmax="1" chance="550" /><!-- platinum amulet -->
+		<item id="2050" countmax="1" chance="30000" /><!-- torch -->
+		<item id="2148" countmax="39" chance="38000" /><!-- gold coin -->
+		<item id="2148" countmax="100" chance="52000" /><!-- gold coin -->
+		<item id="2148" countmax="84" chance="35000" /><!-- gold coin -->
+		<item id="2460" countmax="1" chance="8000" /><!-- brass helmet -->
+		<item id="2554" countmax="1" chance="2500" /><!-- shovel -->
+		<item id="2509" countmax="1" chance="10000" /><!-- steel shield -->
+		<item id="2468" countmax="1" chance="10000" /><!-- studded legs -->
+		<item id="2641" countmax="1" chance="200" /><!-- patched boots -->
+		<item id="2430" countmax="1" chance="600" /><!-- hand axe -->
+	</loot>
+</monster>

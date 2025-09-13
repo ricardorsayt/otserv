@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	<globalevent type="startup" name="ServerStartup" script="startup.lua" />
+	<globalevent type="record" name="PlayerRecord" script="record.lua" />
+	<globalevent type="housetransferitems" name="PlayerTransferItems" script="leavehouse.lua" />
+	<!--
+	<globalevent name="timer_example" time="12:00:00" script="my_script.lua" />
+	-->
+	
+	<!-- EMAC Anti-Cheat -->
+	<globalevent type="startup" name="emac_startup" script="emac_anti_cheat/startup.lua" />
+	
+</globalevents>

@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movements>
+	<!-- Campfires -->
+	<movevent event="StepIn" itemid="1423" function="onStepInField" />
+	<movevent event="AddItem" itemid="1423" function="onAddField" />
+	<movevent event="StepIn" itemid="1424" function="onStepInField" />
+	<movevent event="AddItem" itemid="1424" function="onAddField" />
+	<movevent event="StepIn" itemid="1425" function="onStepInField" />
+	<movevent event="AddItem" itemid="1425" function="onAddField" />
+
+	<!-- Fields -->
+	<movevent event="StepIn" itemid="1487" function="onStepInField" />
+	<movevent event="AddItem" itemid="1487" function="onAddField" />
+	<movevent event="StepIn" itemid="1488" function="onStepInField" />
+	<movevent event="AddItem" itemid="1488" function="onAddField" />
+	<movevent event="StepIn" itemid="1489" function="onStepInField" />
+	<movevent event="AddItem" itemid="1489" function="onAddField" />
+	<movevent event="StepIn" itemid="1490" function="onStepInField" />
+	<movevent event="AddItem" itemid="1490" function="onAddField" />
+	<movevent event="StepIn" itemid="1491" function="onStepInField" />
+	<movevent event="AddItem" itemid="1491" function="onAddField" />
+	<movevent event="StepIn" itemid="1492" function="onStepInField" />
+	<movevent event="AddItem" itemid="1492" function="onAddField" />
+	<movevent event="StepIn" itemid="1493" function="onStepInField" />
+	<movevent event="AddItem" itemid="1493" function="onAddField" />
+	<movevent event="StepIn" itemid="1494" function="onStepInField" />
+	<movevent event="AddItem" itemid="1494" function="onAddField" />
+	<movevent event="StepIn" itemid="1495" function="onStepInField" />
+	<movevent event="AddItem" itemid="1495" function="onAddField" />
+	<movevent event="StepIn" itemid="1496" function="onStepInField" />
+	<movevent event="AddItem" itemid="1496" function="onAddField" />
+	<movevent event="StepIn" itemid="1500" function="onStepInField" />
+	<movevent event="AddItem" itemid="1500" function="onAddField" />
+	<movevent event="StepIn" itemid="1501" function="onStepInField" />
+	<movevent event="AddItem" itemid="1501" function="onAddField" />
+	<movevent event="StepIn" itemid="1502" function="onStepInField" />
+	<movevent event="AddItem" itemid="1502" function="onAddField" />
+	<movevent event="StepIn" itemid="1503" function="onStepInField" />
+	<movevent event="AddItem" itemid="1503" function="onAddField" />
+	<movevent event="StepIn" itemid="1504" function="onStepInField" />
+	<movevent event="AddItem" itemid="1504" function="onAddField" />
+	<movevent event="StepIn" itemid="1505" function="onStepInField" />
+	<movevent event="AddItem" itemid="1505" function="onAddField" />
+	
+	<!-- Boots -->
+	<movevent event="Equip" itemid="2195" slot="feet" function="onEquipItem" /> <!-- Boots of Haste -->
+	<movevent event="DeEquip" itemid="2195" slot="feet" function="onDeEquipItem" /> <!-- Boots of Haste -->
+	<movevent event="Equip" itemid="5549" slot="feet" function="onEquipItem" /> <!-- Ravenor boots -->
+	<movevent event="DeEquip" itemid="5549" slot="feet" function="onDeEquipItem" /> <!-- Ravenor boots-->
+	<movevent event="Equip" itemid="2640" slot="feet" function="onEquipItem" /> <!-- Soft Boots -->
+	<movevent event="DeEquip" itemid="2640" slot="feet" function="onDeEquipItem" /> <!-- Soft Boots -->
+	<movevent event="Equip" itemid="2641" slot="feet" function="onEquipItem" /> <!-- Patched Boots -->
+	<movevent event="DeEquip" itemid="2641" slot="feet" function="onDeEquipItem" /> <!-- Patched Boots -->
+	<movevent event="Equip" itemid="2642" slot="feet" function="onEquipItem" /> <!-- Sandals -->
+	<movevent event="DeEquip" itemid="2642" slot="feet" function="onDeEquipItem" /> <!-- Sandals -->
+	<movevent event="Equip" itemid="2643" slot="feet" function="onEquipItem" /> <!-- Leather Boots -->
+	<movevent event="DeEquip" itemid="2643" slot="feet" function="onDeEquipItem" /> <!-- Leather Boots -->
+	<movevent event="Equip" itemid="2644" slot="feet" function="onEquipItem" /> <!-- Bunnyslippers -->
+	<movevent event="DeEquip" itemid="2644" slot="feet" function="onDeEquipItem" /> <!-- Bunnyslippers -->
+	<movevent event="Equip" itemid="2645" slot="feet" function="onEquipItem" /> <!-- Steel Boots -->
+	<movevent event="DeEquip" itemid="2645" slot="feet" function="onDeEquipItem" /> <!-- Steel Boots -->
+	<movevent event="Equip" itemid="2646" slot="feet" function="onEquipItem" /> <!-- Golden Boots -->
+	<movevent event="DeEquip" itemid="2646" slot="feet" function="onDeEquipItem" /> <!-- Golden Boots -->
+	
+	<!-- Amulets -->
+	<movevent event="Equip" itemid="2125" slot="necklace" function="onEquipItem" /> <!-- Crystal Necklace -->
+	<movevent event="DeEquip" itemid="2125" slot="necklace" function="onDeEquipItem" /> <!-- Crystal Necklace -->
+	<movevent event="Equip" itemid="2126" slot="necklace" function="onEquipItem" /> <!-- Bronze Necklace -->
+	<movevent event="DeEquip" itemid="2126" slot="necklace" function="onDeEquipItem" /> <!-- Bronze Necklace -->
+	<movevent event="Equip" itemid="2129" slot="necklace" function="onEquipItem" /> <!-- Wolf Tooth Chain -->
+	<movevent event="DeEquip" itemid="2129" slot="necklace" function="onDeEquipItem" /> <!-- Wolf Tooth Chain -->
+	<movevent event="Equip" itemid="2130" slot="necklace" function="onEquipItem" /> <!-- Golden Amulet -->
+	<movevent event="DeEquip" itemid="2130" slot="necklace" function="onDeEquipItem" /> <!-- Golden Amulet -->
+	<movevent event="Equip" itemid="2131" slot="necklace" function="onEquipItem" /> <!-- Star Amulet -->
+	<movevent event="DeEquip" itemid="2131" slot="necklace" function="onDeEquipItem" /> <!-- Star Amulet -->
+	<movevent event="Equip" itemid="2132" slot="necklace" function="onEquipItem" /> <!-- Silver Necklace -->
+	<movevent event="DeEquip" itemid="2132" slot="necklace" function="onDeEquipItem" /> <!-- Silver Necklace -->
+	<movevent event="Equip" itemid="2133" slot="necklace" function="onEquipItem" /> <!-- Ruby Necklace -->
+	<movevent event="DeEquip" itemid="2133" slot="necklace" function="onDeEquipItem" /> <!-- Ruby Necklace -->
+	<movevent event="Equip" itemid="2135" slot="necklace" function="onEquipItem" /> <!-- Scarab Amulet -->
+	<movevent event="DeEquip" itemid="2135" slot="necklace" function="onDeEquipItem" /> <!-- Scarab Amulet -->
+	<movevent event="Equip" itemid="2136" slot="necklace" function="onEquipItem" /> <!-- Demonbone Amulet -->
+	<movevent event="DeEquip" itemid="2136" slot="necklace" function="onDeEquipItem" /> <!-- Demonbone Amulet -->
+	<movevent event="Equip" itemid="2138" slot="necklace" function="onEquipItem" /> <!-- Saphire Amulet -->
+	<movevent event="DeEquip" itemid="2138" slot="necklace" function="onDeEquipItem" /> <!-- Saphire Amulet -->
+	<movevent event="Equip" itemid="2142" slot="necklace" function="onEquipItem" /> <!-- Ancient Amulet -->
+	<movevent event="DeEquip" itemid="2142" slot="necklace" function="onDeEquipItem" /> <!-- Ancient Amulet -->
+	<movevent event="Equip" itemid="2161" slot="necklace" function="onEquipItem" /> <!-- Strange Talisman -->
+	<movevent event="DeEquip" itemid="2161" slot="necklace" function="onDeEquipItem" /> <!-- Strange Talisman -->
+	<movevent event="Equip" itemid="2170" slot="necklace" function="onEquipItem" /> <!-- Silver Amulet -->
+	<movevent event="DeEquip" itemid="2170" slot="necklace" function="onDeEquipItem" /> <!-- Silver Amulet -->
+	<movevent event="Equip" itemid="2171" slot="necklace" function="onEquipItem" /> <!-- Platinum Amulet -->
+	<movevent event="DeEquip" itemid="2171" slot="necklace" function="onDeEquipItem" /> <!-- Platinum Amulet -->
+	<movevent event="Equip" itemid="2172" slot="necklace" function="onEquipItem" /> <!-- Bronze Amulet -->
+	<movevent event="DeEquip" itemid="2172" slot="necklace" function="onDeEquipItem" /> <!-- Bronze Amulet -->
+	<movevent event="Equip" itemid="2173" slot="necklace" function="onEquipItem" /> <!-- Amulet of Loss -->
+	<movevent event="DeEquip" itemid="2173" slot="necklace" function="onDeEquipItem" /> <!-- Amulet of Loss -->
+	<movevent event="Equip" itemid="5543" slot="necklace" function="onEquipItem" /> <!-- Ravenor amulet -->
+	<movevent event="DeEquip" itemid="5543" slot="necklace" function="onDeEquipItem" /> <!-- Ravenor amulet -->
+	<movevent event="Equip" itemid="2197" slot="necklace" function="onEquipItem" /> <!-- Stone Skin Amulet -->
+	<movevent event="DeEquip" itemid="2197" slot="necklace" function="onDeEquipItem" /> <!-- Stone Skin Amulet -->
+	<movevent event="Equip" itemid="2198" slot="necklace" function="onEquipItem" /> <!-- Elven Amulet -->
+	<movevent event="DeEquip" itemid="2198" slot="necklace" function="onDeEquipItem" /> <!-- Elven Amulet -->
+	<movevent event="Equip" itemid="2199" slot="necklace" function="onEquipItem" /> <!-- Garlic Amulet -->
+	<movevent event="DeEquip" itemid="2199" slot="necklace" function="onDeEquipItem" /> <!-- Garlic Amulet -->
+	<movevent event="Equip" itemid="2200" slot="necklace" function="onEquipItem" /> <!-- Protection Amulet -->
+	<movevent event="DeEquip" itemid="2200" slot="necklace" function="onDeEquipItem" /> <!-- Protection Amulet -->
+	<movevent event="Equip" itemid="2201" slot="necklace" function="onEquipItem" /> <!-- Dragon Necklace -->
+	<movevent event="DeEquip" itemid="2201" slot="necklace" function="onDeEquipItem" /> <!-- Dragon Necklace -->
+	<movevent event="Equip" itemid="2218" slot="necklace" function="onEquipItem" /> <!-- Paw Amulet -->
+	<movevent event="DeEquip" itemid="2218" slot="necklace" function="onDeEquipItem" /> <!-- Paw Amulet -->
+	<movevent event="Equip" itemid="2661" slot="necklace" function="onEquipItem" /> <!-- Scarf -->
+	<movevent event="DeEquip" itemid="2661" slot="necklace" function="onDeEquipItem" /> <!-- Scarf -->
+	
+	<!-- Rings -->
+	<movevent event="Equip" itemid="2121" slot="ring" function="onEquipItem" /> <!-- Wedding Ring -->
+	<movevent event="DeEquip" itemid="2121" slot="ring" function="onDeEquipItem" /> <!-- Wedding Ring -->
+	<movevent event="Equip" itemid="2123" slot="ring" function="onEquipItem" /> <!-- Ring of the Sky -->
+	<movevent event="DeEquip" itemid="2123" slot="ring" function="onDeEquipItem" /> <!-- Ring of the Sky -->
+	<movevent event="Equip" itemid="2124" slot="ring" function="onEquipItem" /> <!-- Crystal Ring -->
+	<movevent event="DeEquip" itemid="2124" slot="ring" function="onDeEquipItem" /> <!-- Crystal Ring -->
+	<movevent event="Equip" itemid="2164" slot="ring" function="onEquipItem" /> <!-- Might Ring -->
+	<movevent event="DeEquip" itemid="2164" slot="ring" function="onDeEquipItem" /> <!-- Might Ring -->
+	<movevent event="Equip" itemid="2165" slot="ring" function="onEquipItem" /> <!-- Stealth Ring -->
+	<movevent event="Equip" itemid="2202" slot="ring" function="onEquipItem" /> <!-- Stealth Ring -->
+	<movevent event="DeEquip" itemid="2202" slot="ring" function="onDeEquipItem" /> <!-- Stealth Ring -->
+	<movevent event="Equip" itemid="2166" slot="ring" function="onEquipItem" /> <!-- Power Ring -->
+	<movevent event="Equip" itemid="2203" slot="ring" function="onEquipItem" /> <!-- Power Ring -->
+	<movevent event="DeEquip" itemid="2203" slot="ring" function="onDeEquipItem" /><!-- Power Ring -->
+	<movevent event="Equip" itemid="2167" slot="ring" function="onEquipItem" /> <!-- Energy Ring -->
+	<movevent event="Equip" itemid="2204" slot="ring" function="onEquipItem" /> <!-- Energy Ring -->
+	<movevent event="DeEquip" itemid="2204" slot="ring" function="onDeEquipItem" /><!-- Energy Ring -->
+	<movevent event="Equip" itemid="2168" slot="ring" function="onEquipItem" /> <!-- Life Ring -->
+	<movevent event="Equip" itemid="2205" slot="ring" function="onEquipItem" /> <!-- Life Ring -->
+	<movevent event="DeEquip" itemid="2205" slot="ring" function="onDeEquipItem" /><!-- Life Ring -->
+	<movevent event="Equip" itemid="5600" slot="ring" function="onEquipItem" /> <!-- Supreme Life Ring -->
+	<movevent event="Equip" itemid="5601" slot="ring" function="onEquipItem" /> <!-- Supreme Life Ring -->
+	<movevent event="DeEquip" itemid="5601" slot="ring" function="onDeEquipItem" /><!-- Supreme Life Ring -->
+	<movevent event="Equip" itemid="2169" slot="ring" function="onEquipItem" /> <!-- Time Ring -->
+	<movevent event="Equip" itemid="2206" slot="ring" function="onEquipItem" /> <!-- Time Ring -->
+	<movevent event="DeEquip" itemid="2206" slot="ring" function="onDeEquipItem" /> <!-- Time Ring -->
+	<movevent event="Equip" itemid="2179" slot="ring" function="onEquipItem" /> <!-- Gold Ring -->
+	<movevent event="DeEquip" itemid="2179" slot="ring" function="onDeEquipItem" /> <!-- Gold Ring -->
+	<movevent event="Equip" itemid="2207" slot="ring" function="onEquipItem" /> <!-- Sword Ring -->
+	<movevent event="Equip" itemid="2210" slot="ring" function="onEquipItem" /> <!-- Sword Ring -->
+	<movevent event="DeEquip" itemid="2210" slot="ring" function="onDeEquipItem" /> <!-- Sword Ring -->
+	<movevent event="Equip" itemid="2208" slot="ring" function="onEquipItem" /> <!-- Axe Ring -->
+	<movevent event="Equip" itemid="2211" slot="ring" function="onEquipItem" /> <!-- Axe Ring -->
+	<movevent event="DeEquip" itemid="2211" slot="ring" function="onDeEquipItem" /> <!-- Axe Ring -->
+	<movevent event="Equip" itemid="2209" slot="ring" function="onEquipItem" /> <!-- Club Ring -->
+	<movevent event="Equip" itemid="2212" slot="ring" function="onEquipItem" /> <!-- Club Ring -->
+	<movevent event="DeEquip" itemid="2212" slot="ring" function="onDeEquipItem" /> <!-- Club Ring -->
+	<movevent event="Equip" itemid="2213" slot="ring" function="onEquipItem" /> <!-- Dwarven Ring -->
+	<movevent event="Equip" itemid="2215" slot="ring" function="onEquipItem" /> <!-- Dwarven Ring -->
+	<movevent event="DeEquip" itemid="2215" slot="ring" function="onDeEquipItem" /> <!-- Dwarven Ring -->
+	<movevent event="Equip" itemid="2214" slot="ring" function="onEquipItem" /> <!-- Ring of Healing -->
+	<movevent event="Equip" itemid="2216" slot="ring" function="onEquipItem" /> <!-- Ring of Healing -->
+	<movevent event="DeEquip" itemid="2216" slot="ring" function="onDeEquipItem" /> <!-- Ring of Healing -->
+	<movevent event="Equip" itemid="2357" slot="ring" function="onEquipItem" /> <!-- Ring of Wishes -->
+	<movevent event="DeEquip" itemid="2357" slot="ring" function="onDeEquipItem" /> <!-- Ring of Wishes -->
+	
+	<!-- Helmets -->
+	<movevent event="Equip" itemid="2128" slot="head" function="onEquipItem" /> <!-- Crown -->
+	<movevent event="DeEquip" itemid="2128" slot="head" function="onDeEquipItem" /> <!-- Crown -->
+	<movevent event="Equip" itemid="2139" slot="head" function="onEquipItem" /> <!-- Ancient Tiara -->
+	<movevent event="DeEquip" itemid="2139" slot="head" function="onDeEquipItem" /> <!-- Ancient Tiara -->
+	<movevent event="Equip" itemid="2323" slot="head" function="onEquipItem" /> <!-- Hat of the Mad -->
+	<movevent event="DeEquip" itemid="2323" slot="head" function="onDeEquipItem" /> <!-- Hat of the Mad -->
+	<movevent event="Equip" itemid="2339" slot="head" function="onEquipItem" /> <!-- Damaged Helmet -->
+	<movevent event="DeEquip" itemid="2339" slot="head" function="onDeEquipItem" /> <!-- Damaged Helmet -->
+	<movevent event="Equip" itemid="2342" slot="head" function="onEquipItem" /> <!-- Helmet of the Ancients -->
+	<movevent event="DeEquip" itemid="2342" slot="head" function="onDeEquipItem" /> <!-- Helmet of the Ancients -->
+	<movevent event="Equip" itemid="2343" slot="head" function="onEquipItem" /> <!-- Helmet of the Ancients -->
+	<movevent event="DeEquip" itemid="2343" slot="head" function="onDeEquipItem" /> <!-- Helmet of the Ancients -->
+	<movevent event="Equip" itemid="2457" slot="head" function="onEquipItem" /> <!-- Steel Helmet -->
+	<movevent event="DeEquip" itemid="2457" slot="head" function="onDeEquipItem" /> <!-- Steel Helmet -->
+	<movevent event="Equip" itemid="2458" slot="head" function="onEquipItem" /> <!-- Chain Helmet -->
+	<movevent event="DeEquip" itemid="2458" slot="head" function="onDeEquipItem" /> <!-- Chain Helmet -->
+	<movevent event="Equip" itemid="2459" slot="head" function="onEquipItem" /> <!-- Iron Helmet -->
+	<movevent event="DeEquip" itemid="2459" slot="head" function="onDeEquipItem" /> <!-- Iron Helmet -->
+	<movevent event="Equip" itemid="2460" slot="head" function="onEquipItem" /> <!-- Brass Helmet -->
+	<movevent event="DeEquip" itemid="2460" slot="head" function="onDeEquipItem" /> <!-- Brass Helmet -->
+	<movevent event="Equip" itemid="2461" slot="head" function="onEquipItem" /> <!-- Leather Helmet -->
+	<movevent event="DeEquip" itemid="2461" slot="head" function="onDeEquipItem" /> <!-- Leather Helmet -->
+	<movevent event="Equip" itemid="2462" slot="head" function="onEquipItem" /> <!-- Devil Helmet -->
+	<movevent event="DeEquip" itemid="2462" slot="head" function="onDeEquipItem" /> <!-- Devil Helmet -->
+	<movevent event="Equip" itemid="2471" slot="head" function="onEquipItem" /> <!-- Golden Helmet -->
+	<movevent event="DeEquip" itemid="2471" slot="head" function="onDeEquipItem" /> <!-- Golden Helmet -->
+	<movevent event="Equip" itemid="2473" slot="head" function="onEquipItem" /> <!-- Viking Helmet -->
+	<movevent event="DeEquip" itemid="2473" slot="head" function="onDeEquipItem" /> <!-- Viking Helmet -->
+	<movevent event="Equip" itemid="2474" slot="head" function="onEquipItem" /> <!-- Winged Helmet -->
+	<movevent event="DeEquip" itemid="2474" slot="head" function="onDeEquipItem" /> <!-- Winged Helmet -->
+	<movevent event="Equip" itemid="2475" slot="head" function="onEquipItem" /> <!-- Warrior Helmet -->
+	<movevent event="DeEquip" itemid="2475" slot="head" function="onDeEquipItem" /> <!-- Warrior Helmet -->
+	<movevent event="Equip" itemid="2479" slot="head" function="onEquipItem" /> <!-- Strange Helmet -->
+	<movevent event="DeEquip" itemid="2479" slot="head" function="onDeEquipItem" /> <!-- Strange Helmet -->
+	<movevent event="Equip" itemid="2480" slot="head" function="onEquipItem" /> <!-- Legion Helmet -->
+	<movevent event="DeEquip" itemid="2480" slot="head" function="onDeEquipItem" /> <!-- Legion Helmet -->
+	<movevent event="Equip" itemid="2481" slot="head" function="onEquipItem" /> <!-- Soldier Helmet -->
+	<movevent event="DeEquip" itemid="2481" slot="head" function="onDeEquipItem" /> <!-- Soldier Helmet -->
+	<movevent event="Equip" itemid="2482" slot="head" function="onEquipItem" /> <!-- Studded Helmet -->
+	<movevent event="DeEquip" itemid="2482" slot="head" function="onDeEquipItem" /> <!-- Studded Helmet -->
+	<movevent event="Equip" itemid="2490" slot="head" function="onEquipItem" /> <!-- Dark Helmet -->
+	<movevent event="DeEquip" itemid="2490" slot="head" function="onDeEquipItem" /> <!-- Dark Helmet -->
+	<movevent event="Equip" itemid="2491" slot="head" function="onEquipItem" /> <!-- Crown Helmet -->
+	<movevent event="DeEquip" itemid="2491" slot="head" function="onDeEquipItem" /> <!-- Crown Helmet -->
+	<movevent event="Equip" itemid="2493" slot="head" function="onEquipItem" /> <!-- Demon Helmet -->
+	<movevent event="DeEquip" itemid="2493" slot="head" function="onDeEquipItem" /> <!-- Demon Helmet -->
+	<movevent event="Equip" itemid="2496" slot="head" function="onEquipItem" /> <!-- Horned Helmet -->
+	<movevent event="DeEquip" itemid="2496" slot="head" function="onDeEquipItem" /> <!-- Horned Helmet -->
+	<movevent event="Equip" itemid="2497" slot="head" function="onEquipItem" /> <!-- Crusader Helment -->
+	<movevent event="DeEquip" itemid="2497" slot="head" function="onDeEquipItem" /> <!-- Crusader Helmet -->
+	<movevent event="Equip" itemid="2498" slot="head" function="onEquipItem" /> <!-- Royal Helmet -->
+	<movevent event="DeEquip" itemid="2498" slot="head" function="onDeEquipItem" /> <!-- Royal Helmet -->
+	<movevent event="Equip" itemid="2499" slot="head" function="onEquipItem" /> <!-- Amazon Helmet -->
+	<movevent event="DeEquip" itemid="2499" slot="head" function="onDeEquipItem" /> <!-- Amazon Helmet -->
+	<movevent event="Equip" itemid="2501" slot="head" function="onEquipItem" /> <!-- Ceremonial Mask -->
+	<movevent event="DeEquip" itemid="2501" slot="head" function="onDeEquipItem" /> <!-- Ceremonial Mask -->
+	<movevent event="Equip" itemid="2502" slot="head" function="onEquipItem" /> <!-- Dwarfen Helmet -->
+	<movevent event="DeEquip" itemid="2502" slot="head" function="onDeEquipItem" /> <!-- Dwarfen Helmet -->
+	<movevent event="Equip" itemid="2506" slot="head" function="onEquipItem" /> <!-- Dragon Scale Helmet -->
+	<movevent event="DeEquip" itemid="2506" slot="head" function="onDeEquipItem" /> <!-- Dragon Scale Helmet -->
+	<movevent event="Equip" itemid="2662" slot="head" function="onEquipItem" /> <!-- Magician Hat -->
+	<movevent event="DeEquip" itemid="2662" slot="head" function="onDeEquipItem" /> <!-- Magician Hat -->
+	<movevent event="Equip" itemid="2663" slot="head" function="onEquipItem" /> <!-- Mystic Turban -->
+	<movevent event="DeEquip" itemid="2663" slot="head" function="onDeEquipItem" /> <!-- Mystic Turban -->
+	<movevent event="Equip" itemid="2664" slot="head" function="onEquipItem" /> <!-- Wood Cape -->
+	<movevent event="DeEquip" itemid="2664" slot="head" function="onDeEquipItem" /> <!-- Wood Cape -->
+	<movevent event="Equip" itemid="2665" slot="head" function="onEquipItem" /> <!-- Post Officers Hat -->
+	<movevent event="DeEquip" itemid="2665" slot="head" function="onDeEquipItem" /> <!-- Post Officers Hat -->
+	<movevent event="Equip" itemid="3969" slot="head" function="onEquipItem" /> <!-- Horseman Helmet -->
+	<movevent event="DeEquip" itemid="3969" slot="head" function="onDeEquipItem" /> <!-- Horseman Helmet -->
+	<movevent event="Equip" itemid="3970" slot="head" function="onEquipItem" /> <!-- Feather Headdress -->
+	<movevent event="DeEquip" itemid="3970" slot="head" function="onDeEquipItem" /> <!-- Feather Headdress -->
+	<movevent event="Equip" itemid="3971" slot="head" function="onEquipItem" /> <!-- Charmer's Tiara -->
+	<movevent event="DeEquip" itemid="3971" slot="head" function="onDeEquipItem" /> <!-- Charmer's Tiara -->
+	<movevent event="Equip" itemid="3972" slot="head" function="onEquipItem" /> <!-- Beholder Helmet -->
+	<movevent event="DeEquip" itemid="3972" slot="head" function="onDeEquipItem" /> <!-- Beholder Helment -->
+
+	<!-- Armors -->
+	<movevent event="Equip" itemid="2463" slot="armor" function="onEquipItem" /> <!-- Plate Armor -->
+	<movevent event="DeEquip" itemid="2463" slot="armor" function="onDeEquipItem" /> <!-- Plate Armor -->
+	<movevent event="Equip" itemid="2464" slot="armor" function="onEquipItem" /> <!-- Chain Armor -->
+	<movevent event="DeEquip" itemid="2464" slot="armor" function="onDeEquipItem" /> <!-- Chain Armor -->
+	<movevent event="Equip" itemid="2465" slot="armor" function="onEquipItem" /> <!-- Brass Armor -->
+	<movevent event="DeEquip" itemid="2465" slot="armor" function="onDeEquipItem" /> <!-- Brass Armor -->
+	<movevent event="Equip" itemid="2466" slot="armor" function="onEquipItem" /> <!-- Golden Armor -->
+	<movevent event="DeEquip" itemid="2466" slot="armor" function="onDeEquipItem" /> <!-- Golden Armor -->
+	<movevent event="Equip" itemid="2467" slot="armor" function="onEquipItem" /> <!-- Leather Armor -->
+	<movevent event="DeEquip" itemid="2467" slot="armor" function="onDeEquipItem" /> <!-- Leather Armor -->
+	<movevent event="Equip" itemid="2472" slot="armor" function="onEquipItem" /> <!-- Magic Plate Armor -->
+	<movevent event="DeEquip" itemid="2472" slot="armor" function="onDeEquipItem" /> <!-- Magic Plate Armor -->
+	<movevent event="Equip" itemid="2476" slot="armor" function="onEquipItem" /> <!-- Knight Armor -->
+	<movevent event="DeEquip" itemid="2476" slot="armor" function="onDeEquipItem" /> <!-- Knight Armor -->
+	<movevent event="Equip" itemid="2483" slot="armor" function="onEquipItem" /> <!-- Scale Armor -->
+	<movevent event="DeEquip" itemid="2483" slot="armor" function="onDeEquipItem" /> <!-- Scale Armor -->
+	<movevent event="Equip" itemid="2484" slot="armor" function="onEquipItem" /> <!-- Studded Armor -->
+	<movevent event="DeEquip" itemid="2484" slot="armor" function="onDeEquipItem" /> <!-- Studded Armor -->
+	<movevent event="Equip" itemid="2485" slot="armor" function="onEquipItem" /> <!-- Doublet -->
+	<movevent event="DeEquip" itemid="2485" slot="armor" function="onDeEquipItem" /> <!-- Double -->
+	<movevent event="Equip" itemid="2486" slot="armor" function="onEquipItem" /> <!-- Noble Armor -->
+	<movevent event="DeEquip" itemid="2486" slot="armor" function="onDeEquipItem" /> <!-- Noble Armor -->
+	<movevent event="Equip" itemid="2487" slot="armor" function="onEquipItem" /> <!-- Crown Armor -->
+	<movevent event="DeEquip" itemid="2487" slot="armor" function="onDeEquipItem" /> <!-- Crown Armor -->
+	<movevent event="Equip" itemid="2489" slot="armor" function="onEquipItem" /> <!-- Dark Armor -->
+	<movevent event="DeEquip" itemid="2489" slot="armor" function="onDeEquipItem" /> <!-- Dark Armor -->
+	<movevent event="Equip" itemid="2492" slot="armor" function="onEquipItem" /> <!-- Dragon Scale Mail -->
+	<movevent event="DeEquip" itemid="2492" slot="armor" function="onDeEquipItem" /> <!-- Dragon Scale Mail -->
+	<movevent event="Equip" itemid="2494" slot="armor" function="onEquipItem" /> <!-- Demon Armor -->
+	<movevent event="DeEquip" itemid="2494" slot="armor" function="onDeEquipItem" /> <!-- Demon Armor -->
+	<movevent event="Equip" itemid="2500" slot="armor" function="onEquipItem" /> <!-- Amazon Armor -->
+	<movevent event="DeEquip" itemid="2500" slot="armor" function="onDeEquipItem" /> <!-- Amazon Armor -->
+	<movevent event="Equip" itemid="2503" slot="armor" function="onEquipItem" /> <!-- Dwarfen Armor -->
+	<movevent event="DeEquip" itemid="2503" slot="armor" function="onDeEquipItem" /> <!-- Dwarfen Armor -->
+	<movevent event="Equip" itemid="2508" slot="armor" function="onEquipItem" /> <!-- Native Armor -->
+	<movevent event="DeEquip" itemid="2508" slot="armor" function="onDeEquipItem" /> <!-- Native Armor -->
+	<movevent event="Equip" itemid="2650" slot="armor" function="onEquipItem" /> <!-- Jacket -->
+	<movevent event="DeEquip" itemid="2650" slot="armor" function="onDeEquipItem" /> <!-- Jacket -->
+	<movevent event="Equip" itemid="2651" slot="armor" function="onEquipItem" /> <!-- Coat -->
+	<movevent event="DeEquip" itemid="2651" slot="armor" function="onDeEquipItem" /> <!-- Coat -->
+	<movevent event="Equip" itemid="2652" slot="armor" function="onEquipItem" /> <!-- Green Tunic -->
+	<movevent event="DeEquip" itemid="2652" slot="armor" function="onDeEquipItem" /> <!-- Green Tunic -->
+	<movevent event="Equip" itemid="2653" slot="armor" function="onEquipItem" /> <!-- Red Tunic -->
+	<movevent event="DeEquip" itemid="2653" slot="armor" function="onDeEquipItem" /> <!-- Red Tunic -->
+	<movevent event="Equip" itemid="2654" slot="armor" function="onEquipItem" /> <!-- Cape -->
+	<movevent event="DeEquip" itemid="2654" slot="armor" function="onDeEquipItem" /> <!-- Cape -->
+	<movevent event="Equip" itemid="2655" slot="armor" function="onEquipItem" /> <!-- Red Robe -->
+	<movevent event="DeEquip" itemid="2655" slot="armor" function="onDeEquipItem" /> <!-- Red Robe -->
+	<movevent event="Equip" itemid="2656" slot="armor" function="onEquipItem" /> <!-- Blue Robe -->
+	<movevent event="DeEquip" itemid="2656" slot="armor" function="onDeEquipItem" /> <!-- Blue Robe -->
+	<movevent event="Equip" itemid="2657" slot="armor" function="onEquipItem" /> <!-- Simple Dress -->
+	<movevent event="DeEquip" itemid="2657" slot="armor" function="onDeEquipItem" /> <!-- Simple Dress -->
+	<movevent event="Equip" itemid="2658" slot="armor" function="onEquipItem" /> <!-- White Dress -->
+	<movevent event="DeEquip" itemid="2658" slot="armor" function="onDeEquipItem" /> <!-- White Dress -->
+	<movevent event="Equip" itemid="2659" slot="armor" function="onEquipItem" /> <!-- Ball Gown -->
+	<movevent event="DeEquip" itemid="2659" slot="armor" function="onDeEquipItem" /> <!-- Ball Gown -->
+	<movevent event="Equip" itemid="2660" slot="armor" function="onEquipItem" /> <!-- Ranger's Cloak -->
+	<movevent event="DeEquip" itemid="2660" slot="armor" function="onDeEquipItem" /> <!-- Ranger's Cloak -->
+	<movevent event="Equip" itemid="3968" slot="armor" function="onEquipItem" /> <!-- Leopard Armor -->
+	<movevent event="DeEquip" itemid="3968" slot="armor" function="onDeEquipItem" /> <!-- Leopard Armor -->
+	<movevent event="Equip" itemid="4847" slot="armor" function="onEquipItem" /> <!-- Spectral Dress -->
+	<movevent event="DeEquip" itemid="4847" slot="armor" function="onDeEquipItem" /> <!-- Spectral Dress -->
+
+	<!-- Legs -->
+	<movevent event="Equip" itemid="2468" slot="legs" function="onEquipItem" /> <!-- Studded Legs -->
+	<movevent event="DeEquip" itemid="2468" slot="legs" function="onDeEquipItem" /> <!-- Studded Legs -->
+	<movevent event="Equip" itemid="2469" slot="legs" function="onEquipItem" /> <!-- Dragon Scale Legs -->
+	<movevent event="DeEquip" itemid="2469" slot="legs" function="onDeEquipItem" /> <!-- Dragon Scale Legs -->
+	<movevent event="Equip" itemid="2470" slot="legs" function="onEquipItem" /> <!-- Golden Legs -->
+	<movevent event="DeEquip" itemid="2470" slot="legs" function="onDeEquipItem" /> <!-- Golden Legs -->
+	<movevent event="Equip" itemid="2477" slot="legs" function="onEquipItem" /> <!-- Knight Legs -->
+	<movevent event="DeEquip" itemid="2477" slot="legs" function="onDeEquipItem" /> <!-- Knight Legs -->
+	<movevent event="Equip" itemid="2478" slot="legs" function="onEquipItem" /> <!-- Brass Legs -->
+	<movevent event="DeEquip" itemid="2478" slot="legs" function="onDeEquipItem" /> <!-- Brass Legs -->
+	<movevent event="Equip" itemid="2488" slot="legs" function="onEquipItem" /> <!-- Crown Legs -->
+	<movevent event="DeEquip" itemid="2488" slot="legs" function="onDeEquipItem" /> <!-- Crown Legs -->
+	<movevent event="Equip" itemid="2495" slot="legs" function="onEquipItem" /> <!-- Demon Legs -->
+	<movevent event="DeEquip" itemid="2495" slot="legs" function="onDeEquipItem" /> <!-- Demon Legs -->
+	<movevent event="Equip" itemid="2504" slot="legs" function="onEquipItem" /> <!-- Dwarfen Legs -->
+	<movevent event="DeEquip" itemid="2504" slot="legs" function="onDeEquipItem" /> <!-- Dwarfen Legs -->
+	<movevent event="Equip" itemid="2507" slot="legs" function="onEquipItem" /> <!-- Elven Legs -->
+	<movevent event="DeEquip" itemid="2507" slot="legs" function="onDeEquipItem" /> <!-- Elven Legs -->
+	<movevent event="Equip" itemid="2647" slot="legs" function="onEquipItem" /> <!-- Plate Legs -->
+	<movevent event="DeEquip" itemid="2647" slot="legs" function="onDeEquipItem" /> <!-- Plate Legs -->
+	<movevent event="Equip" itemid="2648" slot="legs" function="onEquipItem" /> <!-- Chain Legs -->
+	<movevent event="DeEquip" itemid="2648" slot="legs" function="onDeEquipItem" /> <!-- Chain Legs -->	
+	<movevent event="Equip" itemid="2649" slot="legs" function="onEquipItem" /> <!-- Leather Legs -->
+	<movevent event="DeEquip" itemid="2649" slot="legs" function="onDeEquipItem" /> <!-- Leather Legs -->
+	<movevent event="Equip" itemid="3983" slot="legs" function="onEquipItem" /> <!-- Bast Skirt -->
+	<movevent event="DeEquip" itemid="3983" slot="legs" function="onDeEquipItem" /> <!-- Bast Skirt -->
+	
+	<!-- Shields -->
+	<movevent event="Equip" itemid="5548" slot="hand" function="onEquipItem" /> <!-- Ravenor Shield -->
+	<movevent event="DeEquip" itemid="5548" slot="hand" function="onDeEquipItem" /> <!-- Ravenor Shield -->
+	<movevent event="Equip" itemid="2509" slot="hand" function="onEquipItem" /> <!-- Steel Shield -->
+	<movevent event="DeEquip" itemid="2509" slot="hand" function="onDeEquipItem" /> <!-- Steel Shield -->
+	<movevent event="Equip" itemid="2510" slot="hand" function="onEquipItem" /> <!-- Plate Shield -->
+	<movevent event="DeEquip" itemid="2510" slot="hand" function="onDeEquipItem" /> <!-- Plate Shield -->
+	<movevent event="Equip" itemid="2511" slot="hand" function="onEquipItem" /> <!-- Brass Shield -->
+	<movevent event="DeEquip" itemid="2511" slot="hand" function="onDeEquipItem" /> <!-- Brass Shield -->
+	<movevent event="Equip" itemid="2512" slot="hand" function="onEquipItem" /> <!-- Wooden Shield -->
+	<movevent event="DeEquip" itemid="2512" slot="hand" function="onDeEquipItem" /> <!-- Wooden Shield -->
+	<movevent event="Equip" itemid="2513" slot="hand" function="onEquipItem" /> <!-- Battle Shield -->
+	<movevent event="DeEquip" itemid="2513" slot="hand" function="onDeEquipItem" /> <!-- Battle Shield -->
+	<movevent event="Equip" itemid="2514" slot="hand" function="onEquipItem" /> <!-- Mastermind Shield -->
+	<movevent event="DeEquip" itemid="2514" slot="hand" function="onDeEquipItem" /> <!-- Mastermind Shield -->
+	<movevent event="Equip" itemid="2515" slot="hand" function="onEquipItem" /> <!-- Guardian Shield -->
+	<movevent event="DeEquip" itemid="2515" slot="hand" function="onDeEquipItem" /> <!-- Guardian Shield -->
+	<movevent event="Equip" itemid="2516" slot="hand" function="onEquipItem" /> <!-- Dragon Shield -->
+	<movevent event="DeEquip" itemid="2516" slot="hand" function="onDeEquipItem" /> <!-- Dragon Shield -->
+	<movevent event="Equip" itemid="2517" slot="hand" function="onEquipItem" /> <!-- Shield of Honour -->
+	<movevent event="DeEquip" itemid="2517" slot="hand" function="onDeEquipItem" /> <!-- Shield of Honour -->
+	<movevent event="Equip" itemid="2518" slot="hand" function="onEquipItem" /> <!-- Beholder Shield -->
+	<movevent event="DeEquip" itemid="2518" slot="hand" function="onDeEquipItem" /> <!-- Beholder Shield -->
+	<movevent event="Equip" itemid="2519" slot="hand" function="onEquipItem" /> <!-- Crown Shield -->
+	<movevent event="DeEquip" itemid="2519" slot="hand" function="onDeEquipItem" /> <!-- Crown Shield -->
+	<movevent event="Equip" itemid="2520" slot="hand" function="onEquipItem" /> <!-- Demon Shield -->
+	<movevent event="DeEquip" itemid="2520" slot="hand" function="onDeEquipItem" /> <!-- Demon Shield -->
+	<movevent event="Equip" itemid="2521" slot="hand" function="onEquipItem" /> <!-- Dark Shield -->
+	<movevent event="DeEquip" itemid="2521" slot="hand" function="onDeEquipItem" /> <!-- Dark Shield -->
+	<movevent event="Equip" itemid="2522" slot="hand" function="onEquipItem" /> <!-- Great Shield -->
+	<movevent event="DeEquip" itemid="2522" slot="hand" function="onDeEquipItem" /> <!-- Great Shield -->
+	<movevent event="Equip" itemid="2523" slot="hand" function="onEquipItem" /> <!-- Blessed Shield -->
+	<movevent event="DeEquip" itemid="2523" slot="hand" function="onDeEquipItem" /> <!-- Blessed Shield -->
+	<movevent event="Equip" itemid="2524" slot="hand" function="onEquipItem" /> <!-- Ornamented Shield -->
+	<movevent event="DeEquip" itemid="2524" slot="hand" function="onDeEquipItem" /> <!-- Ornamented Shield -->
+	<movevent event="Equip" itemid="2525" slot="hand" function="onEquipItem" /> <!-- Dwarven Shield -->
+	<movevent event="DeEquip" itemid="2525" slot="hand" function="onDeEquipItem" /> <!-- Dwarven Shield -->
+	<movevent event="Equip" itemid="2526" slot="hand" function="onEquipItem" /> <!-- Studded Shield -->
+	<movevent event="DeEquip" itemid="2526" slot="hand" function="onDeEquipItem" /> <!-- Studded Shield -->
+	<movevent event="Equip" itemid="2527" slot="hand" function="onEquipItem" /> <!-- Rose Shield -->
+	<movevent event="DeEquip" itemid="2527" slot="hand" function="onDeEquipItem" /> <!-- Rose Shield -->
+	<movevent event="Equip" itemid="2528" slot="hand" function="onEquipItem" /> <!-- Tower Shield -->
+	<movevent event="DeEquip" itemid="2528" slot="hand" function="onDeEquipItem" /> <!-- Tower Shield -->
+	<movevent event="Equip" itemid="2529" slot="hand" function="onEquipItem" /> <!-- Black Shield -->
+	<movevent event="DeEquip" itemid="2529" slot="hand" function="onDeEquipItem" /> <!-- Black Shield -->
+	<movevent event="Equip" itemid="2530" slot="hand" function="onEquipItem" /> <!-- Copper Shield -->
+	<movevent event="DeEquip" itemid="2530" slot="hand" function="onDeEquipItem" /> <!-- Copper Shield -->
+	<movevent event="Equip" itemid="2531" slot="hand" function="onEquipItem" /> <!-- Viking Shield -->
+	<movevent event="DeEquip" itemid="2531" slot="hand" function="onDeEquipItem" /> <!-- Viking Shield -->
+	<movevent event="Equip" itemid="2532" slot="hand" function="onEquipItem" /> <!-- Ancient Shield -->
+	<movevent event="DeEquip" itemid="2532" slot="hand" function="onDeEquipItem" /> <!-- Ancient Shield -->
+	<movevent event="Equip" itemid="2533" slot="hand" function="onEquipItem" /> <!-- Griffin Shield -->
+	<movevent event="DeEquip" itemid="2533" slot="hand" function="onDeEquipItem" /> <!-- Griffin Shield -->
+	<movevent event="Equip" itemid="2534" slot="hand" function="onEquipItem" /> <!-- Vampire Shield -->
+	<movevent event="DeEquip" itemid="2534" slot="hand" function="onDeEquipItem" /> <!-- Vampire Shield -->
+	<movevent event="Equip" itemid="2535" slot="hand" function="onEquipItem" /> <!-- Castle Shield -->
+	<movevent event="DeEquip" itemid="2535" slot="hand" function="onDeEquipItem" /> <!-- Castle Shield -->
+	<movevent event="Equip" itemid="2536" slot="hand" function="onEquipItem" /> <!-- Medusa Shield -->
+	<movevent event="DeEquip" itemid="2536" slot="hand" function="onDeEquipItem" /> <!-- Medusa Shield -->
+	<movevent event="Equip" itemid="2537" slot="hand" function="onEquipItem" /> <!-- Amazon Shield -->
+	<movevent event="DeEquip" itemid="2537" slot="hand" function="onDeEquipItem" /> <!-- Amazon Shield -->
+	<movevent event="Equip" itemid="2538" slot="hand" function="onEquipItem" /> <!-- Eagle Shield -->
+	<movevent event="DeEquip" itemid="2538" slot="hand" function="onDeEquipItem" /> <!-- Eagle Shield -->
+	<movevent event="Equip" itemid="2539" slot="hand" function="onEquipItem" /> <!-- Phoenix Shield -->
+	<movevent event="DeEquip" itemid="2539" slot="hand" function="onDeEquipItem" /> <!-- Phoenix Shield -->
+	<movevent event="Equip" itemid="2540" slot="hand" function="onEquipItem" /> <!-- Scarab Shield -->
+	<movevent event="DeEquip" itemid="2540" slot="hand" function="onDeEquipItem" /> <!-- Scarab Shield -->
+	<movevent event="Equip" itemid="2541" slot="hand" function="onEquipItem" /> <!-- Bone Shield -->
+	<movevent event="DeEquip" itemid="2541" slot="hand" function="onDeEquipItem" /> <!-- Bone Shield -->
+	<movevent event="Equip" itemid="2542" slot="hand" function="onEquipItem" /> <!-- Tempest Shield -->
+	<movevent event="DeEquip" itemid="2542" slot="hand" function="onDeEquipItem" /> <!-- Tempest Shield -->
+
+	<!-- Axes -->
+	<movevent event="Equip" itemid="2378" slot="hand" function="onEquipItem" /> <!-- Battle Axe -->
+	<movevent event="DeEquip" itemid="2378" slot="hand" function="onDeEquipItem" /> <!-- Battle Axe -->
+	<movevent event="Equip" itemid="2380" slot="hand" function="onEquipItem" /> <!-- Hand Axe -->
+	<movevent event="DeEquip" itemid="2380" slot="hand" function="onDeEquipItem" /> <!-- Hand Axe -->
+	<movevent event="Equip" itemid="2381" slot="hand" function="onEquipItem" /> <!-- Halberd -->
+	<movevent event="DeEquip" itemid="2381" slot="hand" function="onDeEquipItem" /> <!-- Halberd -->
+	<movevent event="Equip" itemid="2386" slot="hand" function="onEquipItem" /> <!-- Axe -->
+	<movevent event="DeEquip" itemid="2386" slot="hand" function="onDeEquipItem" /> <!-- Axe -->
+	<movevent event="Equip" itemid="2387" slot="hand" function="onEquipItem" /> <!-- Double Axe -->
+	<movevent event="DeEquip" itemid="2387" slot="hand" function="onDeEquipItem" /> <!-- Double Axe -->
+	<movevent event="Equip" itemid="2388" slot="hand" function="onEquipItem" /> <!-- Hatchet -->
+	<movevent event="DeEquip" itemid="2388" slot="hand" function="onDeEquipItem" /> <!-- Hatchet -->
+	<movevent event="Equip" itemid="2405" slot="hand" function="onEquipItem" /> <!-- Sickle -->
+	<movevent event="DeEquip" itemid="2405" slot="hand" function="onDeEquipItem" /> <!-- Sickle -->
+	<movevent event="Equip" itemid="2414" slot="hand" function="onEquipItem" /> <!-- Dragon Lance -->
+	<movevent event="DeEquip" itemid="2414" slot="hand" function="onDeEquipItem" /> <!-- Dragon Lance -->
+	<movevent event="Equip" itemid="2415" slot="hand" function="onEquipItem" /> <!-- Great Axe -->
+	<movevent event="DeEquip" itemid="2415" slot="hand" function="onDeEquipItem" /> <!-- Great Axe -->
+	<movevent event="Equip" itemid="2418" slot="hand" function="onEquipItem" /> <!-- Golden Sickle -->
+	<movevent event="DeEquip" itemid="2418" slot="hand" function="onDeEquipItem" /> <!-- Golden Sickle -->
+	<movevent event="Equip" itemid="2425" slot="hand" function="onEquipItem" /> <!-- Obsidian Lance -->
+	<movevent event="DeEquip" itemid="2425" slot="hand" function="onDeEquipItem" /> <!-- Obsidian Lance -->
+	<movevent event="Equip" itemid="2426" slot="hand" function="onEquipItem" /> <!-- Naginata -->
+	<movevent event="DeEquip" itemid="2426" slot="hand" function="onDeEquipItem" /> <!-- Naginata -->
+	<movevent event="Equip" itemid="2427" slot="hand" function="onEquipItem" /> <!-- Guardian Halberd -->
+	<movevent event="DeEquip" itemid="2427" slot="hand" function="onDeEquipItem" /> <!-- Guardian Halberd -->
+	<movevent event="Equip" itemid="2428" slot="hand" function="onEquipItem" /> <!-- Orcish Axe -->
+	<movevent event="DeEquip" itemid="2428" slot="hand" function="onDeEquipItem" /> <!-- Orcish Axe -->
+	<movevent event="Equip" itemid="2429" slot="hand" function="onEquipItem" /> <!-- Barbarian Axe -->
+	<movevent event="DeEquip" itemid="2429" slot="hand" function="onDeEquipItem" /> <!-- Barbarian Axe -->
+	<movevent event="Equip" itemid="2430" slot="hand" function="onEquipItem" /> <!-- Knight Axe -->
+	<movevent event="DeEquip" itemid="2430" slot="hand" function="onDeEquipItem" /> <!-- Knight Axe -->
+	<movevent event="Equip" itemid="2431" slot="hand" function="onEquipItem" /> <!-- Stonecutter Axe -->
+	<movevent event="DeEquip" itemid="2431" slot="hand" function="onDeEquipItem" /> <!-- Stonecutter Axe -->
+	<movevent event="Equip" itemid="2432" slot="hand" function="onEquipItem" /> <!-- Fire Axe -->
+	<movevent event="DeEquip" itemid="2432" slot="hand" function="onDeEquipItem" /> <!-- Fire Axe -->
+	<movevent event="Equip" itemid="2435" slot="hand" function="onEquipItem" /> <!-- Dwarven Axe -->
+	<movevent event="DeEquip" itemid="2435" slot="hand" function="onDeEquipItem" /> <!-- Dwarven Axe -->
+	<movevent event="Equip" itemid="2440" slot="hand" function="onEquipItem" /> <!-- Daramanian Waraxe -->
+	<movevent event="DeEquip" itemid="2440" slot="hand" function="onDeEquipItem" /> <!-- Daramanian Waraxe -->
+	<movevent event="Equip" itemid="2441" slot="hand" function="onEquipItem" /> <!-- Daramanian Axe -->
+	<movevent event="DeEquip" itemid="2441" slot="hand" function="onDeEquipItem" /> <!-- Daramanian Axe -->
+	<movevent event="Equip" itemid="2443" slot="hand" function="onEquipItem" /> <!-- Ravager's Axe -->
+	<movevent event="DeEquip" itemid="2443" slot="hand" function="onDeEquipItem" /> <!-- Ravager's Axe -->
+	<movevent event="Equip" itemid="2447" slot="hand" function="onEquipItem" /> <!-- Twin Axe -->
+	<movevent event="DeEquip" itemid="2447" slot="hand" function="onDeEquipItem" /> <!-- Twin Axe -->
+	<movevent event="Equip" itemid="2454" slot="hand" function="onEquipItem" /> <!-- War Axe -->
+	<movevent event="DeEquip" itemid="2454" slot="hand" function="onDeEquipItem" /> <!-- War Axe -->
+	<movevent event="Equip" itemid="3962" slot="hand" function="onEquipItem" /> <!-- Beastslayer Axe -->
+	<movevent event="DeEquip" itemid="3962" slot="hand" function="onDeEquipItem" /> <!-- Beastslayer Axe -->
+	<movevent event="Equip" itemid="3964" slot="hand" function="onEquipItem" /> <!-- Ripper Lance -->
+	<movevent event="DeEquip" itemid="3964" slot="hand" function="onDeEquipItem" /> <!-- Ripper Lance -->
+	<movevent event="Equip" itemid="3965" slot="hand" function="onEquipItem" /> <!-- Hunting Spear -->
+	<movevent event="DeEquip" itemid="3965" slot="hand" function="onDeEquipItem" /> <!-- Hunting Spear -->
+	
+	<!-- Clubs -->
+	<movevent event="Equip" itemid="2321" slot="hand" function="onEquipItem" /> <!-- Giant Smithhammer -->
+	<movevent event="DeEquip" itemid="2321" slot="hand" function="onDeEquipItem" /> <!-- Giant Smithhammer -->
+	<movevent event="Equip" itemid="2382" slot="hand" function="onEquipItem" /> <!-- Club -->
+	<movevent event="DeEquip" itemid="2382" slot="hand" function="onDeEquipItem" /> <!-- Club -->
+	<movevent event="Equip" itemid="2391" slot="hand" function="onEquipItem" /> <!-- War Hammer -->
+	<movevent event="DeEquip" itemid="2391" slot="hand" function="onDeEquipItem" /> <!-- War Hammer -->
+	<movevent event="Equip" itemid="2394" slot="hand" function="onEquipItem" /> <!-- Morning Star -->
+	<movevent event="DeEquip" itemid="2394" slot="hand" function="onDeEquipItem" /> <!-- Morning Star -->
+	<movevent event="Equip" itemid="2398" slot="hand" function="onEquipItem" /> <!-- Mace -->
+	<movevent event="DeEquip" itemid="2398" slot="hand" function="onDeEquipItem" /> <!-- Mace -->
+	<movevent event="Equip" itemid="2401" slot="hand" function="onEquipItem" /> <!-- Staff -->
+	<movevent event="DeEquip" itemid="2401" slot="hand" function="onDeEquipItem" /> <!-- Staff -->
+	<movevent event="Equip" itemid="2416" slot="hand" function="onEquipItem" /> <!-- Crowbar -->
+	<movevent event="DeEquip" itemid="2416" slot="hand" function="onDeEquipItem" /> <!-- Crowbar -->
+	<movevent event="Equip" itemid="2417" slot="hand" function="onEquipItem" /> <!-- Battle Hammer -->
+	<movevent event="DeEquip" itemid="2417" slot="hand" function="onDeEquipItem" /> <!-- Battle Hammer -->
+	<movevent event="Equip" itemid="2421" slot="hand" function="onEquipItem" /> <!-- Thunder Hammer -->
+	<movevent event="DeEquip" itemid="2421" slot="hand" function="onDeEquipItem" /> <!-- Thunder Hammer -->	
+	<movevent event="Equip" itemid="2422" slot="hand" function="onEquipItem" /> <!-- Iron Hammer -->
+	<movevent event="DeEquip" itemid="2422" slot="hand" function="onDeEquipItem" /> <!-- Iron Hammer -->
+	<movevent event="Equip" itemid="2423" slot="hand" function="onEquipItem" /> <!-- Clerical Mace -->
+	<movevent event="DeEquip" itemid="2423" slot="hand" function="onDeEquipItem" /> <!-- Clerical Mace -->
+	<movevent event="Equip" itemid="2424" slot="hand" function="onEquipItem" /> <!-- Silver Mace -->
+	<movevent event="DeEquip" itemid="2424" slot="hand" function="onDeEquipItem" /> <!-- Silver Mace -->
+	<movevent event="Equip" itemid="2433" slot="hand" function="onEquipItem" /> <!-- Enchanted Staff -->
+	<movevent event="DeEquip" itemid="2433" slot="hand" function="onDeEquipItem" /> <!-- Enchanted Staff -->
+	<movevent event="Equip" itemid="2434" slot="hand" function="onEquipItem" /> <!-- Dragon Hammer -->
+	<movevent event="DeEquip" itemid="2434" slot="hand" function="onDeEquipItem" /> <!-- Dragon Hammer -->
+	<movevent event="Equip" itemid="2436" slot="hand" function="onEquipItem" /> <!-- Skull Staff -->
+	<movevent event="DeEquip" itemid="2436" slot="hand" function="onDeEquipItem" /> <!-- Skull Staff -->
+	<movevent event="Equip" itemid="2437" slot="hand" function="onEquipItem" /> <!-- Light Mace -->
+	<movevent event="DeEquip" itemid="2437" slot="hand" function="onDeEquipItem" /> <!-- Light Mace -->
+	<movevent event="Equip" itemid="2439" slot="hand" function="onEquipItem" /> <!-- Daramanian Mace -->
+	<movevent event="DeEquip" itemid="2439" slot="hand" function="onDeEquipItem" /> <!-- Daramanian Mace -->
+	<movevent event="Equip" itemid="2444" slot="hand" function="onEquipItem" /> <!-- Hammer of Wrath -->
+	<movevent event="DeEquip" itemid="2444" slot="hand" function="onDeEquipItem" /> <!-- Hammer of Wrath -->
+	<movevent event="Equip" itemid="2445" slot="hand" function="onEquipItem" /> <!-- Crystal Mace -->
+	<movevent event="DeEquip" itemid="2445" slot="hand" function="onDeEquipItem" /> <!-- Crystal Mace -->
+	<movevent event="Equip" itemid="2448" slot="hand" function="onEquipItem" /> <!-- Studded Club -->
+	<movevent event="DeEquip" itemid="2448" slot="hand" function="onDeEquipItem" /> <!-- Studded Club -->
+	<movevent event="Equip" itemid="2449" slot="hand" function="onEquipItem" /> <!-- Bone Club -->
+	<movevent event="DeEquip" itemid="2449" slot="hand" function="onDeEquipItem" /> <!-- Bone Club -->
+	<movevent event="Equip" itemid="2452" slot="hand" function="onEquipItem" /> <!-- Heavy Mace -->
+	<movevent event="DeEquip" itemid="2452" slot="hand" function="onDeEquipItem" /> <!-- Heavy Mace -->
+	<movevent event="Equip" itemid="2453" slot="hand" function="onEquipItem" /> <!-- Arcane Staff -->
+	<movevent event="DeEquip" itemid="2453" slot="hand" function="onDeEquipItem" /> <!-- Arcane Staff -->
+	<movevent event="Equip" itemid="2550" slot="hand" function="onEquipItem" /> <!-- Scythe -->
+	<movevent event="DeEquip" itemid="2550" slot="hand" function="onDeEquipItem" /> <!-- Scythe -->
+	<movevent event="Equip" itemid="3961" slot="hand" function="onEquipItem" /> <!-- Lich Staff -->
+	<movevent event="DeEquip" itemid="3961" slot="hand" function="onDeEquipItem" /> <!-- Lich Staff -->
+	<movevent event="Equip" itemid="3966" slot="hand" function="onEquipItem" /> <!-- Banana Staff -->
+	<movevent event="DeEquip" itemid="3966" slot="hand" function="onDeEquipItem" /> <!-- Banana Staff -->
+	
+	<!-- Swords -->
+	<movevent event="Equip" itemid="2376" slot="hand" function="onEquipItem" /> <!-- Sword -->
+	<movevent event="DeEquip" itemid="2376" slot="hand" function="onDeEquipItem" /> <!-- Sword -->
+	<movevent event="Equip" itemid="2377" slot="hand" function="onEquipItem" /> <!-- Two Handed Sword -->
+	<movevent event="DeEquip" itemid="2377" slot="hand" function="onDeEquipItem" /> <!-- Two Handed Sword -->
+	<movevent event="Equip" itemid="2379" slot="hand" function="onEquipItem" /> <!-- Dagger -->
+	<movevent event="DeEquip" itemid="2379" slot="hand" function="onDeEquipItem" /> <!-- Dagger -->
+	<movevent event="Equip" itemid="2383" slot="hand" function="onEquipItem" /> <!-- Spike Sword -->
+	<movevent event="DeEquip" itemid="2383" slot="hand" function="onDeEquipItem" /> <!-- Spike Sword -->
+	<movevent event="Equip" itemid="2384" slot="hand" function="onEquipItem" /> <!-- Rapier -->
+	<movevent event="DeEquip" itemid="2384" slot="hand" function="onDeEquipItem" /> <!-- Rapier -->
+	<movevent event="Equip" itemid="2385" slot="hand" function="onEquipItem" /> <!-- Sabre -->
+	<movevent event="DeEquip" itemid="2385" slot="hand" function="onDeEquipItem" /> <!-- Sabre -->
+	<movevent event="Equip" itemid="2390" slot="hand" function="onEquipItem" /> <!-- Magic Longsword -->
+	<movevent event="DeEquip" itemid="2390" slot="hand" function="onDeEquipItem" /> <!-- Magic Longsword -->
+	<movevent event="Equip" itemid="2392" slot="hand" function="onEquipItem" /> <!-- Fire Sword -->
+	<movevent event="DeEquip" itemid="2392" slot="hand" function="onDeEquipItem" /> <!-- Fire Sword -->
+	<movevent event="Equip" itemid="2393" slot="hand" function="onEquipItem" /> <!-- Giant Sword -->
+	<movevent event="DeEquip" itemid="2393" slot="hand" function="onDeEquipItem" /> <!-- Giant Sword -->
+	<movevent event="Equip" itemid="2395" slot="hand" function="onEquipItem" /> <!-- Carlin Sword -->
+	<movevent event="DeEquip" itemid="2395" slot="hand" function="onDeEquipItem" /> <!-- Carlin Sword -->
+	<movevent event="Equip" itemid="2396" slot="hand" function="onEquipItem" /> <!-- Ice Rapier -->
+	<movevent event="DeEquip" itemid="2396" slot="hand" function="onDeEquipItem" /> <!-- Ice Rapier -->
+	<movevent event="Equip" itemid="2397" slot="hand" function="onEquipItem" /> <!-- Longsword -->
+	<movevent event="DeEquip" itemid="2397" slot="hand" function="onDeEquipItem" /> <!-- Longsword -->
+	<movevent event="Equip" itemid="2400" slot="hand" function="onEquipItem" /> <!-- Magic Sword -->
+	<movevent event="DeEquip" itemid="2400" slot="hand" function="onDeEquipItem" /> <!-- Magic Sword -->
+	<movevent event="Equip" itemid="2403" slot="hand" function="onEquipItem" /> <!-- Knife -->
+	<movevent event="DeEquip" itemid="2403" slot="hand" function="onDeEquipItem" /> <!-- Knife -->
+	<movevent event="Equip" itemid="2404" slot="hand" function="onEquipItem" /> <!-- Combat Knife -->
+	<movevent event="DeEquip" itemid="2404" slot="hand" function="onDeEquipItem" /> <!-- Combat Knight -->
+	<movevent event="Equip" itemid="2406" slot="hand" function="onEquipItem" /> <!-- Short Sword -->
+	<movevent event="DeEquip" itemid="2406" slot="hand" function="onDeEquipItem" /> <!-- Short Sword -->
+	<movevent event="Equip" itemid="2407" slot="hand" function="onEquipItem" /> <!-- Bright Sword -->
+	<movevent event="DeEquip" itemid="2407" slot="hand" function="onDeEquipItem" /> <!-- Bright Sword -->
+	<movevent event="Equip" itemid="2408" slot="hand" function="onEquipItem" /> <!-- Warlord Sword -->
+	<movevent event="DeEquip" itemid="2408" slot="hand" function="onDeEquipItem" /> <!-- Warlord Sword -->
+	<movevent event="Equip" itemid="2409" slot="hand" function="onEquipItem" /> <!-- Serpent Sword -->
+	<movevent event="DeEquip" itemid="2409" slot="hand" function="onDeEquipItem" /> <!-- Serpent Sword -->
+	<movevent event="Equip" itemid="2411" slot="hand" function="onEquipItem" /> <!-- Poison Dagger -->
+	<movevent event="DeEquip" itemid="2411" slot="hand" function="onDeEquipItem" /> <!-- Poison Dagger -->
+	<movevent event="Equip" itemid="2412" slot="hand" function="onEquipItem" /> <!-- Katana -->
+	<movevent event="DeEquip" itemid="2412" slot="hand" function="onDeEquipItem" /> <!-- Katana -->
+	<movevent event="Equip" itemid="2413" slot="hand" function="onEquipItem" /> <!-- Broadsword -->
+	<movevent event="DeEquip" itemid="2413" slot="hand" function="onDeEquipItem" /> <!-- Broadsword -->
+	<movevent event="Equip" itemid="2419" slot="hand" function="onEquipItem" /> <!-- Scimitar -->
+	<movevent event="DeEquip" itemid="2419" slot="hand" function="onDeEquipItem" /> <!-- Scimitar -->
+	<movevent event="Equip" itemid="2420" slot="hand" function="onEquipItem" /> <!-- Machete -->
+	<movevent event="DeEquip" itemid="2420" slot="hand" function="onDeEquipItem" /> <!-- Machete -->
+	<movevent event="Equip" itemid="2438" slot="hand" function="onEquipItem" /> <!-- Foil -->
+	<movevent event="DeEquip" itemid="2438" slot="hand" function="onDeEquipItem" /> <!-- Foil -->
+	<movevent event="Equip" itemid="2442" slot="hand" function="onEquipItem" /> <!-- Heavy Machete -->
+	<movevent event="DeEquip" itemid="2442" slot="hand" function="onDeEquipItem" /> <!-- Heavy Machete -->
+	<movevent event="Equip" itemid="2446" slot="hand" function="onEquipItem" /> <!-- Pharaoh Sword -->
+	<movevent event="DeEquip" itemid="2446" slot="hand" function="onDeEquipItem" /> <!-- Pharaoh Sword -->
+	<movevent event="Equip" itemid="2450" slot="hand" function="onEquipItem" /> <!-- Bone Sword -->
+	<movevent event="DeEquip" itemid="2450" slot="hand" function="onDeEquipItem" /> <!-- Bone Sword -->
+	<movevent event="Equip" itemid="2451" slot="hand" function="onEquipItem" /> <!-- Djinn Blade -->
+	<movevent event="DeEquip" itemid="2451" slot="hand" function="onDeEquipItem" /> <!-- Djinn Blade -->
+	<movevent event="Equip" itemid="3963" slot="hand" function="onEquipItem" /> <!-- Templar Scytheblade -->
+	<movevent event="DeEquip" itemid="3963" slot="hand" function="onDeEquipItem" /> <!-- Templar Scytheblade -->
+	
+	<!-- Distance Weapons -->
+	<movevent event="Equip" itemid="1294" slot="hand" function="onEquipItem" /> <!-- Small Stone -->
+	<movevent event="DeEquip" itemid="1294" slot="hand" function="onDeEquipItem" /> <!-- Small Stone -->
+	<movevent event="Equip" itemid="2111" slot="hand" function="onEquipItem" /> <!-- Snowball -->
+	<movevent event="DeEquip" itemid="2111" slot="hand" function="onDeEquipItem" /> <!-- Snowball -->
+	<movevent event="Equip" itemid="2389" slot="hand" function="onEquipItem" /> <!-- Spears -->
+	<movevent event="DeEquip" itemid="2389" slot="hand" function="onDeEquipItem" /> <!-- Spears -->
+	<movevent event="Equip" itemid="2399" slot="hand" function="onEquipItem" /> <!-- Throwing Star -->
+	<movevent event="DeEquip" itemid="2399" slot="hand" function="onDeEquipItem" /> <!-- Throwing Star -->
+	<movevent event="Equip" itemid="2410" slot="hand" function="onEquipItem" /> <!-- Throwing Knife -->
+	<movevent event="DeEquip" itemid="2410" slot="hand" function="onDeEquipItem" /> <!-- Throwing Knife -->
+	<movevent event="Equip" itemid="2455" slot="hand" function="onEquipItem" /> <!-- Crossbow -->
+	<movevent event="DeEquip" itemid="2455" slot="hand" function="onDeEquipItem" /> <!-- Crossbow -->
+	<movevent event="Equip" itemid="2456" slot="hand" function="onEquipItem" /> <!-- Bow -->
+	<movevent event="DeEquip" itemid="2456" slot="hand" function="onDeEquipItem" /> <!-- Bow -->
+	<movevent event="Equip" itemid="5090" slot="ammo" function="onEquipItem" /> <!-- Arrow Quiver -->
+	<movevent event="DeEquip" itemid="5090" slot="ammo" function="onDeEquipItem" /> <!-- Arrow Quiver -->
+	<movevent event="Equip" itemid="5091" slot="ammo" function="onEquipItem" /> <!-- Bolt Quiver -->
+	<movevent event="DeEquip" itemid="5091" slot="ammo" function="onDeEquipItem" /> <!-- Bolt Quiver -->
+	<movevent event="Equip" itemid="5090" slot="hand" function="onEquipItem" /> <!-- Arrow Quiver -->
+	<movevent event="DeEquip" itemid="5090" slot="hand" function="onDeEquipItem" /> <!-- Arrow Quiver -->
+	<movevent event="Equip" itemid="5091" slot="hand" function="onEquipItem" /> <!-- Bolt Quiver -->
+	<movevent event="DeEquip" itemid="5091" slot="hand" function="onDeEquipItem" /> <!-- Bolt Quiver -->
+
+	<movevent event="Equip" itemid="5546" slot="hand" function="onEquipItem" /> <!-- Arrow Quiver -->
+	<movevent event="DeEquip" itemid="5546" slot="hand" function="onDeEquipItem" /> <!-- Arrow Quiver -->
+	<movevent event="Equip" itemid="5545" slot="hand" function="onEquipItem" /> <!-- Bolt Quiver -->
+	<movevent event="DeEquip" itemid="5545" slot="hand" function="onDeEquipItem" /> <!-- Bolt Quiver -->
+
+	<movevent event="Equip" itemid="5481" slot="hand" function="onEquipItem" /> <!-- Modified Crossbow -->
+	<movevent event="DeEquip" itemid="5481" slot="hand" function="onDeEquipItem" /> <!-- Modified Crossbow -->
+	<movevent event="Equip" itemid="5482" slot="hand" function="onEquipItem" /> <!-- Elven Crossbow -->
+	<movevent event="DeEquip" itemid="5482" slot="hand" function="onDeEquipItem" /> <!-- Elven Crossbow -->
+	<movevent event="Equip" itemid="5483" slot="hand" function="onEquipItem" /> <!-- Sacred Crossbow -->
+	<movevent event="DeEquip" itemid="5483" slot="hand" function="onDeEquipItem" /> <!-- Sacred Crossbow -->
+
+	<movevent event="Equip" itemid="5484" slot="hand" function="onEquipItem" /> <!-- Modified Bow -->
+	<movevent event="DeEquip" itemid="5484" slot="hand" function="onDeEquipItem" /> <!-- Modified Bow -->
+	<movevent event="Equip" itemid="5485" slot="hand" function="onEquipItem" /> <!-- Elven Bow -->
+	<movevent event="DeEquip" itemid="5485" slot="hand" function="onDeEquipItem" /> <!-- Elven Bow -->
+	<movevent event="Equip" itemid="5486" slot="hand" function="onEquipItem" /> <!-- Sacred Bow -->
+	<movevent event="DeEquip" itemid="5486" slot="hand" function="onDeEquipItem" /> <!-- Sacred Bow -->
+
+	<movevent event="Equip" itemid="5490" slot="hand" function="onEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="Equip" itemid="5490" slot="ammo" function="onEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="DeEquip" itemid="5490" slot="hand" function="onDeEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="DeEquip" itemid="5490" slot="ammo" function="onDeEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="Equip" itemid="5491" slot="hand" function="onEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="Equip" itemid="5491" slot="ammo" function="onEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="DeEquip" itemid="5491" slot="hand" function="onDeEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="DeEquip" itemid="5491" slot="ammo" function="onDeEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="Equip" itemid="5492" slot="hand" function="onEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="Equip" itemid="5492" slot="ammo" function="onEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="DeEquip" itemid="5492" slot="hand" function="onDeEquipItem" /> <!-- Bolt quiver -->
+	<movevent event="DeEquip" itemid="5492" slot="ammo" function="onDeEquipItem" /> <!-- Bolt quiver -->
+
+	<movevent event="Equip" itemid="5487" slot="hand" function="onEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="Equip" itemid="5487" slot="ammo" function="onEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="DeEquip" itemid="5487" slot="hand" function="onDeEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="DeEquip" itemid="5487" slot="ammo" function="onDeEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="Equip" itemid="5488" slot="hand" function="onEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="Equip" itemid="5488" slot="ammo" function="onEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="DeEquip" itemid="5488" slot="hand" function="onDeEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="DeEquip" itemid="5488" slot="ammo" function="onDeEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="Equip" itemid="5489" slot="hand" function="onEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="Equip" itemid="5489" slot="ammo" function="onEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="DeEquip" itemid="5489" slot="hand" function="onDeEquipItem" /> <!-- Arrow quiver -->
+	<movevent event="DeEquip" itemid="5489" slot="ammo" function="onDeEquipItem" /> <!-- Arrow quiver -->
+
+	<movevent event="Equip" itemid="5554" slot="hand" function="onEquipItem" /> <!-- Sunflare Wand -->
+	<movevent event="DeEquip" itemid="5554" slot="hand" function="onDeEquipItem" /> <!-- Sunflare Wand -->
+	<movevent event="Equip" itemid="5555" slot="hand" function="onEquipItem" /> <!-- Skywarden Wand -->
+	<movevent event="DeEquip" itemid="5555" slot="hand" function="onDeEquipItem" /> <!-- Skywarden Wand -->
+	<movevent event="Equip" itemid="5556" slot="hand" function="onEquipItem" /> <!-- Skullwing Wand -->
+	<movevent event="DeEquip" itemid="5556" slot="hand" function="onDeEquipItem" /> <!-- Skullwing Wand -->
+	<movevent event="Equip" itemid="5558" slot="hand" function="onEquipItem" /> <!-- Shadownheart Wand -->
+	<movevent event="DeEquip" itemid="5558" slot="hand" function="onDeEquipItem" /> <!-- Shadownheart Wand -->
+	<movevent event="Equip" itemid="5559" slot="hand" function="onEquipItem" /> <!-- Celestial Wand -->
+	<movevent event="DeEquip" itemid="5559" slot="hand" function="onDeEquipItem" /> <!-- Celestial Wand -->
+	<movevent event="Equip" itemid="5560" slot="hand" function="onEquipItem" /> <!-- Bloomwarden Wand -->
+	<movevent event="DeEquip" itemid="5560" slot="hand" function="onDeEquipItem" /> <!-- Bloomwarden Wand -->
+	<movevent event="Equip" itemid="5561" slot="hand" function="onEquipItem" /> <!-- Necromantic Wand -->
+	<movevent event="DeEquip" itemid="5561" slot="hand" function="onDeEquipItem" /> <!-- Necromantic Wand -->
+	<movevent event="Equip" itemid="5565" slot="hand" function="onEquipItem" /> <!-- Bloodfare Wand -->
+	<movevent event="DeEquip" itemid="5565" slot="hand" function="onDeEquipItem" /> <!-- Bloodfare Wand -->
+	<movevent event="Equip" itemid="5567" slot="hand" function="onEquipItem" /> <!-- Frostbane Wand -->
+	<movevent event="DeEquip" itemid="5567" slot="hand" function="onDeEquipItem" /> <!-- Frostbane Wand -->
+	<movevent event="Equip" itemid="5568" slot="hand" function="onEquipItem" /> <!-- Solara's Wand -->
+	<movevent event="DeEquip" itemid="5568" slot="hand" function="onDeEquipItem" /> <!-- Solara's Wand -->
+
+
+
+
+
+	
+</movements>

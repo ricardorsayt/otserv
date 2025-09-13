@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raid>
+	<!-- Raid is unannounced! -->
+	<announce delay="1000" type="event" message="Halloween energy has arrived...Thais and Rookgaard under attack!"/>
+	<areaspawn delay="1000" lifetime="7200000" radius="4" centerx="32096" centery="32204" centerz="7">
+		<monster name="the halloween hare" minamount="1" maxamount="1"/>
+	</areaspawn>
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32068" centery="32226" centerz="6">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="3000" lifetime="7200000" radius="5" centerx="32093" centery="32229" centerz="6">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32081" centery="32214" centerz="6">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32060" centery="32177" centerz="6">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32082" centery="32184" centerz="6">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32082" centery="32184" centerz="5">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32099" centery="32183" centerz="6">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32103" centery="32192" centerz="5">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32026" centery="32195" centerz="6">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32096" centery="32204" centerz="7">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>	
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32084" centery="32193" centerz="7">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+		<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32071" centery="32217" centerz="7">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+		<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32054" centery="32232" centerz="7">
+	</areaspawn>
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32064" centery="32192" centerz="7">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+		<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32032" centery="32200" centerz="7">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+		<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32047" centery="32193" centerz="7">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>	
+	<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32091" centery="32164" centerz="7">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+		<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32115" centery="32213" centerz="7">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+		<areaspawn delay="3000" lifetime="7200000" radius="4" centerx="32013" centery="32203" centerz="7">
+		<monster name="novice pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="10000" radius="7" centerx="32370" centery="32213" centerz="7">
+		<monster name="the halloween hare" minamount="1" maxamount="1"/>
+	</areaspawn>
+	<areaspawn delay="10000" radius="7" centerx="32370" centery="32213" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="20000" radius="7" centerx="32339" centery="32183" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="25000" radius="7" centerx="32368" centery="32183" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="30000" radius="7" centerx="32324" centery="32226" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="35000" radius="7" centerx="32370" centery="32213" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="40000" radius="7" centerx="32385" centery="32216" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="45000" radius="7" centerx="32405" centery="32213" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="50000" radius="7" centerx="32422" centery="32214" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="55000" radius="7" centerx="32425" centery="32260" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="60000" radius="7" centerx="32409" centery="32255" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="65000" radius="7" centerx="32389" centery="32251" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="70000" radius="7" centerx="32337" centery="32262" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="75000" radius="7" centerx="32335" centery="32272" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="80000" radius="7" centerx="32322" centery="32241" centerz="7">
+		<monster name="pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="85000" radius="7" centerx="32310" centery="32248" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="90000" radius="7" centerx="32369" centery="32223" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="95000" radius="7" centerx="32425" centery="32195" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="100000" radius="7" centerx="32369" centery="32197" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="105000" radius="7" centerx="32425" centery="32241" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="110000" radius="7" centerx="32366" centery="32252" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1820000" radius="7" centerx="32339" centery="32183" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1825000" radius="7" centerx="32368" centery="32183" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1830000" radius="7" centerx="32324" centery="32226" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1835000" radius="7" centerx="32370" centery="32213" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1840000" radius="7" centerx="32385" centery="32216" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1845000" radius="7" centerx="32405" centery="32213" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1850000" radius="7" centerx="32422" centery="32214" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1855000" radius="7" centerx="32425" centery="32260" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1860000" radius="7" centerx="32409" centery="32255" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1865000" radius="7" centerx="32389" centery="32251" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1870000" radius="7" centerx="32337" centery="32262" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1875000" radius="7" centerx="32335" centery="32272" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1880000" radius="7" centerx="32322" centery="32241" centerz="7">
+		<monster name="pumpkinhead" minamount="10" maxamount="15"/>
+	</areaspawn>
+	<areaspawn delay="1885000" radius="7" centerx="32310" centery="32248" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1890000" radius="7" centerx="32369" centery="32223" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1895000" radius="7" centerx="32425" centery="32195" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1900000" radius="7" centerx="32369" centery="32197" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1905000" radius="7" centerx="32425" centery="32241" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+	<areaspawn delay="1910000" radius="7" centerx="32366" centery="32252" centerz="7">
+		<monster name="pumpkinhead" minamount="20" maxamount="30"/>
+	</areaspawn>
+</raid>

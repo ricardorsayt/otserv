@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<monster name="Barbarian Brutetamer" nameDescription="a barbarian brutetamer" race="blood" experience="390" speed="64" manacost="0">
+	<health now="600" max="600" />
+	<look type="161" head="0" body="0" legs="0" feet="0" corpse="3058" />
+	<targetchange chance="50" />
+	<targetstrategy nearest="100" weakest="0" mostdamage="0" random="0" />
+	<bestiary id="8" class="humanoid" prowess="250" expertise="600" mastery="1200" difficulty="2" occurrence="2"/>
+	<flags>
+		<flag canpushcreatures="false" />
+		<flag canpushitems="true" />
+		<flag convinceable="false" />
+		<flag hostile="true" />
+		<flag illusionable="true" />
+		<flag pushable="false" />
+		<flag summonable="false" />
+		<flag runonhealth="0" />
+		<flag targetdistance="4" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1100" skillnextlevel="100" skilladdcount="2" skill="58" attack="48" />
+		<attack name="ice" delay="7" min="-46" max="-115" range="7">
+			<attribute key="areaeffect" value="ice" />
+			<attribute key="shooteffect" value="ice" />
+		</attack>
+		<attack name="lifedrain" delay="7" min="-85" max="-135" range="7">
+			<attribute key="areaeffect" value="redspark" />
+		</attack>
+		<attack name="speed" delay="7" duration="10000" speed="-70" speedvariation="0" radius="3" target="0">
+			<attribute key="areaeffect" value="ice" />
+		</attack>
+		<attack name="ice" delay="7" min="-35" max="-95" range="7" target="1">
+			<attribute key="areaeffect" value="ice" />
+			<attribute key="shooteffect" value="ice" />
+		</attack>
+	</attacks>
+	<defenses defense="20" armor="25">
+		<defense name="healing" delay="5" min="52" max="78">
+			<attribute key="areaeffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity fire="true" />
+		<immunity ice="true" />
+		<immunity invisible="true" />
+		<immunity outfit="true" />
+	</immunities>
+	<elements />
+	<voices>
+		<voice sentence="To me, creatures of the wild!" yell="0" />
+		<voice sentence="My instincts tell me about your cowardice." yell="0" />
+		<voice sentence="Feel the power of the beast!" yell="0" />
+	</voices>
+	<loot>
+		<item id="2229" countmax="3" chance="60000" /><!-- skull -->
+		<item id="2436" countmax="1" chance="1000" /><!-- skull staff -->
+		<item id="2229" countmax="2" chance="80000" /><!-- skull -->
+		<item id="2423" countmax="1" chance="7500" /><!-- clerical mace -->
+		<item id="2789" countmax="8" chance="11000" /><!-- brown mushroom -->
+		<item id="2401" countmax="1" chance="10000" /><!-- staff -->
+		<item id="2549" countmax="1" chance="30000" /><!-- rake -->
+		<item id="2148" countmax="90" chance="35000" /><!-- gold coin -->
+		<item id="2148" countmax="53" chance="32500" /><!-- gold coin -->
+		<item id="2148" countmax="88" chance="32000" /><!-- gold coin -->
+		<item id="2189" countmax="1" chance="1" /><!-- yellow spell wand -->
+		<item id="2168" countmax="1" chance="400" /><!-- life ring -->
+		<item id="2171" countmax="1" chance="70" /><!-- platinum amulet -->
+		<item id="2654" countmax="1" chance="10000" /><!-- cape -->
+		<item id="2641" countmax="1" chance="600" /><!-- patched boots -->
+		<item id="5481" countmax="1" chance="300" /><!-- crossbow t2 -->
+	</loot>
+</monster>

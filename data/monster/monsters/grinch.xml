@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<monster name="Grinch" nameDescription="a grinch" race="undead" experience="20" speed="23" manacost="0">
+	<health now="50" max="50" />
+	<look type="291" head="0" body="0" legs="0" feet="0" corpse="0" />
+	<targetchange chance="0" />
+	<targetstrategy nearest="100" weakest="0" mostdamage="0" random="0" />
+	<flags>
+		<flag canpushcreatures="true" />
+		<flag canpushitems="true" />
+		<flag convinceable="false" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag pushable="true" />
+		<flag summonable="false" />
+		<flag runonhealth="15" />
+		<flag targetdistance="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1500" skillnextlevel="100" skilladdcount="1" skill="15" attack="10" />
+		<attack name="ice" delay="12" min="-5" max="-10">
+			<attribute key="areaeffect" value="ice" />
+			<attribute key="shooteffect" value="snowball" />
+		</attack>
+	</attacks>
+	<defenses defense="8" armor="6" />
+	<immunities>
+		<immunity poison="1" />
+		<immunity physical="0" />
+		<immunity outfit="1" />
+		<immunity lifedrain="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<elements />
+	<voices>
+		<voice sentence="I hate Christmas too!!!!" yell="0" />
+		<voice sentence="Waste of time, yes!" yell="0" />
+		<voice sentence="Gruntz!" yell="0" />
+		<voice sentence="What boring people..." yell="0" />
+	</voices>
+</monster>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<monster name="Dwarf Soldier" nameDescription="a dwarf soldier" race="blood" experience="70" speed="48" manacost="360">
+	<health now="135" max="135" />
+	<look type="71" head="0" body="0" legs="0" feet="0" corpse="2985" />
+	<targetchange chance="0" />
+	<targetstrategy nearest="100" weakest="0" mostdamage="0" random="0" />
+	<bestiary id="38" class="humanoid" prowess="200" expertise="600" mastery="1200" difficulty="2" occurrence="2"/>
+	<flags>
+		<flag canpushcreatures="false" />
+		<flag canpushitems="true" />
+		<flag convinceable="true" />
+		<flag hostile="true" />
+		<flag illusionable="true" />
+		<flag pushable="false" />
+		<flag summonable="true" />
+		<flag runonhealth="0" />
+		<flag targetdistance="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1200" skillnextlevel="100" skilladdcount="1" skill="42" attack="21" />
+		<attack name="physical" delay="8" min="-20" max="-40" range="7">
+			<attribute key="shooteffect" value="bolt" />
+		</attack>
+	</attacks>
+	<defenses defense="20" armor="9" />
+	<immunities>
+		<immunity poison="true" />
+	</immunities>
+	<elements />
+	<voices>
+		<voice sentence="Hail Durin!" yell="0" />
+	</voices>
+	<loot>
+		<item id="2787" countmax="2" chance="40000" />
+		<item id="2481" countmax="1" chance="12000" />
+		<item id="2554" countmax="1" chance="10000" />
+		<item id="2148" countmax="12" chance="35000" />
+		<item id="2525" countmax="1" chance="5000" />
+		<item id="2455" countmax="1" chance="4000" />
+		<item id="2464" countmax="1" chance="9000" />
+		<item id="2543" countmax="4" chance="40000" />
+		<item id="2378" countmax="1" chance="1250" />
+		<item id="2208" countmax="1" chance="100" />
+		<item id="5091" countmax="1" chance="20" />
+	</loot>
+</monster>

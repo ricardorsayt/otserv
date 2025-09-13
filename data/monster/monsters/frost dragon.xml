@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<monster name="Frost Dragon" nameDescription="a frost dragon" race="blood" experience="5200" speed="120" manacost="0">
+	<health now="6000" max="6000" />
+	<look type="165" head="0" body="0" legs="0" feet="0" corpse="5094" />
+	<targetchange chance="5" />
+	<targetstrategy nearest="70" weakest="0" mostdamage="30" random="0" />
+	<bestiary id="52" class="dragon" prowess="300" expertise="750" mastery="1800" difficulty="4" occurrence="4"/>
+	<flags>
+		<flag canpushcreatures="true" />
+		<flag canpushitems="true" />
+		<flag convinceable="false" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag pushable="false" />
+		<flag summonable="false" />
+		<flag runonhealth="500" />
+		<flag targetdistance="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1500" skillnextlevel="100" skilladdcount="1" skill="110" attack="75" />
+		<attack name="ice" delay="7" min="-180" max="-240" range="7" radius="4" target="1">
+			<attribute key="areaeffect" value="ice" />
+			<attribute key="shooteffect" value="ice" />
+		</attack>
+		<attack name="speed" delay="8" duration="30000" range="7" speed="-95" speedvariation="10" radius="3" target="1">
+			<attribute key="areaeffect" value="poff" />
+			<attribute key="shooteffect" value="ice" />
+		</attack>
+		<attack name="ice" delay="10" length="9" spread="4" min="-300" max="-600">
+			<attribute key="areaeffect" value="ice" />
+		</attack>
+		<attack name="ice" delay="9" min="-80" max="-180" range="7" radius="3" target="0">
+			<attribute key="areaeffect" value="ice" />
+			<attribute key="shooteffect" value="ice" />
+		</attack>
+		<attack name="physical" delay="9" length="1" spread="0" min="0" max="-200">
+			<attribute key="areaeffect" value="poff" />
+		</attack>
+		<attack name="physical" delay="8" length="8" spread="3" min="-138" max="-280">
+			<attribute key="areaeffect" value="poff" />
+		</attack>
+	</attacks>
+	<defenses defense="95" armor="70">
+		<defense name="healing" delay="10" min="200" max="340">
+			<attribute key="areaeffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity fire="true" />
+		<immunity ice="true" />
+		<immunity invisible="true" />
+		<immunity outfit="true" />
+		<immunity paralyze="true" />
+		<immunity poison="true" />
+	</immunities>
+	<elements />
+	<voices>
+		<voice sentence="YOU WILL FREEZE!" yell="1" />
+		<voice sentence="ZCHHHHH!" yell="1" />
+		<voice sentence="I am so cool." yell="0" />
+		<voice sentence="Chill out!" yell="0" />
+	</voices>
+	<loot>
+		<item id="2466" countmax="1" chance="1000" /><!-- golden armor -->
+		<item id="2146" countmax="6" chance="19000" />
+		<item id="2396" countmax="1" chance="25000" />
+		<item id="2647" countmax="1" chance="6000" />
+		<item id="2398" countmax="1" chance="30000" />
+		<item id="2195" countmax="1" chance="1000" /><!-- boots of haste -->
+		<item id="2152" countmax="4" chance="80000" />
+		<item id="2148" countmax="90" chance="80000" />
+		<item id="2516" countmax="1" chance="2000" />
+		<item id="2434" countmax="1" chance="6000" />
+		<item id="5109" countmax="11" chance="45000" />
+		<item id="2542" countmax="1" chance="500" /><!-- tempest shield -->
+		<item id="2445" countmax="1" chance="1000" /><!-- crystal mace -->
+		<item id="2148" countmax="100" chance="100000" />
+		<item id="5567" countmax="1" chance="500" /><!-- frostbane wand -->
+		<item id="5492" countmax="1" chance="500" /><!-- bolt quiver t4 -->
+	</loot>
+</monster>

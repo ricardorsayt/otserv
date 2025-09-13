@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<monster name="Evil Grinch" nameDescription="a evil grinch" race="undead" experience="20" speed="23" manacost="0">
+	<health now="500" max="500"/>
+	<look type="290" head="0" body="0" legs="0" feet="69" corpse="0" />
+	<targetchange chance="0" />
+	<targetstrategy nearest="0" weakest="25" mostdamage="25" random="50" />
+	<flags>
+		<flag canpushcreatures="true" />
+		<flag canpushitems="true" />
+		<flag convinceable="false" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag pushable="false" />
+		<flag summonable="false" />
+		<flag runonhealth="150" />
+		<flag targetdistance="2" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1500" skillnextlevel="100" skilladdcount="1" skill="30" attack="30" />
+		<attack name="ice" delay="12" min="-6" max="-18">
+			<attribute key="areaeffect" value="ice" />
+			<attribute key="shooteffect" value="snowball" />
+		</attack>
+		<attack name="ice" delay="9" min="-5" max="-25" radius="30" target="0">
+			<attribute key="areaeffect" value="ice" />
+			<attribute key="shooteffect" value="snowball" />
+		</attack>
+		<attack name="ice" delay="8" length="10" spread="0" min="-10" max="-26">
+			<attribute key="areaeffect" value="ice" />
+		</attack>
+		<attack name="physical" delay="10" min="-10" max="-22" radius="3" target="1">
+			<attribute key="areaeffect" value="greennote" />
+		</attack>
+		<attack name="poison" delay="9" length="5" spread="3" min="-20" max="-26">
+			<attribute key="areaeffect" value="greenspark" />
+		</attack>
+		<attack name="lifedrain" delay="10" min="-10" max="-15">
+			<attribute key="areaeffect" value="rednote" />
+		</attack>
+		<attack name="physical" delay="12" min="-16" max="-21">
+			<attribute key="areaeffect" value="blackspark" />
+			<attribute key="shooteffect" value="largerock" />
+		</attack>
+	</attacks>
+	<defenses defense="11" armor="11">
+		<defense name="healing" delay="12" min="5" max="10">
+			<attribute key="areaeffect" value="greenshimmer" />
+		</defense>
+		<defense name="invisible" delay="10" duration="1000">
+			<attribute key="areaeffect" value="greenbubble" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity poison="1" />
+		<immunity physical="0" />
+		<immunity outfit="1" />
+		<immunity lifedrain="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<elements />
+	<voices>
+		<voice sentence="I hate Christmas!!!" yell="1" />
+		<voice sentence="Waste of time..." yell="0" />
+		<voice sentence="Your gifts will stay with me!" yell="0" />
+	</voices>
+</monster>

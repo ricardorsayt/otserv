@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<monster name="Pumpkinhead" nameDescription="a pumpkinhead" race="venom" experience="250" speed="150" manacost="0">
+	<health now="1000" max="1000" />
+	<look type="288" head="0" body="0" legs="0" feet="0" corpse="5120" />
+	<targetchange chance="0" />
+	<targetstrategy nearest="0" weakest="0" mostdamage="50" random="50" />
+	<flags>
+		<flag canpushcreatures="true" />
+		<flag canpushitems="true" />
+		<flag convinceable="false" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag pushable="true" />
+		<flag summonable="false" />
+		<flag runonhealth="350" />
+		<flag targetdistance="2" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1500" skillnextlevel="100" skilladdcount="1" skill="1" attack="1" />
+	</attacks>
+	<defenses defense="60" armor="42" />
+	<immunities>
+		<immunity invisible="true" />
+		<immunity outfit="true" />
+		<immunity paralyze="true" />
+	</immunities>
+	<elements />
+	<voices>
+		<voice sentence="Iwahuuuuuuu!" yell="0" />
+	</voices>
+	<loot>
+		<item id="5123" countmax="2" chance="50000" />
+		<item id="5123" countmax="5" chance="50000" />
+		<item id="5123" countmax="10" chance="50000" />
+		<item id="5127" countmax="1" chance="50" />
+		<item id="5126" countmax="1" chance="5" />
+	</loot>
+</monster>

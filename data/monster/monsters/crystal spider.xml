@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<monster name="Crystal Spider" nameDescription="a crystal spider" race="venom" experience="900" speed="130" manacost="0">
+	<health now="1000" max="1000" />
+	<look type="166" head="0" body="0" legs="0" feet="0" corpse="5096" />
+	<targetchange chance="20" />
+	<targetstrategy nearest="70" weakest="0" mostdamage="20" random="10" />
+	<bestiary id="28" class="magical" prowess="250" expertise="600" mastery="1200" difficulty="3" occurrence="3"/>
+	<flags>
+		<flag canpushcreatures="true" />
+		<flag canpushitems="true" />
+		<flag convinceable="false" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag pushable="false" />
+		<flag summonable="false" />
+		<flag runonhealth="0" />
+		<flag targetdistance="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1100" skillnextlevel="100" skilladdcount="2" skill="80" attack="50" />
+		<attack name="ice" delay="6" min="-50" max="-175" range="7" radius="1" target="1">
+			<attribute key="areaeffect" value="ice" />
+			<attribute key="shooteffect" value="ice" />
+		</attack>
+		<attack name="ice" delay="6" min="-50" max="-165" radius="5" target="0">
+			<attribute key="areaeffect" value="ice" />
+		</attack>
+	</attacks>
+	<defenses defense="20" armor="30">
+		<defense name="speed" delay="18" duration="20000" speed="65" speedvariation="10">
+			<attribute key="areaeffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity fire="true" />
+		<immunity ice="true" />
+		<immunity invisible="true" />
+		<immunity lifedrain="true" />
+		<immunity outfit="true" />
+		<immunity poison="true" />
+	</immunities>
+	<elements />
+	<loot>
+		<item id="2111" countmax="3" chance="33300" />
+		<item id="2417" countmax="1" chance="6500" />
+		<item id="2171" countmax="1" chance="100" />
+		<item id="2483" countmax="1" chance="10500" />
+		<item id="2165" countmax="1" chance="8000" />
+		<item id="2391" countmax="1" chance="900" />
+		<item id="2148" countmax="11" chance="99900" />
+		<item id="2148" countmax="65" chance="66600" />
+		<item id="2148" countmax="70" chance="33300" />
+		<item id="2477" countmax="1" chance="330" />
+		<item id="2209" countmax="1" chance="5000" />
+		<item id="5567" countmax="1" chance="100" /><!-- frostbane wand -->
+		<item id="5491" countmax="1" chance="100" /><!-- boltquiver t3 -->
+		
+	</loot>
+</monster>

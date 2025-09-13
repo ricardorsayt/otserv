@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<monster name="Minotaur Archer" nameDescription="a minotaur archer" race="blood" experience="65" speed="40" manacost="390">
+	<health now="100" max="100" />
+	<look type="24" head="0" body="0" legs="0" feet="0" corpse="2871" />
+	<targetchange chance="50" />
+	<targetstrategy nearest="100" weakest="0" mostdamage="0" random="0" />
+	<bestiary id="74" class="humanoid" prowess="250" expertise="600" mastery="1200" difficulty="2" occurrence="2"/>
+	<flags>
+		<flag canpushcreatures="false" />
+		<flag canpushitems="false" />
+		<flag convinceable="true" />
+		<flag hostile="true" />
+		<flag illusionable="true" />
+		<flag pushable="false" />
+		<flag summonable="true" />
+		<flag runonhealth="10" />
+		<flag targetdistance="4" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1500" skillnextlevel="100" skilladdcount="1" skill="20" attack="15" />
+		<attack name="physical" delay="3" min="-45" max="-85" range="7">
+			<attribute key="shooteffect" value="bolt" />
+		</attack>
+	</attacks>
+	<defenses defense="8" armor="7" />
+	<immunities />
+	<elements />
+	<voices>
+		<voice sentence="Ruan Wihmpy!" yell="0" />
+		<voice sentence="Kaplar!" yell="0" />
+	</voices>
+	<loot>
+		<item id="2481" countmax="1" chance="2000" />
+		<item id="2483" countmax="1" chance="1000" />
+		<item id="2666" countmax="1" chance="10000" />
+		<item id="2649" countmax="1" chance="5000" />
+		<item id="2461" countmax="1" chance="5000" />
+		<item id="2148" countmax="20" chance="15000" />
+		<item id="2148" countmax="10" chance="70000" />
+		<item id="2455" countmax="1" chance="10000" />
+		<item id="2465" countmax="1" chance="2000" />
+		<item id="2543" countmax="5" chance="80000" />
+		<item id="2543" countmax="15" chance="50000" />
+		<item id="5091" countmax="1" chance="20" />
+	</loot>
+</monster>

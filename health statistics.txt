@@ -1,0 +1,86 @@
+2024-07-17 15:51:55 - Someone dealt 3777 damage of Rat.
+2024-07-17 15:52:54 - Fawkes dealt 45 damage of Cave Rat.
+2024-07-17 15:53:19 - Fawkes dealt 71 damage of Cave Rat.
+2024-07-17 15:53:19 - Fawkes dealt 71 damage of Cave Rat.
+2024-07-17 15:53:19 - Fawkes dealt 71 damage of Cave Rat.
+2024-07-17 15:53:19 - Fawkes dealt 71 damage of Cave Rat.
+2024-07-17 15:53:19 - Fawkes dealt 71 damage of Cave Rat.
+2024-07-17 15:53:19 - Fawkes dealt 71 damage of Cave Rat.
+2024-07-17 15:53:19 - Fawkes dealt 71 damage of Cave Rat.
+2024-07-17 15:53:19 - Fawkes dealt 71 damage of Cave Rat.
+2024-07-17 15:53:27 - Fawkes dealt 49 damage of Cave Rat.
+2024-07-17 15:53:27 - Fawkes dealt 49 damage of Cave Rat.
+2024-07-17 15:53:28 - Fawkes dealt 49 damage of Cave Rat.
+2024-07-17 15:54:05 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:05 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:05 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:05 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:05 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:05 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:05 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:05 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:05 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:06 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:06 - Fawkes dealt 47 damage of Cave Rat.
+2024-07-17 15:54:12 - Fawkes dealt 45 damage of Cave Rat.
+2024-07-17 15:54:12 - Fawkes dealt 45 damage of Cave Rat.
+2024-07-17 15:54:12 - Fawkes dealt 45 damage of Cave Rat.
+2024-07-17 15:54:12 - Fawkes dealt 45 damage of Cave Rat.
+2024-07-17 15:54:12 - Fawkes dealt 45 damage of Cave Rat.
+2024-07-17 15:54:12 - Fawkes dealt 45 damage of Cave Rat.
+2024-07-17 15:54:12 - Fawkes dealt 45 damage of Cave Rat.
+2024-07-17 15:54:14 - Fawkes dealt 44 damage of Cave Rat.
+2024-07-17 15:54:14 - Fawkes dealt 44 damage of Cave Rat.
+2024-07-17 15:54:14 - Fawkes dealt 44 damage of Cave Rat.
+2024-07-17 15:54:17 - Fawkes dealt 67 damage of Cave Rat.
+2024-07-17 15:54:17 - Fawkes dealt 67 damage of Cave Rat.
+2024-07-17 15:54:23 - Fawkes dealt 59 damage of Cave Rat.
+2024-07-17 15:59:15 - Dragon dealt 56 damage of Dragon.
+2024-07-17 15:59:18 - Dragon dealt 50 damage of Dragon.
+2024-07-17 15:59:22 - Dragon dealt 47 damage of Dragon.
+2024-07-17 15:59:24 - Dragon dealt 48 damage of Dragon.
+2024-07-17 15:59:26 - Dragon dealt 48 damage of Dragon.
+2024-07-17 15:59:28 - Dragon dealt 52 damage of Dragon.
+2024-07-17 15:59:29 - Dragon dealt 41 damage of Dragon.
+2024-07-17 15:59:41 - Dragon dealt 53 damage of Dragon.
+2024-07-17 15:59:45 - Dragon dealt 36 damage of Dragon.
+2024-07-17 15:59:46 - Dragon dealt 37 damage of Dragon.
+2024-07-17 15:59:50 - Dragon dealt 40 damage of Dragon.
+2024-07-17 15:59:54 - Dragon dealt 39 damage of Dragon.
+2024-07-17 15:59:55 - Dragon dealt 52 damage of Dragon.
+2024-07-17 16:02:14 - Someone dealt 2791 damage of Rat.
+2024-07-17 16:02:31 - Fawkes dealt 67 damage of Rat.
+2024-07-17 16:02:53 - Fawkes dealt 80 damage of Rat.
+2024-07-17 16:07:47 - Fawkes dealt 74 damage of Rat.
+2024-07-17 16:10:53 - Fawkes dealt 52 damage of Rat.
+2024-07-17 16:14:19 - Fawkes dealt 70 damage of Rat.
+2024-07-17 16:16:04 - Fawkes dealt 65 damage of Rat.
+2024-07-17 16:22:43 - Fawkes dealt 15 damage of Rat.
+2024-07-17 16:22:57 - Fawkes dealt 14 damage of Rat.
+2024-07-17 16:23:53 - Fawkes dealt 21 damage of Rat.
+2024-07-17 16:31:06 - Fawkes dealt 16 damage of Rat.
+2024-07-17 16:31:09 - Fawkes dealt 172 damage of Rat.
+2024-07-17 16:31:09 - Fawkes dealt 172 damage of Rat.
+2024-07-17 16:31:09 - Fawkes dealt 172 damage of Rat.
+2024-07-17 16:31:13 - Fawkes dealt 253 damage of Rat.
+2024-07-17 16:31:13 - Fawkes dealt 253 damage of Rat.
+2024-07-17 16:31:13 - Fawkes dealt 253 damage of Rat.
+2024-07-17 16:31:14 - Fawkes dealt 253 damage of Rat.
+2024-07-17 16:31:14 - Fawkes dealt 253 damage of Rat.
+2024-07-17 16:31:23 - Fawkes dealt 237 damage of Rat.
+2024-07-17 16:31:23 - Fawkes dealt 237 damage of Rat.
+2024-07-17 16:31:23 - Fawkes dealt 237 damage of Rat.
+2024-07-17 16:31:23 - Fawkes dealt 237 damage of Rat.
+2024-07-17 16:31:23 - Fawkes dealt 237 damage of Rat.
+2024-07-17 16:31:23 - Fawkes dealt 237 damage of Rat.
+2024-07-17 16:31:23 - Fawkes dealt 237 damage of Rat.
+2024-07-17 16:31:23 - Fawkes dealt 237 damage of Rat.
+2024-07-17 16:31:23 - Fawkes dealt 237 damage of Rat.
+2024-07-17 16:31:50 - Fawkes dealt 178 damage of Rat.
+2024-07-17 16:31:50 - Fawkes dealt 178 damage of Rat.
+2024-07-17 16:31:50 - Fawkes dealt 178 damage of Rat.
+2024-07-17 16:31:50 - Fawkes dealt 178 damage of Rat.
+2024-07-17 16:31:50 - Fawkes dealt 178 damage of Rat.
+2024-07-17 16:31:50 - Fawkes dealt 178 damage of Rat.
+2024-07-17 16:31:50 - Fawkes dealt 178 damage of Rat.
+2024-07-17 16:31:50 - Fawkes dealt 178 damage of Rat.

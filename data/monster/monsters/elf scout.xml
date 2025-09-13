@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<monster name="Elf Scout" nameDescription="an elf scout" race="blood" experience="75" speed="70" manacost="360">
+	<health now="160" max="160" />
+	<look type="64" head="0" body="0" legs="0" feet="0" corpse="2981" />
+	<targetchange chance="50" />
+	<targetstrategy nearest="100" weakest="0" mostdamage="0" random="0" />
+	<bestiary id="47" class="humanoid" prowess="250" expertise="600" mastery="1200" difficulty="2" occurrence="2"/>
+	<flags>
+		<flag canpushcreatures="false" />
+		<flag canpushitems="true" />
+		<flag convinceable="true" />
+		<flag hostile="true" />
+		<flag illusionable="true" />
+		<flag pushable="false" />
+		<flag summonable="true" />
+		<flag runonhealth="0" />
+		<flag targetdistance="4" />
+	</flags>
+	<attacks>
+		<attack name="melee" skillfactor="1500" skillnextlevel="100" skilladdcount="1" skill="25" attack="18" />
+		<attack name="physical" delay="4" min="-30" max="-60" range="7">
+			<attribute key="shooteffect" value="arrow" />
+		</attack>
+	</attacks>
+	<defenses defense="18" armor="7" />
+	<immunities>
+		<immunity invisible="true" />
+	</immunities>
+	<elements />
+	<voices>
+		<voice sentence="Tha'shi Ab'Dendriel!" yell="0" />
+		<voice sentence="Feel the sting of my arrows!" yell="0" />
+		<voice sentence="Thy blood will quench the soil's thirst!" yell="0" />
+		<voice sentence="Evicor guide my arrow." yell="0" />
+		<voice sentence="Your existence will end here!" yell="0" />
+	</voices>
+	<loot>
+		<item id="2031" countmax="1" chance="14000" />
+		<item id="2482" countmax="1" chance="8000" />
+		<item id="2484" countmax="1" chance="12000" />
+		<item id="2642" countmax="1" chance="10000" />
+		<item id="2545" countmax="3" chance="15000" />
+		<item id="2397" countmax="1" chance="6000" />
+		<item id="2681" countmax="1" chance="18000" />
+		<item id="2148" countmax="5" chance="30000" />
+		<item id="2456" countmax="1" chance="4000" />
+		<item id="2544" countmax="12" chance="30000" />
+		<item id="5090" countmax="1" chance="30" />
+	</loot>
+</monster>
