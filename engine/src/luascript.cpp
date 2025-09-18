@@ -2830,6 +2830,10 @@ void LuaScriptInterface::registerFunctions()
 
 	registerMethod("Player", "getBonusRerollCount", LuaScriptInterface::luaPlayerGetBonusRerollCount);
 	registerMethod("Player", "setBonusRerollCount", LuaScriptInterface::luaPlayerSetBonusRerollCount);
+
+	registerMethod("Player", "hasPing", LuaScriptInterface::luaPlayerHasPing);
+
+
 	
 	registerMethod("Player", "isOffline", LuaScriptInterface::luaPlayerIsOffline);
 
@@ -11862,6 +11866,19 @@ int LuaScriptInterface::luaPlayerGetNoPongTime(lua_State *L) {
 	} else {
 		lua_pushnil(L);
 	}
+	return 1;
+}
+int LuaScriptInterface::luaPlayerHasPing(lua_State* L)
+{
+	// hasPing() -> boolean
+	Player* player = getUserdata<Player>(L, 1);
+	if (!player) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	// Um player tem ping se não perdeu a conexão e tem um client ativo
+	pushBoolean(L, player->client && !player->hasLostConnection());
 	return 1;
 }
 

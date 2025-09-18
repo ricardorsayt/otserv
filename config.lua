@@ -1,14 +1,17 @@
 timeGMT = -3*60*60
+
 maintenance = false
 showPackets = false
 worldType = "retro-pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 1
 pzLocked = 60 * 1000
+
 removeChargesFromRunes = true
 removeChargesFromPotions = true
 removeWeaponAmmunition = true
 removeWeaponCharges = true
+
 timeToDecreaseFrags = 7 * 60 * 60
 whiteSkullTime = 10 * 60 * 1000
 stairJumpExhaustion = 1 * 1000
@@ -43,13 +46,20 @@ maxContainer = 100
 networkAttackThreshold = 50
 replayProtocolPort = 7174
 
-spoofEnabled = false                   
+
+itemUncommonChance = 20
+itemRareChance = 10
+itemEpicChance = 4
+itemLegendaryChance = 2
+
+
+spoofEnabled = true                   
 spoofDailyMinPlayers = 1              
-spoofDailyMaxPlayers = 100            
+spoofDailyMaxPlayers = 35            
 spoofNoiseInterval = 1000             
 spoofNoise = 0                        
 spoofTimezone = -1                    
-spoofInterval = 30000                 
+spoofInterval = 300000                 
 spoofChangeChance = 70                
 spoofIncrementChange = 5   
 
@@ -72,7 +82,7 @@ gamestoreByModules = false
 expertPvp = true
 loadQuestLua = true
 deathLosePercent = -1
-housePriceEachSQM = 1000
+housePriceEachSQM = 300
 houseRentPeriod = "weekly"
 timeBetweenActions = 500
 timeBetweenExActions = 800
@@ -116,10 +126,10 @@ serverSaveNotifyDuration = 5
 serverSaveCleanMap = false
 serverSaveClose = true
 serverSaveShutdown = true
-rateExp = 20
-rateSkill = 10
-rateLoot = 5
-rateMagic = 10
+rateExp = 2
+rateSkill = 2
+rateLoot = 2
+rateMagic = 2
 rateSpawn = 1
 spawnSpeed = 1.0
 rateMonsterHealth = 1.0
@@ -132,7 +142,7 @@ rateManaRegen = 1.0
 rateManaRegenSpeed = 1.0
 rateSoulRegen = 1.0
 rateSoulRegenSpeed = 1.0
-rateAttackSpeed = 0.5
+rateAttackSpeed = 1.0
 deSpawnRange = 2
 deSpawnRadius = 100
 staminaSystem = true

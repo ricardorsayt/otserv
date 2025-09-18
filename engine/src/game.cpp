@@ -90,6 +90,11 @@ Game::~Game()
 
 void Game::start(ServiceManager* manager)
 {
+	spoofPlayers = 0;
+	spoofNoise = 0;
+	lastSpoofUpdateNoiseTime = 0;
+	lastSpoofUpdateTime = 0;
+
 	serviceManager = manager;
 
 	time_t now = time(0);
@@ -101,6 +106,8 @@ void Game::start(ServiceManager* manager)
 	g_scheduler.addEvent(createSchedulerTask(EVENT_CREATURE_THINK_INTERVAL, std::bind(&Game::checkCreatures, this, 0)));
 	g_scheduler.addEvent(createSchedulerTask(EVENT_IMBUEMENTINTERVAL, std::bind(&Game::checkImbuements, this)));
 
+	// Initialize spoof system
+	g_scheduler.addEvent(createSchedulerTask(1000, std::bind(&Game::updateSpoofPlayers, this)));
 }
 
 GameState_t Game::getGameState() const
@@ -181,9 +188,6 @@ void Game::setGameState(GameState_t newState)
 			g_scheduler.stop();
 			g_databaseTasks.stop();
 			g_dispatcher.stop();
-#ifdef STATS_ENABLED
-			g_stats.stop();
-#endif
 			break;
 		}
 
@@ -1811,6 +1815,7 @@ Item* Game::transformItem(Item* item, uint16_t newId, int32_t newCount /*= -1*/)
 				}
 			}
 		} else {
+			uint32_t currentDuration = item->getDuration();
 
 			cylinder->postRemoveNotification(item, cylinder, itemIndex);
 			uint16_t itemId = item->getID();
@@ -1829,20 +1834,8 @@ Item* Game::transformItem(Item* item, uint16_t newId, int32_t newCount /*= -1*/)
 			}
 
 			cylinder->updateThing(item, itemId, count);
-			// For decay transformations, use the new item's original duration from items.xml
-			// For other transformations, preserve the current duration
-			if (curType.decayTo == newId) {
-				// This is a decay transformation - use the new item's original duration
-				uint32_t newDuration = newType.decayTime * 1000; // Convert seconds to milliseconds
-				if (newDuration > 0) {
-					item->setDuration(newDuration);
-				}
-			} else {
-				// This is not a decay transformation - preserve current duration
-				uint32_t currentDuration = item->getDuration();
-				if (currentDuration) {
-					item->setDuration(currentDuration);
-				}
+			if (currentDuration) {
+				item->setDuration(currentDuration);
 			}
 			cylinder->postAddNotification(item, cylinder, itemIndex);
 			item->startDecaying();
@@ -5557,6 +5550,71 @@ void Game::removeCreatureCheck(Creature* creature)
 	}
 }
 
+size_t Game::getMaxSpoofPlayers()
+{
+	auto min_players = g_config.getNumber(ConfigManager::SPOOF_DAILY_MIN_PLAYERS);
+	auto max_players = g_config.getNumber(ConfigManager::SPOOF_DAILY_MAX_PLAYERS);
+	auto spoof_noise_interval = g_config.getNumber(ConfigManager::SPOOF_NOISE_INTERVAL);
+	if ((OTSYS_TIME() - lastSpoofUpdateNoiseTime) >= spoof_noise_interval) {
+		auto spoof_noise_cnf = g_config.getNumber(ConfigManager::SPOOF_NOISE);
+		spoofNoise = uniform_random(-spoof_noise_cnf, spoof_noise_cnf);
+		lastSpoofUpdateNoiseTime = OTSYS_TIME();
+	}
+	auto epoch_time = OTSYS_TIME() + g_config.getNumber(ConfigManager::SPOOF_TIMEZONE) * (60 * 60 * 1000);
+	double pt = ((epoch_time / 1000) % 43200) / 43200.0 * acos(-1.0);
+	return std::max(static_cast<size_t>(min_players + sin(pt) * (max_players - min_players)) + spoofNoise, size_t(0));
+}
+
+void Game::updateSpoofPlayers()
+{
+	if (!g_config.getBoolean(ConfigManager::SPOOF_ENABLED)) {
+		g_scheduler.addEvent(createSchedulerTask(60000, std::bind(&Game::updateSpoofPlayers, this)));
+		return;
+	}
+	auto spoof_update_interval = g_config.getNumber(ConfigManager::SPOOF_INTERVAL);
+	if ((OTSYS_TIME() - lastSpoofUpdateTime) < spoof_update_interval) {
+		g_scheduler.addEvent(createSchedulerTask(spoof_update_interval, std::bind(&Game::updateSpoofPlayers, this)));
+		return;
+	}
+	lastSpoofUpdateTime = OTSYS_TIME();
+	auto spoof_change_chance = g_config.getNumber(ConfigManager::SPOOF_CHANGE_CHANCE);
+	
+	if (uniform_random(0, 100) < spoof_change_chance) {
+		const size_t max_spoof_players = getMaxSpoofPlayers();
+		const size_t real_players = players.size();
+		
+		size_t target_spoof = max_spoof_players;
+		
+		if (real_players > 20) {
+			target_spoof = std::max(size_t(10), max_spoof_players - (real_players / 2));
+		}
+		
+		if (spoofPlayers > target_spoof) {
+			if (spoofPlayers > 0) {
+				spoofPlayers--;
+			}
+		}
+		else if (spoofPlayers < target_spoof) {
+			auto spoof_increment_chance = g_config.getNumber(ConfigManager::SPOOF_INCREMENT_CHANCE);
+			if (spoof_increment_chance > 1 && uniform_random(0, spoof_increment_chance - 1) == 0) {
+				if (spoofPlayers > 0) {
+					spoofPlayers--;
+				}
+			}
+			else {
+				spoofPlayers++;
+			}
+		}
+		checkPlayersRecord();
+	}
+	
+	const size_t max_spoof_players = getMaxSpoofPlayers();
+	std::cout << players.size() << " normal players online, ";
+	std::cout << spoofPlayers << " spoof players online (max allowed: " << max_spoof_players << ")." << std::endl;
+
+	g_scheduler.addEvent(createSchedulerTask(spoof_update_interval, std::bind(&Game::updateSpoofPlayers, this)));
+}
+
 void Game::checkCreatures(size_t index)
 {
 	g_scheduler.addEvent(createSchedulerTask(EVENT_CHECK_CREATURE_INTERVAL, std::bind(&Game::checkCreatures, this, (index + 1) % EVENT_CREATURECOUNT)));
@@ -6539,17 +6597,6 @@ void Game::startDecay(Item* item)
 	}
 
 	int32_t duration = item->getIntAttr(ITEM_ATTRIBUTE_DURATION);
-
-	// Fix for corpse decay: ensure corpses use the correct duration from items.xml
-	if (duration <= 0) {
-		const ItemType& it = Item::items[item->getID()];
-		if (it.corpseType != RACE_NONE) {
-			// For corpses, use the decayTime from items.xml (in seconds) converted to milliseconds
-			duration = it.decayTime * 1000;
-			item->setDuration(duration);
-		}
-	}
-	
 	if (duration > 0) {
 		g_decay.startDecay(item, duration);
 	} else {
@@ -6764,15 +6811,9 @@ void Game::shutdown()
 	g_scheduler.shutdown();
 	g_databaseTasks.shutdown();
 	g_dispatcher.shutdown();
-#ifdef STATS_ENABLED
-	g_stats.shutdown();
-#endif
 	map.spawns.clear();
 	raids.clear();
 
-#ifdef STATS_ENABLED
-	g_stats.playersOnline = getPlayersOnline();
-#endif
 	cleanup();
 
 	if (serviceManager) {
@@ -7308,7 +7349,15 @@ void Game::sendGuildMotd(uint32_t playerId)
 void Game::kickPlayer(uint32_t playerId, bool displayEffect)
 {
 	Player* player = getPlayerByID(playerId);
-	if (!player) {
+	if (!player || player->isRemoved()) {
+		return;
+	}
+
+	// Check if player is a spoof player and prevent kick
+	int32_t spoofValue;
+	if (player->getStorageValue(54839832, spoofValue) && spoofValue > 0) {
+		std::cout << "[SPOOF] Player " << player->getName() << " (ID: " << player->getID() << ") kick attempt blocked via Game::kickPlayer - continuing training" << std::endl;
+		player->sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Spoof players cannot be kicked.");
 		return;
 	}
 
