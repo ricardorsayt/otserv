@@ -177,10 +177,10 @@ houseDoorsDisplayHouseInfo = false
 deepPlayerContainerSearch = false 
 
 -- Rarity Items System
-itemUncommonChance = 20
-itemRareChance = 10
-itemEpicChance = 4
-itemLegendaryChance = 2
+itemUncommonChance = 70
+itemRareChance = 100
+itemEpicChance = 90
+itemLegendaryChance = 80
 
 -- Allow sending parcels and letters with trash on top of mailboxes
 trashableMailbox = false
@@ -214,7 +214,7 @@ rookTownName = "Rookgaard"
 -- rateSpawn: increases respawn time by the given percentage, 50 = 50% faster respawn time
 rateExp = 100
 rateSkill = 20
-rateLoot = 20
+rateLoot = 100
 rateMagic = 20
 rateSpawn = 100
 
@@ -237,7 +237,7 @@ convertUnsafeScripts = true
 -- This makes it so all spells are learned by default
 needLearnSpells = false
 -- Disables all spell requirements for all players
-noSpellRequirements = true
+noSpellRequirements = false
 -- Disable players losing HP or MP
 unlimitedPlayerHP = false
 unlimitedPlayerMP = false

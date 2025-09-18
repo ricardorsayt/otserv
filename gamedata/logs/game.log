@@ -923,3 +923,845 @@
 [2025-09-13 06:03:10.279] [Game] [info] Saving game...
 [2025-09-13 06:03:10.880] [Game] [info] Shutting down...
 [2025-09-13 06:03:10.884] [Game] [info] Shutdown complete.
+[2025-09-13 08:56:22.634] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-13 08:57:20.030] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-13 09:43:17.634] [Game] [info] Very Krazy died in ( 32816 / 31935 / 007 )
+[2025-09-13 09:43:17.635] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-13 09:43:22.755] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-13 10:08:38.055] [Game] [info] Ricardo has logged in from IP 191.19.139.199.
+[2025-09-13 10:08:40.000] [Game] [info] Ricardo has logged out from IP 0.0.0.0.
+[2025-09-13 10:08:49.009] [Game] [info] Very Krazy died in ( 32795 / 31779 / 007 )
+[2025-09-13 10:08:49.009] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-13 10:08:54.965] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-13 10:08:58.455] [Game] [info] [GM Violet at (32097.0,32214.0,7.0) used command] /reload config
+[2025-09-13 10:09:07.802] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-13 10:09:52.095] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /m troll
+[2025-09-13 10:09:58.999] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /i plate armor
+[2025-09-13 10:10:03.375] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /i plate legs
+[2025-09-13 10:10:09.759] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /i spear, 100
+[2025-09-13 10:10:16.727] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /i steel helmet
+[2025-09-13 10:10:25.971] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /i dwarven shield
+[2025-09-13 10:10:36.363] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /i ravenor coin
+[2025-09-13 10:10:45.535] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /i ravenor coin, 100
+[2025-09-13 10:10:49.719] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /i ravenor coin, 100
+[2025-09-13 10:10:56.031] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /i ravenor coin, 100
+[2025-09-13 10:11:02.203] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /i ravenor coin, 400
+[2025-09-13 10:11:17.987] [Game] [info] [GM Violet at (32918.0,32058.0,6.0) used command] /m cyclops
+[2025-09-13 10:11:33.323] [Game] [info] [GM Violet at (32918.0,32059.0,6.0) used command] /i ultimate healing rune, 4
+[2025-09-13 10:11:37.395] [Game] [info] [GM Violet at (32918.0,32059.0,6.0) used command] /i ultimate healing rune
+[2025-09-13 10:11:48.611] [Game] [info] [GM Violet at (32918.0,32059.0,6.0) used command] /i ultimate healing rune
+[2025-09-13 10:11:55.211] [Game] [info] [GM Violet at (32918.0,32059.0,6.0) used command] /i ultimate healing runes
+[2025-09-13 10:12:17.615] [Game] [info] [GM Violet at (32918.0,32056.0,6.0) used command] /i 2160 10
+[2025-09-13 10:12:23.135] [Game] [info] [GM Violet at (32918.0,32056.0,6.0) used command] /i 2160
+[2025-09-13 10:12:26.179] [Game] [info] [GM Violet at (32918.0,32056.0,6.0) used command] /i 2160, 10
+[2025-09-13 10:18:33.369] [Game] [info] [GM Violet at (32919.0,32070.0,6.0) used command] /m dwarf guard
+[2025-09-13 10:18:38.869] [Game] [info] [GM Violet at (32919.0,32072.0,7.0) used command] /a 1
+[2025-09-13 10:23:24.579] [Game] [info] [GM Violet at (32919.0,32072.0,7.0) used command] /i ravenor coin, 100
+[2025-09-13 10:23:30.726] [Game] [info] [GM Violet at (32919.0,32072.0,7.0) used command] /i ravenor coin, 100
+[2025-09-13 10:35:12.605] [Game] [info] [GM Violet at (32922.0,32069.0,7.0) used command] /i ravenor coin, 100
+[2025-09-13 10:35:13.585] [Game] [info] [GM Violet at (32922.0,32069.0,7.0) used command] /i ravenor coin, 100
+[2025-09-13 10:35:14.054] [Game] [info] [GM Violet at (32922.0,32069.0,7.0) used command] /i ravenor coin, 100
+[2025-09-13 10:35:14.466] [Game] [info] [GM Violet at (32922.0,32069.0,7.0) used command] /i ravenor coin, 100
+[2025-09-13 10:35:29.222] [Game] [info] [GM Violet at (32922.0,32069.0,7.0) used command] /i ravenor coin, 100
+[2025-09-13 10:35:29.673] [Game] [info] [GM Violet at (32922.0,32069.0,7.0) used command] /i ravenor coin, 100
+[2025-09-13 10:35:31.233] [Game] [info] [GM Violet at (32922.0,32069.0,7.0) used command] /i ravenor coin, 100
+[2025-09-13 10:40:18.666] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-13 10:40:24.361] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-13 10:41:07.694] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-13 10:46:32.231] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-13 10:46:34.916] [Game] [info] [GM Violet at (32950.0,32031.0,6.0) used command] /reload config
+[2025-09-13 11:03:18.790] [Game] [info] [GM Violet at (32950.0,32031.0,6.0) used command] /reload config
+[2025-09-13 11:03:31.166] [Game] [info] Very Krazy died in ( 33245 / 32275 / 010 )
+[2025-09-13 11:03:31.167] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-13 11:03:51.965] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-13 11:32:28.395] [Game] [info] [GM Violet at (32950.0,32031.0,6.0) used command] /i Faintlight Orb, 100
+[2025-09-13 11:32:38.043] [Game] [info] [GM Violet at (32950.0,32031.0,6.0) used command] /i Tidebound Orb, 100
+[2025-09-13 11:32:52.863] [Game] [info] [GM Violet at (32950.0,32031.0,6.0) used command] /i Netherbound Orb, 100
+[2025-09-13 11:33:00.810] [Game] [info] [GM Violet at (32950.0,32031.0,6.0) used command] /i Blazefury Orb, 100
+[2025-09-13 11:33:06.090] [Game] [info] [GM Violet at (32950.0,32031.0,6.0) used command] /i 2160, 100
+[2025-09-13 11:57:41.343] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-13 12:01:27.988] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-13 20:49:53.732] [Game] [info] Ricardo has logged in from IP 186.227.227.18.
+[2025-09-13 20:50:14.006] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-13 20:58:10.036] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-13 20:58:14.045] [Game] [info] Ricardo has logged out from IP 0.0.0.0.
+[2025-09-14 09:03:45.597] [Game] [info] Ricardo has logged in from IP 186.227.227.18.
+[2025-09-14 09:06:14.752] [Game] [info] Ricardo has logged out from IP 0.0.0.0.
+[2025-09-14 09:06:36.478] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 09:06:39.431] [Game] [info] [GM Violet at (33308.0,32283.0,6.0) used command] /town thais
+[2025-09-14 09:07:12.195] [Game] [info] [GM Violet at (32349.0,32222.0,7.0) used command] /town rookgaard
+[2025-09-14 09:07:33.779] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 09:10:30.117] [Game] [info] GM Ezzz has logged in from IP 186.227.227.18.
+[2025-09-14 09:24:34.140] [Game] [info] GM Ezzz has logged out from IP 0.0.0.0.
+[2025-09-14 09:24:38.111] [Game] [info] GM Ezzz has logged in from IP 186.227.227.18.
+[2025-09-14 09:26:49.213] [Game] [info] GM Ezzz has logged out from IP 0.0.0.0.
+[2025-09-14 09:28:12.157] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-14 09:28:40.248] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-14 18:48:16.829] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 18:48:31.977] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 19:00:00.212] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-14 19:07:58.851] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 19:08:18.888] [Game] [info] [GM Violet at (32107.0,32205.0,7.0) used command] /i ultimate healing rune
+[2025-09-14 19:08:22.225] [Game] [info] [GM Violet at (32107.0,32205.0,7.0) used command] /i ultimate healing rune, 100
+[2025-09-14 19:08:29.194] [Game] [info] [GM Violet at (32107.0,32205.0,7.0) used command] /i ultimate healing, 100
+[2025-09-14 19:08:37.221] [Game] [info] [GM Violet at (32107.0,32205.0,7.0) used command] /i blank rune
+[2025-09-14 19:08:46.714] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-14 19:15:46.612] [Game] [info] [GM Violet at (32107.0,32205.0,7.0) used command] /i 2273
+[2025-09-14 19:15:49.081] [Game] [info] [GM Violet at (32107.0,32205.0,7.0) used command] /i 2273, 100
+[2025-09-14 19:28:36.753] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-14 19:29:27.123] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 19:45:40.229] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 19:46:23.461] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-14 19:58:16.711] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 19:58:20.216] [Game] [info] GM Ezzz has logged in from IP 186.227.227.18.
+[2025-09-14 19:58:30.166] [Game] [info] [GM Ezzz at (32098.0,32213.0,7.0) used command] /a 2
+[2025-09-14 19:59:46.738] [Game] [info] GM Ezzz has logged out from IP 0.0.0.0.
+[2025-09-14 20:23:11.353] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-14 20:23:16.194] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-14 20:27:54.421] [Game] [info] GM Ezzz has logged in from IP 186.227.227.18.
+[2025-09-14 20:28:08.288] [Game] [info] GM Ezzz has logged out from IP 0.0.0.0.
+[2025-09-14 20:28:08.592] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 20:31:12.361] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 20:34:05.567] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 20:34:18.421] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 20:35:25.626] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 20:35:30.445] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 20:37:11.555] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 20:42:51.816] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-14 20:43:37.610] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 20:45:24.367] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 20:45:53.658] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-14 21:02:25.984] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 21:02:43.960] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-14 21:03:50.038] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-14 21:07:37.211] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 21:07:46.115] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 21:09:17.963] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 21:14:32.254] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-14 21:15:04.341] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 21:37:37.784] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-14 21:39:45.427] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 21:57:47.189] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 22:02:17.265] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 22:09:43.467] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 22:21:18.472] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 22:25:55.119] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-14 22:26:39.795] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-14 22:36:26.991] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-14 22:57:32.649] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-14 23:04:54.570] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-14 23:04:56.269] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-14 23:05:10.963] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-15 06:03:00.997] [Game] [info] Saving game...
+[2025-09-15 06:03:09.941] [Game] [info] Saving game...
+[2025-09-15 06:03:10.415] [Game] [info] Shutting down...
+[2025-09-15 06:03:10.421] [Game] [info] Shutdown complete.
+[2025-09-15 06:42:32.393] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-15 06:43:21.244] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-15 06:45:08.297] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 08:06:36.283] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 08:12:02.564] [Game] [info] Very Krazy died in ( 33246 / 31670 / 008 )
+[2025-09-15 08:12:02.565] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-15 08:12:08.655] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 08:25:48.476] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-15 08:30:02.248] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 08:41:19.387] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 08:41:22.649] [Game] [info] [GM Violet at (32099.0,32204.0,7.0) used command] /save
+[2025-09-15 08:41:22.652] [Game] [info] Saving game...
+[2025-09-15 08:41:35.145] [Game] [info] [GM Violet at (32873.0,31923.0,8.0) used command] /save
+[2025-09-15 08:41:35.145] [Game] [info] Saving game...
+[2025-09-15 08:41:47.883] [Game] [info] GM Violet has logged out from IP 191.19.139.199.
+[2025-09-15 08:41:47.888] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-15 08:41:47.893] [Game] [info] Saving game...
+[2025-09-15 08:41:48.247] [Game] [info] Shutting down...
+[2025-09-15 08:41:48.249] [Game] [info] Shutdown complete.
+[2025-09-15 08:42:16.543] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-15 08:44:35.761] [Game] [info] Saving game...
+[2025-09-15 08:44:36.117] [Game] [info] Shutting down...
+[2025-09-15 08:44:36.119] [Game] [info] Shutdown complete.
+[2025-09-15 08:44:43.986] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-15 08:45:18.139] [Game] [info] Saving game...
+[2025-09-15 08:45:18.535] [Game] [info] Shutting down...
+[2025-09-15 08:45:18.537] [Game] [info] Shutdown complete.
+[2025-09-15 08:46:00.096] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-15 08:46:36.848] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 08:48:13.156] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-15 08:52:55.565] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 09:14:17.407] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-15 09:18:19.511] [Game] [info] Saving game...
+[2025-09-15 09:18:19.832] [Game] [info] Shutting down...
+[2025-09-15 09:18:19.834] [Game] [info] Shutdown complete.
+[2025-09-15 09:18:27.757] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-15 09:19:34.665] [Game] [info] Saving game...
+[2025-09-15 09:19:35.010] [Game] [info] Shutting down...
+[2025-09-15 09:19:35.012] [Game] [info] Shutdown complete.
+[2025-09-15 09:20:20.372] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-15 09:21:39.211] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 09:22:05.763] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 09:32:01.893] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-15 09:32:14.559] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 09:35:06.921] [Game] [info] Very Krazy died in ( 32878 / 31948 / 011 )
+[2025-09-15 09:35:06.921] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-15 09:35:12.273] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 09:46:39.056] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-15 09:54:40.338] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 09:58:33.155] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 09:58:34.493] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 10:06:34.240] [Game] [info] [GM Violet at (32873.0,31923.0,8.0) used command] /reload scripts
+[2025-09-15 10:06:43.209] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 10:06:45.019] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 10:17:41.323] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 10:17:43.207] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 10:20:57.401] [Game] [info] Very Krazy died in ( 33236 / 32269 / 011 )
+[2025-09-15 10:20:57.402] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-15 10:21:30.439] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 10:21:52.416] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 10:21:55.164] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 10:26:20.508] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 10:26:22.605] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 10:33:20.201] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-15 10:37:40.399] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 10:56:13.737] [Game] [info] [GM Violet at (32873.0,31923.0,8.0) used command] /save
+[2025-09-15 10:56:13.737] [Game] [info] Saving game...
+[2025-09-15 10:56:24.256] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-15 10:56:24.262] [Game] [info] GM Violet has logged out from IP 191.19.139.199.
+[2025-09-15 10:56:24.266] [Game] [info] Saving game...
+[2025-09-15 10:56:24.572] [Game] [info] Shutting down...
+[2025-09-15 10:56:24.575] [Game] [info] Shutdown complete.
+[2025-09-15 11:16:29.599] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-15 11:18:34.275] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 11:18:54.563] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 11:18:58.519] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 11:20:14.585] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 11:27:37.627] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 11:27:49.818] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 11:29:25.717] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 11:35:00.313] [Game] [info] Druid has logged in from IP 191.19.139.199.
+[2025-09-15 11:35:08.777] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-15 11:35:09.855] [Game] [info] GM Ezzz has logged in from IP 191.19.139.199.
+[2025-09-15 11:47:37.945] [Game] [info] Very Krazy died in ( 33150 / 31595 / 012 )
+[2025-09-15 11:47:37.946] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-15 11:47:45.472] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 11:53:52.360] [Game] [info] Druid has logged in from IP 191.19.139.199.
+[2025-09-15 11:54:18.108] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-15 11:54:23.000] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 11:54:38.115] [Game] [info] GM Ezzz has logged out from IP 0.0.0.0.
+[2025-09-15 11:59:47.178] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-15 12:16:55.388] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 12:17:10.857] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 12:19:04.379] [Game] [info] Druid has logged in from IP 191.19.139.199.
+[2025-09-15 12:19:11.431] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 12:22:30.618] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 12:23:16.469] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-15 12:26:19.965] [Game] [info] Druid has logged in from IP 191.19.139.199.
+[2025-09-15 12:27:07.531] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 12:27:25.539] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-15 12:48:08.031] [Game] [info] Druid has logged in from IP 191.19.139.199.
+[2025-09-15 12:48:13.828] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-15 13:01:26.324] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 13:01:47.994] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 13:02:45.666] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 13:13:35.745] [Game] [info] Druid has logged in from IP 191.19.139.199.
+[2025-09-15 13:14:19.209] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 13:14:41.216] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-15 13:17:19.341] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 13:18:56.780] [Game] [info] Druid has logged in from IP 191.19.139.199.
+[2025-09-15 13:19:45.318] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 13:20:02.323] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-15 13:37:01.285] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 13:45:36.835] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-15 13:45:39.529] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-15 13:47:20.966] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 13:59:06.149] [Game] [info] Very Krazy died in ( 33192 / 31659 / 014 )
+[2025-09-15 13:59:06.150] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-15 13:59:14.407] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 14:46:19.191] [Game] [info] Very Krazy died in ( 33045 / 32691 / 004 )
+[2025-09-15 14:46:19.191] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-15 14:46:37.056] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-15 15:00:38.485] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-15 15:07:56.959] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-15 15:18:02.863] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-15 15:35:43.891] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-15 16:02:02.252] [Game] [info] Make Market has logged out from IP 191.19.139.199.
+[2025-09-15 17:25:58.215] [Game] [info] GM Violet has logged out from IP 191.19.139.199.
+[2025-09-15 17:25:58.228] [Game] [info] Saving game...
+[2025-09-15 17:25:58.611] [Game] [info] Shutting down...
+[2025-09-15 17:25:58.613] [Game] [info] Shutdown complete.
+[2025-09-16 18:35:03.647] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-16 18:40:07.482] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-16 18:49:46.660] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-16 18:49:52.404] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-16 18:50:18.602] [Game] [info] [Make Market at (32345.0,32218.0,7.0) used command] /a 2
+[2025-09-16 18:52:47.008] [Game] [info] [Make Market at (33192.0,32954.0,15.0) used command] /t
+[2025-09-16 18:53:51.201] [Game] [info] [Make Market at (32369.0,32229.0,7.0) used command] /a 20
+[2025-09-16 18:53:52.300] [Game] [info] [Make Market at (32369.0,32209.0,7.0) used command] /a 20
+[2025-09-16 18:53:52.816] [Game] [info] [Make Market at (32369.0,32189.0,7.0) used command] /a 20
+[2025-09-16 18:53:53.328] [Game] [info] [Make Market at (32369.0,32169.0,7.0) used command] /a 20
+[2025-09-16 18:53:54.220] [Game] [info] [Make Market at (32369.0,32149.0,7.0) used command] /a 20
+[2025-09-16 18:53:54.956] [Game] [info] [Make Market at (32368.0,32130.0,7.0) used command] /a 20
+[2025-09-16 18:53:55.636] [Game] [info] [Make Market at (32349.0,32129.0,7.0) used command] /a 20
+[2025-09-16 18:53:56.072] [Game] [info] [Make Market at (32329.0,32129.0,7.0) used command] /a 20
+[2025-09-16 18:53:56.949] [Game] [info] [Make Market at (32309.0,32129.0,7.0) used command] /a 20
+[2025-09-16 18:53:57.461] [Game] [info] [Make Market at (32289.0,32130.0,7.0) used command] /a 20
+[2025-09-16 18:53:59.141] [Game] [info] [Make Market at (32269.0,32130.0,7.0) used command] /a 20
+[2025-09-16 18:53:59.692] [Game] [info] [Make Market at (32270.0,32111.0,7.0) used command] /a 20
+[2025-09-16 18:54:00.993] [Game] [info] [Make Market at (32290.0,32111.0,7.0) used command] /a 20
+[2025-09-16 18:54:02.060] [Game] [info] [Make Market at (32290.0,32091.0,7.0) used command] /a 20
+[2025-09-16 18:54:17.972] [Game] [info] [Make Market at (32288.0,32063.0,7.0) used command] /a 20
+[2025-09-16 18:54:19.861] [Game] [info] [Make Market at (32267.0,32062.0,7.0) used command] /a 20
+[2025-09-16 18:54:21.116] [Game] [info] [Make Market at (32248.0,32062.0,7.0) used command] /a 20
+[2025-09-16 18:54:22.373] [Game] [info] [Make Market at (32249.0,32041.0,7.0) used command] /a 20
+[2025-09-16 18:55:24.787] [Game] [info] [Make Market at (32272.0,32014.0,9.0) used command] /t
+[2025-09-16 18:55:28.603] [Game] [info] [Make Market at (32369.0,32241.0,7.0) used command] /a 20
+[2025-09-16 18:55:30.039] [Game] [info] [Make Market at (32369.0,32261.0,7.0) used command] /a 20
+[2025-09-16 18:55:31.087] [Game] [info] [Make Market at (32369.0,32281.0,7.0) used command] /a 20
+[2025-09-16 18:55:32.123] [Game] [info] [Make Market at (32349.0,32281.0,7.0) used command] /a 20
+[2025-09-16 18:55:33.219] [Game] [info] [Make Market at (32329.0,32281.0,7.0) used command] /a 20
+[2025-09-16 18:55:36.127] [Game] [info] [Make Market at (32310.0,32279.0,7.0) used command] /a 20
+[2025-09-16 18:55:46.547] [Game] [info] [Make Market at (32313.0,32266.0,7.0) used command] /a 2
+[2025-09-16 18:55:47.439] [Game] [info] [Make Market at (32313.0,32268.0,7.0) used command] /a 2
+[2025-09-16 18:55:47.859] [Game] [info] [Make Market at (32313.0,32270.0,7.0) used command] /a 2
+[2025-09-16 18:55:48.383] [Game] [info] [Make Market at (32313.0,32272.0,7.0) used command] /a 2
+[2025-09-16 18:55:49.523] [Game] [info] [Make Market at (32313.0,32274.0,7.0) used command] /a 2
+[2025-09-16 18:55:50.111] [Game] [info] [Make Market at (32315.0,32274.0,7.0) used command] /a 2
+[2025-09-16 18:55:50.894] [Game] [info] [Make Market at (32316.0,32274.0,7.0) used command] /a 2
+[2025-09-16 18:55:54.627] [Game] [info] [Make Market at (32319.0,32272.0,8.0) used command] /a 2
+[2025-09-16 18:55:55.487] [Game] [info] [Make Market at (32319.0,32270.0,8.0) used command] /a 2
+[2025-09-16 18:55:55.991] [Game] [info] [Make Market at (32319.0,32268.0,8.0) used command] /a 2
+[2025-09-16 18:55:56.991] [Game] [info] [Make Market at (32319.0,32266.0,8.0) used command] /a 2
+[2025-09-16 18:55:57.663] [Game] [info] [Make Market at (32320.0,32265.0,8.0) used command] /a 2
+[2025-09-16 18:56:02.683] [Game] [info] [Make Market at (32321.0,32265.0,8.0) used command] /down
+[2025-09-16 18:56:06.235] [Game] [info] [Make Market at (32321.0,32266.0,8.0) used command] /t
+[2025-09-16 18:56:09.147] [Game] [info] [Make Market at (32369.0,32241.0,7.0) used command] /a 100
+[2025-09-16 18:56:10.847] [Game] [info] [Make Market at (32469.0,32241.0,7.0) used command] /a 100
+[2025-09-16 18:56:13.163] [Game] [info] [Make Market at (32470.0,32241.0,7.0) used command] /a 100
+[2025-09-16 18:56:16.391] [Game] [info] [Make Market at (32470.0,32241.0,7.0) used command] /t
+[2025-09-16 18:56:28.708] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-16 18:56:42.754] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-16 18:58:33.722] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-16 18:58:35.021] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-16 18:58:41.999] [Game] [info] [Make Market at (32369.0,32239.0,7.0) used command] /i 3031
+[2025-09-16 18:58:51.957] [Game] [info] [Make Market at (32369.0,32241.0,7.0) used command] /r
+[2025-09-16 18:58:59.175] [Game] [info] [Make Market at (32369.0,32233.0,7.0) used command] /i backpack
+[2025-09-16 19:01:16.585] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-16 19:30:56.986] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 19:34:16.257] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 19:34:42.318] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 19:35:06.274] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 19:35:07.442] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 19:46:39.950] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-16 19:47:09.523] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-16 19:47:18.529] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 19:47:20.003] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 19:50:07.582] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 19:50:08.748] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 19:50:23.590] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 19:50:27.843] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 19:52:08.625] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 19:52:10.132] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 19:52:36.467] [Game] [info] Druid has logged in from IP 186.227.227.18.
+[2025-09-16 19:52:43.636] [Game] [info] Druid has logged out from IP 0.0.0.0.
+[2025-09-16 19:53:04.643] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 19:53:05.430] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 19:53:47.800] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-16 19:54:38.896] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 19:54:48.310] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 19:54:49.016] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 20:32:32.544] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 20:32:33.958] [Game] [info] [Warning - IOLoginData::loadPlayer] GM Violet has Guild ID 3 which doesn't exist
+[2025-09-16 20:32:33.961] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 20:32:38.557] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 20:32:39.465] [Game] [info] [Warning - IOLoginData::loadPlayer] GM Violet has Guild ID 3 which doesn't exist
+[2025-09-16 20:32:39.467] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 20:45:30.626] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 20:54:50.871] [Game] [info] [Warning - IOLoginData::loadPlayer] GM Violet has Guild ID 3 which doesn't exist
+[2025-09-16 20:54:50.885] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 20:54:54.736] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 20:54:55.347] [Game] [info] [Warning - IOLoginData::loadPlayer] GM Violet has Guild ID 3 which doesn't exist
+[2025-09-16 20:54:55.351] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 20:57:37.794] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 20:57:39.793] [Game] [info] [Warning - IOLoginData::loadPlayer] GM Violet has Guild ID 3 which doesn't exist
+[2025-09-16 20:57:39.797] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 20:59:08.880] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 20:59:11.083] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 21:01:26.928] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 21:01:28.699] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 21:07:33.058] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 21:07:33.944] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 21:08:25.430] [Game] [info] GM Violet has logged out from IP 186.227.227.18.
+[2025-09-16 21:08:25.435] [Game] [info] Saving game...
+[2025-09-16 21:08:25.809] [Game] [info] Shutting down...
+[2025-09-16 21:08:25.814] [Game] [info] Shutdown complete.
+[2025-09-16 21:08:36.335] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-16 21:09:22.670] [Game] [info] Saving game...
+[2025-09-16 21:09:23.004] [Game] [info] Shutting down...
+[2025-09-16 21:09:23.007] [Game] [info] Shutdown complete.
+[2025-09-16 21:12:24.833] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-16 21:12:57.432] [Game] [info] Saving game...
+[2025-09-16 21:12:57.761] [Game] [info] Shutting down...
+[2025-09-16 21:12:57.763] [Game] [info] Shutdown complete.
+[2025-09-16 21:15:01.208] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-16 21:15:37.696] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 21:15:43.220] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 21:15:44.356] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 21:18:47.262] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 21:18:48.243] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 22:36:11.707] [Game] [info] GM Violet has logged out from IP 186.227.227.18.
+[2025-09-16 22:36:11.726] [Game] [info] Saving game...
+[2025-09-16 22:36:12.082] [Game] [info] Shutting down...
+[2025-09-16 22:36:12.086] [Game] [info] Shutdown complete.
+[2025-09-16 22:36:34.111] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-16 22:37:19.476] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 22:38:48.217] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 22:38:49.086] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 22:38:55.225] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 22:38:56.859] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 23:16:40.499] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 23:16:46.780] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 23:16:59.512] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 23:17:01.072] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 23:20:15.536] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 23:20:16.399] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-16 23:20:36.545] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-16 23:20:39.074] [Game] [info] GM Violet has logged in from IP 186.227.227.18.
+[2025-09-17 06:03:00.262] [Game] [info] Saving game...
+[2025-09-17 06:03:00.653] [Game] [info] GM Violet has logged out from IP 186.227.227.18.
+[2025-09-17 06:03:10.158] [Game] [info] Saving game...
+[2025-09-17 06:03:10.620] [Game] [info] Shutting down...
+[2025-09-17 06:03:10.624] [Game] [info] Shutdown complete.
+[2025-09-17 08:18:50.317] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-17 08:20:39.394] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-17 09:02:44.596] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-17 09:03:12.870] [Game] [info] [Make Market at (32345.0,32217.0,7.0) used command] /m dragon lord
+[2025-09-17 09:04:38.349] [Game] [info] Manolo Man has logged in from IP 191.19.139.199.
+[2025-09-17 09:04:42.401] [Game] [info] Manolo Man has logged out from IP 0.0.0.0.
+[2025-09-17 09:04:44.295] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-17 09:04:55.733] [Game] [info] [Make Market at (32346.0,32219.0,7.0) used command] /c Very Krazy
+[2025-09-17 09:06:03.413] [Game] [info] [Make Market at (32346.0,32219.0,7.0) used command] /i suden death rune
+[2025-09-17 09:06:40.461] [Game] [info] [Make Market at (32345.0,32219.0,7.0) used command] /i Sudden Death Rune
+[2025-09-17 09:07:19.181] [Game] [info] [Make Market at (32345.0,32219.0,7.0) used command] /i 3155
+[2025-09-17 09:07:25.117] [Game] [info] [Make Market at (32344.0,32219.0,7.0) used command] /r
+[2025-09-17 09:07:28.241] [Game] [info] [Make Market at (32344.0,32219.0,7.0) used command] /r
+[2025-09-17 09:10:53.473] [Game] [info] [Make Market at (32344.0,32219.0,7.0) used command] /i demon helmet
+[2025-09-17 09:11:46.032] [Game] [info] [Make Market at (32344.0,32219.0,7.0) used command] /i Bloodfang Bolt Quiver
+[2025-09-17 09:12:35.112] [Game] [info] [Make Market at (32344.0,32219.0,7.0) used command] /i Ravenor Coin, 100
+[2025-09-17 09:12:37.056] [Game] [info] [Make Market at (32344.0,32219.0,7.0) used command] /i Ravenor Coin, 100
+[2025-09-17 09:12:38.860] [Game] [info] [Make Market at (32344.0,32219.0,7.0) used command] /i Ravenor Coin, 100
+[2025-09-17 09:12:39.416] [Game] [info] [Make Market at (32344.0,32219.0,7.0) used command] /i Ravenor Coin, 100
+[2025-09-17 09:12:39.924] [Game] [info] [Make Market at (32344.0,32219.0,7.0) used command] /i Ravenor Coin, 100
+[2025-09-17 09:13:04.985] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Crystal Coin, 100
+[2025-09-17 09:13:48.876] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Bow
+[2025-09-17 09:13:59.252] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Crossbow
+[2025-09-17 09:14:31.160] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Amazon Armor
+[2025-09-17 09:15:12.676] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Magic Plate Armor
+[2025-09-17 09:15:36.708] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Dragon Scale Mail
+[2025-09-17 09:17:48.584] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Hunting Arrow
+[2025-09-17 09:18:20.756] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Arrow Quiver
+[2025-09-17 09:19:34.345] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Blazefury Orb, 100
+[2025-09-17 09:19:48.777] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Netherbound Orb, 100
+[2025-09-17 09:21:21.713] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Crossbow
+[2025-09-17 09:21:24.961] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Crossbow
+[2025-09-17 09:21:34.461] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Bow
+[2025-09-17 09:21:35.537] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Bow
+[2025-09-17 09:23:06.001] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Crystal Coin, 100
+[2025-09-17 09:23:07.117] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Crystal Coin, 100
+[2025-09-17 09:24:08.809] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Arrow Quiver
+[2025-09-17 09:24:09.553] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Arrow Quiver
+[2025-09-17 09:24:18.313] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Hunting Arrow
+[2025-09-17 09:24:18.937] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Hunting Arrow
+[2025-09-17 09:24:19.681] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Hunting Arrow
+[2025-09-17 09:24:33.541] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Crossbow
+[2025-09-17 09:24:36.917] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Sacred Arrow Quiver
+[2025-09-17 09:24:52.741] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Bloodfang Bolt Quiver
+[2025-09-17 09:24:53.553] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Bloodfang Bolt Quiver
+[2025-09-17 09:24:54.377] [Game] [info] [Make Market at (32344.0,32220.0,7.0) used command] /i Bloodfang Bolt Quiver
+[2025-09-17 09:26:04.937] [Game] [info] [Make Market at (32340.0,32222.0,7.0) used command] /m FROST DRAGON
+[2025-09-17 09:27:16.005] [Game] [info] [Make Market at (32345.0,32218.0,7.0) used command] /r
+[2025-09-17 09:27:19.049] [Game] [info] [Make Market at (32345.0,32217.0,7.0) used command] /r
+[2025-09-17 09:27:26.953] [Game] [info] [Make Market at (32345.0,32217.0,7.0) used command] /m DRAGON LORD
+[2025-09-17 09:29:57.862] [Game] [info] [Make Market at (32345.0,32219.0,7.0) used command] /i Sacred Crossbow
+[2025-09-17 09:30:00.367] [Game] [info] [Make Market at (32345.0,32219.0,7.0) used command] /i Sacred Crossbow
+[2025-09-17 09:31:04.430] [Game] [info] [Make Market at (32345.0,32217.0,7.0) used command] /m DRAGON LORD
+[2025-09-17 09:33:02.923] [Game] [info] [Make Market at (32345.0,32217.0,7.0) used command] /i BACKPACK
+[2025-09-17 09:33:04.182] [Game] [info] [Make Market at (32345.0,32217.0,7.0) used command] /i BACKPACK
+[2025-09-17 09:36:39.090] [Game] [info] [Make Market at (32361.0,32215.0,7.0) used command] /i Sudden Death Rune
+[2025-09-17 09:36:42.998] [Game] [info] [Make Market at (32361.0,32215.0,7.0) used command] /i Sudden Death Rune
+[2025-09-17 09:36:45.454] [Game] [info] [Make Market at (32361.0,32215.0,7.0) used command] /i Sudden Death
+[2025-09-17 09:36:52.566] [Game] [info] [Make Market at (32361.0,32214.0,7.0) used command] /i Death
+[2025-09-17 09:36:56.346] [Game] [info] [Make Market at (32361.0,32214.0,7.0) used command] /i Death RUNE
+[2025-09-17 09:37:03.971] [Game] [info] [Make Market at (32361.0,32214.0,7.0) used command] /a 20
+[2025-09-17 09:37:07.378] [Game] [info] [Make Market at (32382.0,32214.0,7.0) used command] /a 2
+[2025-09-17 09:37:08.250] [Game] [info] [Make Market at (32384.0,32214.0,7.0) used command] /a 2
+[2025-09-17 09:37:08.738] [Game] [info] [Make Market at (32386.0,32214.0,7.0) used command] /a 2
+[2025-09-17 09:37:09.226] [Game] [info] [Make Market at (32388.0,32214.0,7.0) used command] /a 2
+[2025-09-17 09:37:09.642] [Game] [info] [Make Market at (32390.0,32214.0,7.0) used command] /a 2
+[2025-09-17 09:37:10.030] [Game] [info] [Make Market at (32392.0,32214.0,7.0) used command] /a 2
+[2025-09-17 09:37:10.418] [Game] [info] [Make Market at (32394.0,32214.0,7.0) used command] /a 2
+[2025-09-17 09:37:10.890] [Game] [info] [Make Market at (32396.0,32214.0,7.0) used command] /a 2
+[2025-09-17 09:38:03.758] [Game] [info] [Make Market at (33133.0,32641.0,7.0) used command] /down
+[2025-09-17 09:38:04.598] [Game] [info] [Make Market at (33133.0,32641.0,8.0) used command] /down
+[2025-09-17 09:38:05.338] [Game] [info] [Make Market at (33133.0,32641.0,9.0) used command] /down
+[2025-09-17 09:38:06.206] [Game] [info] [Make Market at (33133.0,32641.0,10.0) used command] /down
+[2025-09-17 09:38:08.886] [Game] [info] [Make Market at (33134.0,32641.0,11.0) used command] /down
+[2025-09-17 09:38:12.426] [Game] [info] [Make Market at (33134.0,32641.0,12.0) used command] /a 20
+[2025-09-17 09:38:14.370] [Game] [info] [Make Market at (33155.0,32641.0,12.0) used command] /a 20
+[2025-09-17 09:38:15.122] [Game] [info] [Make Market at (33175.0,32641.0,12.0) used command] /a 20
+[2025-09-17 09:38:15.994] [Game] [info] [Make Market at (33195.0,32641.0,12.0) used command] /a 20
+[2025-09-17 09:38:17.652] [Game] [info] [Make Market at (33215.0,32641.0,12.0) used command] /a 20
+[2025-09-17 09:38:20.128] [Game] [info] [Make Market at (33215.0,32662.0,12.0) used command] /down
+[2025-09-17 09:38:25.424] [Game] [info] [Make Market at (33213.0,32667.0,13.0) used command] /down
+[2025-09-17 09:38:27.576] [Game] [info] [Make Market at (33213.0,32667.0,14.0) used command] /down
+[2025-09-17 09:38:31.168] [Game] [info] [Make Market at (33213.0,32667.0,15.0) used command] /a 20
+[2025-09-17 09:38:32.392] [Game] [info] [Make Market at (33213.0,32647.0,15.0) used command] /a 20
+[2025-09-17 09:38:36.660] [Game] [info] [Make Market at (33219.0,32627.0,15.0) used command] /a 20
+[2025-09-17 09:38:38.400] [Game] [info] [Make Market at (33239.0,32627.0,15.0) used command] /a 20
+[2025-09-17 09:38:39.460] [Game] [info] [Make Market at (33239.0,32607.0,15.0) used command] /a 20
+[2025-09-17 09:38:45.036] [Game] [info] [Make Market at (33241.0,32590.0,15.0) used command] /a 20
+[2025-09-17 09:38:50.080] [Game] [info] [Make Market at (33241.0,32610.0,15.0) used command] /a 20
+[2025-09-17 09:38:50.664] [Game] [info] [Make Market at (33241.0,32630.0,15.0) used command] /a 20
+[2025-09-17 09:38:51.169] [Game] [info] [Make Market at (33241.0,32650.0,15.0) used command] /a 20
+[2025-09-17 09:38:54.296] [Game] [info] [Make Market at (33241.0,32670.0,15.0) used command] /a 2
+[2025-09-17 09:38:56.336] [Game] [info] [Make Market at (33243.0,32670.0,15.0) used command] /a 2
+[2025-09-17 09:39:01.289] [Game] [info] [Make Market at (33245.0,32672.0,15.0) used command] /down
+[2025-09-17 09:39:04.656] [Game] [info] [Make Market at (33245.0,32672.0,15.0) used command] /up
+[2025-09-17 09:39:11.152] [Game] [info] [Make Market at (33244.0,32671.0,14.0) used command] /a 2
+[2025-09-17 09:39:15.141] [Game] [info] [Make Market at (33244.0,32675.0,15.0) used command] /up
+[2025-09-17 09:39:33.560] [Game] [info] [Make Market at (33258.0,32680.0,15.0) used command] /u
+[2025-09-17 09:39:41.789] [Game] [info] [Make Market at (33262.0,32679.0,13.0) used command] /a 2
+[2025-09-17 09:39:48.474] [Game] [info] [Make Market at (33265.0,32677.0,14.0) used command] /a 2
+[2025-09-17 09:39:55.702] [Game] [info] [Make Market at (33264.0,32681.0,14.0) used command] /a 2
+[2025-09-17 09:39:57.323] [Game] [info] [Make Market at (33264.0,32683.0,14.0) used command] /a 2
+[2025-09-17 09:40:04.363] [Game] [info] [Make Market at (33265.0,32688.0,13.0) used command] /a 2
+[2025-09-17 09:40:07.998] [Game] [info] [Make Market at (33265.0,32690.0,13.0) used command] /a 2
+[2025-09-17 09:40:09.658] [Game] [info] [Make Market at (33265.0,32692.0,13.0) used command] /a 2
+[2025-09-17 09:40:14.163] [Game] [info] [Make Market at (33264.0,32694.0,14.0) used command] /up
+[2025-09-17 09:40:52.322] [Game] [info] [Make Market at (33244.0,32701.0,11.0) used command] /a 2
+[2025-09-17 09:40:53.354] [Game] [info] [Make Market at (33242.0,32701.0,11.0) used command] /a 2
+[2025-09-17 09:40:53.738] [Game] [info] [Make Market at (33240.0,32701.0,11.0) used command] /a 2
+[2025-09-17 09:40:54.110] [Game] [info] [Make Market at (33238.0,32701.0,11.0) used command] /a 2
+[2025-09-17 09:40:54.526] [Game] [info] [Make Market at (33236.0,32701.0,11.0) used command] /a 2
+[2025-09-17 09:41:03.023] [Game] [info] [Make Market at (33233.0,32704.0,8.0) used command] /up
+[2025-09-17 09:41:08.574] [Game] [info] [Make Market at (33233.0,32704.0,7.0) used command] /down
+[2025-09-17 09:41:09.379] [Game] [info] [Make Market at (33233.0,32704.0,8.0) used command] /down
+[2025-09-17 09:41:09.879] [Game] [info] [Make Market at (33233.0,32704.0,9.0) used command] /down
+[2025-09-17 09:41:10.654] [Game] [info] [Make Market at (33233.0,32704.0,10.0) used command] /down
+[2025-09-17 09:41:11.514] [Game] [info] [Make Market at (33233.0,32704.0,11.0) used command] /down
+[2025-09-17 09:41:13.290] [Game] [info] [Make Market at (33233.0,32704.0,12.0) used command] /down
+[2025-09-17 09:41:16.358] [Game] [info] [Make Market at (33233.0,32704.0,13.0) used command] /a 20
+[2025-09-17 09:41:20.390] [Game] [info] [Make Market at (33253.0,32704.0,14.0) used command] /a 2
+[2025-09-17 09:41:26.550] [Game] [info] [Make Market at (33249.0,32704.0,14.0) used command] /up
+[2025-09-17 09:41:32.946] [Game] [info] [Make Market at (33247.0,32703.0,13.0) used command] /up
+[2025-09-17 09:41:36.775] [Game] [info] [Make Market at (33247.0,32703.0,12.0) used command] /a 2
+[2025-09-17 09:41:39.530] [Game] [info] [Make Market at (33245.0,32703.0,12.0) used command] /down
+[2025-09-17 09:41:40.894] [Game] [info] [Make Market at (33245.0,32703.0,13.0) used command] /down
+[2025-09-17 09:41:42.795] [Game] [info] [Make Market at (33245.0,32703.0,14.0) used command] /down
+[2025-09-17 09:41:46.755] [Game] [info] [Make Market at (33247.0,32703.0,15.0) used command] /down
+[2025-09-17 09:41:48.134] [Game] [info] [Make Market at (33247.0,32703.0,15.0) used command] /down
+[2025-09-17 09:41:50.714] [Game] [info] [Make Market at (33247.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:41:54.483] [Game] [info] [Make Market at (33252.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:41:55.054] [Game] [info] [Make Market at (33254.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:41:55.526] [Game] [info] [Make Market at (33256.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:41:56.002] [Game] [info] [Make Market at (33258.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:41:56.474] [Game] [info] [Make Market at (33260.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:41:56.930] [Game] [info] [Make Market at (33262.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:41:58.698] [Game] [info] [Make Market at (33264.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:41:59.198] [Game] [info] [Make Market at (33266.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:41:59.671] [Game] [info] [Make Market at (33268.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:42:01.054] [Game] [info] [Make Market at (33270.0,32703.0,15.0) used command] /a 2
+[2025-09-17 09:42:03.823] [Game] [info] [Make Market at (33272.0,32703.0,15.0) used command] /up
+[2025-09-17 09:42:40.231] [Game] [info] [Make Market at (33272.0,32703.0,15.0) used command] /t
+[2025-09-17 09:43:49.695] [Game] [info] [Make Market at (33266.0,31846.0,4.0) used command] /down
+[2025-09-17 09:43:50.418] [Game] [info] [Make Market at (33266.0,31846.0,5.0) used command] /down
+[2025-09-17 09:43:59.878] [Game] [info] [Make Market at (33267.0,31840.0,6.0) used command] /a 5
+[2025-09-17 09:44:12.155] [Game] [info] [Make Market at (33263.0,31834.0,5.0) used command] /a 5
+[2025-09-17 09:44:14.146] [Game] [info] [Make Market at (33263.0,31834.0,5.0) used command] /a 6
+[2025-09-17 09:44:26.038] [Game] [info] [Make Market at (33268.0,31834.0,6.0) used command] /a 2
+[2025-09-17 09:44:27.074] [Game] [info] [Make Market at (33268.0,31832.0,6.0) used command] /a 2
+[2025-09-17 09:44:27.526] [Game] [info] [Make Market at (33268.0,31830.0,6.0) used command] /a 2
+[2025-09-17 09:44:27.983] [Game] [info] [Make Market at (33268.0,31828.0,6.0) used command] /a 2
+[2025-09-17 09:44:29.966] [Game] [info] [Make Market at (33267.0,31825.0,6.0) used command] /a 2
+[2025-09-17 09:44:30.539] [Game] [info] [Make Market at (33265.0,31825.0,6.0) used command] /a 2
+[2025-09-17 09:44:31.374] [Game] [info] [Make Market at (33263.0,31825.0,6.0) used command] /a 2
+[2025-09-17 09:44:32.222] [Game] [info] [Make Market at (33261.0,31825.0,6.0) used command] /a 2
+[2025-09-17 09:44:33.263] [Game] [info] [Make Market at (33259.0,31825.0,6.0) used command] /a 2
+[2025-09-17 09:49:34.450] [Game] [info] [Make Market at (33257.0,31832.0,6.0) used command] /a 2
+[2025-09-17 09:49:35.377] [Game] [info] [Make Market at (33257.0,31834.0,6.0) used command] /a 2
+[2025-09-17 09:49:35.797] [Game] [info] [Make Market at (33257.0,31836.0,6.0) used command] /a 2
+[2025-09-17 09:49:36.201] [Game] [info] [Make Market at (33257.0,31838.0,6.0) used command] /a 2
+[2025-09-17 09:50:44.914] [Game] [info] [Make Market at (33255.0,31839.0,7.0) used command] /t
+[2025-09-17 09:50:47.438] [Game] [info] [Make Market at (32369.0,32241.0,7.0) used command] /a 20
+[2025-09-17 09:50:49.302] [Game] [info] [Make Market at (32349.0,32241.0,7.0) used command] /a 20
+[2025-09-17 09:51:44.649] [Game] [info] [Make Market at (32345.0,32221.0,7.0) used command] /addSkill Very Krazy, level, 20
+[2025-09-17 09:52:07.711] [Game] [info] [Make Market at (32345.0,32221.0,7.0) used command] /addSkill Make Market, level, 20
+[2025-09-17 09:52:13.431] [Game] [info] [Make Market at (32345.0,32221.0,7.0) used command] /addSkill Make Market, level, 20
+[2025-09-17 09:53:32.358] [Game] [info] [Make Market at (32345.0,32221.0,7.0) used command] /i Blazefury Orb, 100
+[2025-09-17 09:55:13.734] [Game] [info] [Make Market at (32345.0,32221.0,7.0) used command] /i Crystal Coin, 100
+[2025-09-17 09:55:14.526] [Game] [info] [Make Market at (32345.0,32221.0,7.0) used command] /i Crystal Coin, 100
+[2025-09-17 09:55:15.018] [Game] [info] [Make Market at (32345.0,32221.0,7.0) used command] /i Crystal Coin, 100
+[2025-09-17 09:55:15.510] [Game] [info] [Make Market at (32345.0,32221.0,7.0) used command] /i Crystal Coin, 100
+[2025-09-17 10:28:50.922] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-17 11:54:32.530] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-17 11:54:34.535] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-17 13:43:10.225] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-17 13:44:11.275] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-17 13:45:04.352] [Game] [info] [Make Market at (32345.0,32221.0,7.0) used command] /addSkill Very Krazy, distance, 20
+[2025-09-17 13:45:24.760] [Game] [info] [Make Market at (32340.0,32222.0,7.0) used command] /m dragon lord
+[2025-09-17 13:48:04.001] [Game] [info] [Make Market at (32340.0,32222.0,7.0) used command] /m dragon lord
+[2025-09-17 13:49:32.796] [Game] [info] [Make Market at (32340.0,32222.0,7.0) used command] /m demodras
+[2025-09-17 13:49:49.952] [Game] [info] Very Krazy died in ( 32346 / 32217 / 007 )
+[2025-09-17 13:49:49.952] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-17 13:50:14.296] [Game] [info] [Make Market at (32348.0,32214.0,7.0) used command] /r
+[2025-09-17 13:50:19.644] [Game] [info] [Make Market at (32343.0,32214.0,7.0) used command] /r
+[2025-09-17 13:50:21.504] [Game] [info] [Make Market at (32343.0,32212.0,7.0) used command] /r
+[2025-09-17 13:50:22.836] [Game] [info] [Make Market at (32343.0,32212.0,7.0) used command] /r
+[2025-09-17 13:50:58.548] [Game] [info] [Make Market at (32389.0,32214.0,7.0) used command] /m demon
+[2025-09-17 13:51:06.148] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-17 13:51:16.212] [Game] [info] [Make Market at (32377.0,32214.0,7.0) used command] /a 20
+[2025-09-17 13:51:21.728] [Game] [info] [Make Market at (32352.0,32215.0,7.0) used command] /c Very Krazy
+[2025-09-17 13:51:40.104] [Game] [info] [Make Market at (32355.0,32215.0,7.0) used command] /a 20
+[2025-09-17 13:51:45.744] [Game] [info] [Make Market at (32381.0,32215.0,7.0) used command] /r
+[2025-09-17 13:51:52.892] [Game] [info] [Make Market at (32388.0,32210.0,7.0) used command] /a 10
+[2025-09-17 13:52:02.972] [Game] [info] [Make Market at (32395.0,32204.0,7.0) used command] /a 5
+[2025-09-17 13:52:16.168] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m demon
+[2025-09-17 13:54:09.045] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-17 13:54:50.060] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-17 13:54:54.109] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /a 5
+[2025-09-17 13:54:57.461] [Game] [info] [Make Market at (32407.0,32204.0,7.0) used command] /u
+[2025-09-17 13:55:00.185] [Game] [info] [Make Market at (32407.0,32204.0,6.0) used command] /a 2
+[2025-09-17 13:55:02.909] [Game] [info] [Make Market at (32411.0,32205.0,6.0) used command] /r
+[2025-09-17 13:55:02.909] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-17 13:55:06.548] [Game] [info] Manolo Man has logged in from IP 191.19.139.199.
+[2025-09-17 13:56:03.621] [Game] [info] [Make Market at (32411.0,32205.0,6.0) used command] /i Celestial Wand
+[2025-09-17 13:56:43.761] [Game] [info] [Make Market at (32097.0,32205.0,7.0) used command] /i fire sword
+[2025-09-17 13:57:03.545] [Game] [info] [Make Market at (32092.0,32204.0,7.0) used command] /a 20
+[2025-09-17 13:57:04.617] [Game] [info] [Make Market at (32092.0,32184.0,7.0) used command] /a 20
+[2025-09-17 13:57:05.337] [Game] [info] [Make Market at (32092.0,32164.0,7.0) used command] /a 20
+[2025-09-17 13:57:10.109] [Game] [info] [Make Market at (32093.0,32143.0,7.0) used command] /c Manolo Man
+[2025-09-17 13:58:06.981] [Game] [info] [Make Market at (32093.0,32143.0,7.0) used command] /a 20
+[2025-09-17 13:58:07.981] [Game] [info] [Make Market at (32093.0,32163.0,7.0) used command] /a 20
+[2025-09-17 13:58:13.889] [Game] [info] [Make Market at (32092.0,32189.0,7.0) used command] /a 3
+[2025-09-17 13:58:18.961] [Game] [info] [Make Market at (32099.0,32191.0,6.0) used command] /a 3
+[2025-09-17 13:58:21.441] [Game] [info] [Make Market at (32102.0,32191.0,6.0) used command] /c Manolo Man
+[2025-09-17 13:59:06.809] [Game] [info] [Make Market at (32102.0,32191.0,6.0) used command] /t
+[2025-09-17 13:59:38.245] [Game] [info] [Make Market at (32369.0,32240.0,7.0) used command] /addSkill Manolo Man, level, 50
+[2025-09-17 14:00:00.617] [Game] [info] [Make Market at (32369.0,32241.0,7.0) used command] /addSkill Manolo Man, magic, 50
+[2025-09-17 14:00:19.232] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-17 14:00:25.880] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-17 14:00:44.249] [Game] [info] [Make Market at (32369.0,32241.0,7.0) used command] /i crystal coin, 100
+[2025-09-17 14:10:37.177] [Game] [info] [Make Market at (32411.0,32205.0,6.0) used command] /r
+[2025-09-17 14:10:37.177] [Game] [info] Manolo Man has logged out from IP 191.19.139.199.
+[2025-09-17 14:10:41.349] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-17 14:13:06.097] [Game] [info] [Make Market at (32401.0,32204.0,7.0) used command] /m dragon lord
+[2025-09-17 14:13:45.081] [Game] [info] [Make Market at (32401.0,32204.0,7.0) used command] /m dragon lord
+[2025-09-17 14:14:23.345] [Game] [info] [Make Market at (32401.0,32204.0,7.0) used command] /m frost dragon
+[2025-09-17 14:15:09.558] [Game] [info] Very Krazy died in ( 32399 / 32207 / 007 )
+[2025-09-17 14:15:09.558] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-17 14:15:15.288] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-17 14:15:20.116] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /a 2
+[2025-09-17 14:15:26.581] [Game] [info] [Make Market at (32401.0,32207.0,7.0) used command] /c Very Krazy
+[2025-09-17 14:15:58.848] [Game] [info] [Make Market at (32401.0,32207.0,7.0) used command] /a 23
+[2025-09-17 14:16:04.281] [Game] [info] [Make Market at (32399.0,32184.0,7.0) used command] /a 23
+[2025-09-17 14:16:06.929] [Game] [info] [Make Market at (32399.0,32207.0,7.0) used command] /a 2
+[2025-09-17 14:16:52.174] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m Ancient Scarab
+[2025-09-17 14:16:53.898] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m Ancient Scarab
+[2025-09-17 14:16:54.962] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m Ancient Scarab
+[2025-09-17 14:16:56.030] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m Ancient Scarab
+[2025-09-17 14:18:17.206] [Game] [info] [Make Market at (32399.0,32205.0,7.0) used command] /m Barbarian Bloodwalker
+[2025-09-17 14:18:18.406] [Game] [info] [Make Market at (32399.0,32205.0,7.0) used command] /m Barbarian Bloodwalker
+[2025-09-17 14:18:19.110] [Game] [info] [Make Market at (32399.0,32205.0,7.0) used command] /m Barbarian Bloodwalker
+[2025-09-17 14:18:20.298] [Game] [info] [Make Market at (32399.0,32205.0,7.0) used command] /m Barbarian Bloodwalker
+[2025-09-17 14:19:56.142] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m Behemoth
+[2025-09-17 14:19:57.202] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m Behemoth
+[2025-09-17 14:21:22.834] [Game] [info] [Make Market at (32399.0,32204.0,7.0) used command] /m Black Knight
+[2025-09-17 14:21:23.730] [Game] [info] [Make Market at (32399.0,32204.0,7.0) used command] /m Black Knight
+[2025-09-17 14:21:24.506] [Game] [info] [Make Market at (32399.0,32204.0,7.0) used command] /m Black Knight
+[2025-09-17 14:21:25.114] [Game] [info] [Make Market at (32399.0,32204.0,7.0) used command] /m Black Knight
+[2025-09-17 14:21:25.842] [Game] [info] [Make Market at (32399.0,32204.0,7.0) used command] /m Black Knight
+[2025-09-17 14:24:29.890] [Game] [info] [Make Market at (32399.0,32203.0,7.0) used command] /m Caiman
+[2025-09-17 14:24:31.182] [Game] [info] [Make Market at (32399.0,32203.0,7.0) used command] /m Caiman
+[2025-09-17 14:27:43.877] [Game] [info] [Make Market at (32399.0,32203.0,7.0) used command] /m hydra
+[2025-09-17 14:28:25.877] [Game] [info] [Make Market at (32402.0,32203.0,7.0) used command] /m hydra
+[2025-09-17 14:28:26.877] [Game] [info] [Make Market at (32402.0,32203.0,7.0) used command] /m hydra
+[2025-09-17 14:30:53.606] [Game] [info] [Make Market at (32399.0,32203.0,7.0) used command] /m Frozemoth
+[2025-09-17 14:30:55.222] [Game] [info] [Make Market at (32399.0,32203.0,7.0) used command] /m Frozemoth
+[2025-09-17 14:30:57.494] [Game] [info] [Make Market at (32399.0,32203.0,7.0) used command] /m Frozemoth
+[2025-09-17 14:32:04.872] [Game] [info] [Make Market at (32399.0,32203.0,7.0) used command] /m Menace Tortoise
+[2025-09-17 14:32:33.159] [Game] [info] [Make Market at (32399.0,32203.0,7.0) used command] /m Novice Pumpkinhead
+[2025-09-17 14:32:34.527] [Game] [info] [Make Market at (32399.0,32203.0,7.0) used command] /m Novice Pumpkinhead
+[2025-09-17 14:33:08.503] [Game] [info] [Make Market at (32399.0,32204.0,7.0) used command] /m Ogre Gruntz
+[2025-09-17 14:33:09.751] [Game] [info] [Make Market at (32399.0,32204.0,7.0) used command] /m Ogre Gruntz
+[2025-09-17 14:33:18.844] [Game] [info] [Make Market at (32399.0,32204.0,7.0) used command] /m Ogre Smasher
+[2025-09-17 14:34:20.830] [Game] [info] [Make Market at (32399.0,32204.0,7.0) used command] /m Rahemos
+[2025-09-17 14:35:44.982] [Game] [info] [Make Market at (32401.0,32204.0,7.0) used command] /r
+[2025-09-17 14:35:56.946] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m Serpent Spawn
+[2025-09-17 14:40:38.173] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-17 14:40:45.181] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-17 15:53:28.372] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-17 15:53:32.230] [Game] [info] [GM Violet at (32874.0,31924.0,8.0) used command] /i blank rune
+[2025-09-17 16:54:57.013] [Game] [info] [GM Violet at (32874.0,31924.0,8.0) used command] /save
+[2025-09-17 16:54:57.013] [Game] [info] Saving game...
+[2025-09-17 16:54:58.709] [Game] [info] GM Violet has logged out from IP 191.19.139.199.
+[2025-09-17 16:54:58.715] [Game] [info] Saving game...
+[2025-09-17 16:54:59.044] [Game] [info] Shutting down...
+[2025-09-17 16:54:59.046] [Game] [info] Shutdown complete.
+[2025-09-17 16:55:12.981] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-17 17:48:43.271] [Game] [info] Saving game...
+[2025-09-17 17:48:43.621] [Game] [info] Shutting down...
+[2025-09-17 17:48:43.623] [Game] [info] Shutdown complete.
+[2025-09-17 17:48:52.475] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-17 17:54:21.472] [Game] [info] Manolo Man has logged in from IP 191.19.139.199.
+[2025-09-17 17:55:44.638] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-17 17:57:43.911] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-17 17:57:57.408] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /m DRAGON LORD
+[2025-09-17 18:00:06.380] [Game] [info] [Make Market at (32398.0,32203.0,7.0) used command] /a 2
+[2025-09-17 18:00:08.517] [Game] [info] [Make Market at (32400.0,32203.0,7.0) used command] /a 2
+[2025-09-17 18:00:15.828] [Game] [info] [Make Market at (32401.0,32202.0,7.0) used command] /a 21
+[2025-09-17 18:00:18.612] [Game] [info] [Make Market at (32380.0,32202.0,7.0) used command] /a 21
+[2025-09-17 18:00:21.264] [Game] [info] [Make Market at (32401.0,32202.0,7.0) used command] /a 2
+[2025-09-17 18:00:33.616] [Game] [info] [Make Market at (32398.0,32205.0,7.0) used command] /a 2
+[2025-09-17 18:00:34.592] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /a 2
+[2025-09-17 18:00:40.500] [Game] [info] [Make Market at (32402.0,32205.0,7.0) used command] /a 2
+[2025-09-17 18:01:02.888] [Game] [info] [Make Market at (32399.0,32203.0,7.0) used command] /a 2
+[2025-09-17 18:01:04.496] [Game] [info] [Make Market at (32399.0,32205.0,7.0) used command] /a 2
+[2025-09-17 18:01:09.544] [Game] [info] [Make Market at (32402.0,32205.0,7.0) used command] /a 1
+[2025-09-17 18:01:16.180] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /m DRAGON LORD
+[2025-09-17 18:01:24.015] [Game] [info] Manolo Man died in ( 32399 / 32209 / 007 )
+[2025-09-17 18:01:24.016] [Game] [info] Manolo Man has logged out from IP 191.19.139.199.
+[2025-09-17 18:01:27.812] [Game] [info] Manolo Man has logged in from IP 191.19.139.199.
+[2025-09-17 18:09:10.216] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /i Blazefury Orb, 100
+[2025-09-17 18:09:47.396] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /i Frostbane Wand
+[2025-09-17 18:10:08.412] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /i Frostbane Wand
+[2025-09-17 18:10:08.868] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /i Frostbane Wand
+[2025-09-17 18:10:09.357] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /i Frostbane Wand
+[2025-09-17 18:11:44.632] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /i CRYSTAL COIN
+[2025-09-17 18:11:48.200] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /i CRYSTAL COIN, 100
+[2025-09-17 18:11:49.152] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /i CRYSTAL COIN, 100
+[2025-09-17 18:11:49.624] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /i CRYSTAL COIN, 100
+[2025-09-17 18:14:07.628] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /addSkill Manolo Man, level, 10
+[2025-09-17 18:14:13.276] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /addSkill Manolo Man, level, 10
+[2025-09-17 18:18:54.788] [Game] [info] [Make Market at (32402.0,32204.0,7.0) used command] /i Ravenor Shield
+[2025-09-17 18:19:20.701] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /i Tidebound Orb, 100
+[2025-09-17 18:20:31.240] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /m dragon lord
+[2025-09-17 18:21:37.544] [Game] [info] [Make Market at (32399.0,32205.0,7.0) used command] /m dragon lord
+[2025-09-17 18:23:05.760] [Game] [info] [Make Market at (32399.0,32204.0,7.0) used command] /i Ring Of The Sky
+[2025-09-17 18:27:05.969] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i cyclops
+[2025-09-17 18:27:12.361] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /m cyclops
+[2025-09-17 18:27:13.293] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /m cyclops
+[2025-09-17 18:27:13.810] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /m cyclops
+[2025-09-17 18:27:14.565] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /m cyclops
+[2025-09-17 18:27:15.033] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /m cyclops
+[2025-09-17 18:28:18.681] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Solara's Wand
+[2025-09-17 18:28:25.842] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Tidebound Orb, 100
+[2025-09-17 18:28:31.081] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Tidebound Orb, 100
+[2025-09-17 18:28:38.725] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Blazefury Orb, 100
+[2025-09-17 18:31:08.840] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Sacred Bow
+[2025-09-17 18:31:09.717] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Sacred Bow
+[2025-09-17 18:31:10.236] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Sacred Bow
+[2025-09-17 18:31:42.884] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Bloodfang Bolt Quiver
+[2025-09-17 18:31:43.809] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Bloodfang Bolt Quiver
+[2025-09-17 18:31:44.264] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Bloodfang Bolt Quiver
+[2025-09-17 18:34:00.833] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i crystal coin, 10
+[2025-09-17 18:34:02.960] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i crystal coin, 100
+[2025-09-17 18:34:03.820] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i crystal coin, 100
+[2025-09-17 18:34:08.544] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i crystal coin, 100
+[2025-09-17 18:34:17.377] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Blazefury Orb, 100
+[2025-09-17 18:34:18.764] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Blazefury Orb, 100
+[2025-09-17 18:34:45.536] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Sacred Bow
+[2025-09-17 18:34:46.112] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Sacred Bow
+[2025-09-17 18:34:46.644] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Sacred Bow
+[2025-09-17 18:36:06.023] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Sacred Bow
+[2025-09-17 18:36:06.643] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Sacred Bow
+[2025-09-17 18:36:07.319] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Sacred Bow
+[2025-09-17 18:36:08.983] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Blazefury Orb, 100
+[2025-09-17 18:36:09.655] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Blazefury Orb, 100
+[2025-09-17 18:36:12.595] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i crystal coin, 100
+[2025-09-17 18:36:13.283] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i crystal coin, 100
+[2025-09-17 18:38:32.927] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /i Burst Arrow
+[2025-09-17 18:39:08.739] [Game] [info] Manolo Man has logged out from IP 191.19.139.199.
+[2025-09-17 18:39:08.744] [Game] [info] Make Market has logged out from IP 191.19.139.199.
+[2025-09-17 18:39:08.748] [Game] [info] GM Violet has logged out from IP 191.19.139.199.
+[2025-09-17 18:39:08.751] [Game] [info] Saving game...
+[2025-09-17 18:39:09.107] [Game] [info] Shutting down...
+[2025-09-17 18:39:09.109] [Game] [info] Shutdown complete.
+[2025-09-17 18:39:37.489] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-17 18:40:37.630] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-17 18:41:25.932] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-17 18:41:29.463] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-17 18:41:38.442] [Game] [info] Manolo Man has logged in from IP 191.19.139.199.
+[2025-09-17 18:42:46.968] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-17 18:43:15.354] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /a 20
+[2025-09-17 18:43:16.998] [Game] [info] [Make Market at (32400.0,32225.0,7.0) used command] /a 20
+[2025-09-17 18:43:19.162] [Game] [info] [Make Market at (32380.0,32225.0,7.0) used command] /a 20
+[2025-09-17 18:43:23.310] [Game] [info] [Make Market at (32400.0,32225.0,7.0) used command] /a 20
+[2025-09-17 18:43:24.446] [Game] [info] [Make Market at (32380.0,32225.0,7.0) used command] /a 20
+[2025-09-17 18:43:26.922] [Game] [info] [Make Market at (32360.0,32225.0,7.0) used command] /a 5
+[2025-09-17 18:43:29.494] [Game] [info] [Make Market at (32366.0,32226.0,7.0) used command] /a 5
+[2025-09-17 18:43:30.814] [Game] [info] [Make Market at (32371.0,32226.0,7.0) used command] /a 5
+[2025-09-17 18:43:31.410] [Game] [info] [Make Market at (32371.0,32231.0,7.0) used command] /a 5
+[2025-09-17 18:43:31.898] [Game] [info] [Make Market at (32371.0,32236.0,7.0) used command] /a 5
+[2025-09-17 18:44:28.698] [Game] [info] [Make Market at (32215.0,32216.0,5.0) used command] /i Sacred Arrow Quiver
+[2025-09-17 18:44:29.966] [Game] [info] [Make Market at (32215.0,32216.0,5.0) used command] /i Sacred Arrow Quiver
+[2025-09-17 18:44:30.466] [Game] [info] [Make Market at (32215.0,32216.0,5.0) used command] /i Sacred Arrow Quiver
+[2025-09-17 18:44:45.706] [Game] [info] [Make Market at (32401.0,32207.0,7.0) used command] /a 2
+[2025-09-17 18:46:46.238] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /i bust arrow
+[2025-09-17 18:47:01.810] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /i Burst Arrow
+[2025-09-17 18:47:16.798] [Game] [info] Make Market has logged out from IP 191.19.139.199.
+[2025-09-17 18:47:16.804] [Game] [info] Manolo Man has logged out from IP 191.19.139.199.
+[2025-09-17 18:47:16.808] [Game] [info] GM Violet has logged out from IP 191.19.139.199.
+[2025-09-17 18:47:16.812] [Game] [info] Saving game...
+[2025-09-17 18:47:17.137] [Game] [info] Shutting down...
+[2025-09-17 18:47:17.139] [Game] [info] Shutdown complete.
+[2025-09-17 18:47:24.703] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-17 18:49:40.187] [Game] [info] Make Market has logged in from IP 191.19.139.199.
+[2025-09-17 18:49:43.252] [Game] [info] Manolo Man has logged in from IP 191.19.139.199.
+[2025-09-17 18:49:58.133] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /m dragon
+[2025-09-17 18:50:32.433] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /m dragon
+[2025-09-17 18:50:45.201] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /i Burst Arrow
+[2025-09-17 18:50:47.449] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /m dragon
+[2025-09-17 18:50:48.057] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /m dragon
+[2025-09-17 18:50:48.681] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /m dragon
+[2025-09-17 18:51:28.429] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /m cyclops
+[2025-09-17 18:51:29.209] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /m cyclops
+[2025-09-17 18:51:29.833] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /m cyclops
+[2025-09-17 18:51:31.297] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /i Burst Arrow
+[2025-09-17 18:51:31.725] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /i Burst Arrow
+[2025-09-17 18:52:03.097] [Game] [info] [Make Market at (32401.0,32205.0,7.0) used command] /i bow
+[2025-09-17 18:52:52.665] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /a
+[2025-09-17 18:52:55.985] [Game] [info] [Make Market at (32400.0,32205.0,7.0) used command] /a 1
+[2025-09-17 18:52:58.069] [Game] [info] [Make Market at (32400.0,32206.0,7.0) used command] /r
+[2025-09-17 18:52:58.069] [Game] [info] Manolo Man has logged out from IP 191.19.139.199.
+[2025-09-17 18:53:03.108] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-17 18:54:05.541] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m dragon
+[2025-09-17 18:54:06.201] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m dragon
+[2025-09-17 18:54:06.705] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m dragon
+[2025-09-17 18:54:07.129] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m dragon
+[2025-09-17 18:54:07.545] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m dragon
+[2025-09-17 18:54:07.965] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m dragon
+[2025-09-17 18:54:08.405] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m dragon
+[2025-09-17 18:54:08.889] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m dragon
+[2025-09-17 18:54:09.345] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m dragon
+[2025-09-17 18:54:09.709] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /m dragon
+[2025-09-17 18:54:10.795] [Game] [info] Very Krazy died in ( 32400 / 32207 / 007 )
+[2025-09-17 18:54:10.795] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-17 18:54:15.858] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-17 18:54:25.893] [Game] [info] [Make Market at (32400.0,32204.0,7.0) used command] /a 10
+[2025-09-17 18:54:29.353] [Game] [info] [Make Market at (32409.0,32204.0,7.0) used command] /c Very Krazy
+[2025-09-17 18:55:38.669] [Game] [info] [Make Market at (32405.0,32207.0,7.0) used command] /r
+[2025-09-17 18:55:38.669] [Game] [info] Very Krazy has logged out from IP 191.19.139.199.
+[2025-09-17 18:55:42.113] [Game] [info] Manolo Man has logged in from IP 191.19.139.199.
+[2025-09-17 18:56:12.085] [Game] [info] [Make Market at (32405.0,32207.0,7.0) used command] /r
+[2025-09-17 18:56:12.085] [Game] [info] Manolo Man has logged out from IP 191.19.139.199.
+[2025-09-17 18:56:13.629] [Game] [info] Very Krazy has logged in from IP 191.19.139.199.
+[2025-09-17 18:57:39.835] [Game] [info] Very Krazy has logged out from IP 0.0.0.0.
+[2025-09-17 18:57:41.842] [Game] [info] Make Market has logged out from IP 0.0.0.0.
+[2025-09-17 18:58:54.761] [Game] [info] Saving game...
+[2025-09-17 18:58:55.107] [Game] [info] Shutting down...
+[2025-09-17 18:58:55.110] [Game] [info] Shutdown complete.
+[2025-09-17 18:59:02.440] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-17 19:04:24.534] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-17 19:04:38.231] [Game] [info] GM Violet has logged out from IP 0.0.0.0.
+[2025-09-18 13:39:33.394] [Game] [info] =========================> GAME LOG <=========================
+[2025-09-18 13:52:30.458] [Game] [info] GM Violet has logged in from IP 191.19.139.199.
+[2025-09-18 13:55:11.661] [Game] [info] [GM Violet at (32874.0,31924.0,8.0) used command] /reload config
+[2025-09-18 13:59:32.930] [Game] [info] [GM Violet at (32834.0,32292.0,15.0) used command] /town thais
+[2025-09-18 14:01:01.152] [Game] [info] [GM Violet at (32369.0,32230.0,7.0) used command] /m demon
