@@ -3165,7 +3165,7 @@ void Game::playerBuyStoreOffer(uint32_t playerId, const StoreOffer& offer, std::
 		return;
 	}
 
-	if (!player->canRemoveCoins(thisOffer->getPrice(player)) ) {
+	if (!player->canRemoveCoins(thisOffer->getPrice(player))) {
 		player->sendStoreError(STORE_ERROR_PURCHASE, "You don't have coins.");
 		return;
 	}
@@ -7670,18 +7670,18 @@ void Game::playerCreateMarketOffer(uint32_t playerId, uint8_t type, uint16_t spr
 			return;
 		}
 
-		DepotLocker* depotLocker = player->getDepotLocker(player->getLastDepotId());
-		if (!depotLocker) {
-			return;
-		}
-
 		if (it.id == ITEM_STORECOINS) {
-			if (amount > player->getCoinBalance()) {
+			if (amount > IOAccount::getCoinBalance(player->getAccount(), COIN_TYPE_DEFAULT)) {
 				return;
 			}
 
-			IOAccount::addCoins(player->getAccount(), -static_cast<int32_t>(amount));
+			IOAccount::addCoins(player->getAccount(), -static_cast<int32_t>(amount), COIN_TYPE_DEFAULT);
 		} else {
+			DepotLocker* depotLocker = player->getDepotLocker(player->getLastDepotId());
+			if (!depotLocker) {
+				return;
+			}
+
 			std::forward_list<Item*> itemList = getMarketItemList(it.wareId, amount, depotLocker);
 			if (itemList.empty()) {
 				return;
@@ -7767,7 +7767,7 @@ void Game::playerCancelMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		}
 
 		if (it.id == ITEM_STORECOINS) {
-			IOAccount::addCoins(player->getAccount(), offer.amount);
+			IOAccount::addCoins(player->getAccount(), offer.amount, COIN_TYPE_DEFAULT);
 		} else if (it.stackable) {
 			uint16_t tmpAmount = offer.amount;
 			while (tmpAmount > 0) {
@@ -7847,6 +7847,43 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 	uint64_t totalPrice = static_cast<uint64_t>(offer.price) * amount;
 
 	if (offer.type == MARKETACTION_BUY) {
+		player->bankBalance += static_cast<uint64_t>(offer.price) * offer.amount;
+		player->sendMarketEnter(player->getLastDepotId());
+	} else {
+		if (it.id == ITEM_STORECOINS) {
+			IOAccount::addCoins(player->getAccount(), offer.amount, COIN_TYPE_DEFAULT);
+		} else if (it.stackable) {
+			uint16_t tmpAmount = offer.amount;
+			while (tmpAmount > 0) {
+				int32_t stackCount = std::min<int32_t>(100, tmpAmount);
+				Item* item = Item::CreateItem(it.id, stackCount);
+				if (internalAddItem(player->getInbox(), item, INDEX_WHEREEVER, FLAG_NOLIMIT) != RETURNVALUE_NOERROR) {
+					delete item;
+					break;
+				}
+
+				tmpAmount -= stackCount;
+			}
+		} else {
+			int32_t subType;
+			if (it.charges != 0) {
+				subType = it.charges;
+			} else {
+				subType = -1;
+			}
+
+			for (uint16_t i = 0; i < offer.amount; ++i) {
+				Item* item = Item::CreateItem(it.id, subType);
+				if (internalAddItem(player->getInbox(), item, INDEX_WHEREEVER, FLAG_NOLIMIT) != RETURNVALUE_NOERROR) {
+					delete item;
+					break;
+				}
+			}
+		}
+	}
+
+
+	if (offer.type == MARKETACTION_BUY) {
 		DepotLocker* depotLocker = player->getDepotLocker(player->getLastDepotId());
 		if (!depotLocker) {
 			return;
@@ -7862,12 +7899,14 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		}
 
 		if (it.id == ITEM_STORECOINS) {
-			if (amount > IOAccount::getCoinBalance(player->getAccount())) {
+			if (amount > IOAccount::getCoinBalance(player->getAccount(), COIN_TYPE_DEFAULT)) {
 				return;
 			}
 
-			IOAccount::addCoins(player->getAccount(), -static_cast<int32_t>(amount));
+			IOAccount::addCoins(player->getAccount(), -static_cast<int32_t>(amount), COIN_TYPE_DEFAULT);
+			IOAccount::addCoins(buyerPlayer->getAccount(), static_cast<int32_t>(amount), COIN_TYPE_DEFAULT);
 			IOAccount::registerTransaction(player->getAccount(), OS_TIME(nullptr), 0, amount, 0, "Sold on Market", -static_cast<int32_t>(amount));
+			IOAccount::registerTransaction(buyerPlayer->getAccount(), OS_TIME(nullptr), 0, amount, 0, "Purchased on Market", static_cast<int32_t>(amount));
 
 		} else {
 			std::forward_list<Item*> itemList = getMarketItemList(it.wareId, amount, depotLocker);
@@ -7896,8 +7935,7 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		player->bankBalance += totalPrice;
 
 		if (it.id == ITEM_STORECOINS) {
-			IOAccount::addCoins(buyerPlayer->getAccount(), amount);
-			IOAccount::registerTransaction(buyerPlayer->getAccount(), OS_TIME(nullptr), 0, amount, 0, "Purchased on Market", amount);
+			// no inbox items for coins
 		} else if (it.stackable) {
 			uint16_t tmpAmount = amount;
 			while (tmpAmount > 0) {
@@ -7941,8 +7979,8 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 		player->bankBalance -= totalPrice;
 
 		if (it.id == ITEM_STORECOINS) {
-			IOAccount::addCoins(player->getAccount(), amount);
-			IOAccount::registerTransaction(player->getAccount(), OS_TIME(nullptr), 0, 1, 0, "Purchased on Market", amount);
+			IOAccount::addCoins(player->getAccount(), static_cast<int32_t>(amount), COIN_TYPE_DEFAULT);
+			IOAccount::registerTransaction(player->getAccount(), OS_TIME(nullptr), 0, 1, 0, "Purchased on Market", static_cast<int32_t>(amount));
 		} else if (it.stackable) {
 			uint16_t tmpAmount = amount;
 			while (tmpAmount > 0) {
@@ -7984,13 +8022,11 @@ void Game::playerAcceptMarketOffer(uint32_t playerId, uint32_t timestamp, uint16
 			IOLoginData::increaseBankBalance(offer.playerId, totalPrice);
 
 			if (it.id == ITEM_STORECOINS) {
-				sellerPlayer = new Player(nullptr);
+				Player* tmp = new Player(nullptr);
+				if (IOLoginData::loadPlayerById(tmp, offer.playerId)) {
+					IOAccount::registerTransaction(tmp->getAccount(), OS_TIME(nullptr), 0, 1, 0, "Sold on Market", -static_cast<int32_t>(amount));				}
 
-				if (IOLoginData::loadPlayerById(sellerPlayer, offer.playerId)) {
-					IOAccount::registerTransaction(sellerPlayer->getAccount(), OS_TIME(nullptr), 0, 1, 0, "Sold on Market", -static_cast<int32_t>(amount));
-				}
-
-				delete sellerPlayer;
+				delete tmp;
 			}
 		}
 
@@ -8877,8 +8913,7 @@ bool Game::getAccountHistory(const uint32_t accountId, std::vector<StoreHistory>
 	return true;
 }
 
-void Game::incrementMessageStatement(std::string name, std::string message, uint32_t guid, uint16_t channelId, bool isPlayer /* = false*/)
-{
+void Game::incrementMessageStatement(std::string name, std::string message, uint32_t guid, uint16_t channelId, bool isPlayer /* = false*/) {
 	statementId++;
 	if (isPlayer) {
 		serverMessages.emplace(std::piecewise_construct,
