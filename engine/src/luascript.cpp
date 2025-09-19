@@ -2492,6 +2492,9 @@ void LuaScriptInterface::registerFunctions()
 	registerMethod("Item", "getDuration", LuaScriptInterface::luaItemGetDuration);
 	registerMethod("Item", "getRemainingDuration", LuaScriptInterface::luaItemGetRemainingDuration);
 
+	registerMethod("Item", "getDuration", LuaScriptInterface::luaItemGetDuration);
+	registerMethod("Item", "getRemainingDuration", LuaScriptInterface::luaItemGetRemainingDuration);
+
 	registerMethod("Item", "hasProperty", LuaScriptInterface::luaItemHasProperty);
 
 	// Container

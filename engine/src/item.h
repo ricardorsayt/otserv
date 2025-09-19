@@ -232,6 +232,7 @@ class ItemAttributes
 		void setDurationTimestamp(int64_t timestamp) {
 			setIntAttr(ITEM_ATTRIBUTE_DURATION_TIMESTAMP, timestamp);
 		}
+
 		int32_t getDuration() const {
 			return getIntAttr(ITEM_ATTRIBUTE_DURATION);
 		}
