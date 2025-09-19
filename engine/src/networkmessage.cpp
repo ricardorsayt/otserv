@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2019 Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2019  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,14 +24,6 @@
 #include "container.h"
 #include "creature.h"
 
-int32_t NetworkMessage::decodeHeader()
-{
-	int32_t newSize = static_cast<int32_t>(buffer[0] | buffer[1] << 8);
-	info.length = newSize;
-	return info.length;
-}
-
-/******************************************************************************/
 std::string NetworkMessage::getString(uint16_t stringLen/* = 0*/)
 {
 	if (stringLen == 0) {
@@ -55,12 +47,11 @@ Position NetworkMessage::getPosition()
 	pos.z = getByte();
 	return pos;
 }
-/******************************************************************************/
 
 void NetworkMessage::addString(const std::string& value)
 {
 	size_t stringLen = value.length();
-	if (!canAdd(stringLen + 2) || stringLen > 8192) {
+	if (!canAdd(stringLen + 2)) {
 		return;
 	}
 
@@ -78,7 +69,7 @@ void NetworkMessage::addDouble(double value, uint8_t precision/* = 2*/)
 
 void NetworkMessage::addBytes(const char* bytes, size_t size)
 {
-	if (!canAdd(size) || size > 8192) {
+	if (!canAdd(size)) {
 		return;
 	}
 
@@ -102,6 +93,51 @@ void NetworkMessage::addPosition(const Position& pos)
 	add<uint16_t>(pos.x);
 	add<uint16_t>(pos.y);
 	addByte(pos.z);
+}
+
+void NetworkMessage::addItem(uint16_t id, uint8_t count, bool withDescription)
+{
+	const ItemType& it = Item::items[id];
+
+	add<uint16_t>(it.clientId);
+
+	addByte(0xFF); // MARK_UNMARKED
+
+	if (it.stackable) {
+		addByte(count);
+	} else if (it.isSplash() || it.isFluidContainer()) {
+		addByte(fluidMap[count & 7]);
+	}
+
+	if (it.isAnimation) {
+		addByte(0xFE); // random phase (0xFF for async)
+	}
+
+	if (withDescription) {
+		addString("");
+	}
+}
+
+void NetworkMessage::addItem(const Item* item, bool withDescription)
+{
+	const ItemType& it = Item::items[item->getID()];
+
+	add<uint16_t>(it.clientId);
+	addByte(0xFF); // MARK_UNMARKED
+
+	if (it.stackable) {
+		addByte(std::min<uint16_t>(0xFF, item->getItemCount()));
+	} else if (it.isSplash() || it.isFluidContainer()) {
+		addByte(fluidMap[item->getFluidType() & 7]);
+	}
+
+	if (it.isAnimation) {
+		addByte(0xFE); // random phase (0xFF for async)
+	}
+
+	if (withDescription) {
+		addString(item->getDescription(0));
+	}
 }
 
 void NetworkMessage::addItemId(uint16_t itemId)

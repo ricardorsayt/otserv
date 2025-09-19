@@ -3798,6 +3798,8 @@ void ProtocolGame::sendFeatures()
 	std::map<GameFeature, bool> features;
 	// place for non-standard OTCv8 features
 	features[GameExtendedOpcode] = true;
+	features[GameItemTooltip] = true; // fully available from version 2.6
+
 
 	if(features.empty())
 		return;
