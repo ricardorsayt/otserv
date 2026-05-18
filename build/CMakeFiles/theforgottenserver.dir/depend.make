@@ -65,11 +65,11 @@ CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/actions.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: ../src/auras.cpp
 CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: ../src/auras.h
@@ -80,11 +80,11 @@ CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: ../src/position.h
 CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: ../src/pugicast.h
 CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/auras.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: ../src/ban.cpp
 CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: ../src/ban.h
@@ -97,11 +97,11 @@ CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: ../src/position.h
 CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: ../src/thread_holder_base.h
 CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/ban.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: ../src/baseevents.cpp
 CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: ../src/baseevents.h
@@ -115,11 +115,11 @@ CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: ../src/outfit.h
 CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: ../src/position.h
 CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: ../src/pugicast.h
 CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/baseevents.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: ../src/auras.h
@@ -179,11 +179,11 @@ CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/battlepass.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: ../src/auras.h
@@ -245,11 +245,11 @@ CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/bed.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: ../src/auras.h
@@ -311,11 +311,11 @@ CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/chat.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: ../src/auras.h
@@ -377,11 +377,11 @@ CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: ../src/weapons.h
 CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/combat.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: ../src/auras.h
@@ -440,11 +440,11 @@ CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/condition.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: ../src/auras.h
@@ -506,11 +506,11 @@ CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/configmanager.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: ../src/ban.h
 CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: ../src/configmanager.h
@@ -533,11 +533,11 @@ CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: ../src/tasks.h
 CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: ../src/thread_holder_base.h
 CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: ../src/tools.h
 CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/connection.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/container.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/container.cpp.o: ../src/auras.h
@@ -598,11 +598,11 @@ CMakeFiles/theforgottenserver.dir/src/container.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/container.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/container.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/container.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/container.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/container.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/container.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/container.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/container.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/container.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/container.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/container.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/container.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/container.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: ../src/auras.h
@@ -664,11 +664,11 @@ CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/creature.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: ../src/auras.h
 CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: ../src/baseevents.h
@@ -721,11 +721,11 @@ CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: ../src/vocation.h
 CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/creatureevent.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: ../src/cylinder.cpp
 CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: ../src/cylinder.h
@@ -734,11 +734,11 @@ CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: ../src/enums.h
 CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: ../src/position.h
 CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: ../src/thing.h
-CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/cylinder.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/database.cpp.o: ../src/configmanager.h
 CMakeFiles/theforgottenserver.dir/src/database.cpp.o: ../src/database.cpp
@@ -749,11 +749,11 @@ CMakeFiles/theforgottenserver.dir/src/database.cpp.o: ../src/logger.h
 CMakeFiles/theforgottenserver.dir/src/database.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/database.cpp.o: ../src/stats.h
 CMakeFiles/theforgottenserver.dir/src/database.cpp.o: ../src/thread_holder_base.h
-CMakeFiles/theforgottenserver.dir/src/database.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/database.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/database.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/database.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/database.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/database.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/database.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/database.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/database.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/database.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: ../src/configmanager.h
 CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: ../src/database.h
@@ -765,11 +765,11 @@ CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: ../src/luascript.h
 CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: ../src/outfit.h
 CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: ../src/position.h
-CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/databasemanager.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: ../src/database.h
 CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: ../src/databasetasks.cpp
@@ -780,11 +780,11 @@ CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: ../src/stats.h
 CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: ../src/tasks.h
 CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: ../src/thread_holder_base.h
-CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/databasetasks.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: ../src/const.h
 CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: ../src/container.h
@@ -807,11 +807,11 @@ CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: ../src/spectators.h
 CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: ../src/thing.h
 CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: ../src/tile.h
 CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/depotlocker.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/events.cpp.o: ../src/auras.h
 CMakeFiles/theforgottenserver.dir/src/events.cpp.o: ../src/baseevents.h
@@ -865,21 +865,21 @@ CMakeFiles/theforgottenserver.dir/src/events.cpp.o: ../src/vocation.h
 CMakeFiles/theforgottenserver.dir/src/events.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/events.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/events.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/events.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/events.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/events.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/events.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/events.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/events.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/events.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/events.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/events.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/events.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: ../src/definitions.h
 CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: ../src/fileloader.cpp
 CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: ../src/fileloader.h
 CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: ../src/otpch.h
-CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/fileloader.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/game.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/game.cpp.o: ../src/actions.h
@@ -956,11 +956,11 @@ CMakeFiles/theforgottenserver.dir/src/game.cpp.o: ../src/weapons.h
 CMakeFiles/theforgottenserver.dir/src/game.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/game.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/game.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/game.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/game.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/game.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/game.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/game.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/game.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/game.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/game.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/game.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/game.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: ../src/baseevents.h
 CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: ../src/configmanager.h
@@ -980,11 +980,11 @@ CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: ../src/stats.h
 CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: ../src/tasks.h
 CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: ../src/thread_holder_base.h
 CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/globalevent.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: ../src/const.h
 CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: ../src/definitions.h
@@ -995,11 +995,11 @@ CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: ../src/position.h
 CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: ../src/pugicast.h
 CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/groups.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: ../src/auras.h
@@ -1058,11 +1058,11 @@ CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/guild.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/house.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/house.cpp.o: ../src/auras.h
@@ -1127,11 +1127,11 @@ CMakeFiles/theforgottenserver.dir/src/house.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/house.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/house.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/house.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/house.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/house.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/house.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/house.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/house.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/house.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/house.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/house.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/house.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/house.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: ../src/auras.h
@@ -1191,11 +1191,11 @@ CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/housetile.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: ../src/database.h
 CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: ../src/definitions.h
@@ -1203,11 +1203,11 @@ CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: ../src/guild.h
 CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: ../src/ioguild.cpp
 CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: ../src/ioguild.h
 CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: ../src/otpch.h
-CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/ioguild.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: ../src/auras.h
@@ -1269,11 +1269,11 @@ CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/iologindata.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: ../src/auras.h
@@ -1335,11 +1335,11 @@ CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/iomap.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: ../src/auras.h
@@ -1402,11 +1402,11 @@ CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/iomapserialize.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/item.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/item.cpp.o: ../src/actions.h
@@ -1474,11 +1474,11 @@ CMakeFiles/theforgottenserver.dir/src/item.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/item.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/item.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/item.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/item.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/item.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/item.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/item.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/item.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/item.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/item.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/item.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/item.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/item.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/items.cpp.o: ../src/actions.h
 CMakeFiles/theforgottenserver.dir/src/items.cpp.o: ../src/auras.h
@@ -1538,11 +1538,11 @@ CMakeFiles/theforgottenserver.dir/src/items.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/items.cpp.o: ../src/weapons.h
 CMakeFiles/theforgottenserver.dir/src/items.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/items.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/items.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/items.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/items.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/items.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/items.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/items.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/items.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/items.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/items.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/items.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: ../src/auras.h
@@ -1603,11 +1603,11 @@ CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/logger.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: ../src/actions.h
@@ -1685,11 +1685,11 @@ CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: ../src/weapons.h
 CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/luascript.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: ../src/auras.h
@@ -1752,11 +1752,11 @@ CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/mailbox.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/map.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/map.cpp.o: ../src/auras.h
@@ -1819,11 +1819,11 @@ CMakeFiles/theforgottenserver.dir/src/map.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/map.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/map.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/map.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/map.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/map.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/map.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/map.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/map.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/map.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/map.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/map.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/map.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/map.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: ../src/actions.h
@@ -1890,11 +1890,11 @@ CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: ../src/weapons.h
 CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/monster.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: ../src/actions.h
@@ -1960,11 +1960,11 @@ CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: ../src/weapons.h
 CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/monsters.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: ../src/auras.h
@@ -2025,11 +2025,11 @@ CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/movement.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/n.cpp.o: ../src/n.cpp
 
@@ -2062,11 +2062,11 @@ CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: ../src/thing.h
 CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: ../src/tile.h
 CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: ../src/tools.h
 CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: ../src/town.h
-CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/networkmessage.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: ../src/auras.h
@@ -2129,11 +2129,11 @@ CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/npc.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: ../src/actions.h
@@ -2199,20 +2199,20 @@ CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/npcbehavior.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: ../src/definitions.h
 CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: ../src/otpch.cpp
 CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: ../src/otpch.h
-CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/otpch.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: ../src/auras.h
@@ -2283,11 +2283,11 @@ CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/otserv.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: ../src/const.h
 CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: ../src/definitions.h
@@ -2298,11 +2298,11 @@ CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: ../src/outfit.h
 CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: ../src/position.h
 CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: ../src/pugicast.h
 CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/outfit.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: ../src/connection.h
 CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: ../src/const.h
@@ -2320,11 +2320,11 @@ CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: ../src/tasks.h
 CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: ../src/thread_holder_base.h
 CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: ../src/tools.h
 CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/outputmessage.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/party.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/party.cpp.o: ../src/auras.h
@@ -2385,11 +2385,11 @@ CMakeFiles/theforgottenserver.dir/src/party.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/party.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/party.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/party.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/party.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/party.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/party.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/party.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/party.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/party.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/party.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/party.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/party.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/party.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/player.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/player.cpp.o: ../src/auras.h
@@ -2458,21 +2458,21 @@ CMakeFiles/theforgottenserver.dir/src/player.cpp.o: ../src/weapons.h
 CMakeFiles/theforgottenserver.dir/src/player.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/player.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/player.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/player.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/player.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/player.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/player.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/player.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/player.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/player.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/player.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/player.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/player.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/position.cpp.o: ../src/definitions.h
 CMakeFiles/theforgottenserver.dir/src/position.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/position.cpp.o: ../src/position.cpp
 CMakeFiles/theforgottenserver.dir/src/position.cpp.o: ../src/position.h
-CMakeFiles/theforgottenserver.dir/src/position.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/position.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/position.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/position.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/position.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/position.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/position.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/position.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/position.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/position.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: ../src/connection.h
 CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: ../src/const.h
@@ -2487,11 +2487,11 @@ CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: ../src/protocol.h
 CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: ../src/rsa.h
 CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: ../src/tools.h
 CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/protocol.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: ../src/actions.h
@@ -2557,11 +2557,11 @@ CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/protocolgame.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: ../src/auras.h
@@ -2625,11 +2625,11 @@ CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/protocollogin.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: ../src/auras.h
@@ -2691,11 +2691,11 @@ CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/protocolstatus.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: ../src/auras.h
@@ -2759,21 +2759,21 @@ CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/raids.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: ../src/definitions.h
 CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: ../src/rsa.cpp
 CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: ../src/rsa.h
-CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/rsa.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: ../src/definitions.h
 CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: ../src/enums.h
@@ -2783,11 +2783,11 @@ CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: ../src/scheduler.h
 CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: ../src/stats.h
 CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: ../src/tasks.h
 CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: ../src/thread_holder_base.h
-CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/scheduler.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/script.cpp.o: ../src/configmanager.h
 CMakeFiles/theforgottenserver.dir/src/script.cpp.o: ../src/database.h
@@ -2799,11 +2799,11 @@ CMakeFiles/theforgottenserver.dir/src/script.cpp.o: ../src/outfit.h
 CMakeFiles/theforgottenserver.dir/src/script.cpp.o: ../src/position.h
 CMakeFiles/theforgottenserver.dir/src/script.cpp.o: ../src/script.cpp
 CMakeFiles/theforgottenserver.dir/src/script.cpp.o: ../src/script.h
-CMakeFiles/theforgottenserver.dir/src/script.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/script.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/script.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/script.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/script.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/script.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/script.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/script.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/script.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/script.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: ../src/actions.h
 CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: ../src/auras.h
@@ -2866,11 +2866,11 @@ CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: ../src/weapons.h
 CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/scriptmanager.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: ../src/const.h
 CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: ../src/definitions.h
@@ -2880,11 +2880,11 @@ CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: ../src/position.h
 CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: ../src/scriptreader.cpp
 CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: ../src/scriptreader.h
 CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/scriptreader.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/server.cpp.o: ../src/ban.h
 CMakeFiles/theforgottenserver.dir/src/server.cpp.o: ../src/configmanager.h
@@ -2904,11 +2904,11 @@ CMakeFiles/theforgottenserver.dir/src/server.cpp.o: ../src/stats.h
 CMakeFiles/theforgottenserver.dir/src/server.cpp.o: ../src/tasks.h
 CMakeFiles/theforgottenserver.dir/src/server.cpp.o: ../src/thread_holder_base.h
 CMakeFiles/theforgottenserver.dir/src/server.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/server.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/server.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/server.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/server.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/server.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/server.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/server.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/server.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/server.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/server.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: ../src/const.h
 CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: ../src/definitions.h
@@ -2919,11 +2919,11 @@ CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: ../src/pugicast.h
 CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: ../src/shaders.cpp
 CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: ../src/shaders.h
 CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/shaders.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: ../src/actions.h
@@ -2994,11 +2994,11 @@ CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: ../src/weapons.h
 CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/signals.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: ../src/auras.h
@@ -3062,11 +3062,11 @@ CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/spawn.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: ../src/actions.h
@@ -3131,11 +3131,11 @@ CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/spells.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: ../src/configmanager.h
 CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: ../src/const.h
@@ -3148,11 +3148,11 @@ CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: ../src/stats.h
 CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: ../src/tasks.h
 CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: ../src/thread_holder_base.h
 CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/stats.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: ../src/const.h
 CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: ../src/container.h
@@ -3174,11 +3174,11 @@ CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: ../src/storeinbox.h
 CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: ../src/thing.h
 CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: ../src/tile.h
 CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/storeinbox.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: ../src/auras.h
 CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: ../src/baseevents.h
@@ -3233,11 +3233,11 @@ CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: ../src/vocation.h
 CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/talkaction.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: ../src/auras.h
@@ -3296,11 +3296,11 @@ CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/tasks.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: ../src/auras.h
@@ -3360,11 +3360,11 @@ CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/teleport.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: ../src/const.h
 CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: ../src/cylinder.h
@@ -3384,11 +3384,11 @@ CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: ../src/thing.cpp
 CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: ../src/thing.h
 CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: ../src/tile.h
 CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/thing.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: ../src/auras.h
@@ -3453,11 +3453,11 @@ CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/tile.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: ../src/configmanager.h
 CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: ../src/const.h
@@ -3467,11 +3467,11 @@ CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: ../src/position.h
 CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: ../src/tools.cpp
 CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: ../src/tools.h
-CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/tools.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: ../src/auras.h
@@ -3531,11 +3531,11 @@ CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: ../src/walkmatrix.h
 CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/trashholder.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: ../src/const.h
 CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: ../src/cylinder.h
@@ -3555,11 +3555,11 @@ CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: ../src/thing.h
 CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: ../src/tools.h
 CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: ../src/vocation.cpp
 CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: ../src/vocation.h
-CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/vocation.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: ../src/account.h
 CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: ../src/auras.h
@@ -3622,22 +3622,22 @@ CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: ../src/weapons.h
 CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: ../src/wildcardtree.h
 CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: ../src/wings.h
 CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/weapons.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: ../src/definitions.h
 CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: ../src/enums.h
 CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: ../src/wildcardtree.cpp
 CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: ../src/wildcardtree.h
-CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/wildcardtree.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: ../src/const.h
 CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: ../src/definitions.h
@@ -3648,19 +3648,19 @@ CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: ../src/pugicast.h
 CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: ../src/tools.h
 CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: ../src/wings.cpp
 CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: ../src/wings.h
-CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/wings.cpp.o: /usr/include/lua5.4/lualib.h
 
 CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: ../src/definitions.h
 CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: ../src/otpch.h
 CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: ../src/xtea.cpp
 CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: ../src/xtea.h
-CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: /usr/include/lua5.3/lauxlib.h
-CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: /usr/include/lua5.3/lua.h
-CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: /usr/include/lua5.3/lua.hpp
-CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: /usr/include/lua5.3/luaconf.h
-CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: /usr/include/lua5.3/lualib.h
+CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: /usr/include/lua5.4/lauxlib.h
+CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: /usr/include/lua5.4/lua.h
+CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: /usr/include/lua5.4/lua.hpp
+CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: /usr/include/lua5.4/luaconf.h
+CMakeFiles/theforgottenserver.dir/src/xtea.cpp.o: /usr/include/lua5.4/lualib.h
 

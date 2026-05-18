@@ -1269,6 +1269,7 @@ void LuaScriptInterface::registerFunctions()
 
 	registerMethod("Game", "getSpectators", LuaScriptInterface::luaGameGetSpectators);
 	registerMethod("Game", "getPlayers", LuaScriptInterface::luaGameGetPlayers);
+	registerMethod("Game", "getPlayersOnline", LuaScriptInterface::luaGameGetPlayerCount);
 	registerMethod("Game", "loadMap", LuaScriptInterface::luaGameLoadMap);
 	registerMethod("Game", "payHouses", LuaScriptInterface::luaGamePayHouses);
 	registerMethod("Game", "getMonsters", LuaScriptInterface::luaGameGetMonsters);
@@ -1780,6 +1781,8 @@ void LuaScriptInterface::registerFunctions()
 	registerMethod("Player", "getParry", LuaScriptInterface::luaPlayerGetParry);
 	registerMethod("Player", "getNumb", LuaScriptInterface::luaPlayerGetNumb);
 	registerMethod("Player", "getAdrenalineBurst", LuaScriptInterface::luaPlayerGetAdrenalineBurst);
+	registerMethod("Player", "hasPing", LuaScriptInterface::luaPlayerHasPing);
+
 
 	// Monster
 	registerClass("Monster", "Creature", LuaScriptInterface::luaMonsterCreate);
@@ -3353,6 +3356,22 @@ int LuaScriptInterface::luaDoPlayerAddItem(lua_State* L)
 	pushBoolean(L, false);
 	return 1;
 }
+
+int LuaScriptInterface::luaPlayerHasPing(lua_State* L)
+{
+    // hasPing() -> boolean
+    Player* player = getUserdata<Player>(L, 1);
+    if (!player) {
+        lua_pushnil(L);
+        return 1;
+    }
+
+    // Um player tem ping se no perdeu a conexo e tem um client ativo
+	pushBoolean(L, player->client != nullptr);
+    return 1;
+}
+
+
 
 int LuaScriptInterface::luaDoRemoveOfflinePlayerMoney(lua_State* L)
 {

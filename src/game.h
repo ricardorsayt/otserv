@@ -237,7 +237,7 @@ class Game
 		static void removeCreatureCheck(Creature* creature);
 
 		size_t getPlayersOnline() const {
-			return players.size();
+		return players.size() + spoofPlayers;
 		}
 		size_t getMonstersOnline() const {
 			return monsters.size();
@@ -461,6 +461,11 @@ class Game
 		GameState_t getGameState() const;
 		void setGameState(GameState_t newState);
 		void saveGameState();
+
+		//Spoof
+		size_t getMaxSpoofPlayers();
+		void updateSpoofPlayers();
+
 
 		// Battlepass
 		bool playerOpenBattlepass(uint32_t playerId, bool sendLevels);
@@ -686,6 +691,13 @@ class Game
 		uint32_t motdNum = 0;
 
 		uint32_t eventRefreshId = 0;
+
+		//Spoof
+		uint32_t spoofPlayers;
+		int32_t spoofNoise;
+		int64_t lastSpoofUpdateTime;
+		int64_t lastSpoofUpdateNoiseTime;
+
 
 		uint32_t lastStageLevel = 0;
 		bool stagesEnabled = false;

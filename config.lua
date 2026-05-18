@@ -6,11 +6,11 @@
 -- Connection Settings --
 -------------------------
 -- maxPlayers: set to 0 for no limit
---ip = "shanera-retro.com"       --oficial proxy
+--ip = "34.95.136.196"       --oficial proxy
 --bindOnlyGlobalAddress = true --proxy
 --statusProtocolPort = 7173 --proxy
-ip = "34.95.243.186"
-statusIP = "34.95.243.186"
+ip = "34.95.136.196"
+statusIP = "34.95.136.196"
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
@@ -65,6 +65,19 @@ startupDatabaseOptimization = false
 mapName = "map"
 mapAuthor = "Ezzz & CipSoft"
 
+
+-- Spoof Configuration
+spoofEnabled = true                    -- Liga/desliga o sistema
+spoofDailyMinPlayers = 1              -- Mínimo de players fake por dia
+spoofDailyMaxPlayers = 100            -- Máximo de players fake por dia
+spoofNoiseInterval = 1000             -- Intervalo do ruído em milissegundos
+spoofNoise = 0                        -- Intensidade do ruído (variação aleatória)
+spoofTimezone = -1                    -- Fuso horário (UTC-1, Brasil seria -3)
+spoofInterval = 30000                 -- Intervalo entre atualizações (30 segundos)
+spoofChangeChance = 70                -- Chance de mudança acontecer (70%)
+spoofIncrementChange = 5              -- Chance de diminuir em vez de aumentar
+
+
 --------------------------
 -- Map Refresh Settings --
 --------------------------
@@ -92,10 +105,10 @@ protectionLevel = 1
 banDaysLength = 30
 pzLocked = 60000
 onlyOneFragPerKill = false
-removeChargesFromRunes = false
-removeChargesFromPotions = false
-removeWeaponAmmunition = false
-removeWeaponCharges = false
+removeChargesFromRunes = true
+removeChargesFromPotions = true
+removeWeaponAmmunition = true
+removeWeaponCharges = true
 redSkullDuration = 15 * 24 * 60 * 60
 killsDayRedSkull = 7
 killsWeekRedSkull = 15
@@ -177,10 +190,10 @@ houseDoorsDisplayHouseInfo = false
 deepPlayerContainerSearch = false 
 
 -- Rarity Items System
-itemUncommonChance = 70
-itemRareChance = 100
-itemEpicChance = 90
-itemLegendaryChance = 80
+itemUncommonChance = 15
+itemRareChance = 8
+itemEpicChance = 3
+itemLegendaryChance = 1
 
 -- Allow sending parcels and letters with trash on top of mailboxes
 trashableMailbox = false
@@ -212,16 +225,16 @@ rookTownName = "Rookgaard"
 -- Rate Settings --
 -------------------
 -- rateSpawn: increases respawn time by the given percentage, 50 = 50% faster respawn time
-rateExp = 100
-rateSkill = 20
-rateLoot = 100
-rateMagic = 20
+rateExp = 2
+rateSkill = 2
+rateLoot = 2
+rateMagic = 2
 rateSpawn = 100
 
 --------------------------
 -- Battlepass Settings --
 --------------------------
-battlePassEndDate = "10.08.2025.10.00" -- // Date format - 20.09.2023.10.00
+battlePassEndDate = "10.12.2027.10.00" -- // Date format - 20.09.2023.10.00
 
 -----------------
 -- LUA Scripts --

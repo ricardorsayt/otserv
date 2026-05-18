@@ -5,26 +5,26 @@ project(TheForgottenServer)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# ForÃ§a ABI moderno do C++ (necessÃ¡rio pra evitar erros com Crypto++)
+# Força ABI moderno do C++ (necessário pra evitar erros com Crypto++)
 add_definitions(-D_GLIBCXX_USE_CXX11_ABI=1)
 
-# Caminho para mÃ³dulos personalizados
+# Caminho para módulos personalizados
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/Modules")
 
-# Encontrar dependÃªncias
+# Encontrar dependências
 find_package(spdlog REQUIRED)
 find_package(Lua 5.3 REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system filesystem iostreams)
 find_package(MySQL REQUIRED)
 
-# Tentativa de encontrar Crypto++ usando mÃ³dulo, se existir
+# Tentativa de encontrar Crypto++ usando módulo, se existir
 find_package(Crypto++ QUIET)
 
-# Se nÃ£o encontrar, define manualmente
+# Se não encontrar, define manualmente
 if (NOT Crypto++_FOUND AND NOT CRYPTOPP_FOUND)
-    message(WARNING "Crypto++ nÃ£o encontrado com find_package, usando fallback manual")
+    message(WARNING "Crypto++ não encontrado com find_package, usando fallback manual")
 
-    # Ajuste no caminho para buscar corretamente os arquivos de cabeÃ§alho
+    # Ajuste no caminho para buscar corretamente os arquivos de cabeçalho
     find_path(CRYPTOPP_INCLUDE_DIRS cryptlib.h PATHS /usr/include/crypto++ /usr/local/include)
 
     # Ajuste no caminho para buscar corretamente as bibliotecas
@@ -35,11 +35,11 @@ if (NOT Crypto++_FOUND AND NOT CRYPTOPP_FOUND)
         set(CRYPTOPP_LIBRARIES ${CRYPTOPP_LIBRARY})
         set(CRYPTOPP_FOUND TRUE)
     else()
-        message(FATAL_ERROR "Crypto++ nÃ£o encontrado. Instale com: sudo apt install libcrypto++-dev")
+        message(FATAL_ERROR "Crypto++ não encontrado. Instale com: sudo apt install libcrypto++-dev")
     endif()
 endif()
 
-# Incluir diretÃ³rios
+# Incluir diretórios
 include_directories(
     ${CRYPTOPP_INCLUDE_DIRS}
     ${SPDLOG_INCLUDE_DIR}
@@ -53,7 +53,7 @@ include_directories(
 # Buscar arquivos fonte
 file(GLOB_RECURSE SOURCES src/*.cpp)
 
-# Criar executÃ¡vel
+# Criar executável
 add_executable(theforgottenserver ${SOURCES})
 
 # Linkar bibliotecas
@@ -65,3 +65,10 @@ target_link_libraries(theforgottenserver
     ${MYSQL_LIBRARIES}
     pugixml
 )
+
+# Forçar link direto com LuaJIT para corrigir "undefined reference to lua_*"
+# (Necessário em Ubuntu 22+ pois o FindLua não detecta corretamente o LuaJIT)
+target_link_libraries(theforgottenserver /usr/lib/x86_64-linux-gnu/libluajit-5.1.so)
+
+# Mensagem de confirmação
+message(STATUS "Linkagem direta com LuaJIT adicionada manualmente (/usr/lib/x86_64-linux-gnu/libluajit-5.1.so)")

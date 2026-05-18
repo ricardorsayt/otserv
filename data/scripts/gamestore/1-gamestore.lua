@@ -616,7 +616,7 @@ storeIndex = {
         icon = '13/Category_Items',
         offers = {
 		   {
-                name = "Ravenor Ring",
+                name = "Retro Ring",
                 price = 150,
                 id = 5547,
                 count = 1,
@@ -627,7 +627,7 @@ storeIndex = {
                 category_id = "5"
             },
 		    {
-                name = "Ravenor Boots",
+                name = "Retro Boots",
                 price = 150,
                 id = 5549,
                 count = 1,
@@ -638,7 +638,7 @@ storeIndex = {
                 category_id = "5"
             },
 			{
-			    name = "Ravenor Shield",
+			    name = "Retro Shield",
                 price = 150,
                 id = 5548,
                 count = 1,
@@ -649,7 +649,7 @@ storeIndex = {
                 category_id = "5"
             },
             {
-                name = "Ravenor Backpack",
+                name = "Retro Backpack",
                 price = 15,
                 id = 5117,
                 count = 1,
@@ -660,7 +660,7 @@ storeIndex = {
                 category_id = "5"
             },
 			{
-                name = "Ravenor Reduction Backpack",
+                name = "Retro Reduction Backpack",
                 price = 100,
                 id = 5569,
                 count = 1,

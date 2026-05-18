@@ -1,7 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
-<!-- EMAC Anti-Cheat -->
-<event type="login" name="emac_login" script="emac_anti_cheat/login.lua" />
-<event type="logout" name="emac_logout" script="emac_anti_cheat/logout.lua" />
-
 </creaturescripts>
